@@ -1,0 +1,293 @@
+#!/usr/bin/env python3
+"""
+从 IG Metall 雇主名单站导入公司列表。
+
+因为那是个纯前端 SPA,数据几乎肯定是一个静态 JSON 文件。
+本脚本会:
+  1. 抓首页 HTML,找出所有 JS/JSON 资源
+  2. 在 JS 里搜 .json 引用,顺藤摸瓜找到数据文件
+  3. 也直接试一批常见路径
+  4. 都失败就走手动模式(见下面的说明)
+
+用法:
+    python import_igm.py auto                      # 自动探测
+    python import_igm.py file igm_raw.json         # 用手动保存的文件
+    python import_igm.py file igm_raw.json --region bayern   # 只要巴伐利亚
+    python import_igm.py show                      # 看看导入了什么
+
+手动模式怎么拿文件:
+    打开 https://arbeitgeberliste.netlify.app/
+    F12 → Network 标签 → 刷新页面 → 按 Size 排序,最大的那个 .json 就是
+    → 右键 → Copy → Copy response → 存成 igm_raw.json
+"""
+
+import argparse
+import json
+import re
+import sys
+from collections import Counter
+from pathlib import Path
+from urllib.parse import urljoin
+
+try:
+    import requests
+    import yaml
+except ImportError:
+    sys.exit("请先运行:  pip install requests pyyaml")
+
+from names import slug_candidates
+
+BASE = Path(__file__).resolve().parent
+OUT = BASE / "igmetall.yaml"
+SITE = "https://arbeitgeberliste.netlify.app/"
+
+UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
+S = requests.Session()
+S.headers.update({"User-Agent": UA})
+
+COMMON_PATHS = [
+    "data.json", "companies.json", "arbeitgeber.json", "arbeitgeberliste.json",
+    "db.json", "list.json", "firmen.json", "betriebe.json",
+    "data/data.json", "data/companies.json", "assets/data.json",
+    "static/data.json", "public/data.json",
+]
+
+# 可能装着公司名的字段名(德/英)
+NAME_KEYS = ["name", "firma", "firmenname", "unternehmen", "arbeitgeber",
+             "betrieb", "company", "title", "bezeichnung"]
+PLACE_KEYS = ["ort", "stadt", "city", "standort", "sitz", "adresse", "address",
+              "plz", "postleitzahl", "zip"]
+REGION_KEYS = ["bundesland", "region", "bezirk", "land", "state", "gebiet",
+               "tarifgebiet", "tarifbezirk"]
+
+
+# ---------------------------------------------------------------- 自动探测
+
+def try_json(url):
+    try:
+        r = S.get(url, timeout=20)
+        if r.status_code != 200:
+            return None
+        ct = r.headers.get("content-type", "")
+        if "json" not in ct and not r.text.lstrip().startswith(("[", "{")):
+            return None
+        return r.json()
+    except Exception:
+        return None
+
+
+def auto_discover():
+    print(f"抓取 {SITE}")
+    try:
+        html = S.get(SITE, timeout=20).text
+    except Exception as e:
+        sys.exit(f"抓不到首页: {e}\n改用手动模式,见文件顶部说明。")
+
+    # 直接在 HTML 里出现的 .json
+    urls = []
+    for m in re.findall(r'["\'\(]([^"\'\)\s]+\.json)["\'\)]', html):
+        urls.append(urljoin(SITE, m))
+
+    # 从 JS bundle 里挖
+    scripts = re.findall(r'<script[^>]+src=["\']([^"\']+)["\']', html)
+    for s in scripts[:8]:
+        js_url = urljoin(SITE, s)
+        try:
+            js = S.get(js_url, timeout=25).text
+        except Exception:
+            continue
+        for m in re.findall(r'["\'\(]([^"\'\)\s]{3,120}\.json)["\'\)]', js):
+            urls.append(urljoin(js_url, m))
+            urls.append(urljoin(SITE, m.lstrip("./")))
+
+    urls += [urljoin(SITE, p) for p in COMMON_PATHS]
+
+    seen, best, best_n = set(), None, 0
+    for u in urls:
+        if u in seen:
+            continue
+        seen.add(u)
+        data = try_json(u)
+        if data is None:
+            continue
+        recs = find_records(data)
+        if recs and len(recs) > best_n:
+            best, best_n = (u, data, recs), len(recs)
+            print(f"  ✓ {u}  →  {len(recs)} 条记录")
+        else:
+            print(f"  · {u}  (不像数据文件)")
+
+    if not best:
+        print("\n自动探测失败。请走手动模式:")
+        print("  F12 → Network → 刷新 → 找最大的 .json → Copy response")
+        print("  存成 igm_raw.json,然后:  python import_igm.py file igm_raw.json")
+        sys.exit(1)
+
+    url, data, recs = best
+    print(f"\n采用 {url}({len(recs)} 条)")
+    return recs
+
+
+# ---------------------------------------------------------------- 解析
+
+def find_records(data, depth=0):
+    """在任意嵌套结构里找出"看起来像公司列表"的那个数组。"""
+    if depth > 5:
+        return None
+    if isinstance(data, list):
+        if len(data) >= 5 and all(isinstance(x, dict) for x in data[:5]):
+            keys = {k.lower() for k in data[0]}
+            if any(nk in keys for nk in NAME_KEYS):
+                return data
+        if len(data) >= 5 and all(isinstance(x, str) for x in data[:5]):
+            return [{"name": x} for x in data]
+        return None
+    if isinstance(data, dict):
+        best = None
+        for v in data.values():
+            r = find_records(v, depth + 1)
+            if r and (best is None or len(r) > len(best)):
+                best = r
+        return best
+    return None
+
+
+def pick_key(records, candidates):
+    """在记录里挑一个最可能的字段名。"""
+    keys = Counter()
+    for r in records[:200]:
+        for k in r:
+            keys[k.lower()] += 1
+    for c in candidates:
+        for k in keys:
+            if k == c:
+                return k
+    for c in candidates:
+        for k in keys:
+            if c in k:
+                return k
+    return None
+
+
+def extract(records, region_filter=None):
+    if not records:
+        sys.exit("没解析出记录。")
+
+    # 统一小写键,方便取值
+    recs = [{str(k).lower(): v for k, v in r.items()} for r in records]
+
+    nk = pick_key(recs, NAME_KEYS)
+    pk = pick_key(recs, PLACE_KEYS)
+    rk = pick_key(recs, REGION_KEYS)
+    print(f"字段识别:  公司名={nk}   地点={pk}   地区={rk}")
+    if not nk:
+        print("\n没找到公司名字段。记录长这样:")
+        print(json.dumps(records[0], ensure_ascii=False, indent=2)[:600])
+        sys.exit("请手动把正确字段名加到 import_igm.py 顶部的 NAME_KEYS 里。")
+
+    out, skipped = [], 0
+    for r in recs:
+        name = r.get(nk)
+        if not name or not str(name).strip():
+            continue
+        name = str(name).strip()
+        place = str(r.get(pk) or "").strip() if pk else ""
+        region = str(r.get(rk) or "").strip() if rk else ""
+
+        if region_filter:
+            hay = f"{place} {region}".lower()
+            if region_filter.lower() not in hay:
+                skipped += 1
+                continue
+
+        e = {"name": name}
+        if place:
+            e["ort"] = place
+        if region:
+            e["region"] = region
+        out.append(e)
+
+    # 去重
+    seen, uniq = set(), []
+    for e in out:
+        k = e["name"].lower()
+        if k not in seen:
+            seen.add(k)
+            uniq.append(e)
+
+    if region_filter:
+        print(f"地区过滤 '{region_filter}':保留 {len(uniq)},排除 {skipped}")
+    return uniq
+
+
+def save(entries):
+    OUT.write_text(
+        "# 由 import_igm.py 生成 —— IG Metall 雇主白名单\n"
+        "# jobwatch.py 会用它过滤职位:只保留这些公司发布的岗位\n\n"
+        + yaml.safe_dump({"employers": entries}, allow_unicode=True,
+                         sort_keys=False, width=200),
+        encoding="utf-8")
+    print(f"\n已写入 {OUT}  ({len(entries)} 家公司)")
+
+    munich = [e for e in entries
+              if "münch" in f"{e.get('ort','')}".lower()
+              or "munich" in f"{e.get('ort','')}".lower()]
+    if munich:
+        print(f"其中地点含慕尼黑的:{len(munich)} 家")
+
+    print("\n接下来可以拿这些去探测 ATS(一次 8 个左右):")
+    pool = munich or entries
+    cands = []
+    for e in pool[:8]:
+        cands += slug_candidates(e["name"])[:2]
+    print("  python jobwatch.py discover " + " ".join(cands[:16]))
+
+
+# ---------------------------------------------------------------- CLI
+
+def main():
+    ap = argparse.ArgumentParser()
+    sub = ap.add_subparsers(dest="cmd")
+
+    a = sub.add_parser("auto", help="自动探测站点的数据文件")
+    a.add_argument("--region", help="只保留地点/地区含此关键词的,例:bayern")
+
+    f = sub.add_parser("file", help="解析手动保存的 json")
+    f.add_argument("path")
+    f.add_argument("--region")
+
+    sub.add_parser("show", help="看已导入的内容")
+    args = ap.parse_args()
+
+    if args.cmd == "auto":
+        save(extract(auto_discover(), args.region))
+
+    elif args.cmd == "file":
+        p = Path(args.path)
+        if not p.exists():
+            sys.exit(f"找不到 {p}")
+        raw = json.loads(p.read_text(encoding="utf-8"))
+        recs = find_records(raw)
+        if not recs:
+            print("自动定位数组失败,顶层结构:")
+            print(json.dumps(raw, ensure_ascii=False)[:800])
+            sys.exit("把这段贴给我,我帮你改解析逻辑。")
+        print(f"找到 {len(recs)} 条记录")
+        save(extract(recs, args.region))
+
+    elif args.cmd == "show":
+        if not OUT.exists():
+            sys.exit("还没导入。先跑 python import_igm.py auto")
+        d = yaml.safe_load(OUT.read_text(encoding="utf-8"))
+        emps = d.get("employers", [])
+        print(f"{len(emps)} 家公司,前 20 家:")
+        for e in emps[:20]:
+            print(f"  {e['name']:<50} {e.get('ort','')}")
+
+    else:
+        ap.print_help()
+
+
+if __name__ == "__main__":
+    main()

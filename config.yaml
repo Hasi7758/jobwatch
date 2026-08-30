@@ -1,0 +1,108 @@
+# ============================================================
+#  这是你唯一需要经常改的文件
+# ============================================================
+
+# ---------- 关键词过滤(最重要!) ----------
+# include 留空 = 全部要。慕尼黑一天新增职位可能 300+,建议一定填。
+# 匹配对象是「职位标题 + 公司名」,不区分大小写,是子串匹配。
+# 德语提示:写词根就行,比如写 "ingenieur" 能同时命中
+# Ingenieur / Ingenieurin / Wirtschaftsingenieur。
+keywords:
+  include:
+    # —— IT / 软件 / 数据 ——
+    - software
+    - entwickler          # 覆盖 Softwareentwickler / Entwicklerin
+    - developer
+    - informatik
+    - daten               # Datenanalyst / Datenbank...
+    - data
+    - machine learning
+    - devops
+    - cloud
+    - firmware
+    # —— 电子 / 电气 / 嵌入式 ——
+    - elektro             # 覆盖 Elektronik / Elektrotechnik / Elektromobilität
+    - embedded
+    - hardware
+    - fpga
+    - halbleiter          # 半导体
+    - leistungselektronik
+    # —— 机械 / 汽车 / 制造 ——
+    - ingenieur           # 覆盖各种 ...ingenieur (m/w/d)
+    - engineer            # 覆盖 engineer / engineering
+    - mechatronik
+    - maschinenbau
+    - konstrukt           # Konstrukteur / Konstruktion
+    - fahrzeug
+    - automotive
+    - fertigung
+    - simulation
+    - robotik
+    - automatisierung
+    - antrieb             # 传动/驱动
+    - batterie
+    - cad
+
+  # 排除优先级高于 include,用来去掉噪音
+  exclude:
+    - vertrieb            # 销售
+    - sales
+    - außendienst
+    - helfer              # 各类 Produktionshelfer / Montagehelfer
+    - reinigung           # 保洁
+    - fahrer              # 司机
+    - pflege              # 护理
+    - kaufmann            # 商务文员类
+    - kauffrau
+    - buchhalt            # 会计
+    - empfang             # 前台
+    - personalentwicklung # HR 的"人才发展",不是研发
+
+
+# ---------- 地点过滤 ----------
+location:
+  terms: ["münchen", "munich", "muenchen", "garching", "unterföhring",
+          "ismaning", "oberschleißheim", "planegg", "martinsried"]
+  allow_remote: true      # 远程岗也算(德国公司发的远程岗通常也在慕尼黑)
+  plz_prefixes: ["80", "81", "82", "85"]   # 慕尼黑及周边邮编
+
+# ---------- 联邦劳动局官方接口 ----------
+arbeitsagentur:
+  enabled: true
+  city: "München"
+  radius_km: 25
+  # 抓最近几天发布的。设 2 是为了容错(跨时区、周末补录),
+  # 反正重复的会被数据库自动去掉,不会重复通知你。
+  published_within_days: 2
+  # 每个词单独查一次。留 [""] 表示不限关键词、把慕尼黑当天全部拉下来,
+  # 再交给上面的 keywords 过滤 —— 推荐这样,漏得最少。
+  queries: [""]
+
+# ---------- IG Metall 雇主白名单 ----------
+# 先跑:  python import_igm.py auto
+# 生成 igmetall.yaml 之后,把 enabled 改成 true。
+employers:
+  enabled: true
+  # strict = 只要白名单上的公司(推荐,信噪比最高)
+  # loose  = 全都保留,但白名单公司会打上绿色 IG Metall 标记
+  mode: strict
+
+  # 别名表:处理缩写这类算法认不出来的情况。
+  # 劳动局的数据常用公司全称,而名单上多是简称,这里手工搭桥。
+  # 左边写职位里出现的写法,右边写白名单上的写法。
+  # 跑几天后把漏掉的补进来即可。
+  aliases:
+    "Bayerische Motoren Werke": "BMW AG"
+    "Maschinenfabrik Augsburg-Nürnberg": "MAN Truck & Bus SE"
+
+# ---------- 推送(可选) ----------
+# 不开的话就每天打开 digest.html 看。
+# 想要手机推送:在 Telegram 里找 @BotFather 发 /newbot 拿 token,
+# 再找 @userinfobot 拿你的 chat_id,填进来把 enabled 改成 true。
+telegram:
+  enabled: false
+  bot_token: ""
+  chat_id: ""
+
+# 跑完自动用浏览器打开报告
+open_browser: true
