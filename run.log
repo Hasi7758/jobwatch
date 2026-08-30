@@ -1,13 +1,19 @@
 抓取联邦劳动局…
-  [劳动局] HTTP 403
   拿到 0 条
+抓取 arbeitnow…
+  拿到 750 条
 抓取公司 ATS…
-  拿到 0 条
+  [OK] Webasto (personio)
+  [OK] Brainlab (smartrecruiters)
+  [OK] Isar Aerospace (greenhouse)
+  [OK] Konux (greenhouse)
+  [OK] Proglove (personio)
+  [OK] Magirus (personio)
+  拿到 195 条
 
-过滤后 0 / 0 条符合关键词+地点
-  [白名单] 找不到 igmetall.yaml,先跑 import_igm.py。本次跳过过滤。
+过滤后 95 / 945 条符合关键词+地点
 
-首次运行:已把现有 0 条收作基线,不算新职位。
+首次运行:已把现有 94 条收作基线,不算新职位。
 从下一次运行起,只会显示真正新增的。
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
