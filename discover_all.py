@@ -30,6 +30,18 @@ for e in emps:
     muc_word = "münchen" in hay or "munich" in hay
     if near or muc_word or (bayern and lat is None):
         targets.append(e)
+# 名单站不覆盖慕尼黑,这里补一份慕尼黑周边金属电气大厂(多为 Tarif 企业,
+# 但 Tarifbindung 未逐一核实),让探测器找它们的直连接口:
+CURATED = [
+    "Knorr-Bremse", "KraussMaffei", "Webasto", "Brainlab", "Kuka",
+    "Renk", "MTU Aero Engines", "Premium Aerotec", "Linde", "ams OSRAM",
+    "Rohde Schwarz", "Wacker Neuson", "Zeppelin", "HAWE Hydraulik", "ARRI",
+    "Giesecke Devrient", "Baader", "Multivac", "Grob Werke", "Fendt",
+    "Agile Robots", "Isar Aerospace", "Konux", "Proglove", "Tado",
+    "Magirus", "Deckel Maho", "Zollner", "Rohde", "Siltronic",
+]
+for n in CURATED:
+    targets.append({"name": n})
 targets = targets[:MAX_COMPANIES]
 print(f"名单共 {len(emps)} 家;慕尼黑 {RADIUS_KM}km 内/巴伐利亚待探测 {len(targets)} 家\n")
 
