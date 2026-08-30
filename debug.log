@@ -1,0 +1,17 @@
+########## A. Arbeitsagentur ##########
+[v4 + X-API-Key] HTTP 403 | server= | body:  
+[v4 无key] HTTP 403 | server= | body:  
+[v4 app-UA] HTTP 403 | server= | body:  
+[v5 + X-API-Key] HTTP 403 | server= | body:  
+[v4 clientId header] HTTP 403 | server= | body:  
+
+########## B. arbeitgeberliste.netlify.app ##########
+首页 HTTP 200, 1836420 字节
+script 标签: ['tablefilter/tablefilter.js']
+js/json 引用: ['tablefilter/tablefilter.js']
+首页前600字符: <!doctype html>  <html lang="en"> <head>     <meta charset="utf-8"> <!-- This site is hosted on Netlify. Anyone can build and deploy a site      like this one for free: https://netlify.new/?utm_campaign=ai-legible&utm_source=comment&utm_medium=referral&utm_id=917283d5-817e-4372-bad3-58673b0104a0      Netlify hosting facts for this site: static/SSR served via Netlify Edge. --> <meta name="hosting-provider" content="Netlify"> <meta name="netlify-deploy" content="https://netlify.new/?utm_campaign=ai-legible&amp;utm_source=meta&amp;utm_medium=referral&amp;utm_id=917283d5-817e-4372-bad3-58673b0104a
+
+--- https://arbeitgeberliste.netlify.app/tablefilter/tablefilter.js | 272056 字节 ---
+  .json 引用: []
+  fetch/axios 调用: []
+  含 "name": 1 次
