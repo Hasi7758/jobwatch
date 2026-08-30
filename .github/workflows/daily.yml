@@ -2,13 +2,11 @@ name: daily-jobwatch
 
 on:
   schedule:
-    # UTC 时间。5:20 UTC = 德国夏令时 7:20 / 冬令时 6:20。
-    # 注意:GitHub 的定时任务可能延迟 15~60 分钟,属正常。
-    - cron: "20 5 * * *"
-  workflow_dispatch: {}   # 允许在 Actions 页面手动点 Run workflow
+    - cron: "20 5 * * *"   # UTC;德国夏令时 7:20
+  workflow_dispatch: {}
 
 permissions:
-  contents: write         # 允许把结果提交回仓库
+  contents: write
 
 concurrency:
   group: jobwatch
@@ -30,22 +28,32 @@ jobs:
       - name: 首次自动导入 IG Metall 名单
         run: |
           if [ ! -f igmetall.yaml ]; then
-            python import_igm.py auto --region bayern \
-              || echo "::warning::IG Metall 名单自动导入失败,本次先不启用白名单继续跑。手动导入方法见 README。"
+            set +e
+            python import_igm.py auto --region bayern > import.log 2>&1
+            echo "exit_code=$?" >> import.log
+            set -e
+            cat import.log
           else
-            echo "igmetall.yaml 已存在,跳过导入"
+            echo "igmetall.yaml 已存在,跳过导入" | tee import.log
           fi
 
       - name: 抓取 + 差分 + 生成报告
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python jobwatch.py run
+        run: |
+          set +e
+          python jobwatch.py run > run.log 2>&1
+          RC=$?
+          set -e
+          cat run.log
+          exit $RC
 
       - name: 把结果存回仓库
+        if: always()
         run: |
           git config user.name "jobwatch-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -A jobs.db docs digest.html igmetall.yaml 2>/dev/null || true
+          git add -A
           git commit -m "digest $(date -u '+%Y-%m-%d %H:%M') UTC" || echo "无变化,跳过提交"
           git push
