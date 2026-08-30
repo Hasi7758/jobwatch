@@ -609,7 +609,8 @@ h1{font-size:23px;margin:0 0 4px;letter-spacing:-.01em}
 .meta{color:var(--mut);font-size:12.5px;margin-top:4px}
 .tag{display:inline-block;background:#f0ede7;border-radius:4px;padding:1px 6px;
      font-size:11px;color:var(--mut);margin-left:6px}
-.tag.igm{background:#e8f0e4;color:#3d6b2e;font-weight:600;cursor:help}
+.tag.igm{background:#2f7d32;color:#fff;font-weight:700;cursor:help;letter-spacing:.04em;
+         padding:2px 7px}
 .empty{color:var(--mut);padding:40px 0;text-align:center}
 """
 
@@ -620,7 +621,7 @@ def _job_card(j):
     if j.extra.get("igm"):
         igm = (f'<span class="tag igm" title="名单上写作:'
                f'{html.escape(j.extra["igm"])}({html.escape(j.extra.get("igm_how", ""))})">'
-               f'IG Metall</span>')
+               f'IG&nbsp;METALL</span>')
     return (f'<div class=j><a href="{html.escape(j.url)}" target=_blank rel=noopener>'
             f'{html.escape(j.title)}</a>{igm}{posted}'
             f'<div class=meta>{html.escape(j.company)} · '
@@ -652,7 +653,7 @@ def render_html(day_groups, new_today, total_seen, first_run, cfg):
         for day, js in day_groups:
             label = "今天" if day == today else ("昨天" if day == yday else day)
             parts.append(f"<div class=grp>{label} · {len(js)} 条</div>")
-            for j in js:
+            for j in sorted(js, key=lambda x: (0 if x.extra.get("igm") else 1, x.company)):
                 parts.append(_job_card(j))
 
     parts.append("</div>")

@@ -88,7 +88,7 @@ employers:
   enabled: true
   # strict = 只要白名单上的公司(推荐,信噪比最高)
   # loose  = 全都保留,但白名单公司会打上绿色 IG Metall 标记
-  mode: strict
+  mode: loose
 
   # 别名表:处理缩写这类算法认不出来的情况。
   # 劳动局的数据常用公司全称,而名单上多是简称,这里手工搭桥。
