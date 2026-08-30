@@ -65,5 +65,10 @@ companies:
 - name: BMW Group
   ats: bmw
   filter: location_DE
+- name: Rodenstock GmbH
+  ats: hr4you
+  url: https://rodenstock.hr4you.org
+  id_from: 1900
+  id_to: 2200
 
 # Workday 格式: {name: 公司, ats: workday, url: https://x.wdN.myworkdayjobs.com/wday/cxs/x/SITE/jobs}

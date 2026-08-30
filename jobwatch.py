@@ -637,6 +637,58 @@ def ats_workday(cfg_entry, name):
 
 
 
+
+def ats_hr4you(cfg_entry, name):
+    """
+    HR4YOU(德国本土系统)。它没有列表接口,职位页是 generator.php?id=N,
+    所以扫描 ID 区间探活。区间会随最大命中 ID 自动向前滚动。
+    """
+    import concurrent.futures as cf
+    host = cfg_entry["url"].rstrip("/")
+    lo = int(cfg_entry.get("id_from", 1900))
+    hi = int(cfg_entry.get("id_to", 2200))
+
+    def probe(i):
+        try:
+            r = session.get(f"{host}/generator.php?id={i}&changelanguage=de", timeout=12)
+        except Exception:
+            return None
+        if r.status_code != 200 or len(r.content) < 3000:
+            return None
+        r.encoding = "iso-8859-1"
+        page = r.text
+        m = re.search(r"<title>(.*?)</title>", page, re.S)
+        if not m:
+            return None
+        title = _html_unescape(m.group(1))
+        if len(title) < 6 or "fehler" in title.lower() or "error" in title.lower():
+            return None
+        loc = ""
+        mk = re.search(r'Keywords"\s+CONTENT="[^"]*?,\s*[^,"]*,\s*([^,"]{3,40}?)\s*,', page, re.I)
+        if mk:
+            loc = _html_unescape(mk.group(1))
+        if not loc:
+            ml = re.search(r"mit Sitz in ([A-Z][\wäöüß .-]{2,30}?) sucht", page)
+            if ml:
+                loc = ml.group(1).strip()
+        return Job(
+            uid=f"hr4you:{name}:{i}",
+            source="HR4YOU",
+            company=name,
+            title=title,
+            location=loc or "München",
+            url=f"{host}/generator.php?id={i}&changelanguage=de",
+            posted="",
+        )
+
+    jobs = []
+    with cf.ThreadPoolExecutor(max_workers=10) as ex:
+        for res in ex.map(probe, range(lo, hi + 1)):
+            if res:
+                jobs.append(res)
+    return jobs
+
+
 def ats_softgarden(slug, name):
     """softgarden:德国中小企业常用。"""
     r = _get(f"https://{slug}.softgarden.io/api/rest/frontend/v3/job-postings",
@@ -709,6 +761,8 @@ def fetch_companies():
                 out += ats_successfactors(c, name)
             elif ats == "bmw":
                 out += ats_bmw(c, name)
+            elif ats == "hr4you":
+                out += ats_hr4you(c, name)
             elif ats in ATS_FETCHERS:
                 out += ATS_FETCHERS[ats](c["slug"], name)
             else:
