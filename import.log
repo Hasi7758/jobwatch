@@ -1,0 +1,6 @@
+抓取 https://arbeitgeberliste.netlify.app/
+
+自动探测失败。请走手动模式:
+  F12 → Network → 刷新 → 找最大的 .json → Copy response
+  存成 igm_raw.json,然后:  python import_igm.py file igm_raw.json
+exit_code=1
