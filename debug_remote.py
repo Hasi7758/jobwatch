@@ -1,29 +1,22 @@
 #!/usr/bin/env python3
 import re, requests
-from urllib.parse import urljoin
-S = requests.Session()
-S.headers.update({"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0"})
-
-URL = "https://arbeitgeberliste.netlify.app/interaktive-karte/unternehmen-mit-ig-metall-flaechentarif-oder-haustarif-sowie-ig-bce"
-r = S.get(URL, timeout=30)
-h = r.text
-print(f"地图页 HTTP {r.status_code}, {len(h)} 字节")
-print("script src:", re.findall(r'<script[^>]+src=["\']([^"\']+)["\']', h))
-print("内联script数:", len(re.findall(r'<script(?![^>]*src)', h)))
-print("geojson/json 引用:", list(set(re.findall(r'["\'\(]([^"\'\)\s]{2,150}\.(?:geo)?json)["\'\)]', h)))[:15])
-print("fetch调用:", list(set(re.findall(r'fetch\(\s*["\'`]([^"\'`]{3,150})["\'`]', h)))[:15])
-print("umap特征:", "umap" in h.lower(), "| leaflet:", "leaflet" in h.lower(), "| L.marker数:", h.count("L.marker"), "| circleMarker:", h.count("circleMarker"))
-# 数据若内嵌:找大数组
-for pat in ['[{"', "[{'", 'var data', 'const data', 'addLayer', 'L.geoJSON', 'L.geoJson']:
-    i = h.find(pat)
+S = requests.Session(); S.headers.update({"User-Agent": "Mozilla/5.0 Chrome/124.0"})
+h = S.get("https://arbeitgeberliste.netlify.app/interaktive-karte/unternehmen-mit-ig-metall-flaechentarif-oder-haustarif-sowie-ig-bce", timeout=60).text
+m = max(re.finditer(r'<script(?![^>]*src)[^>]*>(.*?)</script>', h, re.S), key=lambda x: len(x.group(1)))
+js = m.group(1)
+print("大脚本:", len(js), "字节")
+for pat in ["LonLat", "Geometry.Point", "Feature.Vector", "OpenLayers.Marker", "Popup", "Layer.Vector", "Layer.Markers", "addMarker", "createMarker", "attributes"]:
+    print(f"  {pat}: {js.count(pat)} 次")
+print("\nLayer.Vector/Markers 定义(前8个):")
+for x in re.findall(r'new OpenLayers\.Layer\.(?:Vector|Markers)\(\s*["\']([^"\']+)["\']', js)[:8]:
+    print("  层名:", x)
+for pat in ["Geometry.Point", "createMarker", "addMarker", "OpenLayers.Marker"]:
+    i = js.find(pat)
     if i >= 0:
-        print(f"\n--- 首个 {pat!r} @ {i},上下600字符 ---")
-        print(h[max(0,i-100):i+500].replace("\n", " "))
-# 内联 script 逐个报尺寸
-for m in re.finditer(r'<script(?![^>]*src)[^>]*>(.*?)</script>', h, re.S):
-    body = m.group(1)
-    if len(body) > 500:
-        print(f"\n=== 内联script {len(body)} 字节, 开头400: ===")
-        print(body[:400].replace("\n"," "))
-        js_refs = list(set(re.findall(r'["\'`]([^"\'`\s]{2,150}\.(?:geo)?json)["\'`]', body)))
-        if js_refs: print("  其中json引用:", js_refs[:15])
+        print(f"\n--- {pat} 首次出现,前后900字符 ---")
+        print(js[max(0,i-450):i+450].replace("\n", " "))
+        break
+i = js.find("Popup")
+if i >= 0:
+    print("\n--- Popup 首次出现,前后800 ---")
+    print(js[max(0,i-200):i+600].replace("\n"," "))
