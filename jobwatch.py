@@ -636,6 +636,52 @@ def ats_workday(cfg_entry, name):
     return jobs
 
 
+
+def ats_softgarden(slug, name):
+    """softgarden:德国中小企业常用。"""
+    r = _get(f"https://{slug}.softgarden.io/api/rest/frontend/v3/job-postings",
+             params={"limit": 200})
+    r.raise_for_status()
+    d = r.json()
+    items = d.get("content") or d.get("jobPostings") or d.get("data") or []
+    jobs = []
+    for j in items:
+        jid = j.get("id") or j.get("jobPostingId")
+        if not jid:
+            continue
+        loc = j.get("jobLocation") or j.get("location") or {}
+        if isinstance(loc, dict):
+            loc = " ".join(str(x) for x in [loc.get("postalCode"), loc.get("city"),
+                                            loc.get("name")] if x)
+        jobs.append(Job(
+            uid=f"sg:{slug}:{jid}",
+            source="softgarden",
+            company=name,
+            title=j.get("jobTitle") or j.get("name") or j.get("title", ""),
+            location=str(loc),
+            url=j.get("jobPostingUrl") or j.get("url")
+                or f"https://{slug}.softgarden.io/job/{jid}",
+            posted=str(j.get("onlineDate") or j.get("createdDate") or "")[:10],
+        ))
+    return jobs
+
+
+def ats_teamtailor(slug, name):
+    r = _get(f"https://{slug}.teamtailor.com/jobs.json")
+    r.raise_for_status()
+    d = r.json()
+    items = d if isinstance(d, list) else (d.get("jobs") or d.get("data") or [])
+    return [Job(
+        uid=f"tt:{slug}:{j.get('id')}",
+        source="Teamtailor",
+        company=name,
+        title=j.get("title", ""),
+        location=str(j.get("location") or ""),
+        url=j.get("url", ""),
+        posted=str(j.get("created_at") or "")[:10],
+    ) for j in items]
+
+
 ATS_FETCHERS = {
     "personio": ats_personio,
     "greenhouse": ats_greenhouse,
@@ -645,6 +691,8 @@ ATS_FETCHERS = {
     "ashby": ats_ashby,
     "workable": ats_workable,
     "join": ats_join,
+    "softgarden": ats_softgarden,
+    "teamtailor": ats_teamtailor,
 }
 
 
