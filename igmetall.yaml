@@ -1,0 +1,4304 @@
+# 由 import_igm.py 生成 —— IG Metall 雇主白名单
+# jobwatch.py 会用它过滤职位:只保留这些公司发布的岗位
+
+employers:
+- name: 3D Formen- und Werkzeugbau GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.5746
+  lon: 9.69442
+- name: A & S - Engineering GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.52873
+  lon: 9.6857
+- name: A+W Software GmbH
+  ort: Pohlheim Pohlheim
+  region: Hessen
+  lat: 50.52808
+  lon: 8.75195
+- name: A. Ebbecke Verfahrenstechnik AG
+  ort: Schöneck Schöneck
+  region: Hessen
+  lat: 50.20074
+  lon: 8.85493
+- name: A.S.S. Fertigungstechnik GmbH & Co. KG
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55118
+  lon: 8.48092
+- name: AAM Germany GmbH
+  ort: Bad Homburg vor der Höhe Bad Homburg vor der Höhe
+  region: Hessen
+  lat: 50.21575
+  lon: 8.61534
+- name: ABB Automation GmbH
+  ort: Friedberg Friedberg
+  region: Hessen
+  lat: 50.32449
+  lon: 8.7458
+- name: ABI Maschinenfabrik und Vertriebsgesellschaft mbH
+  ort: Niedernberg Niedernberg
+  region: Bayern
+  lat: 49.91571
+  lon: 9.12169
+- name: ACO Passavant GmbH
+  ort: Philippsthal Philippsthal
+  region: Hessen
+  lat: 50.83857
+  lon: 9.99095
+- name: ACS - Advanced Customer Service - Deutschland GmbH
+  ort: Gladenbach Gladenbach
+  region: Hessen
+  lat: 50.74975
+  lon: 8.61028
+- name: ACTS-Advanced Car Technology Systems GmbH & Co. KG
+  ort: Sailauf Sailauf
+  region: Bayern
+  lat: 50.00295
+  lon: 9.23979
+- name: ADDITIVE Soft- und Hardware für Technik und Wissenschaft GmbH
+  ort: Friedrichsdorf Friedrichsdorf
+  region: Hessen
+  lat: 50.25979
+  lon: 8.65477
+- name: ADVA Optical Networking (weltweit)
+  ort: Meiningen Meiningen
+  region: Thüringen
+  lat: 50.55649
+  lon: 10.3777
+- name: ADVA Optical Networking SE
+  ort: Meiningen Meiningen
+  region: Thüringen
+  lat: 50.55649
+  lon: 10.3777
+- name: AEM August Elektrotechnik GmbH
+  ort: Hohenroda Hohenroda
+  region: Hessen
+  lat: 50.80801
+  lon: 9.92425
+- name: AFOTEK Anlagen für Oberflächentechnik GmbH
+  ort: Bad Hersfeld Bad Hersfeld
+  region: Hessen
+  lat: 50.85652
+  lon: 9.72554
+- name: AFOTEK Services GmbH & Co. KG
+  ort: Bad Hersfeld Bad Hersfeld
+  region: Hessen
+  lat: 50.85652
+  lon: 9.72554
+- name: AKG Thermotechnik GmbH & Co. KG
+  ort: Hofgeismar Hofgeismar
+  region: Hessen
+  lat: 51.50249
+  lon: 9.38939
+- name: AKG Thermotechnik International GmbH & Co. KG
+  ort: Hofgeismar Hofgeismar
+  region: Hessen
+  lat: 51.50249
+  lon: 9.38939
+- name: AKG Verwaltungsgesellschaft mbH
+  ort: Hofgeismar Hofgeismar
+  region: Hessen
+  lat: 51.50249
+  lon: 9.38939
+- name: AKM Maschinenbau GmbH
+  ort: Seligenstadt Seligenstadt
+  region: Hessen
+  lat: 50.05117
+  lon: 8.92909
+- name: AL-KO Technology Paderborn Gmb
+  ort: Paderborn Paderborn
+  region: Nordrhein-Westfalen
+  lat: 51.78254
+  lon: 8.7076
+- name: ALD Vacuum Technologies GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.11558
+  lon: 8.96964
+- name: ALMO-Erzeugnisse Erwin Busch GmbH
+  ort: Bad Arolsen Bad Arolsen
+  region: Hessen
+  lat: 51.37998
+  lon: 9.00005
+- name: ALTE LEIPZIGER Bauspar AG
+  ort: Oberursel Oberursel (Taunus)
+  region: Hessen
+  lat: 50.21245
+  lon: 8.57363
+- name: ARVOS GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.31479
+  lon: 9.53303
+- name: ASC Technologies AG
+  ort: Hösbach Hösbach
+  region: Bayern
+  lat: 49.99867
+  lon: 9.225
+- name: ATEAM Die Energietechnologie GmbH & Co. KG
+  ort: Maintal Maintal
+  region: Hessen
+  lat: 50.13112
+  lon: 8.86019
+- name: ATIS systems GmbH
+  ort: Bad Homburg vor der Höhe Bad Homburg v. d. Höhe
+  region: Hessen
+  lat: 50.21811
+  lon: 8.61428
+- name: AVO Carbon Germany GmbH
+  ort: Frankfurt am Main Frankfurt
+  region: Hessen
+  lat: 50.18662
+  lon: 8.64441
+- name: Administration Intelligence AG
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.77457
+  lon: 9.92604
+- name: Advancis Software & Services GmbH
+  ort: Langen Langen (Hessen)
+  region: Hessen
+  lat: 49.99627
+  lon: 8.65449
+- name: Ahlbrandt System GmbH
+  ort: Lauterbach Lauterbach (Hessen)
+  region: Hessen
+  lat: 50.63738
+  lon: 9.38724
+- name: Albert Koch Maschinen- und Vorrichtungsbau GmbH
+  ort: Baunatal Baunatal
+  region: Hessen
+  lat: 51.26154
+  lon: 9.39489
+- name: Albéa Deutschland GmbH
+  ort: Scheßlitz Scheßlitz
+  region: Bayern
+  lat: 49.96869
+  lon: 11.02502
+- name: Alcon
+  ort: Großwallstadt Großwallstadt
+  region: Bayern
+  lat: 49.87978
+  lon: 9.14578
+- name: Alexander Binzel Schweisstechnik GmbH & Co. KG
+  ort: Buseck Buseck
+  region: Hessen
+  lat: 50.61773
+  lon: 8.73752
+- name: Alfons Millitzer Brandschutz und Haustechnik - GmbH
+  ort: Seligenstadt Seligenstadt
+  region: Hessen
+  lat: 50.04565
+  lon: 8.95944
+- name: Allessa GmbH
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.12895
+  lon: 8.76745
+- name: Aluprof, Aluminiumprofile GmbH
+  ort: Freigericht Freigericht
+  region: Hessen
+  lat: 50.14126
+  lon: 9.1124
+- name: Anlagenbau Günther GmbH
+  ort: Wartenberg Wartenberg
+  region: Hessen
+  lat: 50.62131
+  lon: 9.45695
+- name: Antrok Anlagentechnik GmbH
+  ort: 'Lohfelden Lohfelden (vormals: Baunatal)'
+  region: Hessen
+  lat: 51.28465
+  lon: 9.52955
+- name: 'Antrok Maschinenbau GmbH (vormals: Henschel Maschinenbau GmbH)'
+  ort: 'Lohfelden Lohfelden (vormals: Kassel)'
+  region: Hessen
+  lat: 51.28637
+  lon: 9.53228
+- name: Applied Materials GmbH & Co. KG
+  ort: Alzenau Alzenau
+  region: Bayern
+  lat: 50.09561
+  lon: 9.03958
+- name: Aschaffenburger Versorgungs-GmbH
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.9678
+  lon: 9.14275
+- name: Asteelflash Hersfeld GmbH
+  ort: Bad Hersfeld Bad Hersfeld
+  region: Hessen
+  lat: 50.87018
+  lon: 9.72121
+- name: Autokühler GmbH & Co. KG
+  ort: Hofgeismar Hofgeismar
+  region: Hessen
+  lat: 51.49877
+  lon: 9.38258
+- name: Automotive Lighting Brotterode GmbH
+  ort: Brotterode-Trusetal Brotterode-Trusetal
+  region: Thüringen
+  lat: 50.82249
+  lon: 10.4351
+- name: Avaya Deutschland GmbH
+  ort: Frankfurt am Main Frankfurt
+  region: Hessen
+  lat: 50.11636
+  lon: 8.62967
+- name: Avaya German HoldCo GmbH
+  ort: Frankfurt am Main Frankfurt
+  region: Hessen
+  lat: 50.11636
+  lon: 8.62967
+- name: B. Braun Melsungen Aktiengesellschaft
+  ort: Melsungen Melsungen
+  region: Hessen
+  lat: 51.1087
+  lon: 9.55751
+- name: BBM Bub und Best GmbH
+  ort: Künzell Künzell
+  region: Hessen
+  lat: 50.54505
+  lon: 9.75463
+- name: 'BCUBE Brotterode GmbH (vormals: TOPLOG Brotterode GmbH)'
+  ort: Brotterode-Trusetal Brotterode-Trusetal
+  region: Thüringen
+  lat: 50.82893
+  lon: 10.43873
+- name: BE Gerätebau Waldgirmes GmbH
+  ort: Lahnau Lahnau
+  region: Hessen
+  lat: 50.58004
+  lon: 8.57035
+- name: BEKOA-Elektrotechnik GmbH
+  ort: Aßlar Aßlar
+  region: Hessen
+  lat: 50.58855
+  lon: 8.48073
+- name: BELECTRIC GmbH
+  ort: Kolitzheim Kolitzheim
+  region: Bayern
+  lat: 49.91413
+  lon: 10.23903
+- name: BELECTRIC Solarkraftwerke GmbH
+  ort: Kolitzheim Kolitzheim
+  region: Bayern
+  lat: 49.91476
+  lon: 10.24006
+- name: BENTELER Business Services GmbH
+  ort: Paderborn Paderborn
+  region: Nordrhein-Westfalen
+  lat: 51.74545
+  lon: 8.71466
+- name: 'BMI Technical Services GmbH (vormals: Monier Technical Centre GmbH)'
+  ort: Heusenstamm Heusenstamm
+  region: Hessen
+  lat: 50.05711
+  lon: 8.81903
+- name: BMZ Batterien-Montage- Zentrum GmbH
+  ort: Karlstein am Main Karlstein
+  region: Bayern
+  lat: 50.05221
+  lon: 8.98595
+- name: 'BSH Hausgeräte GmbH (vormals: BSH Bosch und Siemens Hausgeräte GmbH)'
+  ort: Bad Neustadt an der Saale Bad Neustadt
+  region: Bayern
+  lat: 50.33502
+  lon: 10.21917
+- name: BSS Brandschutz Sichelstiel GmbH
+  ort: Alzenau Alzenau
+  region: Bayern
+  lat: 50.09567
+  lon: 9.05075
+- name: BVS Industrie-Elektronik GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.13544
+  lon: 8.91643
+- name: BZB Bürozentrum GmbH
+  ort: Gelnhausen Gelnhausen
+  region: Hessen
+  lat: 50.20503
+  lon: 9.17416
+- name: Basler Sachversicherungs- Aktiengesellschaft
+  ort: Bad Homburg vor der Höhe Bad Homburg vor der Höhe
+  region: Hessen
+  lat: 50.22067
+  lon: 8.62508
+- name: BaumTec GmbH
+  ort: Rodgau Rodgau
+  region: Hessen
+  lat: 49.99034
+  lon: 8.87115
+- name: Baumann Maschinenbau Solms GmbH & Co. KG
+  ort: Solms Solms
+  region: Hessen
+  lat: 50.55146
+  lon: 8.39044
+- name: Baumer Thalheim GmbH & Co.KG
+  ort: Eschwege Eschwege
+  region: Hessen
+  lat: 51.17529
+  lon: 10.02259
+- name: Baumüller Nürnberg GmbH
+  ort: Kitzingen Kitzingen
+  region: Bayern
+  lat: 49.72442
+  lon: 10.1544
+- name: Bavaria Yachtbau GmbH
+  ort: Giebelstadt Giebelstadt
+  region: Bayern
+  lat: 49.65247
+  lon: 9.94151
+- name: Bechtle GmbH
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.12094
+  lon: 8.74149
+- name: BelFox Torautomatik GmbH
+  ort: Kalbach Kalbach
+  region: Hessen
+  lat: 50.4302
+  lon: 9.64003
+- name: Benteler Automobiltechnik Eisenach GmbH
+  ort: Eisenach Eisenach
+  region: Thüringen
+  lat: 50.98145
+  lon: 10.30087
+- name: Benteler Automobiltechnik GmbH
+  ort: Lichtenau Lichtenau
+  region: Nordrhein-Westfalen
+  lat: 51.57735
+  lon: 8.97599
+- name: Benteler Steel/Tube GmbH
+  ort: Paderborn Paderborn
+  region: Nordrhein-Westfalen
+  lat: 51.74978
+  lon: 8.75541
+- name: Berkenhoff GmbH
+  ort: Heuchelheim Heuchelheim
+  region: Hessen
+  lat: 50.5888
+  lon: 8.61456
+- name: Bien-Zenker GmbH
+  ort: Schlüchtern Schlüchtern
+  region: Hessen
+  lat: 50.38566
+  lon: 9.52745
+- name: Bilfinger Noell GmbH
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.8115
+  lon: 9.88929
+- name: Biotest AG
+  ort: Dreieich Dreieich
+  region: Hessen
+  lat: 50.00521
+  lon: 8.69936
+- name: Blaesing GmbH
+  ort: Limeshain Limeshain
+  region: Hessen
+  lat: 50.27338
+  lon: 8.9776
+- name: Blechwarenfabrik Limburg GmbH
+  ort: Limburg a. d. Lahn Limburg
+  region: Hessen
+  lat: 50.41132
+  lon: 8.07315
+- name: 'BluJay Solutions GmbH (vormals: Kewill GmbH)'
+  ort: Bad Homburg vor der Höhe Bad Homburg v. d. Höhe
+  region: Hessen
+  lat: 50.22197
+  lon: 8.62045
+- name: Boart Longyear GmbH & Co.KG
+  ort: Eiterfeld Eiterfeld
+  region: Hessen
+  lat: 50.76175
+  lon: 9.81557
+- name: Bodycote Wärmebehandlung GmbH
+  ort: Langenselbold Langenselbold
+  region: Hessen
+  lat: 50.16378
+  lon: 9.05656
+- name: Bombardier Transportation GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.33881
+  lon: 9.48326
+- name: BorgWarner Europe GmbH
+  ort: Arnstadt Arnstadt
+  region: Thüringen
+  lat: 50.85391
+  lon: 10.94726
+- name: Bosch Rexroth AG
+  ort: Lohr am Main Lohr a. Main
+  region: Bayern
+  lat: 50.01416
+  lon: 9.59056
+- name: Braas GmbH
+  ort: Heusenstamm Heusenstamm
+  region: Hessen
+  lat: 50.05725
+  lon: 8.81859
+- name: Brandt & Partner GmbH Institut für Unternehmensorganisation
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.98288
+  lon: 9.1105
+- name: Branopac GmbH
+  ort: Lich Lich
+  region: Hessen
+  lat: 50.50992
+  lon: 8.82967
+- name: Brose Fahrzeugteile GmbH & Co. Kommanditgesellschaft, Würzburg
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.79733
+  lon: 9.97411
+- name: Bruker EAS GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.11786
+  lon: 8.92331
+- name: Brückmann Elektronik GmbH
+  ort: Lahnau Lahnau
+  region: Hessen
+  lat: 50.58004
+  lon: 8.57035
+- name: Brückmann Hard- und Software GmbH
+  ort: Lahnau Lahnau
+  region: Hessen
+  lat: 50.58004
+  lon: 8.57035
+- name: Buderus - Schleiftechnik GmbH
+  ort: Aßlar Aßlar
+  region: Hessen
+  lat: 50.58165
+  lon: 8.4768
+- name: Buderus Edelstahl GmbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.57277
+  lon: 8.4819
+- name: Bundesrepublik Deutschland - Finanzagentur Gesellschaft mit beschränkter Haftung
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.17329
+  lon: 8.64122
+- name: Burk Kunststofftechnik GmbH & Co. KG
+  ort: Gladenbach Gladenbach
+  region: Hessen
+  lat: 50.76969
+  lon: 8.58775
+- name: Buss-SMS-Canzler GmbH
+  ort: Butzbach Butzbach
+  region: Hessen
+  lat: 50.42956
+  lon: 8.6693
+- name: Bänninger Kunststoff-Produkte GmbH Reiskirchen
+  ort: Reiskirchen Reiskirchen
+  region: Hessen
+  lat: 50.59725
+  lon: 8.82282
+- name: Bühler Alzenau GmbH
+  ort: Alzenau Alzenau
+  region: Bayern
+  lat: 50.095
+  lon: 9.0421
+- name: Büro modern GmbH
+  ort: Schlüchtern Schlüchtern
+  region: Hessen
+  lat: 50.34375
+  lon: 9.53095
+- name: Bürosystemhaus Schäfer GmbH & Co. KG
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.55402
+  lon: 9.6581
+- name: CIBA Vision GmbH
+  ort: Großwallstadt Großwallstadt
+  region: Bayern
+  lat: 49.88096
+  lon: 9.14679
+- name: CID GmbH
+  ort: Freigericht Freigericht
+  region: Hessen
+  lat: 50.15902
+  lon: 9.1602
+- name: 'CMBlu Energy AG (vormals: CMBlu Projekt Aktiengesellschaft)'
+  ort: Alzenau Alzenau
+  region: Bayern
+  lat: 50.09742
+  lon: 9.04958
+- name: COATEC Gesellschaft für Oberflächenveredelung mbH
+  ort: Schlüchtern Schlüchtern
+  region: Hessen
+  lat: 50.35457
+  lon: 9.51047
+- name: CORDSEN ENGINEERING GmbH
+  ort: Seligenstadt Seligenstadt
+  region: Hessen
+  lat: 50.05235
+  lon: 8.92616
+- name: CPB Software (Germany) GmbH
+  ort: Miltenberg Miltenberg
+  region: Bayern
+  lat: 49.70644
+  lon: 9.22771
+- name: CPI GmbH
+  ort: Büttelborn Büttelborn
+  region: Hessen
+  lat: 49.89667
+  lon: 8.52594
+- name: CSL Behring GmbH
+  ort: Marburg Marburg/Lahn
+  region: Hessen
+  lat: 50.82108
+  lon: 8.74705
+- name: CSS AG
+  ort: Künzell Künzell
+  region: Hessen
+  lat: 50.54005
+  lon: 9.71442
+- name: Capgemini
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.10519
+  lon: 8.64914
+- name: Carl Cloos Schweißtechnik Gesellschaft mit beschränkter Haftung
+  ort: Haiger Haiger
+  region: Hessen
+  lat: 50.74084
+  lon: 8.2172
+- name: Carl Zeiss AG
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.56355
+  lon: 8.50017
+- name: Carl Zeiss AG
+  ort: Göttingen Göttingen
+  region: Niedersachsen
+  lat: 51.53694
+  lon: 9.91671
+- name: Carrier Kältetechnik Deutschland GmbH
+  ort: Wiesbaden Mainz-Kostheim
+  region: Hessen
+  lat: 50.00233
+  lon: 8.30082
+- name: Casco Schoeller GmbH
+  ort: Frankfurt am Main Frankfurt
+  region: Hessen
+  lat: 50.19504
+  lon: 8.65889
+- name: Cavotec Germany GmbH
+  ort: Dietzenbach Dietzenbach
+  region: Hessen
+  lat: 50.02069
+  lon: 8.8047
+- name: Centec Gesellschaft für Labor- und Prozeßmeßtechnik mbH
+  ort: Maintal Maintal
+  region: Hessen
+  lat: 50.13051
+  lon: 8.86285
+- name: Chemisches und mikrobio- logisches Institut UEG GmbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.53334
+  lon: 8.53348
+- name: Claas Kommanditgesellschaft auf Aktien mbH
+  ort: Paderborn Paderborn
+  region: Nordrhein-Westfalen
+  lat: 51.69041
+  lon: 8.74854
+- name: Claus Bender Werkzeugbau GmbH & Co. KG
+  ort: Aßlar Aßlar
+  region: Hessen
+  lat: 50.58235
+  lon: 8.47885
+- name: Coatinc Würzburg GmbH
+  ort: Rottendorf Rottendorf
+  region: Bayern
+  lat: 49.79446
+  lon: 10.03049
+- name: Cobra Bandstahl GmbH
+  ort: Wächtersbach Wächtersbach
+  region: Hessen
+  lat: 50.25393
+  lon: 9.29859
+- name: ComTel Systemhaus GmbH & Co. KG
+  ort: Gelnhausen Gelnhausen
+  region: Hessen
+  lat: 50.20356
+  lon: 9.16857
+- name: Complan & Partner GmbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55051
+  lon: 8.49866
+- name: 'Control Mechatronics GmbH (vormals: Control Mechatronics Süd GmbH)'
+  ort: Nidderau Nidderau
+  region: Hessen
+  lat: 50.24318
+  lon: 8.8627
+- name: Controlware GmbH Kommunikationssysteme
+  ort: Dietzenbach Dietzenbach
+  region: Hessen
+  lat: 50.01714
+  lon: 8.80774
+- name: Cooper-Standard Automotive (Deutschland) GmbH
+  ort: Grünberg Grünberg
+  region: Hessen
+  lat: 50.59857
+  lon: 8.95828
+- name: Cordenka GmbH & Co. KG
+  ort: Erlenbach am Main Erlenbach am Main
+  region: Bayern
+  lat: 49.82589
+  lon: 9.14782
+- name: Crytek GmbH
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.12654
+  lon: 8.7536
+- name: Cummins Deutschland GmbH
+  ort: Groß-Gerau Groß-Gerau
+  region: Hessen
+  lat: 49.90788
+  lon: 8.49996
+- name: DATCOM Pro Telematik GmbH
+  ort: Bad Soden-Salmünster Bad Soden-Salmünster
+  region: Hessen
+  lat: 50.29107
+  lon: 9.36271
+- name: DE-Bit-Computerservice GmbH
+  ort: Gelnhausen Gelnhausen
+  region: Hessen
+  lat: 50.20021
+  lon: 9.19029
+- name: DFS Deutsche Flugsicherung GmbH
+  ort: Langen Langen (Hessen)
+  region: Hessen
+  lat: 50.00622
+  lon: 8.65276
+- name: DIMOS Maschinenbau GmbH
+  ort: Petersberg Petersberg
+  region: Hessen
+  lat: 50.55905
+  lon: 9.72852
+- name: DONGES STEELTEC GmbH
+  ort: Darmstadt Darmstadt
+  region: Hessen
+  lat: 49.87989
+  lon: 8.63496
+- name: DROTAX GmbH
+  ort: Bad Homburg vor der Höhe Bad Homburg vor der Höhe
+  region: Hessen
+  lat: 50.21706
+  lon: 8.60241
+- name: DS Datentechnik und Software- entwicklung Müftahi GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.12717
+  lon: 8.91445
+- name: DS Smith Packaging Deutschland Stiftung & Co. KG
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.53275
+  lon: 9.68
+- name: DS Smith Paper Deutschland GmbH
+  ort: Witzenhausen Witzenhausen
+  region: Hessen
+  lat: 51.31931
+  lon: 9.84797
+- name: DSD-Noell
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.81146
+  lon: 9.88909
+- name: DT&SHOP GmbH
+  ort: Bad Bocklet Bad Bocklet
+  region: Bayern
+  lat: 50.24769
+  lon: 10.07398
+- name: DUO PLAST Holding GmbH
+  ort: Lauterbach Lauterbach (Hessen)
+  region: Hessen
+  lat: 50.64296
+  lon: 9.39377
+- name: DVS Production GmbH
+  ort: Krauthausen Krauthausen
+  region: Thüringen
+  lat: 51.01077
+  lon: 10.25362
+- name: Danfoss GmbH
+  ort: Offenbach am Main Offenbach am Main
+  region: Hessen
+  lat: 50.08479
+  lon: 8.8336
+- name: De Nora Deutschland GmbH
+  ort: Rodenbach Rodenbach
+  region: Hessen
+  lat: 50.14695
+  lon: 9.00629
+- name: Dematic GmbH
+  ort: Heusenstamm Heusenstamm
+  region: Hessen
+  lat: 50.05476
+  lon: 8.82504
+- name: Dentsply Implants Manufacturing GmbH
+  ort: 'Hanau Hanau (vormals: Mannheim)'
+  region: Hessen
+  lat: 50.11951
+  lon: 8.96497
+- name: Desoi GmbH
+  ort: Kalbach Kalbach
+  region: Hessen
+  lat: 50.427
+  lon: 9.64462
+- name: Deublin GmbH
+  ort: Mainz Mainz
+  region: Rheinland-Pfalz
+  lat: 49.94474
+  lon: 8.26125
+- name: Dexion GmbH
+  ort: Laubach Laubach
+  region: Hessen
+  lat: 50.54249
+  lon: 8.97943
+- name: Dickert Electronic GmbH
+  ort: Cölbe Cölbe-Schönstadt
+  region: Hessen
+  lat: 50.88198
+  lon: 8.83605
+- name: Didier-Werke AG Werk Mainzlar
+  ort: Staufenberg Staufenberg
+  region: Hessen
+  lat: 50.65922
+  lon: 8.75028
+- name: Die Pharmadrucker GmbH
+  ort: Melsungen Melsungen
+  region: Hessen
+  lat: 51.11116
+  lon: 9.55298
+- name: Diebold Nixdorf Aktiengesellschaft
+  ort: Paderborn Neu-Isenburg
+  region: Nordrhein-Westfalen
+  lat: 51.72005
+  lon: 8.71741
+- name: Diehl Aerospace GmbH
+  ort: Frankfurt am Main Frankfurt
+  region: Hessen
+  lat: 50.16514
+  lon: 8.64827
+- name: Dieter Reinhardt Werkzeugbau und Elektronik GmbH
+  ort: Solms Solms
+  region: Hessen
+  lat: 50.55272
+  lon: 8.43516
+- name: 'Dinghan SMART Railway Technology GmbH (vormals: SMA Railway Technology GmbH)'
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.31116
+  lon: 9.5374
+- name: Doering GmbH
+  ort: Sinn Sinn
+  region: Hessen
+  lat: 50.65225
+  lon: 8.32838
+- name: Drehtechnik Schmidt GmbH
+  ort: Biebertal Biebertal
+  region: Hessen
+  lat: 50.61774
+  lon: 8.5928
+- name: Drimalski & Partner GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.52734
+  lon: 9.67926
+- name: Druckguss Westfalen GmbH & Co
+  ort: Geseke Geseke
+  region: Nordrhein-Westfalen
+  lat: 51.62555
+  lon: 8.50648
+- name: Düker GmbH
+  ort: Karlstadt Karlstadt
+  region: Bayern
+  lat: 49.95529
+  lon: 9.77233
+- name: ECOPLAN GmbH
+  ort: Künzell Künzell
+  region: Hessen
+  lat: 50.55163
+  lon: 9.72465
+- name: EDAG Engineering GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.57442
+  lon: 9.70597
+- name: EDAG Production Solutions GmbH & Co. KG
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.57442
+  lon: 9.70597
+- name: EDV-Beratung Winter GmbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.53397
+  lon: 8.53303
+- name: EELOY AG
+  ort: Künzell Künzell
+  region: Hessen
+  lat: 50.53956
+  lon: 9.71441
+- name: EJOT Holding GmbH & Co. KG
+  ort: Tambach-Dietharz Tambach-Dietharz
+  region: Thüringen
+  lat: 50.80098
+  lon: 10.61684
+- name: ELMOTEC STATOMAT GmbH
+  ort: Karben Karben
+  region: Hessen
+  lat: 50.22649
+  lon: 8.76357
+- name: ELSO Elbe GmbH & Co. KG
+  ort: Hofheim in Unterfranken Hofheim i.UFr.
+  region: Bayern
+  lat: 50.12968
+  lon: 10.5181
+- name: ENGEL ElektroMotoren AG
+  ort: Walluf Walluf
+  region: Hessen
+  lat: 50.04554
+  lon: 8.1626
+- name: EPZ Industrietechnik GmbH
+  ort: Arnstadt Arnstadt
+  region: Thüringen
+  lat: 50.84555
+  lon: 10.96025
+- name: ESV GmbH
+  ort: Erfurt Erfurt
+  region: Thüringen
+  lat: 50.99916
+  lon: 11.03987
+- name: ET Elastomer Technik GmbH
+  ort: Hammelburg Hammelburg
+  region: Bayern
+  lat: 50.12748
+  lon: 9.9275
+- name: ETM Meuser Maschinen GmbH
+  ort: Gründau Gründau
+  region: Hessen
+  lat: 50.19853
+  lon: 9.11709
+- name: EWIKON Heißkanalsysteme GmbH
+  ort: Frankenberg Frankenberg
+  region: Hessen
+  lat: 51.05472
+  lon: 8.78742
+- name: EXPRESSO Deutschland GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.28019
+  lon: 9.51012
+- name: EZ Zerspanung GmbH
+  ort: Kalbach Kalbach
+  region: Hessen
+  lat: 50.42552
+  lon: 9.64566
+- name: Ebner GmbH & Co. KG Anlagen und Apparate
+  ort: Eiterfeld Eiterfeld
+  region: Hessen
+  lat: 50.75672
+  lon: 9.81916
+- name: Eckart Produktion GmbH
+  ort: Schlüchtern Schlüchtern
+  region: Hessen
+  lat: 50.39649
+  lon: 9.50958
+- name: Eichsfelder Schraubenwerk GmbH
+  ort: Heilbad Heiligenstadt Heilbad Heiligenstadt
+  region: Thüringen
+  lat: 51.37479
+  lon: 10.11532
+- name: Eisenguss Hasloch
+  ort: Hasloch Hasloch
+  region: Bayern
+  lat: 49.81336
+  lon: 9.49364
+- name: 'Eisenmann LacTec GmbH (vormals: Lac Tec GmbH Gesellschaft für moderne Lackiertechnik)'
+  ort: Rodgau Rodgau
+  region: Hessen
+  lat: 50.02366
+  lon: 8.89771
+- name: Elb-Schliff Werkzeugmaschinen GmbH
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.92486
+  lon: 9.15432
+- name: Elbe Holding GmbH & Co. KG
+  ort: Hofheim in Unterfranken Hofheim i.UFr.
+  region: Bayern
+  lat: 50.13082
+  lon: 10.51895
+- name: Element Six GmbH
+  ort: Burghaun Burghaun
+  region: Hessen
+  lat: 50.70092
+  lon: 9.72355
+- name: Elementar Analysensysteme GmbH
+  ort: Langenselbold Langenselbold
+  region: Hessen
+  lat: 50.17967
+  lon: 9.02235
+- name: ElringKlinger AG
+  ort: Idstein Idstein
+  region: Hessen
+  lat: 50.20805
+  lon: 8.25962
+- name: Elster GmbH
+  ort: Wiesbaden Mainz-Kastel
+  region: Hessen
+  lat: 50.00993
+  lon: 8.28952
+- name: Eltek Deutschland GmbH
+  ort: Frankfurt am Main Frankfurt
+  region: Hessen
+  lat: 50.11764
+  lon: 8.76386
+- name: Emco Wheaton Gesellschaft mit beschränkter Haftung
+  ort: Kirchhain Kirchhain
+  region: Hessen
+  lat: 50.82831
+  lon: 8.91452
+- name: Emerson Process Management GmbH & Co. OHG
+  ort: Hasselroth Hasselroth
+  region: Hessen
+  lat: 50.16198
+  lon: 9.08486
+- name: Emod Motoren Gesellschaft mit beschränkter Haftung
+  ort: Bad Salzschlirf Bad Salzschlirf
+  region: Hessen
+  lat: 50.62966
+  lon: 9.50107
+- name: Energie- und Wassergesellschaft mbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.56699
+  lon: 8.50006
+- name: EngRoTec - Solutions GmbH
+  ort: Hünfeld Hünfeld
+  region: Hessen
+  lat: 50.69058
+  lon: 9.75199
+- name: EngRoTec GmbH & Co. KG
+  ort: Hünfeld Hünfeld
+  region: Hessen
+  lat: 50.68929
+  lon: 9.76647
+- name: Engel AG
+  ort: Bad Orb Bad Orb
+  region: Hessen
+  lat: 50.23331
+  lon: 9.33621
+- name: Engel Oberflächentechnik GmbH
+  ort: Pohlheim Pohlheim
+  region: Hessen
+  lat: 50.54313
+  lon: 8.70804
+- name: Engelhard Arzneimittel GmbH & Co. KG
+  ort: Niederdorfelden Niederdorfelden
+  region: Hessen
+  lat: 50.19275
+  lon: 8.79391
+- name: Erich Rothe GmbH & Co. KG
+  ort: Kitzingen Kitzingen
+  region: Bayern
+  lat: 49.74148
+  lon: 10.18251
+- name: Ernst Diegel GmbH
+  ort: Alsfeld Alsfeld
+  region: Hessen
+  lat: 50.748
+  lon: 9.28612
+- name: Eschenbach Zeltbau GmbH & Co. KG
+  ort: Bad Königshofen im Grabfeld Bad Königshofen
+  region: Bayern
+  lat: 50.30682
+  lon: 10.46304
+- name: Essex Germany GmbH
+  ort: Bad Arolsen Bad Arolsen
+  region: Hessen
+  lat: 51.37923
+  lon: 8.99743
+- name: Eurotronic Technology GmbH
+  ort: Steinau an der Straße Steinau an der Straße
+  region: Hessen
+  lat: 50.36013
+  lon: 9.42305
+- name: Excelitas Technologies GmbH & Co. KG
+  ort: Wiesbaden Wiesbaden
+  region: Hessen
+  lat: 50.08602
+  lon: 8.19175
+- name: Exide Technologies GmbH
+  ort: Büdingen Büdingen
+  region: Hessen
+  lat: 50.27399
+  lon: 9.12159
+- name: F. W. Breidenbach GmbH & Co. KG Kunststoff-Form- artikel-Eigener Werkzeugbau
+  ort: Linsengericht Linsengericht
+  region: Hessen
+  lat: 50.16479
+  lon: 9.17304
+- name: F. W. Breithaupt & Sohn GmbH & Co KG
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.31074
+  lon: 9.47576
+- name: F.S. Fehrer Automotive GmbH
+  ort: Kitzingen Kitzingen
+  region: Bayern
+  lat: 49.74556
+  lon: 10.16761
+- name: FERRA-TEC Werkzeugbau und Formenbau Kunststofftechnik GmbH
+  ort: Hösbach Hösbach
+  region: Bayern
+  lat: 50.00684
+  lon: 9.22426
+- name: FINOBA Automotive GmbH
+  ort: Baunatal Baunatal
+  region: Hessen
+  lat: 51.22942
+  lon: 9.41666
+- name: FIS Informationssysteme und Consulting GmbH
+  ort: Grafenrheinfeld Grafenrheinfeld
+  region: Bayern
+  lat: 49.99625
+  lon: 10.20166
+- name: FIS-ASP Application Service Providing und IT-Outsourcing GmbH
+  ort: Grafenrheinfeld Grafenrheinfeld
+  region: Bayern
+  lat: 49.99585
+  lon: 10.20106
+- name: FLAVIA IT-Management GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.3139
+  lon: 9.4437
+- name: FLEXA GmbH & Co Produktion und Vertrieb KG
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.09636
+  lon: 8.90045
+- name: FMB Maschinenbaugesellschaft mbH & Co. KG
+  ort: Faulbach Faulbach
+  region: Bayern
+  lat: 49.78584
+  lon: 9.44868
+- name: FRIMO Sontra GmbH
+  ort: Sontra Sontra
+  region: Hessen
+  lat: 51.05047
+  lon: 9.91994
+- name: FRONIUS Deutschland GmbH
+  ort: Neuhof Neuhof
+  region: Hessen
+  lat: 50.44985
+  lon: 9.62389
+- name: FSM Frankenberger GmbH & Co. KG
+  ort: Pohlheim Pohlheim
+  region: Hessen
+  lat: 50.53327
+  lon: 8.76779
+- name: FTE Automotive GmbH
+  ort: Ebern Ebern
+  region: Bayern
+  lat: 50.09855
+  lon: 10.79513
+- name: Federal-Mogul Holding Deutschland GmbH
+  ort: Stadtallendorf Stadtallendorf
+  region: Hessen
+  lat: 50.82422
+  lon: 9.01358
+- name: Federnfabrik Subtil Gesellschaft mit beschränkter Haftung
+  ort: Reiskirchen Reiskirchen
+  region: Hessen
+  lat: 50.55967
+  lon: 8.8966
+- name: Feintool System Parts Obertshausen GmbH
+  ort: Obertshausen Obertshausen
+  region: Hessen
+  lat: 50.07039
+  lon: 8.85302
+- name: Fertig Motors GmbH
+  ort: Marktheidenfeld Marktheidenfeld
+  region: Bayern
+  lat: 49.83285
+  lon: 9.59714
+- name: Fertigungsgerätebau Adolf Steinbach GmbH & Co. KG
+  ort: Salz Salz
+  region: Bayern
+  lat: 50.30534
+  lon: 10.20696
+- name: Filzfabrik Fulda GmbH & Co. KG
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.5377
+  lon: 9.67398
+- name: FingerHaus GmbH
+  ort: Frankenberg Frankenberg (Eder)
+  region: Hessen
+  lat: 51.05168
+  lon: 8.77603
+- name: Finstral GmbH
+  ort: Gochsheim Gochsheim
+  region: Bayern
+  lat: 50.0213
+  lon: 10.26304
+- name: Firstwaters GmbH
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.98171
+  lon: 9.1439
+- name: Fischer Stahlbau GmbH
+  ort: Offenbach am Main Offenbach am Main
+  region: Hessen
+  lat: 50.08412
+  lon: 8.83578
+- name: Fosun FFT Holdings (Germany) GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.55599
+  lon: 9.60108
+- name: 'Framatome GmbH (vormals: New NP GmbH)'
+  ort: Karlstein am Main Karlstein
+  region: Bayern
+  lat: 50.04666
+  lon: 9.00127
+- name: Frank Walz- und Schmiedetechnik GmbH
+  ort: Hatzfeld Hatzfeld
+  region: Hessen
+  lat: 51.00061
+  lon: 8.58591
+- name: Franke Deutschland Holding GmbH
+  ort: Grünsfeld Grünsfeld
+  region: Baden-Württemberg
+  lat: 49.60385
+  lon: 9.7163
+- name: 'Franken Guss GmbH & Co. KG (vormals: Franken Guss Kitzingen GmbH & Co. KG)'
+  ort: Kitzingen Kitzingen
+  region: Bayern
+  lat: 49.74411
+  lon: 10.18247
+- name: Fraport AG
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.05126
+  lon: 8.57943
+- name: Fresenius Kabi Deutschland GmbH
+  ort: Bad Hersfeld Bad Hersfeld
+  region: Hessen
+  lat: 50.83558
+  lon: 9.67028
+- name: Fresenius SE & Co. KGaA
+  ort: Bad Homburg vor der Höhe Bad Homburg vor der Höhe
+  region: Hessen
+  lat: 50.21586
+  lon: 8.62274
+- name: Freudenberg Sealing Technologies
+  ort: Schwalmstadt Schwalmstadt
+  region: Hessen
+  lat: 50.90951
+  lon: 9.203
+- name: Friedrich Kurz GmbH & Co. KG Spedition-Logistik
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55253
+  lon: 8.47639
+- name: Friedrich Kurz GmbH Internationale Spedition - Logistik
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55253
+  lon: 8.47639
+- name: Fritsch Holding Aktiengesellschaft
+  ort: Markt Einersheim Markt Einersheim
+  region: Bayern
+  lat: 49.68517
+  lon: 10.28361
+- name: Fritz Winter Eisengießerei GmbH & Co. KG
+  ort: Stadtallendorf Stadtallendorf
+  region: Hessen
+  lat: 50.82328
+  lon: 9.00666
+- name: Fränkische Rohrwerke Gebr. Kirchner GmbH & Co. KG
+  ort: Königsberg in Bayern Königsberg in Bayern
+  region: Bayern
+  lat: 50.08412
+  lon: 10.56308
+- name: Fränkische Rohrwerke Gebr. Kirchner GmbH & Co. KG
+  ort: Königsberg in Bayern Königsberg in Bayern
+  region: Bayern
+  lat: 50.08399
+  lon: 10.56413
+- name: G.E. Habich's Söhne GmbH & Co. KG
+  ort: Reinhardshagen Reinhardshagen
+  region: Hessen
+  lat: 51.49311
+  lon: 9.6055
+- name: G.M.W. Industrieautomation GmbH
+  ort: Burghaun Burghaun
+  region: Hessen
+  lat: 50.69726
+  lon: 9.72062
+- name: GASCADE Gastransport GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.31766
+  lon: 9.47763
+- name: GCE GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.54499
+  lon: 9.68407
+- name: GE Grid GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.2966
+  lon: 9.52553
+- name: GEA Group Aktiengesellschaft
+  ort: Kitzingen Kitzingen
+  region: Bayern
+  lat: 49.74678
+  lon: 10.1711
+- name: GFA Gesellschaft für Anlagenbau mbH
+  ort: Gelnhausen Gelnhausen
+  region: Hessen
+  lat: 50.21049
+  lon: 9.16997
+- name: GKN Driveline Deutschland GmbH
+  ort: Offenbach am Main Offenbach am Main
+  region: Hessen
+  lat: 50.08446
+  lon: 8.83364
+- name: 'GKN Sinter Metals & Forge Operations GmbH (vormals: GKN Sinter Metals GmbH)'
+  ort: Bad Brückenau Bad Brückenau
+  region: Bayern
+  lat: 50.31363
+  lon: 9.79905
+- name: GOK Regler- und Armaturen-GmbH & Co. KG
+  ort: Marktbreit Marktbreit
+  region: Bayern
+  lat: 49.66565
+  lon: 10.14797
+- name: Gardner Denver Deutschland GmbH
+  ort: Bad Neustadt an der Saale Bad Neustadt a.d. Saale
+  region: Bayern
+  lat: 50.3377
+  lon: 10.22252
+- name: Garmin Würzburg GmbH
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.79759
+  lon: 9.94492
+- name: Gebr. Bode GmbH & Co. KG
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.29651
+  lon: 9.53125
+- name: Gebrüder Götz GmbH & Co. KG
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.81138
+  lon: 9.88354
+- name: Gebrüder Kempf Gesellschaft mit beschränkter Haftung
+  ort: Gersfeld Gersfeld
+  region: Hessen
+  lat: 50.45224
+  lon: 9.93331
+- name: Gebrüder Reinfurt GmbH & Co. KG
+  ort: Rimpar Rimpar
+  region: Bayern
+  lat: 49.84926
+  lon: 9.95727
+- name: Gedys IntraWare GmbH
+  ort: Petersberg Petersberg
+  region: Hessen
+  lat: 50.60801
+  lon: 9.72044
+- name: Gefinal Blech- und Stahlbau GmbH
+  ort: Mainhausen Mainhausen
+  region: Hessen
+  lat: 50.02021
+  lon: 8.99196
+- name: Geibel & Hotz Gesellschaft mit beschränkter Haftung
+  ort: Homberg (Ohm) Homberg (Ohm)
+  region: Hessen
+  lat: 50.72491
+  lon: 9.00204
+- name: Geissler Präzisionsdrehteile GmbH
+  ort: Bruchköbel Bruchköbel
+  region: Hessen
+  lat: 50.17716
+  lon: 8.90938
+- name: Georg Sahm GmbH & Co. KG
+  ort: Eschwege Eschwege
+  region: Hessen
+  lat: 51.19459
+  lon: 10.02938
+- name: Gerresheimer Lohr GmbH
+  ort: Lohr am Main Lohr am Main
+  region: Bayern
+  lat: 49.98447
+  lon: 9.57897
+- name: Gersfelder Metallwaren GmbH
+  ort: Gersfeld Gersfeld
+  region: Hessen
+  lat: 50.45413
+  lon: 9.93866
+- name: GigaCodes GmbH
+  ort: Seligenstadt Seligenstadt
+  region: Hessen
+  lat: 50.03654
+  lon: 8.95767
+- name: Gilbarco GmbH
+  ort: Salzkotten Salzkotten
+  region: Nordrhein-Westfalen
+  lat: 51.67151
+  lon: 8.59496
+- name: Glaswarenfabrik Karl Hecht GmbH & Co. KG
+  ort: Sondheim v.d.Rhön Sondheim v.d.Rhön
+  region: Bayern
+  lat: 50.46723
+  lon: 10.15574
+- name: Glatfelter Ober-Schmitten GmbH
+  ort: Nidda Nidda
+  region: Hessen
+  lat: 50.4457
+  lon: 9.03553
+- name: Goldbach Zerspanungs- GmbH & Co. KG
+  ort: Hofbieber Hofbieber
+  region: Hessen
+  lat: 50.57967
+  lon: 9.80403
+- name: Goodyear Dunlop Tires Germany GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.124
+  lon: 8.9388
+- name: Gothaer Fahrzeugtechnik GmbH
+  ort: Gotha Gotha
+  region: Thüringen
+  lat: 50.96876
+  lon: 10.72221
+- name: Gottschild Automatisierungstechnik GmbH
+  ort: Hofbieber Hofbieber
+  region: Hessen
+  lat: 50.58623
+  lon: 9.77498
+- name: Greenerity GmbH
+  ort: 'Hanau Alzenau (vormals: Hanau)'
+  region: Hessen
+  lat: 50.11873
+  lon: 8.96544
+- name: Grenzebach Maschinenbau GmbH
+  ort: Bad Hersfeld Bad Hersfeld
+  region: Hessen
+  lat: 50.85839
+  lon: 9.74246
+- name: Gurit (Kassel) GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.28038
+  lon: 9.50372
+- name: Gärtner & Lang GmbH
+  ort: Sontra Sontra
+  region: Hessen
+  lat: 51.07606
+  lon: 9.9315
+- name: Göpfert Maschinen GmbH
+  ort: Wiesentheid Wiesentheid
+  region: Bayern
+  lat: 49.78721
+  lon: 10.33783
+- name: Güdel Germany GmbH
+  ort: Altenstadt Altenstadt
+  region: Hessen
+  lat: 50.27441
+  lon: 8.96473
+- name: Günther Heisskanaltechnik GmbH
+  ort: Frankenberg Frankenberg (Eder)
+  region: Hessen
+  lat: 51.07713
+  lon: 8.80947
+- name: HDO Druckguß- und Oberflächentechnik-GmbH
+  ort: Paderborn Paderborn
+  region: Nordrhein-Westfalen
+  lat: 51.69041
+  lon: 8.74854
+- name: HEMA Maschinen- und Apparateschutz GmbH
+  ort: Seligenstadt Seligenstadt (Hessen)
+  region: Hessen
+  lat: 50.0526
+  lon: 8.92705
+- name: HERA Papierverarbeitung GmbH & Co KG
+  ort: Nidda Nidda
+  region: Hessen
+  lat: 50.44451
+  lon: 9.03002
+- name: HERSA Metalltechnik GmbH
+  ort: Bad Soden-Salmünster Bad Soden-Salmünster
+  region: Hessen
+  lat: 50.27301
+  lon: 9.3749
+- name: HEYLIGENSTAEDT Werkzeugmaschinen GmbH
+  ort: Gießen Gießen
+  region: Hessen
+  lat: 50.57561
+  lon: 8.67438
+- name: HKM-Technik GmbH
+  ort: Gemünden (Felda) Gemünden (Felda)
+  region: Hessen
+  lat: 50.68758
+  lon: 9.0465
+- name: HKS Dreh-Antriebe GmbH
+  ort: Wächtersbach Wächtersbach
+  region: Hessen
+  lat: 50.25568
+  lon: 9.33161
+- name: HMF Henning Maschinen- und Formenbau GmbH & Co KG
+  ort: Schlüchtern Schlüchtern
+  region: Hessen
+  lat: 50.32773
+  lon: 9.55681
+- name: HOPPE Aktiengesellschaft
+  ort: Stadtallendorf Stadtallendorf
+  region: Hessen
+  lat: 50.81436
+  lon: 8.9853
+- name: HORIBA Jobin Yvon GmbH
+  ort: Darmstadt Darmstadt
+  region: Hessen
+  lat: 49.87851
+  lon: 8.64245
+- name: HUBTEX Holding GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.56026
+  lon: 9.59576
+- name: Haacon Hebetechnik GmbH
+  ort: Collenberg Kirschfurt
+  region: Bayern
+  lat: 49.74414
+  lon: 9.31923
+- name: Haga Metallbau GmbH
+  ort: Hofheim in Unterfranken Hofheim
+  region: Bayern
+  lat: 50.13504
+  lon: 10.518
+- name: Haga Metallbau GmbH
+  ort: Fuchsstadt Fuchsstadt
+  region: Bayern
+  lat: 50.1077
+  lon: 9.92825
+- name: Hako GmbH
+  ort: Waltershausen Waltershausen
+  region: Thüringen
+  lat: 50.90627
+  lon: 10.56459
+- name: Hanau Netz GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.12981
+  lon: 8.92549
+- name: Hanon Systems Bad Homburg GmbH
+  ort: Bad Homburg vor der Höhe Bad Homburg vor der Höhe
+  region: Hessen
+  lat: 50.21425
+  lon: 8.62136
+- name: Hans Giesbert GmbH & Co. KG.
+  ort: Mömbris Mömbris
+  region: Bayern
+  lat: 50.07509
+  lon: 9.15598
+- name: Hartmann Spezialkarosserien Gesellschaft mit beschränkter Haftung
+  ort: Alsfeld Alsfeld
+  region: Hessen
+  lat: 50.74793
+  lon: 9.28793
+- name: Hasenclever & Sohn GmbH
+  ort: Battenberg Battenberg
+  region: Hessen
+  lat: 51.03545
+  lon: 8.62318
+- name: Hassia Verpackungsmaschinen GmbH
+  ort: Ranstadt Ranstadt
+  region: Hessen
+  lat: 50.35634
+  lon: 8.98537
+- name: Hauck Heat Treatment GmbH
+  ort: Kronberg im Taunus Kronberg
+  region: Hessen
+  lat: 50.17518
+  lon: 8.54708
+- name: Health Rise GmbH
+  ort: Bad Homburg vor der Höhe Bad Homburg vor der Höhe
+  region: Hessen
+  lat: 50.22049
+  lon: 8.61018
+- name: Heck & Becker GmbH & Co. KG
+  ort: Dautphetal Dautphetal
+  region: Hessen
+  lat: 50.86356
+  lon: 8.55189
+- name: Hegler Plastik GmbH.
+  ort: Oerlenbach Oerlenbach
+  region: Bayern
+  lat: 50.14315
+  lon: 10.13012
+- name: Heinrich Kopp GmbH
+  ort: Kahl am Main Kahl
+  region: Bayern
+  lat: 50.07918
+  lon: 9.01658
+- name: Hemmelrath Lackfabrik GmbH
+  ort: Klingenberg am Main Klingenberg
+  region: Bayern
+  lat: 49.76876
+  lon: 9.18431
+- name: Henke-Sass
+  ort: Nörten-Hardenberg Nörten-Hardenberg
+  region: Niedersachsen
+  lat: 51.60662
+  lon: 9.9306
+- name: Henry Schein Dental Deutschland GmbH
+  ort: Langen Langen (Hessen)
+  region: Hessen
+  lat: 49.99735
+  lon: 8.65414
+- name: 'Henzel Automotive GmbH (vormals: Henzel Formenbau GmbH)'
+  ort: Gründau Gründau
+  region: Hessen
+  lat: 50.20644
+  lon: 9.12957
+- name: Herbert Maschinen- und Anlagenbau GmbH & Co.KG
+  ort: Hünfeld Hünfeld
+  region: Hessen
+  lat: 50.68997
+  lon: 9.75787
+- name: Herbert Maschinenbau GmbH & Co. KG
+  ort: Hünfeld Hünfeld
+  region: Hessen
+  lat: 50.68997
+  lon: 9.75787
+- name: Herhof-Basalt- und Diabas-Werk GmbH
+  ort: Solms Solms
+  region: Hessen
+  lat: 50.55155
+  lon: 8.3922
+- name: Herkules Wetzlar GmbH
+  ort: Solms Solms
+  region: Hessen
+  lat: 50.55385
+  lon: 8.43658
+- name: Herrhammer GmbH Spezialmaschinen
+  ort: Ochsenfurt Ochsenfurt
+  region: Bayern
+  lat: 49.66162
+  lon: 10.05015
+- name: Herrtwich Gesellschaft mit beschränkter Haftung
+  ort: Rodgau Rodgau
+  region: Hessen
+  lat: 50.01334
+  lon: 8.88477
+- name: 'Hessische Schraubenfabrik Welter GmbH (vormals: Hessische Schraubenfabrik Welter GmbH & Co KG)'
+  ort: Marburg Marburg
+  region: Hessen
+  lat: 50.79458
+  lon: 8.75129
+- name: Hettich Holding GmbH & Co. oHG
+  ort: Frankenberg Frankenberg
+  region: Hessen
+  lat: 51.05095
+  lon: 8.77863
+- name: Hexagon Metrology GmbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55129
+  lon: 8.47993
+- name: 'Hexagon Purus GmbH (vormals: Hexagon xperion GmbH)'
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.2803
+  lon: 9.50533
+- name: Hi-Lex Europe GmbH
+  ort: Schweinfurt Schweinfurt
+  region: Bayern
+  lat: 50.01875
+  lon: 10.2188
+- name: Hilite Germany GmbH
+  ort: Marktheidenfeld Marktheidenfeld
+  region: Bayern
+  lat: 49.82352
+  lon: 9.55111
+- name: Hilti Deutschland AG (Liechtenstein), Zweigniederlassung Deutschland
+  ort: Bebra Bebra
+  region: Hessen
+  lat: 50.98404
+  lon: 9.78946
+- name: Hochtaunus-Kliniken gemeinnützige GmbH
+  ort: Bad Homburg vor der Höhe Bad Homburg vor der Höhe
+  region: Hessen
+  lat: 50.21605
+  lon: 8.61141
+- name: Hohmann Werkzeug GmbH
+  ort: Sinntal Sinntal
+  region: Hessen
+  lat: 50.31476
+  lon: 9.62695
+- name: Honda Research Institute Europe GmbH
+  ort: Offenbach am Main Offenbach am Main
+  region: Hessen
+  lat: 50.08487
+  lon: 8.83946
+- name: Honeywell Aerospace GmbH
+  ort: Raunheim Raunheim
+  region: Hessen
+  lat: 50.01617
+  lon: 8.46413
+- name: Honeywell Gas Technologies GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.30867
+  lon: 9.53744
+- name: Honeywell GmbH
+  ort: Offenbach am Main Offenbach
+  region: Hessen
+  lat: 50.10668
+  lon: 8.73473
+- name: Honeywell Regelsysteme GmbH
+  ort: Maintal Maintal
+  region: Hessen
+  lat: 50.13409
+  lon: 8.86472
+- name: Horiba Europe GmbH
+  ort: Darmstadt Darmstadt
+  region: Hessen
+  lat: 49.87851
+  lon: 8.64245
+- name: Horn & Bauer Verwaltungs GmbH
+  ort: Schwalmstadt Schwalmstadt-Treysa
+  region: Hessen
+  lat: 50.91841
+  lon: 9.20753
+- name: Hottinger Baldwin Messtechnik Gesellschaft mit beschränkter Haftung
+  ort: Darmstadt Darmstadt
+  region: Hessen
+  lat: 49.88565
+  lon: 8.643
+- name: Hunger DFE GmbH Dichtungs- und Führungselemente
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.81347
+  lon: 9.8869
+- name: Hörmann Automotive Gustavsburg GmbH
+  ort: Ginsheim-Gustavsburg Ginsheim-Gustavsburg
+  region: Hessen
+  lat: 49.99193
+  lon: 8.32463
+- name: Hübner Holding GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.28031
+  lon: 9.51553
+- name: Hüttenberger Zerspanungs- technik, Aggregate und Komponenten GmbH & Co. KG
+  ort: Hüttenberg Hüttenberg
+  region: Hessen
+  lat: 50.50827
+  lon: 8.6269
+- name: I.G. Bauerhin GmbH
+  ort: Gründau Gründau
+  region: Hessen
+  lat: 50.19596
+  lon: 9.11534
+- name: IAL-Institut für angewandte Logistik GmbH
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.13445
+  lon: 8.74192
+- name: IBM Deutschland GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.31067
+  lon: 9.53745
+- name: IFSYS Integrated Feeding Systems GmbH
+  ort: Großbardorf Großbardorf
+  region: Bayern
+  lat: 50.27253
+  lon: 10.37361
+- name: IKAR GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.56308
+  lon: 9.60226
+- name: IMA-TEC GmbH
+  ort: Kürnach Kürnach
+  region: Bayern
+  lat: 49.84248
+  lon: 10.01527
+- name: INNIUS RR GmbH
+  ort: Rosbach v. d. Höhe Rosbach v. d. Höhe
+  region: Hessen
+  lat: 50.30723
+  lon: 8.69773
+- name: INRO Elektrotechnik GmbH
+  ort: Stockstadt am Main Stockstadt/​M.
+  region: Bayern
+  lat: 49.96948
+  lon: 9.08181
+- name: INTEND Geoinformatik GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.30638
+  lon: 9.44874
+- name: ITM Gesellschaft mit beschränkter Haftung Sondermaschinen- und Werkzeugbau
+  ort: Hainburg Hainburg
+  region: Hessen
+  lat: 50.06477
+  lon: 8.9627
+- name: ITW Automotive Products GmbH
+  ort: Röttingen Röttingen
+  region: Bayern
+  lat: 49.52023
+  lon: 9.96459
+- name: ITW Industrie-Technik Werth GmbH
+  ort: Birstein Birstein
+  region: Hessen
+  lat: 50.37682
+  lon: 9.26979
+- name: IWETEC GmbH Industrie- und Werkstattbedarf Fabrikation-Vertrieb-Service
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.55688
+  lon: 9.59033
+- name: Imhof Hartchrom GmbH
+  ort: Karlstadt Karlstadt
+  region: Bayern
+  lat: 49.95177
+  lon: 9.77751
+- name: Immel Datentechnik GmbH
+  ort: Gladenbach Gladenbach
+  region: Hessen
+  lat: 50.77193
+  lon: 8.58441
+- name: Incoe International Europe
+  ort: Rödermark Rödermark
+  region: Hessen
+  lat: 49.9664
+  lon: 8.81813
+- name: Industrieofen- & Anlagenbau GmbH
+  ort: Bad Königshofen im Grabfeld Bad Königshofen i. Grabfeld
+  region: Bayern
+  lat: 50.29705
+  lon: 10.45518
+- name: Informatica Systemhaus Rücker GmbH
+  ort: Biebertal Biebertal
+  region: Hessen
+  lat: 50.64385
+  lon: 8.59493
+- name: Ingenieurbüro Klöffel GmbH
+  ort: Bruchköbel Bruchköbel
+  region: Hessen
+  lat: 50.19005
+  lon: 8.9292
+- name: Inmed Medizintechnik GmbH
+  ort: Mainhausen Mainhausen
+  region: Hessen
+  lat: 50.02099
+  lon: 8.99468
+- name: InnoSenT GmbH
+  ort: Donnersdorf Donnersdorf
+  region: Bayern
+  lat: 49.98254
+  lon: 10.42668
+- name: Inovag Ladenbau GmbH & Co. KG
+  ort: Bad Hersfeld Bad Hersfeld
+  region: Hessen
+  lat: 50.86641
+  lon: 9.71912
+- name: Intera Gesellschaft für Software-Entwicklung mbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.14389
+  lon: 8.94004
+- name: Isabellenhütte Heusler GmbH & Co. KG
+  ort: Dillenburg Dillenburg
+  region: Hessen
+  lat: 50.74188
+  lon: 8.31569
+- name: J. M. Dalquen GmbH & Co. Blechbearbeitungszentrum
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.14523
+  lon: 8.93914
+- name: JOPP Automotive GmbH
+  ort: Bad Neustadt an der Saale Bad Neustadt a.d. Saale
+  region: Bayern
+  lat: 50.33123
+  lon: 10.2298
+- name: JOST-Werke Deutschland GmbH
+  ort: Neu-Isenburg Neu-Isenburg
+  region: Hessen
+  lat: 50.0461
+  lon: 8.67672
+- name: JUMO GmbH & Co. KG
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.5636
+  lon: 9.68374
+- name: Janitza Electronics GmbH
+  ort: Lahnau Lahnau (Waldgirmes)
+  region: Hessen
+  lat: 50.58436
+  lon: 8.54148
+- name: Jean Müller GmbH Elektrotechnische Fabrik
+  ort: Eltville am Rhein Eltville
+  region: Hessen
+  lat: 50.02537
+  lon: 8.10731
+- name: Johann Fischer Aschaffenburg Präzisionswerk GmbH & Co. KG.
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.97378
+  lon: 9.11122
+- name: Johannes Hübner Fabrik elektrischer Maschinen Gesellschaft mit beschränkter Haftung
+  ort: Gießen Gießen
+  region: Hessen
+  lat: 50.57482
+  lon: 8.68971
+- name: John Crane GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.56062
+  lon: 9.59726
+- name: Josef Wiegand GmbH & Co.KG
+  ort: Rasdorf Rasdorf
+  region: Hessen
+  lat: 50.71754
+  lon: 9.90047
+- name: Joyson Safety Systems PlasTec GmbH
+  ort: Oberthulba Oberthulba
+  region: Bayern
+  lat: 50.20966
+  lon: 9.97892
+- name: Jurchen Technology GmbH
+  ort: Helmstadt Kitzingen
+  region: Bayern
+  lat: 49.7595
+  lon: 9.71683
+- name: K+S Aktiengesellschaft
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.30604
+  lon: 9.44519
+- name: K-UTEC AG Salt Technologies
+  ort: Sondershausen Sondershausen
+  region: Thüringen
+  lat: 51.36851
+  lon: 10.84674
+- name: K.U.K.T. Kautschuk & Kunststoff-Technologie GmbH
+  ort: Gelnhausen Gelnhausen
+  region: Hessen
+  lat: 50.19432
+  lon: 9.18124
+- name: KABATEC GmbH & Co. KG
+  ort: Burghaun Burghaun
+  region: Hessen
+  lat: 50.69135
+  lon: 9.74771
+- name: KAMAX Automotive GmbH
+  ort: Homberg (Ohm) Homberg (Ohm)
+  region: Hessen
+  lat: 50.72206
+  lon: 9.00593
+- name: KARL MAYER Textilmaschinenfabrik GmbH
+  ort: Obertshausen Obertshausen
+  region: Hessen
+  lat: 50.07129
+  lon: 8.85406
+- name: KBA-MePrint AG
+  ort: Veitshöchheim Veitshöchheim
+  region: Bayern
+  lat: 49.82976
+  lon: 9.90005
+- name: KDK Automotive GmbH
+  ort: Wächtersbach Wächtersbach
+  region: Hessen
+  lat: 50.25129
+  lon: 9.2958
+- name: KEYENCE DEUTSCHLAND GmbH
+  ort: Neu-Isenburg Neu-Isenburg
+  region: Hessen
+  lat: 50.0461
+  lon: 8.67672
+- name: KGM Kugelfabrik GmbH & Co. KG
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.54411
+  lon: 9.67091
+- name: KIANBE GmbH
+  ort: Kirtorf Kirtorf
+  region: Hessen
+  lat: 50.74217
+  lon: 9.15924
+- name: KINDERMANN GmbH
+  ort: Eibelstadt Eibelstadt
+  region: Bayern
+  lat: 49.73216
+  lon: 9.99065
+- name: KL IT-Consult Gesellschaft für IT-Dienstleistungen mbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.54574
+  lon: 9.68125
+- name: KLT Hummel Plastic GmbH
+  ort: Schweinfurt Schweinfurt
+  region: Bayern
+  lat: 50.036
+  lon: 10.24164
+- name: KUKA Industries GmbH & Co. KG
+  ort: Obernburg am Main Obernburg
+  region: Bayern
+  lat: 49.83235
+  lon: 9.13289
+- name: KWB - Maschinenbau Gesellschaft mit beschränkter Haftung
+  ort: Freigericht Freigericht
+  region: Hessen
+  lat: 50.14126
+  lon: 9.1124
+- name: Karl Georg Schobert Präzisions-Messzeug GmbH
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.9507
+  lon: 9.16866
+- name: Kaup GmbH & Co. KG
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.97171
+  lon: 9.1108
+- name: Kegelmann Technik GmbH
+  ort: Rodgau Rodgau
+  region: Hessen
+  lat: 50.02028
+  lon: 8.8998
+- name: Kelviplast GmbH & Co. KG
+  ort: Linsengericht Linsengericht
+  region: Hessen
+  lat: 50.16271
+  lon: 9.19507
+- name: Kiehm Datenmanagement GmbH
+  ort: Wächtersbach Wächtersbach
+  region: Hessen
+  lat: 50.24839
+  lon: 9.29305
+- name: Kinetics Germany GmbH
+  ort: Eschau Eschau-Hobbach
+  region: Bayern
+  lat: 49.8423
+  lon: 9.27718
+- name: Kinkele GmbH & Co. KG
+  ort: Ochsenfurt Ochsenfurt
+  region: Bayern
+  lat: 49.66133
+  lon: 10.04955
+- name: Kleinknecht GmbH + Co. KG
+  ort: Lohfelden Lohfelden
+  region: Hessen
+  lat: 51.2729
+  lon: 9.5525
+- name: Klima-Bau Volk GmbH & Co. KG
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55085
+  lon: 8.58636
+- name: Klinikum Hanau GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.13351
+  lon: 8.92224
+- name: Knaus Tabbert GmbH
+  ort: Sinntal Sinntal
+  region: Hessen
+  lat: 50.30009
+  lon: 9.65838
+- name: Koenig & Bauer AG
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.80824
+  lon: 9.87942
+- name: Kolb & Baumann GmbH & Co. KG
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.9831
+  lon: 9.11394
+- name: Konecranes GmbH
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.81185
+  lon: 9.88638
+- name: Konvekta Aktiengesellschaft
+  ort: Schwalmstadt Schwalmstadt
+  region: Hessen
+  lat: 50.92251
+  lon: 9.22936
+- name: Kopas Verpackungs- maschinen GmbH
+  ort: Wettenberg Wettenberg
+  region: Hessen
+  lat: 50.63003
+  lon: 8.63281
+- name: Kotte GmbH & Co. KG, Technische Komponenten
+  ort: Elsenfeld Elsenfeld
+  region: Bayern
+  lat: 49.8289
+  lon: 9.2034
+- name: Krauss-Maffei Wegmann
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.3234
+  lon: 9.4884
+- name: Krebs & Riedel Schleifscheibenfabrik GmbH & Co. KG
+  ort: Bad Karlshafen Bad Karlshafen
+  region: Hessen
+  lat: 51.63823
+  lon: 9.46005
+- name: Kreissparkasse Gelnhausen
+  ort: Gelnhausen Gelnhausen
+  region: Hessen
+  lat: 50.20088
+  lon: 9.19245
+- name: Kreissparkasse Schlüchtern
+  ort: Schlüchtern Schlüchtern
+  region: Hessen
+  lat: 50.34974
+  lon: 9.52427
+- name: Kremer-Kautschuk-Kunststoff GmbH & Co. KG
+  ort: Bad Soden-Salmünster Bad Soden-Salmünster
+  region: Hessen
+  lat: 50.28081
+  lon: 9.37623
+- name: Krick Meßtechnik & Partner GmbH & Co. KG
+  ort: Langenselbold Langenselbold
+  region: Hessen
+  lat: 50.16133
+  lon: 9.05443
+- name: Kroeplin GmbH
+  ort: Schlüchtern Schlüchtern
+  region: Hessen
+  lat: 50.35442
+  lon: 9.53466
+- name: Krämer + Grebe GmbH & Co. KG
+  ort: Biedenkopf Biedenkopf
+  region: Hessen
+  lat: 50.91844
+  lon: 8.46519
+- name: Kräuter Mix GmbH
+  ort: Abtswind Abtswind
+  region: Bayern
+  lat: 49.77103
+  lon: 10.36866
+- name: Kulzer GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.12985
+  lon: 8.92445
+- name: Kunzler Notstromtechnik GmbH
+  ort: Maintal Maintal
+  region: Hessen
+  lat: 50.13201
+  lon: 8.86999
+- name: Kurtz GmbH
+  ort: Kreuzwertheim Kreuzwertheim
+  region: Bayern
+  lat: 49.79053
+  lon: 9.5214
+- name: Kurtz GmbH
+  ort: Kreuzwertheim Kreuzwertheim
+  region: Bayern
+  lat: 49.78952
+  lon: 9.52394
+- name: Kyocera Automotive and Industrial Solutions GmbH
+  ort: Dietzenbach Dietzenbach
+  region: Hessen
+  lat: 50.02462
+  lon: 8.80671
+- name: König + Neurath AG
+  ort: Karben Karben
+  region: Hessen
+  lat: 50.23222
+  lon: 8.76104
+- name: 'Körber Supply Chain Software GmbH (vormals: inconso GmbH)'
+  ort: Bad Nauheim Bad Nauheim
+  region: Hessen
+  lat: 50.35392
+  lon: 8.75509
+- name: LBF Technik GmbH
+  ort: Lauterbach Lauterbach (Hessen)
+  region: Hessen
+  lat: 50.64834
+  lon: 9.39189
+- name: LEONHARD WEISS GmbH & Co. KG
+  ort: Langen Langen
+  region: Hessen
+  lat: 49.99663
+  lon: 8.65451
+- name: LEONI Bordnetz-Systeme GmbH
+  ort: Kitzingen Kitzingen
+  region: Bayern
+  lat: 49.74126
+  lon: 10.18653
+- name: LISI AUTOMOTIVE KKP GmbH & Co. KG
+  ort: Mellrichstadt Mellrichstadt
+  region: Bayern
+  lat: 50.439
+  lon: 10.30483
+- name: LLE Elektrotechnik GmbH
+  ort: Kirtorf Kirtorf
+  region: Hessen
+  lat: 50.76218
+  lon: 9.12266
+- name: LTI Motion GmbH
+  ort: Lahnau Lahnau
+  region: Hessen
+  lat: 50.58466
+  lon: 8.54571
+- name: LUBRICANT CONSULT GmbH (Gesellschaft für Schmier- und grenzflächenaktive Stoffe)
+  ort: Maintal Maintal
+  region: Hessen
+  lat: 50.14208
+  lon: 8.79737
+- name: Labelident GmbH
+  ort: Schweinfurt Schweinfurt
+  region: Bayern
+  lat: 50.01842
+  lon: 10.21217
+- name: Labor L+S AG
+  ort: Bad Bocklet Bad Bocklet, OT Großenbrach
+  region: Bayern
+  lat: 50.24627
+  lon: 10.07224
+- name: Laderma GmbH & Co. KG
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.11637
+  lon: 8.72636
+- name: Lahnau Akustik GmbH
+  ort: Lahnau Lahnau
+  region: Hessen
+  lat: 50.57831
+  lon: 8.5718
+- name: Lather Kommunikation GmbH & Co. KG
+  ort: Lohra Lohra-Damm
+  region: Hessen
+  lat: 50.72676
+  lon: 8.65073
+- name: Lehnhardt-Feinmechanik-GmbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55378
+  lon: 8.52939
+- name: Lehren- und Meßgerätewerk Schmalkalden GmbH
+  ort: Schmalkalden Schmalkalden
+  region: Thüringen
+  lat: 50.73278
+  lon: 10.4603
+- name: Leica Camera Aktiengesellschaft
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55353
+  lon: 8.53539
+- name: Leica Microsystems CMS GmbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55207
+  lon: 8.49841
+- name: 'Linde + Wiemann SE & Co. KG (vormals: Linde + Wiemann GmbH-Kommanditgesellschaft)'
+  ort: Dillenburg Dillenburg
+  region: Hessen
+  lat: 50.7461
+  lon: 8.27724
+- name: Linde Hydraulics GmbH & Co. KG
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.94827
+  lon: 9.09737
+- name: Linde Material Handling GmbH
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.96819
+  lon: 9.15365
+- name: Litens Automotive GmbH
+  ort: Gelnhausen Gelnhausen
+  region: Hessen
+  lat: 50.18817
+  lon: 9.17526
+- name: Loka Metallverarbeitung GmbH
+  ort: Hüttenberg Hüttenberg
+  region: Hessen
+  lat: 50.51622
+  lon: 8.58109
+- name: 'Low & Bonar GmbH (vormals: Mehler Texnologies GmbH)'
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.54387
+  lon: 9.6815
+- name: Lufthansa AirPlus Servicekarten GmbH
+  ort: Neu-Isenburg Neu-Isenburg
+  region: Hessen
+  lat: 50.04536
+  lon: 8.68609
+- name: Lutz-Pumpen GmbH
+  ort: Wertheim Wertheim
+  region: Baden-Württemberg
+  lat: 49.78051
+  lon: 9.50732
+- name: 'Lydall Gutsche GmbH & Co. KG (vormals: Lydall Technical Nonwoven - Gutsche GmbH & Co. KG)'
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.56808
+  lon: 9.67546
+- name: M + R Dichtungstechnik GmbH
+  ort: Seligenstadt Seligenstadt
+  region: Hessen
+  lat: 50.04987
+  lon: 8.92738
+- name: M-Sicherheitsbeteiligungen GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.54514
+  lon: 9.6826
+- name: 'M. Röhner Beteiligungs GmbH (vormals: R + S solutions Beteiligungs GmbH)'
+  ort: 'Fulda Fulda (vormals: Hamburg)'
+  region: Hessen
+  lat: 50.55184
+  lon: 9.64192
+- name: MAHLE GmbH
+  ort: Wölfersheim Wölfersheim
+  region: Hessen
+  lat: 50.42291
+  lon: 8.85584
+- name: MAINGAU Energie GmbH
+  ort: Obertshausen Obertshausen
+  region: Hessen
+  lat: 50.07077
+  lon: 8.85452
+- name: MATO GmbH & Co. KG
+  ort: Mühlheim am Main Mühlheim
+  region: Hessen
+  lat: 50.11442
+  lon: 8.85289
+- name: MAXWORX GmbH
+  ort: Bad Soden-Salmünster Bad Soden-Salmünster
+  region: Hessen
+  lat: 50.2893
+  lon: 9.36626
+- name: MBS CNC-Technologie GmbH
+  ort: Freigericht Freigericht
+  region: Hessen
+  lat: 50.14595
+  lon: 9.10879
+- name: MERO-TSK Prichsenstadt
+  ort: Prichsenstadt Prichsenstadt
+  region: Bayern
+  lat: 49.81955
+  lon: 10.34431
+- name: MERO-TSK WÜ
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.72852
+  lon: 9.96399
+- name: MESSER Group GmbH
+  ort: Groß-Umstadt Groß-Umstadt
+  region: Hessen
+  lat: 49.87256
+  lon: 8.91319
+- name: MICROBOX GmbH
+  ort: Bad Nauheim Bad Nauheim
+  region: Hessen
+  lat: 50.37496
+  lon: 8.75112
+- name: MIWE Michael Wenz GmbH
+  ort: Arnstein Arnstein
+  region: Bayern
+  lat: 49.97166
+  lon: 9.98345
+- name: MR-Datentechnik Vertriebs- und Service GmbH
+  ort: Würzburg Nürnberg
+  region: Bayern
+  lat: 49.79744
+  lon: 9.99923
+- name: MSB GmbH & Co. KG
+  ort: Bischofsheim i.d.Rhön Bischofsheim a. d. Rhön
+  region: Bayern
+  lat: 50.40226
+  lon: 10.01075
+- name: MTS Maschinenbau und Fertigungstechnik GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.14622
+  lon: 8.9257
+- name: MULTA MEDIO Informationssysteme AG
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.79846
+  lon: 9.94416
+- name: MULTIVISIO Kommunikations- gesellschaft mbH
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.11605
+  lon: 8.72547
+- name: MWB Vertrieb GmbH
+  ort: Kalbach Kalbach
+  region: Hessen
+  lat: 50.42552
+  lon: 9.64566
+- name: Maag Automatik GmbH
+  ort: Großostheim Großostheim-Ringheim
+  region: Bayern
+  lat: 49.93259
+  lon: 9.04231
+- name: Madinger GmbH Industry Services
+  ort: Euerbach Euerbach
+  region: Bayern
+  lat: 50.06307
+  lon: 10.14363
+- name: 'Magna Electronics Europe GmbH & Co. OHG (vormals: Magna Electronics Europe GmbH & Co. KG)'
+  ort: Sailauf Sailauf
+  region: Bayern
+  lat: 50.00363
+  lon: 9.23877
+- name: Magna Exteriors GmbH
+  ort: Sailauf Sailauf
+  region: Bayern
+  lat: 50.00295
+  lon: 9.23979
+- name: Magna Exteriors Systems GmbH
+  ort: Obertshausen Obertshausen
+  region: Hessen
+  lat: 50.08289
+  lon: 8.87222
+- name: Magna International (Germany) GmbH
+  ort: Sailauf Sailauf
+  region: Bayern
+  lat: 50.00295
+  lon: 9.23979
+- name: Magna Mirrors GmbH & Co. KG
+  ort: Dorfprozelten Dorfprozelten
+  region: Bayern
+  lat: 49.77572
+  lon: 9.39526
+- name: Mahr GmbH
+  ort: Göttingen Göttingen
+  region: Niedersachsen
+  lat: 51.52472
+  lon: 9.92602
+- name: Maincor Rohrsysteme GmbH & Co. KG
+  ort: Schweinfurt Schweinfurt
+  region: Bayern
+  lat: 50.02656
+  lon: 10.2389
+- name: Mainfranken Netze GmbH
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.79986
+  lon: 9.9376
+- name: Mainfrucht GmbH & Co. KG
+  ort: Gochsheim Gochsheim
+  region: Bayern
+  lat: 50.02531
+  lon: 10.26395
+- name: Mainova Aktiengesellschaft
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.11886
+  lon: 8.63399
+- name: Mainsite GmbH & Co. KG
+  ort: 'Erlenbach am Main Erlenbach am Main (vormals: Erlenbach)'
+  region: Bayern
+  lat: 49.83174
+  lon: 9.14896
+- name: 'Malvern Panalytical GmbH (vormals: PANalytical GmbH)'
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.29438
+  lon: 9.51278
+- name: Management Services Helwig Schmitt Gesellschaft mit beschränkter Haftung
+  ort: Hofgeismar Hofgeismar
+  region: Hessen
+  lat: 51.49183
+  lon: 9.385
+- name: Maschinenfabrik Reinhausen GmbH
+  ort: Oberursel Oberursel
+  region: Hessen
+  lat: 50.20729
+  lon: 8.59808
+- name: Maschinenfabrik Wüstwillenroth GmbH
+  ort: Birstein Birstein
+  region: Hessen
+  lat: 50.42305
+  lon: 9.32125
+- name: Massoth Elektroschaltanlagen- bau GmbH & Co. KG
+  ort: Rodgau Rodgau
+  region: Hessen
+  lat: 50.02437
+  lon: 8.87954
+- name: Max Lamb GmbH & Co. KG
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.81279
+  lon: 9.97839
+- name: Medienkontor M. Angelstein GmbH & Co. KG
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.54928
+  lon: 9.66132
+- name: Mehler Vario System GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.54514
+  lon: 9.6826
+- name: Meiknologic GmbH
+  ort: Großkrotzenburg Großkrotzenburg
+  region: Hessen
+  lat: 50.0842
+  lon: 8.98681
+- name: Mercedes-Benz Group AG
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.33173
+  lon: 9.47941
+- name: Mettler-Toledo Management Holding Deutschland GmbH
+  ort: Gießen Gießen
+  region: Hessen
+  lat: 50.61187
+  lon: 8.70444
+- name: 'Miba Industrial Bearings Germany GmbH (vormals: John Crane Bearing Technology GmbH)'
+  ort: Göttingen Göttingen
+  region: Niedersachsen
+  lat: 51.54869
+  lon: 9.89676
+- name: Micro Maschinenbau Gesellschaft für Planung Konstruktion und Fertigung mbH
+  ort: Gelnhausen Gelnhausen
+  region: Hessen
+  lat: 50.20536
+  lon: 9.16563
+- name: Micromata GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.30465
+  lon: 9.44471
+- name: Milupa GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.55729
+  lon: 9.59696
+- name: Minebea Intec Bovenden GmbH & Co. KG
+  ort: Bovenden Bovenden
+  region: Niedersachsen
+  lat: 51.59677
+  lon: 9.92394
+- name: Minimax Viking GmbH
+  ort: Dreieich Dreieich
+  region: Hessen
+  lat: 50.00788
+  lon: 8.69169
+- name: Mino Automation GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.54696
+  lon: 9.67464
+- name: Multi-Color Hann. Muenden Germany GmbH
+  ort: Hann. Münden Hann. Münden
+  region: Niedersachsen
+  lat: 51.41321
+  lon: 9.65067
+- name: Musashi Hann. Muenden Forging GmbH
+  ort: Hann. Münden Hann. Münden
+  region: Niedersachsen
+  lat: 51.43051
+  lon: 9.65046
+- name: Musashi Hann. Muenden Machining GmbH & Co. KG
+  ort: Hann. Münden Hann. Münden
+  region: Niedersachsen
+  lat: 51.43051
+  lon: 9.65046
+- name: 'Musashi Leinefelde Forging GmbH & Co. KG (vormals: MS Umformtechnik GmbH & Co KG)'
+  ort: Leinefelde-Worbis Leinefelde-Worbis
+  region: Thüringen
+  lat: 51.38999
+  lon: 10.33963
+- name: Möller Medical GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.53619
+  lon: 9.69775
+- name: Müller Modell- und Formenbau GmbH & Co. KG
+  ort: Biedenkopf Biedenkopf
+  region: Hessen
+  lat: 50.92419
+  lon: 8.47106
+- name: N3 Engine Overhaul Services GmbH & Co. KG
+  ort: Arnstadt Arnstadt
+  region: Thüringen
+  lat: 50.85836
+  lon: 10.94417
+- name: NETZSCH Trockenmahltechnik GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.1299
+  lon: 8.97727
+- name: NORMA Germany GmbH
+  ort: Maintal Maintal
+  region: Hessen
+  lat: 50.14519
+  lon: 8.83189
+- name: NORMA Group SE
+  ort: Maintal Maintal
+  region: Hessen
+  lat: 50.14587
+  lon: 8.83227
+- name: NTG Neue Technologien GmbH & Co. KG
+  ort: Gelnhausen Gelnhausen
+  region: Hessen
+  lat: 50.18611
+  lon: 9.17853
+- name: Naxos-Diskus Schleifmittelwerke GmbH
+  ort: Butzbach Butzbach
+  region: Hessen
+  lat: 50.43286
+  lon: 8.68293
+- name: Neumayer Tekfor Rotenburg GmbH
+  ort: Rotenburg an der Fulda Rotenburg a. d. Fulda
+  region: Hessen
+  lat: 51.00091
+  lon: 9.73026
+- name: Nikolaus Sorg GmbH & Co. KG
+  ort: Lohr am Main Lohr am Main
+  region: Bayern
+  lat: 50.00397
+  lon: 9.58362
+- name: Noell Crane Systems GmbH
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.81134
+  lon: 9.88779
+- name: Nord-Micro GmbH & Co. OHG
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.14373
+  lon: 8.74585
+- name: Novelis Deutschland GmbH
+  ort: Göttingen Göttingen
+  region: Niedersachsen
+  lat: 51.54916
+  lon: 9.93098
+- name: Noxum GmbH
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.7976
+  lon: 9.94822
+- name: ODW ELEKTRIK GmbH
+  ort: Steinau an der Straße Steinau an der Straße
+  region: Hessen
+  lat: 50.31544
+  lon: 9.43409
+- name: OHP-Off Highway Powertrain
+  ort: Hasselroth Hasselroth
+  region: Hessen
+  lat: 50.16321
+  lon: 9.07612
+- name: OPS-INGERSOLL Funkenerosion GmbH
+  ort: Burbach Burbach
+  region: Nordrhein-Westfalen
+  lat: 50.75274
+  lon: 8.09936
+- name: OPTIMA-Maschinenfabrik Dr. Bühler GmbH & Co. KG
+  ort: Gladenbach Gladenbach
+  region: Hessen
+  lat: 50.74862
+  lon: 8.61205
+- name: Oculus Optikgeräte GmbH
+  ort: Wetzlar Dutenhofen
+  region: Hessen
+  lat: 50.55671
+  lon: 8.59314
+- name: Odenwald Faserplattenwerk GmbH
+  ort: Amorbach Amorbach
+  region: Bayern
+  lat: 49.6468
+  lon: 9.22116
+- name: Omniplast GmbH
+  ort: Ehringshausen Ehringshausen
+  region: Hessen
+  lat: 50.59582
+  lon: 8.38332
+- name: Ondal Holding GmbH
+  ort: Hünfeld Hünfeld
+  region: Hessen
+  lat: 50.68539
+  lon: 9.75952
+- name: Opel Automobile GmbH
+  ort: Eisenach Eisenach
+  region: Thüringen
+  lat: 50.98145
+  lon: 10.30087
+- name: OptoTech Optikmaschinen GmbH
+  ort: Wettenberg Wettenberg
+  region: Hessen
+  lat: 50.61844
+  lon: 8.66098
+- name: 'Osborn GmbH (vormals: Jason GmbH)'
+  ort: Burgwald Burgwald
+  region: Hessen
+  lat: 51.01676
+  lon: 8.75631
+- name: OsthessenNetz GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.54755
+  lon: 9.67369
+- name: Oswald Elektromotoren GmbH
+  ort: Miltenberg Miltenberg
+  region: Bayern
+  lat: 49.71084
+  lon: 9.246
+- name: PALLMANN GmbH
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.80065
+  lon: 10.00081
+- name: PF Schweißtechnologie GmbH
+  ort: Alsfeld Alsfeld
+  region: Hessen
+  lat: 50.7397
+  lon: 9.2545
+- name: PHP Fibers GmbH
+  ort: Obernburg am Main Obernburg a. Main
+  region: Bayern
+  lat: 49.84588
+  lon: 9.14869
+- name: 'PIA Automation Bad Neustadt GmbH (vormals: Preh IMA Automation GmbH)'
+  ort: Bad Neustadt an der Saale Bad Neustadt a.d. Saale
+  region: Bayern
+  lat: 50.34015
+  lon: 10.22271
+- name: PIC GmbH
+  ort: Langenselbold Langenselbold
+  region: Hessen
+  lat: 50.1779
+  lon: 9.05141
+- name: PIV Drives GmbH
+  ort: Bad Homburg vor der Höhe Bad Homburg v. d. Höhe
+  region: Hessen
+  lat: 50.21902
+  lon: 8.61434
+- name: POLYMA Energiesysteme GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.28188
+  lon: 9.5216
+- name: POMA Systems GmbH
+  ort: Kalbach Kalbach
+  region: Hessen
+  lat: 50.42903
+  lon: 9.64523
+- name: PRÄWEMA Antriebstechnik GmbH
+  ort: Eschwege Eschwege
+  region: Hessen
+  lat: 51.17677
+  lon: 10.02932
+- name: PSI Logistics GmbH
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.98633
+  lon: 9.15629
+- name: PVA TePla AG
+  ort: Wettenberg Wettenberg
+  region: Hessen
+  lat: 50.60805
+  lon: 8.64814
+- name: Pacoma GmbH
+  ort: Eschwege Eschwege
+  region: Hessen
+  lat: 51.19645
+  lon: 10.0287
+- name: Paidi Holding GmbH
+  ort: Hafenlohr Hafenlohr
+  region: Bayern
+  lat: 49.88
+  lon: 9.59969
+- name: Pall GmbH
+  ort: Dreieich Dreieich
+  region: Hessen
+  lat: 50.03263
+  lon: 8.70688
+- name: Pan Dacom Direkt GmbH
+  ort: Dreieich Dreieich
+  region: Hessen
+  lat: 50.02829
+  lon: 8.70405
+- name: Panasonic Automotive Systems Europe GmbH
+  ort: Langen Langen (Hessen)
+  region: Hessen
+  lat: 50.00266
+  lon: 8.65672
+- name: Parker Hannifin Manufacturing Germany GmbH & Co. KG
+  ort: Mücke Mücke
+  region: Hessen
+  lat: 50.6131
+  lon: 9.02133
+- name: Paul & Co. GmbH & Co. KG
+  ort: Wildflecken Wildflecken
+  region: Bayern
+  lat: 50.37587
+  lon: 9.94657
+- name: Paul GmbH & Co. KG
+  ort: Steinau an der Straße Steinau an der Straße
+  region: Hessen
+  lat: 50.31527
+  lon: 9.44238
+- name: Peikko Deutschland GmbH
+  ort: Waldeck Waldeck-Höringhausen
+  region: Hessen
+  lat: 51.2712
+  lon: 8.97977
+- name: Penny Dialogmarketing & Services GmbH
+  ort: Heusenstamm Heusenstamm
+  region: Hessen
+  lat: 50.05664
+  lon: 8.81925
+- name: Perrin GmbH
+  ort: Nidderau Nidderau
+  region: Hessen
+  lat: 50.24193
+  lon: 8.86834
+- name: Peter Wahl GmbH & Co. KG
+  ort: Kreuzwertheim Kreuzwertheim-Wiebelbach
+  region: Bayern
+  lat: 49.79244
+  lon: 9.52396
+- name: Pfeiffer GmbH & Co. KG
+  ort: Aßlar Aßlar
+  region: Hessen
+  lat: 50.58581
+  lon: 8.46763
+- name: Pfeiffer Vacuum Technology AG
+  ort: Aßlar Aßlar
+  region: Hessen
+  lat: 50.58432
+  lon: 8.47386
+- name: Piller Blowers & Compressors GmbH
+  ort: Moringen Moringen
+  region: Niedersachsen
+  lat: 51.70285
+  lon: 9.86771
+- name: Pitney Bowes Deutschland GmbH
+  ort: Darmstadt Darmstadt
+  region: Hessen
+  lat: 49.8742
+  lon: 8.63112
+- name: Poly-clip System GmbH & Co. KG
+  ort: Hattersheim Hattersheim
+  region: Hessen
+  lat: 50.06513
+  lon: 8.47115
+- name: Poppe GmbH
+  ort: Gießen Gießen
+  region: Hessen
+  lat: 50.57125
+  lon: 8.67852
+- name: Preh GmbH
+  ort: Bad Neustadt an der Saale Bad Neustadt a.d.Saale
+  region: Bayern
+  lat: 50.32025
+  lon: 10.20943
+- name: PrehKeyTec GmbH
+  ort: Mellrichstadt Mellrichstadt
+  region: Bayern
+  lat: 50.42207
+  lon: 10.30673
+- name: ProTAKT Projekte & Business Software Aktiengesellschaft
+  ort: Bad Nauheim Bad Nauheim
+  region: Hessen
+  lat: 50.3786
+  lon: 8.73575
+- name: Procter & Gamble Manufacturing GmbH
+  ort: Marktheidenfeld Marktheidenfeld
+  region: Bayern
+  lat: 49.84784
+  lon: 9.61537
+- name: Putzmeister Holding GmbH
+  ort: Gründau Gründau
+  region: Hessen
+  lat: 50.19851
+  lon: 9.12059
+- name: R + S solutions GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.14389
+  lon: 8.94004
+- name: REBO Lighting & Electronics GmbH
+  ort: Eisenach Eisenach
+  region: Thüringen
+  lat: 50.9931
+  lon: 10.38303
+- name: REV Ritter GmbH
+  ort: Mömbris Mömbris
+  region: Bayern
+  lat: 50.06264
+  lon: 9.16037
+- name: RINGSPANN GmbH
+  ort: Bad Homburg vor der Höhe Bad Homburg vor der Höhe
+  region: Hessen
+  lat: 50.22048
+  lon: 8.60984
+- name: RMG Messtechnik GmbH
+  ort: Butzbach Butzbach
+  region: Hessen
+  lat: 50.43486
+  lon: 8.68814
+- name: RODGAUER BAUSTOFFWERKE GMBH & CO KG
+  ort: Rodgau Rodgau
+  region: Hessen
+  lat: 49.99637
+  lon: 8.90228
+- name: RST STAHLBAU GmbH & Co. KG
+  ort: Niederlauer Niederlauer
+  region: Bayern
+  lat: 50.29449
+  lon: 10.1869
+- name: RTO GmbH
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.12389
+  lon: 8.74334
+- name: RWS-Steuerungsbau GmbH
+  ort: Wächtersbach Wächtersbach
+  region: Hessen
+  lat: 50.25769
+  lon: 9.29448
+- name: Rail Power Systems GmbH
+  ort: Offenbach am Main Offenbach
+  region: Hessen
+  lat: 50.10337
+  lon: 8.75188
+- name: Regiolux GmbH
+  ort: Königsberg in Bayern Königsberg in Bayern
+  region: Bayern
+  lat: 50.08425
+  lon: 10.5629
+- name: Reich GmbH
+  ort: Mellrichstadt Mellrichstadt
+  region: Bayern
+  lat: 50.42415
+  lon: 10.30295
+- name: Reitz Holding GmbH & Co KG
+  ort: Hessisch Lichtenau Hessisch Lichtenau
+  region: Hessen
+  lat: 51.22265
+  lon: 9.70063
+- name: Rheinmetall AG
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.3343
+  lon: 9.47965
+- name: RhönEnergie Effizienz + Service GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.54704
+  lon: 9.67425
+- name: RhönEnergie Fulda GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.54788
+  lon: 9.67458
+- name: RhönEnergie Fulda GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.54788
+  lon: 9.67458
+- name: Rieth Maschinenhandel GmbH
+  ort: Rodgau Rodgau
+  region: Hessen
+  lat: 50.02266
+  lon: 8.90061
+- name: Rohde Schutzgasöfen GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.1487
+  lon: 8.93987
+- name: Rohrleitungsbau Fritz GmbH & Co KG
+  ort: Reiskirchen Reiskirchen
+  region: Hessen
+  lat: 50.55635
+  lon: 8.91092
+- name: Rolls-Royce Deutschland Ltd & Co KG
+  ort: Oberursel Oberursel
+  region: Hessen
+  lat: 50.2157
+  lon: 8.53675
+- name: Roof Systems Germany GmbH
+  ort: Dietzenbach Dietzenbach
+  region: Hessen
+  lat: 50.01258
+  lon: 8.79069
+- name: Roth Präzisionsteile GmbH & Co. KG
+  ort: Hosenfeld Hosenfeld
+  region: Hessen
+  lat: 50.53769
+  lon: 9.48751
+- name: Rovema GmbH
+  ort: Fernwald Fernwald
+  region: Hessen
+  lat: 50.58665
+  lon: 8.76611
+- name: Rowius GmbH
+  ort: Kalbach Kalbach
+  region: Hessen
+  lat: 50.42025
+  lon: 9.63908
+- name: Rudolf-Erich Müller GmbH & Co. KG
+  ort: Münnerstadt Münnerstadt
+  region: Bayern
+  lat: 50.25383
+  lon: 10.18643
+- name: Röder GmbH & Co. KG
+  ort: Biebergemünd Biebergemünd
+  region: Hessen
+  lat: 50.22526
+  lon: 9.2768
+- name: Röder-Präzision Gesellschaft mit beschränkter Haftung
+  ort: Egelsbach Egelsbach
+  region: Hessen
+  lat: 49.96368
+  lon: 8.6419
+- name: Römheld & Moelle Eisengießerei GmbH
+  ort: Mainz Mainz
+  region: Rheinland-Pfalz
+  lat: 50.01915
+  lon: 8.24835
+- name: Römheld GmbH Friedrichshütte
+  ort: Laubach Laubach
+  region: Hessen
+  lat: 50.52174
+  lon: 8.97236
+- name: Rösler Holding GmbH & Co KG
+  ort: Bad Staffelstein Staffelstein
+  region: Bayern
+  lat: 50.12971
+  lon: 11.00782
+- name: Rübsam & Co. Metallwaren GmbH & Co. KG
+  ort: Hünfeld Hünfeld
+  region: Hessen
+  lat: 50.66138
+  lon: 9.74221
+- name: Rühl AG & Co. chemische Fabrik KG
+  ort: Friedrichsdorf Friedrichsdorf
+  region: Hessen
+  lat: 50.25762
+  lon: 8.64282
+- name: S & S Werkzeugbau GmbH
+  ort: Schlitz Schlitz
+  region: Hessen
+  lat: 50.67116
+  lon: 9.55388
+- name: SAE Schaltanlagenbau Erfurt GmbH
+  ort: Erfurt Erfurt
+  region: Thüringen
+  lat: 50.99916
+  lon: 11.03987
+- name: SAEILO GmbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.60646
+  lon: 8.51474
+- name: SAF-HOLLAND GmbH
+  ort: Bessenbach Bessenbach
+  region: Bayern
+  lat: 49.97801
+  lon: 9.25564
+- name: SALT Solutions GmbH
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.79818
+  lon: 9.9467
+- name: SAMSON AKTIENGESELLSCHAFT
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.11787
+  lon: 8.73304
+- name: SAND Profile GmbH
+  ort: Stockstadt am Main Stockstadt a. Main
+  region: Bayern
+  lat: 49.96959
+  lon: 9.07963
+- name: SCHINDLER Handhabetechnik GmbH
+  ort: Bad Königshofen im Grabfeld Bad Königshofen i Grabfeld
+  region: Bayern
+  lat: 50.29405
+  lon: 10.47228
+- name: SCHRAMM Coatings GmbH
+  ort: Offenbach am Main Offenbach am Main
+  region: Hessen
+  lat: 50.1071
+  lon: 8.78746
+- name: SCHWAB VERSAND GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.12267
+  lon: 8.92
+- name: SCHWIND eye-tech-solutions GmbH & Co. KG
+  ort: Kleinostheim Kleinostheim
+  region: Bayern
+  lat: 49.99385
+  lon: 9.06717
+- name: SD Worx GmbH
+  ort: Dreieich Dreieich
+  region: Hessen
+  lat: 50.02544
+  lon: 8.70188
+- name: SEHO Systems GmbH
+  ort: Kreuzwertheim Kreuzwertheim
+  region: Bayern
+  lat: 49.7903
+  lon: 9.52555
+- name: SENERTEC Kraft-Wärme-Energiesysteme GmbH
+  ort: Schweinfurt Schweinfurt
+  region: Bayern
+  lat: 50.03593
+  lon: 10.23006
+- name: SHS Lochbleche Butzbach GmbH
+  ort: Butzbach Butzbach
+  region: Hessen
+  lat: 50.44101
+  lon: 8.66901
+- name: SICO D. u. E. Simon GmbH
+  ort: Steinau an der Straße Steinau an der Straße
+  region: Hessen
+  lat: 50.31851
+  lon: 9.44085
+- name: SIGNUS Medizintechnik GmbH
+  ort: Alzenau Alzenau
+  region: Bayern
+  lat: 50.08818
+  lon: 9.04969
+- name: SIKA Dr. Siebert & Kühn GmbH & Co. KG
+  ort: Kaufungen Oberkaufungen
+  region: Hessen
+  lat: 51.28514
+  lon: 9.63534
+- name: SIKA Systemtechnik GmbH
+  ort: Kaufungen Kaufungen
+  region: Hessen
+  lat: 51.28514
+  lon: 9.63534
+- name: SINOVO business solutions GmbH
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.15748
+  lon: 8.74392
+- name: SKF GmbH
+  ort: Schweinfurt Schweinfurt
+  region: Bayern
+  lat: 50.03163
+  lon: 10.23028
+- name: SKZ - Das Kunststoff-Zentrum
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.79423
+  lon: 9.91524
+- name: SMA Solar Technology AG
+  ort: Niestetal Niestetal
+  region: Hessen
+  lat: 51.31694
+  lon: 9.53994
+- name: SMC Deutschland GmbH
+  ort: Egelsbach Egelsbach
+  region: Hessen
+  lat: 49.96011
+  lon: 8.66815
+- name: SOFORT GmbH
+  ort: Linden Gießen
+  region: Hessen
+  lat: 50.52579
+  lon: 8.66562
+- name: SPARKASSE HANAU
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.13239
+  lon: 8.91779
+- name: SPIE SAG GmbH
+  ort: Biebertal Biebertal
+  region: Hessen
+  lat: 50.61173
+  lon: 8.6152
+- name: SRAM Deutschland GmbH
+  ort: Schweinfurt Schweinfurt
+  region: Bayern
+  lat: 50.01931
+  lon: 10.21405
+- name: SRG Schulz + Rackow Gastechnik GmbH
+  ort: Gladenbach Gladenbach
+  region: Hessen
+  lat: 50.77109
+  lon: 8.58989
+- name: SSD Präzisionstechnik GmbH & Co. KG
+  ort: Mücke Mücke
+  region: Hessen
+  lat: 50.64345
+  lon: 9.03947
+- name: SSI Schäfer Automation GmbH
+  ort: Giebelstadt Giebelstadt
+  region: Bayern
+  lat: 49.68772
+  lon: 9.95138
+- name: STADA Arzneimittel Aktiengesellschaft
+  ort: Bad Vilbel Bad Vilbel
+  region: Hessen
+  lat: 50.20236
+  lon: 8.7455
+- name: STATEK Stanzereitechnik Gesellschaft mit beschränkter Haftung
+  ort: Maintal Maintal
+  region: Hessen
+  lat: 50.13026
+  lon: 8.86162
+- name: STI Corrugated GmbH
+  ort: Alsfeld Alsfeld
+  region: Hessen
+  lat: 50.74173
+  lon: 9.28901
+- name: STI Grebenhain Display + Verpackung GmbH
+  ort: Grebenhain Grebenhain
+  region: Hessen
+  lat: 50.516
+  lon: 9.30921
+- name: STI Lauterbach Verpackung GmbH
+  ort: Lauterbach Lauterbach
+  region: Hessen
+  lat: 50.63182
+  lon: 9.38436
+- name: SYKO Gesellschaft für Leistungselektronik mbH
+  ort: Mainhausen Mainhausen
+  region: Hessen
+  lat: 50.01762
+  lon: 8.99491
+- name: Saar-Blankstahl GmbH
+  ort: Burbach Burbach
+  region: Nordrhein-Westfalen
+  lat: 50.74684
+  lon: 8.08609
+- name: Safran Cabin Germany GmbH
+  ort: Herborn Herborn
+  region: Hessen
+  lat: 50.68458
+  lon: 8.3074
+- name: Sandvik Tooling Deutschland GmbH
+  ort: Frankfurt am Main Frankfurt
+  region: Hessen
+  lat: 50.12891
+  lon: 8.59835
+- name: Sandvik Tooling Deutschland GmbH
+  ort: Schmalkalden Schmalkalden
+  region: Thüringen
+  lat: 50.72215
+  lon: 10.35355
+- name: Sarnow-Präzisions-GmbH
+  ort: Mainhausen Mainhausen
+  region: Hessen
+  lat: 50.01566
+  lon: 8.99963
+- name: Sartorius Stedim Systems GmbH
+  ort: Guxhagen Guxhagen
+  region: Hessen
+  lat: 51.20109
+  lon: 9.46936
+- name: Satisloh GmbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.53756
+  lon: 8.5325
+- name: Saurer Technologies GmbH & Co. KG
+  ort: Hammelburg Hammelburg
+  region: Bayern
+  lat: 50.12157
+  lon: 9.8824
+- name: Sauter - Cumulus GmbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55222
+  lon: 8.49628
+- name: Schenck Process GmbH
+  ort: Darmstadt Darmstadt
+  region: Hessen
+  lat: 49.88264
+  lon: 8.6403
+- name: Scherer Feinbau GmbH
+  ort: Alzenau Alzenau
+  region: Bayern
+  lat: 50.09693
+  lon: 9.05127
+- name: Schindler Deutschland AG & Co. KG
+  ort: Mainz Mainz
+  region: Rheinland-Pfalz
+  lat: 49.95584
+  lon: 8.25419
+- name: Schindler Deutschland AG & Co. KG (Konzern)
+  ort: Mainz Mainz
+  region: Rheinland-Pfalz
+  lat: 49.95584
+  lon: 8.25419
+- name: Schlemmer GmbH
+  ort: Haßfurt Haßfurt
+  region: Bayern
+  lat: 50.03274
+  lon: 10.53167
+- name: Schmelzmetall Deutschland GmbH
+  ort: Steinfeld Steinfeld-Hausen
+  region: Bayern
+  lat: 49.95873
+  lon: 9.66203
+- name: Schmidt Automation GmbH & Co. KG
+  ort: Neuhof Neuhof
+  region: Hessen
+  lat: 50.46914
+  lon: 9.63492
+- name: Schmitter Hydraulik GmbH
+  ort: Hammelburg Hammelburg
+  region: Bayern
+  lat: 50.12734
+  lon: 9.93014
+- name: SchmitterGroup GmbH
+  ort: Thüngen Thüngen
+  region: Bayern
+  lat: 49.94062
+  lon: 9.85573
+- name: Schmitz Cargobull Aktiengesellschaft
+  ort: Gotha Gotha
+  region: Thüringen
+  lat: 50.96212
+  lon: 10.72141
+- name: Schmoll Maschinen GmbH
+  ort: Rödermark Rödermark
+  region: Hessen
+  lat: 49.96928
+  lon: 8.82695
+- name: Schneider Electric Automation GmbH
+  ort: Marktheidenfeld Marktheidenfeld
+  region: Bayern
+  lat: 49.8226
+  lon: 9.55563
+- name: Schneider GmbH & Co. KG
+  ort: Fronhausen Fronhausen
+  region: Hessen
+  lat: 50.71114
+  lon: 8.70341
+- name: Scholl Energie- und Steuerungstechnik GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.55184
+  lon: 9.64192
+- name: Schonlau-Werke
+  ort: Geseke Geseke
+  region: Nordrhein-Westfalen
+  lat: 51.64237
+  lon: 8.50354
+- name: Schuler Pressen GmbH
+  ort: Erfurt Erfurt
+  region: Thüringen
+  lat: 51.00655
+  lon: 11.03698
+- name: Schunk GmbH
+  ort: Heuchelheim Heuchelheim
+  region: Hessen
+  lat: 50.59002
+  lon: 8.63395
+- name: Sebald Maschinenbau GmbH
+  ort: Salz Salz
+  region: Bayern
+  lat: 50.29686
+  lon: 10.1923
+- name: Seidel GmbH & Co KG
+  ort: Marburg Marburg
+  region: Hessen
+  lat: 50.81824
+  lon: 8.76999
+- name: Seipp & Kehl GmbH
+  ort: Gemünden (Felda) Gemünden (Felda)
+  region: Hessen
+  lat: 50.68823
+  lon: 9.04714
+- name: Selzer Fertigungstechnik
+  ort: Driedorf Driedorf
+  region: Hessen
+  lat: 50.64186
+  lon: 8.22278
+- name: Senior Flexonics GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.29291
+  lon: 9.47592
+- name: Sensitec GmbH
+  ort: Lahnau Lahnau
+  region: Hessen
+  lat: 50.58315
+  lon: 8.54231
+- name: Sequatec STP PRECISION COMPONENTS GmbH
+  ort: Bad Emstal Bad Emstal
+  region: Hessen
+  lat: 51.25051
+  lon: 9.26487
+- name: Siegwerk Büdingen GmbH
+  ort: Büdingen Büdingen
+  region: Hessen
+  lat: 50.27243
+  lon: 9.11187
+- name: Siemens AG
+  ort: Bad Neustadt an der Saale Bad Neustadt an der Saale
+  region: Bayern
+  lat: 50.33705
+  lon: 10.21818
+- name: Siemens AG
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.07878
+  lon: 8.62994
+- name: Siemens Healthcare Diagnostics Products GmbH
+  ort: Marburg Marburg
+  region: Hessen
+  lat: 50.82108
+  lon: 8.74705
+- name: 'Sika Automotive Frankfurt-Worms GmbH (vormals: Faist ChemTec GmbH)'
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.13533
+  lon: 8.73568
+- name: Simon Möhringer Anlagenbau GmbH
+  ort: Wiesentheid Wiesentheid
+  region: Bayern
+  lat: 49.78465
+  lon: 10.34064
+- name: Singulus Technologies AG
+  ort: Kahl am Main Kahl am Main
+  region: Bayern
+  lat: 50.08345
+  lon: 9.00177
+- name: Smiths Heimann GmbH
+  ort: Wiesbaden Wiesbaden
+  region: Hessen
+  lat: 50.05796
+  lon: 8.28774
+- name: Smurfit Kappa GmbH Werk Hanau
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.1458
+  lon: 8.93723
+- name: Softplan Informatik GmbH
+  ort: Wettenberg Wettenberg
+  region: Hessen
+  lat: 50.61972
+  lon: 8.66527
+- name: Solupharm Pharmazeutische Erzeugnisse GmbH
+  ort: Melsungen Melsungen
+  region: Hessen
+  lat: 51.1091
+  lon: 9.5599
+- name: Spang & Brands GmbH
+  ort: Friedrichsdorf Friedrichsdorf
+  region: Hessen
+  lat: 50.25773
+  lon: 8.6599
+- name: Sparkasse Langen - Seligenstadt
+  ort: Seligenstadt Seligenstadt
+  region: Hessen
+  lat: 50.04576
+  lon: 8.95903
+- name: Stadtwerke Bad Kissingen GmbH
+  ort: Bad Kissingen Bad Kissingen
+  region: Bayern
+  lat: 50.18737
+  lon: 10.07723
+- name: Stadtwerke Hanau Gesellschaft mit beschränkter Haftung
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.13451
+  lon: 8.91618
+- name: Stadtwerke Mühlheim am Main Gesellschaft mit beschränkter Haftung
+  ort: Mühlheim am Main Mühlheim am Main
+  region: Hessen
+  lat: 50.12447
+  lon: 8.84146
+- name: Stahlbau Ebert GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.14117
+  lon: 8.92554
+- name: Stanz- und Preßwerk Lindner GmbH & Co KG
+  ort: Kassel Niestetal
+  region: Hessen
+  lat: 51.31174
+  lon: 9.54309
+- name: Stark Deutschland GmbH
+  ort: Offenbach am Main Offenbach am Main
+  region: Hessen
+  lat: 50.11317
+  lon: 8.75543
+- name: Steelpaint GmbH
+  ort: Kitzingen Kitzingen
+  region: Bayern
+  lat: 49.75432
+  lon: 10.17027
+- name: Stefan Wahl Schaltanlagen GmbH
+  ort: Eichenzell Eichenzell
+  region: Hessen
+  lat: 50.47886
+  lon: 9.76056
+- name: Stegmann Systems GmbH
+  ort: Rodgau Rodgau
+  region: Hessen
+  lat: 50.01286
+  lon: 8.8849
+- name: Steinigke Showtechnic GmbH
+  ort: Waldbüttelbrunn Waldbüttelbrunn
+  region: Bayern
+  lat: 49.79337
+  lon: 9.84349
+- name: Stiebel-Eltron GmbH&Co KG
+  ort: Eschwege Eschwege
+  region: Hessen
+  lat: 51.19256
+  lon: 10.02681
+- name: StorTrec AG
+  ort: Niedernberg Niedernberg
+  region: Bayern
+  lat: 49.91761
+  lon: 9.1286
+- name: 'SumiRiko AVS Germany GmbH (vormals: Anvis Deutschland GmbH)'
+  ort: Steinau an der Straße Steinau an der Straße
+  region: Hessen
+  lat: 50.31799
+  lon: 9.43732
+- name: Sun Chemical Group GmbH
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.13525
+  lon: 8.74219
+- name: Synventive Fertigungstechnik GmbH
+  ort: Bensheim Bensheim
+  region: Hessen
+  lat: 49.69965
+  lon: 8.61237
+- name: Synventive Molding Solutions GmbH
+  ort: Bensheim Bensheim
+  region: Hessen
+  lat: 49.69965
+  lon: 8.61237
+- name: Systeex Brandschutzsysteme GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.12026
+  lon: 8.92348
+- name: Sälzer Gesellschaft mit beschränkter Haftung
+  ort: Marburg Marburg
+  region: Hessen
+  lat: 50.78904
+  lon: 8.73509
+- name: TAKATA - PETRI Aktiengesellschaft
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.96432
+  lon: 9.1449
+- name: TANTEC GmbH
+  ort: 'Gelnhausen Gelnhausen (vormals: Hanau)'
+  region: Hessen
+  lat: 50.20522
+  lon: 9.16881
+- name: TB&C Holding GmbH
+  ort: Herborn Herborn
+  region: Hessen
+  lat: 50.70038
+  lon: 8.30836
+- name: TBi Industries GmbH
+  ort: Fernwald Fernwald
+  region: Hessen
+  lat: 50.54896
+  lon: 8.7701
+- name: TEXPA Maschinenbau GmbH & Co. KG
+  ort: Saal a.d.Saale Saal a.d.Saale
+  region: Bayern
+  lat: 50.31322
+  lon: 10.36806
+- name: TLT-Turbo GmbH
+  ort: Bad Hersfeld Bad Hersfeld
+  region: Hessen
+  lat: 50.85827
+  lon: 9.73925
+- name: TROX X-FANS GmbH
+  ort: Bad Hersfeld Bad Hersfeld
+  region: Hessen
+  lat: 50.85289
+  lon: 9.68789
+- name: TRW Automotive Safety Systems GmbH
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.96474
+  lon: 9.1522
+- name: Tadiran Batteries GmbH
+  ort: Büdingen Büdingen
+  region: Hessen
+  lat: 50.27357
+  lon: 9.11448
+- name: TeKo Gesellschaft für Kältetechnik mbH
+  ort: Altenstadt Altenstadt
+  region: Hessen
+  lat: 50.27416
+  lon: 8.96641
+- name: Technolit GmbH
+  ort: Großenlüder Großenlüder
+  region: Hessen
+  lat: 50.59937
+  lon: 9.53457
+- name: Tecosol GmbH
+  ort: Ochsenfurt Ochsenfurt
+  region: Bayern
+  lat: 49.66396
+  lon: 10.06747
+- name: Tecuplast Kunststoffverarbeitung und Formenbau GmbH
+  ort: Partenstein Partenstein
+  region: Bayern
+  lat: 50.03699
+  lon: 9.52485
+- name: Teknos Deutschland GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.54169
+  lon: 9.68289
+- name: Telespazio VEGA Deutschland GmbH
+  ort: Darmstadt Darmstadt
+  region: Hessen
+  lat: 49.87187
+  lon: 8.62668
+- name: Temmler Pharma GmbH & Co. KG
+  ort: Marburg Marburg
+  region: Hessen
+  lat: 50.78913
+  lon: 8.76437
+- name: Texmer GmbH & Co. KG
+  ort: Petersberg Petersberg
+  region: Hessen
+  lat: 50.55397
+  lon: 9.76234
+- name: 'The FilamentFactory GmbH (vormals: DuraFiber Technologies (DFT) GmbH)'
+  ort: Bad Hersfeld Bad Hersfeld
+  region: Hessen
+  lat: 50.85916
+  lon: 9.71079
+- name: Thermo Electron LED GmbH
+  ort: Langenselbold Langenselbold
+  region: Hessen
+  lat: 50.1783
+  lon: 9.01986
+- name: Thomas GmbH
+  ort: Langenselbold Langenselbold
+  region: Hessen
+  lat: 50.16241
+  lon: 9.05005
+- name: Thüringische Weidmüller GmbH
+  ort: Wutha-Farnroda Wutha-Farnroda
+  region: Thüringen
+  lat: 50.95065
+  lon: 10.38932
+- name: Toss GmbH & Co KG Verpackungssysteme
+  ort: Buseck Buseck
+  region: Hessen
+  lat: 50.61185
+  lon: 8.75193
+- name: TransPak AG Fachgroßhandel für Verpackungsmittel
+  ort: Solms Solms
+  region: Hessen
+  lat: 50.55049
+  lon: 8.43082
+- name: Transfertex GmbH & Co. Thermodruck KG
+  ort: Kleinostheim Kleinostheim
+  region: Bayern
+  lat: 50.02419
+  lon: 9.04176
+- name: Trips GmbH
+  ort: Grafenrheinfeld Grafenrheinfeld
+  region: Bayern
+  lat: 49.99413
+  lon: 10.19979
+- name: Tucker GmbH
+  ort: Gießen Gießen
+  region: Hessen
+  lat: 50.59138
+  lon: 8.71495
+- name: TÜV SÜD Product Service GmbH
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.12093
+  lon: 8.74148
+- name: TÜV Technische Überwachung Hessen GmbH
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.19101
+  lon: 8.65104
+- name: UL International Germany GmbH
+  ort: Neu-Isenburg Neu-Isenburg
+  region: Hessen
+  lat: 50.03694
+  lon: 8.60785
+- name: 'UNICOR GmbH (vormals: Unicor Beteiligungs GmbH)'
+  ort: Haßfurt Haßfurt
+  region: Bayern
+  lat: 50.03401
+  lon: 10.53036
+- name: UNITEC Informationssysteme GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.13541
+  lon: 8.91641
+- name: UNIWELL Rohrsysteme GmbH & Co. KG
+  ort: Ebern Ebern
+  region: Bayern
+  lat: 50.11315
+  lon: 10.77849
+- name: Uhlmann & Zacher GmbH
+  ort: Waldbüttelbrunn Waldbüttelbrunn
+  region: Bayern
+  lat: 49.79563
+  lon: 9.8451
+- name: Umicore AG & Co. KG
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.12125
+  lon: 8.97711
+- name: Unicor GmbH
+  ort: Haßfurt Haßfurt
+  region: Bayern
+  lat: 50.03402
+  lon: 10.53076
+- name: Uniflex - Hydraulik GmbH
+  ort: Karben Karben
+  region: Hessen
+  lat: 50.22862
+  lon: 8.761
+- name: Uniper Kraftwerke GmbH
+  ort: Großkrotzenburg Großkrotzenburg
+  region: Hessen
+  lat: 50.08411
+  lon: 8.96419
+- name: Unitymedia GmbH
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.19062
+  lon: 8.65799
+- name: Universitätsklinikum Gießen und Marburg GmbH
+  ort: Gießen Gießen
+  region: Hessen
+  lat: 50.57686
+  lon: 8.6653
+- name: Unterfränkische Überlandzentrale eG
+  ort: Lülsfeld Lülsfeld
+  region: Bayern
+  lat: 49.868
+  lon: 10.32815
+- name: Uponor Beteiligungs GmbH
+  ort: Haßfurt Haßfurt
+  region: Bayern
+  lat: 50.03401
+  lon: 10.53036
+- name: Uth GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.55356
+  lon: 9.6413
+- name: Uwe Weller Feinwerktechnik GmbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55353
+  lon: 8.53539
+- name: VDE Prüf- und Zertifizierungsinstitut GmbH
+  ort: Offenbach am Main Offenbach
+  region: Hessen
+  lat: 50.0873
+  lon: 8.74536
+- name: VIAOPTIC GmbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55327
+  lon: 8.53435
+- name: VIBTECH GmbH & Co KG
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.12114
+  lon: 8.92252
+- name: VINTIN GmbH
+  ort: Sennfeld Sennfeld
+  region: Bayern
+  lat: 50.03596
+  lon: 10.24392
+- name: VISPIRON MOBILITY GmbH
+  ort: Gelnhausen Gelnhausen
+  region: Hessen
+  lat: 50.2042
+  lon: 9.17169
+- name: Vacuumschmelze GmbH & Co. KG
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.13014
+  lon: 8.92899
+- name: Valeo Siemens eAutomotive GmbH
+  ort: Bad Neustadt an der Saale Bad Neustadt an der Saale
+  region: Bayern
+  lat: 50.32827
+  lon: 10.22443
+- name: Ventcon GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.53132
+  lon: 9.68466
+- name: Verifone GmbH
+  ort: Bad Hersfeld Bad Hersfeld
+  region: Hessen
+  lat: 50.87159
+  lon: 9.71126
+- name: Veritas AG
+  ort: Gelnhausen Gelnhausen
+  region: Hessen
+  lat: 50.19708
+  lon: 9.18016
+- name: VetterTec GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.30628
+  lon: 9.5249
+- name: 'Viant Aura GmbH (vormals: Lake Region Medical GmbH)'
+  ort: Aura im Sinngrund Aura im Sinngrund
+  region: Bayern
+  lat: 50.17443
+  lon: 9.57415
+- name: Viessmann Werke GmbH & Co KG
+  ort: Allendorf Allendorf (Eder)
+  region: Hessen
+  lat: 51.02999
+  lon: 8.68721
+- name: 'Vogel Communications Group Verwaltungs GmbH (vormals: Vogel Medien Verwaltungs GmbH)'
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.79739
+  lon: 9.90057
+- name: Vola Plast GmbH & Co. KG
+  ort: Spangenberg Spangenberg
+  region: Hessen
+  lat: 51.11378
+  lon: 9.64789
+- name: Volker Witamwas GmbH
+  ort: Schotten Schotten
+  region: Hessen
+  lat: 50.49707
+  lon: 9.12036
+- name: Volksbank Mittelhessen eG
+  ort: Gießen Gießen
+  region: Hessen
+  lat: 50.57064
+  lon: 8.69299
+- name: Vyaire Medical GmbH
+  ort: Höchberg Höchberg
+  region: Bayern
+  lat: 49.76981
+  lon: 9.86735
+- name: W & K Gesellschaft für Industrietechnik mbH
+  ort: Faulbach Faulbach
+  region: Bayern
+  lat: 49.78918
+  lon: 9.43683
+- name: W-E-G GmbH & Co. KG
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.5667
+  lon: 9.67603
+- name: WALTER Deutschland GmbH
+  ort: Frankfurt am Main Frankfurt
+  region: Hessen
+  lat: 50.12891
+  lon: 8.59835
+- name: WAREMA Kunststofftechnik und Maschinenbau GmbH
+  ort: Marktheidenfeld Marktheidenfeld
+  region: Bayern
+  lat: 49.83188
+  lon: 9.59278
+- name: WAREMA Renkhoff SE
+  ort: Marktheidenfeld Marktheidenfeld
+  region: Bayern
+  lat: 49.84626
+  lon: 9.61434
+- name: WBS Training AG
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.55339
+  lon: 9.68175
+- name: WEBER GmbH
+  ort: Aschaffenburg Aschaffenburg
+  region: Bayern
+  lat: 49.94692
+  lon: 9.09718
+- name: WECO Contact GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.15222
+  lon: 8.93345
+- name: WEGMANN automotive GmbH
+  ort: Veitshöchheim Veitshöchheim
+  region: Bayern
+  lat: 49.83208
+  lon: 9.90751
+- name: WERKSTOFF + FUNKTION Grimmel Wassertechnik GmbH
+  ort: Ober-Mörlen Ober-Mörlen
+  region: Hessen
+  lat: 50.36296
+  lon: 8.69745
+- name: WIKA Alexander Wiegand SE & Co. KG
+  ort: Klingenberg am Main Klingenberg a. Main
+  region: Bayern
+  lat: 49.7818
+  lon: 9.17092
+- name: WINGAS GmbH
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.31333
+  lon: 9.4862
+- name: WITTENSTEIN SE
+  ort: Igersheim Igersheim
+  region: Baden-Württemberg
+  lat: 49.53489
+  lon: 9.85553
+- name: WKT-Letsch Produktions- und Handelsgesellschaft mit beschränkter Haftung
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.11165
+  lon: 8.92967
+- name: Wagner Mess- und Regeltechnik GmbH
+  ort: Offenbach am Main Offenbach am Main
+  region: Hessen
+  lat: 50.08547
+  lon: 8.83289
+- name: 'Wagner eCommerce Group GmbH (vormals: Handelshaus Wagner GmbH)'
+  ort: Nidda Nidda
+  region: Hessen
+  lat: 50.40478
+  lon: 8.99601
+- name: Walcher GmbH & Co. KG
+  ort: Eichenzell Eichenzell
+  region: Hessen
+  lat: 50.48512
+  lon: 9.71876
+- name: Waldaschaff Automotive GmbH
+  ort: Waldaschaff Waldaschaff
+  region: Bayern
+  lat: 49.97789
+  lon: 9.28316
+- name: Waldrich Siegen Werkzeugmaschinen Gesellschaft mit beschränkter Haftung
+  ort: Burbach Burbach
+  region: Nordrhein-Westfalen
+  lat: 50.75274
+  lon: 8.09936
+- name: Walter Hunger GmbH & Co. KG - Hydraulikzylinderwerk
+  ort: Lohr am Main Lohr
+  region: Bayern
+  lat: 49.98008
+  lon: 9.58278
+- name: Wassermann Technologie GmbH
+  ort: Eichenzell Eichenzell
+  region: Hessen
+  lat: 50.48257
+  lon: 9.72851
+- name: Web Arts AG
+  ort: Bad Homburg vor der Höhe Bad Homburg vor der Höhe
+  region: Hessen
+  lat: 50.22381
+  lon: 8.60655
+- name: Wedia Germany GmbH
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.13103
+  lon: 8.76275
+- name: Wehner Metalltechnik GmbH & Co. KG
+  ort: Kalbach Kalbach
+  region: Hessen
+  lat: 50.41395
+  lon: 9.71836
+- name: Weihrauch & Weihrauch Sport GmbH + Co KG
+  ort: Mellrichstadt Mellrichstadt
+  region: Bayern
+  lat: 50.42227
+  lon: 10.30149
+- name: Weinrich GmbH & Co. KG
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.53404
+  lon: 9.67893
+- name: Weisensee Warmpressteile GmbH
+  ort: Eichenzell Eichenzell
+  region: Hessen
+  lat: 50.48095
+  lon: 9.73157
+- name: Weiss Spindeltechnologie GmbH
+  ort: Maroldsweisach Maroldsweisach
+  region: Bayern
+  lat: 50.1961
+  lon: 10.65476
+- name: Weiss Technik GmbH
+  ort: Reiskirchen Reiskirchen
+  region: Hessen
+  lat: 50.59929
+  lon: 8.85901
+- name: Wenzel Group GmbH & Co. KG
+  ort: Wiesthal Wiesthal
+  region: Bayern
+  lat: 50.01688
+  lon: 9.43264
+- name: Weppler Filter Gesellschaft mit beschränkter Haftung
+  ort: Oberursel Oberursel (Taunus)
+  region: Hessen
+  lat: 50.18855
+  lon: 8.58556
+- name: Werkzeugbau Holzhauer GmbH
+  ort: Malsfeld Malsfeld
+  region: Hessen
+  lat: 51.08772
+  lon: 9.49169
+- name: Werkzeugmaschinenbau Ziegenhain GmbH
+  ort: Schwalmstadt Schwalmstadt
+  region: Hessen
+  lat: 50.91986
+  lon: 9.22907
+- name: Werner Schmid GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.53814
+  lon: 9.68299
+- name: Werth Messtechnik GmbH
+  ort: Gießen Gießen
+  region: Hessen
+  lat: 50.57346
+  lon: 8.69128
+- name: Weso Aurorahütte GmbH
+  ort: Gladenbach Gladenbach
+  region: Hessen
+  lat: 50.75588
+  lon: 8.57252
+- name: Wieland Holding GmbH
+  ort: Bamberg Bamberg
+  region: Bayern
+  lat: 49.90613
+  lon: 10.89578
+- name: Wilhelm Brandenburg GmbH & Co. oHG
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.13184
+  lon: 8.74231
+- name: Willich Elektrotechnik GmbH
+  ort: Bebra Bebra
+  region: Hessen
+  lat: 50.9664
+  lon: 9.7879
+- name: Winkel-Schweißtechnik Gesellschaft mit beschränkter Haftung
+  ort: Freigericht Freigericht
+  region: Hessen
+  lat: 50.1451
+  lon: 9.1094
+- name: Winora Staiger GmbH
+  ort: Sennfeld Sennfeld
+  region: Bayern
+  lat: 50.03621
+  lon: 10.24488
+- name: WireMasters GmbH & Co. KG
+  ort: Gelnhausen Gelnhausen
+  region: Hessen
+  lat: 50.18581
+  lon: 9.17285
+- name: Woco Industrietechnik GmbH
+  ort: Bad Soden-Salmünster Bad Soden-Salmünster
+  region: Hessen
+  lat: 50.28452
+  lon: 9.3767
+- name: Wolz Nautic GmbH & Co. KG
+  ort: Gaukönigshofen Gaukönigshofen
+  region: Bayern
+  lat: 49.64052
+  lon: 9.99469
+- name: Würzburger Versorgungs- und Verkehrs - Gesellschaft mit beschränkter Haftung
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.79983
+  lon: 9.93696
+- name: Xerox Dienstleistungs- gesellschaft mbH
+  ort: Frankfurt am Main Frankfurt am Main
+  region: Hessen
+  lat: 50.19096
+  lon: 8.65114
+- name: Xylem Water Solutions Deutschland GmbH
+  ort: Großostheim Großostheim
+  region: Bayern
+  lat: 49.89921
+  lon: 9.0493
+- name: YAVEON AG
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.79906
+  lon: 9.94675
+- name: Yildiz CNC Drehtechnik GmbH & Co. KG
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.547
+  lon: 8.48003
+- name: YouCard Kartensysteme GmbH
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55246
+  lon: 8.51006
+- name: ZF Friedrichshafen AG ZF Aftermarket
+  ort: Schweinfurt Schweinfurt
+  region: Bayern
+  lat: 50.02964
+  lon: 10.21453
+- name: Zeppelin GmbH
+  ort: Rödermark Rödermark
+  region: Hessen
+  lat: 49.9823
+  lon: 8.8037
+- name: Zodiac Pool Deutschland GmbH
+  ort: Großostheim Großostheim
+  region: Bayern
+  lat: 49.92975
+  lon: 9.07101
+- name: Zöller-Kipper Gesellschaft mit beschränkter Haftung
+  ort: Mainz Mainz
+  region: Rheinland-Pfalz
+  lat: 49.96131
+  lon: 8.31027
+- name: active logistics AG
+  ort: Niederaula Niederaula
+  region: Hessen
+  lat: 50.79029
+  lon: 9.59562
+- name: axicorp GmbH
+  ort: Friedrichsdorf Friedrichsdorf
+  region: Hessen
+  lat: 50.25802
+  lon: 8.65984
+- name: b+m surface systems GmbH
+  ort: Eiterfeld Eiterfeld
+  region: Hessen
+  lat: 50.75918
+  lon: 9.81703
+- name: b.s.u. biebertaler stanz- und umformtechnik GmbH
+  ort: Biebertal Biebertal
+  region: Hessen
+  lat: 50.62551
+  lon: 8.57659
+- name: bedea Berkenhoff & Drebes GmbH
+  ort: Aßlar Aßlar
+  region: Hessen
+  lat: 50.59319
+  lon: 8.45371
+- name: dacoso GmbH
+  ort: Langen Langen (Hessen)
+  region: Hessen
+  lat: 50.00194
+  lon: 8.65741
+- name: dbr phoneConnect Gesellschaft mit beschränkter Haftung Telefon- und Datenverbindung
+  ort: Gelnhausen Gelnhausen
+  region: Hessen
+  lat: 50.18585
+  lon: 9.17601
+- name: die interaktiven GmbH & Co. KG
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.55353
+  lon: 8.53539
+- name: dima GmbH
+  ort: Hanau Hanau
+  region: Hessen
+  lat: 50.14703
+  lon: 8.90042
+- name: dinotec GmbH
+  ort: Maintal Maintal
+  region: Hessen
+  lat: 50.14542
+  lon: 8.79592
+- name: ditec Dichtungstechnik GmbH
+  ort: Kitzingen Kitzingen
+  region: Bayern
+  lat: 49.72252
+  lon: 10.15153
+- name: dormakaba Deutschland GmbH
+  ort: Dreieich Dreieich
+  region: Hessen
+  lat: 50.03226
+  lon: 8.70792
+- name: eResearchTechnology GmbH
+  ort: Estenfeld Estenfeld
+  region: Bayern
+  lat: 49.83829
+  lon: 10.00942
+- name: eibe Produktion + Vertrieb GmbH & Co. KG
+  ort: Röttingen Röttingen
+  region: Bayern
+  lat: 49.51027
+  lon: 9.97326
+- name: einsAmobile GmbH
+  ort: Obertshausen Obertshausen
+  region: Hessen
+  lat: 50.07694
+  lon: 8.87518
+- name: ekom21 - KGRZ Hessen
+  ort: Gießen Gießen
+  region: Hessen
+  lat: 50.59897
+  lon: 8.66107
+- name: eska Kossatz Maschinenbau GmbH
+  ort: Eichenzell Eichenzell
+  region: Hessen
+  lat: 50.482
+  lon: 9.73176
+- name: eska Schneider Lagersysteme GmbH
+  ort: Eichenzell Eichenzell
+  region: Hessen
+  lat: 50.48163
+  lon: 9.73168
+- name: globalcarrier telecom GmbH
+  ort: Steinau an der Straße Steinau an der Straße
+  region: Hessen
+  lat: 50.29853
+  lon: 9.50383
+- name: hofer eds GmbH
+  ort: 'Estenfeld Estenfeld (vormals: Würzburg)'
+  region: Bayern
+  lat: 49.838
+  lon: 10.01027
+- name: ibo Software GmbH
+  ort: Wettenberg Wettenberg
+  region: Hessen
+  lat: 50.60872
+  lon: 8.64833
+- name: imes-icore GmbH
+  ort: Eiterfeld Eiterfeld
+  region: Hessen
+  lat: 50.7564
+  lon: 9.81507
+- name: innoforum GmbH
+  ort: Obertshausen Obertshausen
+  region: Hessen
+  lat: 50.07592
+  lon: 8.87391
+- name: innovation mecom GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.52727
+  lon: 9.6828
+- name: isel Germany AG
+  ort: Eichenzell Eichenzell
+  region: Hessen
+  lat: 50.48207
+  lon: 9.7364
+- name: it-novum GmbH
+  ort: Fulda Fulda
+  region: Hessen
+  lat: 50.544
+  lon: 9.6813
+- name: mainis IT-Service GmbH
+  ort: Offenbach am Main Offenbach am Main
+  region: Hessen
+  lat: 50.11938
+  lon: 8.78544
+- name: manroland sheetfed GmbH
+  ort: Offenbach am Main Offenbach
+  region: Hessen
+  lat: 50.11187
+  lon: 8.80624
+- name: marcapo GmbH
+  ort: Ebern Ebern
+  region: Bayern
+  lat: 50.09819
+  lon: 10.79384
+- name: medDV GmbH
+  ort: Fernwald Fernwald
+  region: Hessen
+  lat: 50.55752
+  lon: 8.78541
+- name: milch & zucker TALENT ACQUISITION & TALENT MANAGEMENT COMPANY AG
+  ort: Gießen Gießen
+  region: Hessen
+  lat: 50.58358
+  lon: 8.64416
+- name: nanoplus Nanosystems and Technologies GmbH
+  ort: Meiningen Meiningen
+  region: Thüringen
+  lat: 50.55842
+  lon: 10.37422
+- name: ovag Energie AG
+  ort: Friedberg Friedberg
+  region: Hessen
+  lat: 50.33466
+  lon: 8.75893
+- name: ovag Netz GmbH
+  ort: Friedberg Friedberg (Hessen)
+  region: Hessen
+  lat: 50.33507
+  lon: 8.75869
+- name: plentysystems AG
+  ort: Kassel Kassel
+  region: Hessen
+  lat: 51.31541
+  lon: 9.48768
+- name: sera GmbH
+  ort: Immenhausen Immenhausen
+  region: Hessen
+  lat: 51.42878
+  lon: 9.46485
+- name: sfm medical devices GmbH
+  ort: Wächtersbach Wächtersbach
+  region: Hessen
+  lat: 50.25794
+  lon: 9.29791
+- name: tech11 GmbH
+  ort: Würzburg Würzburg
+  region: Bayern
+  lat: 49.79764
+  lon: 9.9449
+- name: tecsis GmbH
+  ort: Offenbach am Main Offenbach am Main
+  region: Hessen
+  lat: 50.08357
+  lon: 8.83927
+- name: 'vR production (DUKTUS) gmbh (vormals: Duktus (Production) GmbH)'
+  ort: Wetzlar Wetzlar
+  region: Hessen
+  lat: 50.56081
+  lon: 8.49697
+- name: 'voestalpine BWG GmbH (vormals: voestalpine Bahnsysteme Beteiligungsverwaltung Deutschland GmbH)'
+  ort: Butzbach Butzbach
+  region: Hessen
+  lat: 50.44309
+  lon: 8.66642
+- name: vwd Vereinigte Wirtschaftsdienste GmbH
+  ort: Schweinfurt Schweinfurt
+  region: Bayern
+  lat: 50.05715
+  lon: 10.1962
+- name: xperion Energy & Environment GmbH
+  ort: 'Kassel Kassel (vormals: Herford)'
+  region: Hessen
+  lat: 51.28038
+  lon: 9.50372
