@@ -1,6 +1,72 @@
-###### A. 官网招聘页识别 ######
+###### A. HR4YOU 职位列表探测 ######
+https://rodenstock.hr4you.org/generator.php?id=2030&changelangua   HTTP 200   12976字节 jobid数=0 最终=https://rodenstock.hr4you.org/generator.php?id=2030&changela
+https://rodenstock.hr4you.org/joblist.php?changelanguage=de        HTTP 404   12131字节 jobid数=0 最终=https://rodenstock.hr4you.org/joblist.php?changelanguage=de
+https://rodenstock.hr4you.org/index.php?changelanguage=de          HTTP 200   13330字节 jobid数=0 最终=https://rodenstock.hr4you.org/index.php?changelanguage=de
+https://rodenstock.hr4you.org/                                     HTTP 200   13330字节 jobid数=0 最终=https://rodenstock.hr4you.org/
+https://rodenstock.hr4you.org/joboffers.php                        HTTP 404   12131字节 jobid数=0 最终=https://rodenstock.hr4you.org/joboffers.php
+https://rodenstock.hr4you.org/rss.php                              HTTP 404   12131字节 jobid数=0 最终=https://rodenstock.hr4you.org/rss.php
+https://rodenstock.hr4you.org/feed.php                             HTTP 404   12131字节 jobid数=0 最终=https://rodenstock.hr4you.org/feed.php
 
-###### B. 直接试常见 slug ######
+###### B. 主列表页结构 ######
+HTTP 200 12976 字节
 
-###### C. arbeitnow 里现在有没有 Rodenstock ######
-  命中: 0
+--- 所有 href(去重前20) ---
+['MyFontsWebfontsKit.css', 'https://static.4hr.de/css/webfonts/font-awesome-4.4.0/css/font-awesome.min.css', '//fonts.googleapis.com/css?family=Oswald', 'css/job-basis_new.css', 'css/job-basis-mobile_new.css', '/index_extern.php?sid=2030&changelanguage=de', 'module.php?module=applicant_apply_with_xing&amp;sid=2030', 'generator.php?id=2030&lang=de&pdf=true&intern=', 'https://www.linkedin.com/company/rodenstock/?originalSubdomain=de', 'https://www.facebook.com/Rodenstock', 'https://www.instagram.com/rodenstock_official/', 'https://www.rodenstock.de/de/de/wir-als-arbeitgeber.html#Mitarbeiterangebote', 'https://www.rodenstock.de/karriere-jobs']
+
+--- 含 (m/w/d) 的文本 ---
+['Internationaler Category Manager ICT (m/w/d)', 'Internationaler Category Manager ICT (m/w/d)']
+
+--- class 统计 ---
+[('benefit-icon-align', 24), ('benefit-icon-text', 24), ('benefit-icon', 16), ('application', 2), ('application-xing', 2), ('print', 2), ('textlink', 2), ('content-headline', 2), ('clear-br', 2), ('wrapper', 1), ('job-qr-icons', 1), ('content-wrapper-right-buttons', 1), ('text-company-desc', 1), ('text-job-title', 1), ('text-job-subtitle', 1), ('content-wrapper', 1), ('content-wrapper-left-icons', 1), ('content-left', 1)]
+
+--- 前 2200 字符 ---
+ 
+   
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internationaler Category Manager ICT (m/w/d)</title>
+		<meta name="Author" CONTENT="Rodenstock GmbH">
+		<meta name="Publisher" CONTENT="Rodenstock GmbH">
+		<meta name="Copyright" CONTENT="Rodenstock GmbH">
+		<meta name="Expires" CONTENT="Wed,21 Oct 2026">
+		<meta name="Keywords" CONTENT="Jobs, Stellenangebote, Internationaler Category Manager ICT (m/w/d), München , Rodenstock GmbH">
+		<meta name="Description" CONTENT="Rodenstock GmbH mit Sitz in München sucht eine/n Internationaler Category Manager ICT (m/w/d). Die Stelle ist eine Festanstellung-Stelle.">
+		
+		<meta name="Language" CONTENT="de-DE">
+		<meta http-equiv="language" content="de-DE">
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta http-equiv="Content-Language" content="DE" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+
+               
+        			        <link rel="stylesheet" type="text/css" href="https://static.4hr.de/css/webfonts/font-awesome-4.4.0/css/font-awesome.min.css" />
+		        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+				<link rel="stylesheet" type="text/css" href="css/job-basis_new.css" media="(min-width: 1250px)">
+				<link rel="stylesheet" type="text/css" href="css/job-basis-mobile_new.css" media="(max-width: 1249px)">
+							
+					<style>
+			.job-qr {
+				display: none !important;
+			}
+            .job-qr-icons {
+                display: none !important;
+            }
+			</style>
+		    </head>       
+	<body id="body" onLoad="self.resizeTo( screen.availWidth, screen.availHeight);">
+		<div>
+			<div id="Inhalt"><div class="wrapper">
+<div style="
+                background-image: url(/images/stellentemplates/ro-hr-empfehlungspr-header.jpg);
+                width: 718px;
+                height: 190px;
+                margin: 0 auto;
+                padding:0;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                position: relative;">
+<d
