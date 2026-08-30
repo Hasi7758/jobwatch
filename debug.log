@@ -1,15 +1,58 @@
+字节 25052
 
-===== https://rodenstock.hr4you.org/index_extern.php?sid=2030&changelanguage
-HTTP 200 25052字节 | generator.php?id 出现 0 次, 唯一 0 个
-id样例: []
-链接文字样例:
+=== 全部 href(去重) ===
+   /stylesheet.php
+   /ajax/jquery-ui/1.13-latest/jquery-ui.min.css
+   /ajax/select2/3.4.5/select2.css
+   https://static.4hr.de/css/webfonts/font-awesome-4.4.0/css/font-awesome.min.css
+   /include/clipboard.css
+   /include/jquery/jquery_multiselect.css
+   applicationForm.css.php
 
-===== https://rodenstock.hr4you.org/index_extern.php?changelanguage=de
-HTTP 200 25002字节 | generator.php?id 出现 0 次, 唯一 0 个
-id样例: []
-链接文字样例:
+=== 含 (m/w/d) 文本 ===
+['\n\t\t\t            Bewerbung auf: Internationaler Category Manager ICT (m/w/d)']
 
-===== https://rodenstock.hr4you.org/index.php?changelanguage=de
-HTTP 200 13330字节 | generator.php?id 出现 0 次, 唯一 0 个
-id样例: []
-链接文字样例:
+=== class 统计 ===
+[('applicationFormBlock', 1), ('applicationFormBlockTitle', 1), ('applicationFormRows', 1), ('applicationFormRow', 1), ('applicationFormField width4', 1), ('ui-widget-header ui-corner-all', 1), ('upload-conatainer ui-corner-all', 1), ('ui-widget-header ui-corner-all upload-label', 1), ('required', 1), ('upload-msg-div', 1), ('upload-input', 1), ('uploader-open-button icon', 1), ('uploader-save-button icon', 1), ('upload-result-div', 1), ('uploader-info-div', 1), ('file-list-elem ui-widget-header ui-corner-all', 1), ('ui-icon ui-icon-close', 1), ('ui-state-highlight ui-corner-all', 1), ('ui-icon ui-icon-check', 1), ('ui-state-error ui-corner-all', 1)]
+
+=== 是否 iframe/JS 加载 ===
+iframe: ['about:blank']
+script src: ['/ajax/jquery/3.5-latest/jquery.min.js', '/ajax/updatesession.min.js', '/ajax/jquery-ui/1.13-latest/jquery-ui.min.js', '/ajax/jquery-deserialize.js', '/ajax/jquery.bgiframe_3.0.1.min.js', '/include/localejs/locale.js', '/include/localejs/de/main.js', '/ajax/select2/3.4.5/select2.min.js']
+ajax/fetch: ['module.php', 'module.php', 'module.php', 'upload_ajax.php']
+
+=== 中段 1500 字符(跳过头部) ===
+<body data-lang="de">
+<div id="main">
+<!-- CONTENT ANFANG -->
+<link rel="stylesheet" type="text/css" href="applicationForm.css.php" />
+<!-- CONTENT ANFANG -->
+
+<div id="applicationForm">
+		<div id="applicationFormHeadImage">
+			<img src="images/banner-hr_922x160_verlauf_njl_version2bunt.jpg" alt="Rodenstock" style="width:100%; margin-top:0px; padding-top:0px ;padding-bottom: 5px;" />
+		</div>
+		
+				<div id="applicationFormTitle">
+				 
+					<h1>
+			            Bewerbung auf: Internationaler Category Manager ICT (m/w/d)			        </h1>
+			        <h3>
+			            Schritt 1 von 3			        </h3>
+			       
+			</div>
+				<div id="applicationFormBlocks">
+					<div class="applicationFormBlock">
+						<div class="applicationFormBlockTitle">Dokumentupload</div>
+							<div class="applicationFormRows">
+								<div class="applicationFormRow">
+									<div class="applicationFormField width4">
+							            <h3 class="ui-widget-header ui-corner-all" style="padding: 5px; margin:5px; ">
+							                Bitte laden Sie hier Ihren Lebenslauf hoch.<br /><br />
+							                <span style="font-size: 13px;">
+								            	Ihre Daten werden automatisch aus Ihrem Lebenslauf ausgelesen und in das Bewerbungsformular &uuml;bertragen. Bitte pr&uuml;fen Sie die Daten im Nachgang auf Richtigkeit.<br />
+												Eingescannte Lebensl&auml;ufe k&ouml;nnen nicht erkannt werden.											</span>
+							            </h3>
+							            
+										<div style="width: 350px; margin-left: auto; margin-right: auto; margin-top: 10pt;">
+											<div class="upload-conatainer ui-corner-all" id="upload-container-lebenslauf">
+	<form id="form-lebenslauf" style="display:inline" id="upload-form-lebenslauf" action="upload_ajax.php?action=upload&name=lebenslauf" method="pos
