@@ -41,6 +41,10 @@ except ImportError:
 from names import NameMatcher
 
 
+def _html_unescape(s):
+    return re.sub(r'\s+', ' ', html.unescape(s or '')).strip()
+
+
 BASE = Path(__file__).resolve().parent
 IGM_PATH = BASE / "igmetall.yaml"
 DB_PATH = BASE / "jobs.db"
@@ -484,6 +488,50 @@ def ats_join(slug, name):
     ) for j in items]
 
 
+
+def ats_successfactors(cfg_entry, name):
+    """SAP SuccessFactors 的求职门户(HTML)。解析职位列表页。"""
+    base = cfg_entry["url"].rstrip("/")
+    jobs, seen = [], set()
+    for start in (0, 25, 50, 75):
+        url = f"{base}/search/?q=&locationsearch={quote(cfg_entry.get('location','München'))}&startrow={start}"
+        try:
+            r = session.get(url, timeout=25)
+            if r.status_code != 200:
+                break
+            page = r.text
+        except Exception:
+            break
+        blocks = re.findall(
+            r'href="(/job/[^"]+)"[^>]*>\s*([^<]{4,120}?)\s*</a>(.{0,900}?)(?=href="/job/|</tbody>)',
+            page, re.S)
+        if not blocks:
+            break
+        n_before = len(jobs)
+        for href, title, tail in blocks:
+            jid = href.rstrip("/").split("/")[-1]
+            if jid in seen:
+                continue
+            seen.add(jid)
+            loc = ""
+            m = re.search(r'jobLocation[^>]*>\s*([^<]{2,60})', tail)
+            if m:
+                loc = m.group(1).strip()
+            jobs.append(Job(
+                uid=f"sf:{name}:{jid}",
+                source="SuccessFactors",
+                company=name,
+                title=_html_unescape(title),
+                location=_html_unescape(loc),
+                url=base.split("/search")[0] + href,
+                posted="",
+            ))
+        if len(jobs) == n_before:
+            break
+        time.sleep(0.4)
+    return jobs
+
+
 def ats_workday(cfg_entry, name):
     """Workday 需要 POST,且每家公司的 tenant/site 不同。"""
     url = cfg_entry["url"]          # 例:https://x.wd3.myworkdayjobs.com/wday/cxs/x/Careers/jobs
@@ -491,7 +539,10 @@ def ats_workday(cfg_entry, name):
     jobs, offset = [], 0
     while offset < 400:
         r = session.post(url, json={"appliedFacets": {}, "limit": 20,
-                                    "offset": offset, "searchText": ""},
+                                    "offset": offset,
+                                    "searchText": cfg_entry.get("search", "")},
+                         headers={"Content-Type": "application/json",
+                                  "Accept": "application/json"},
                          timeout=25)
         r.raise_for_status()
         data = r.json()
@@ -534,6 +585,8 @@ def fetch_companies():
         try:
             if ats == "workday":
                 out += ats_workday(c, name)
+            elif ats == "successfactors":
+                out += ats_successfactors(c, name)
             elif ats in ATS_FETCHERS:
                 out += ATS_FETCHERS[ats](c["slug"], name)
             else:

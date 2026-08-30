@@ -54,5 +54,13 @@ companies:
 - name: Steadforce GmbH
   ats: personio
   slug: steadforce
+- name: Airbus
+  ats: workday
+  url: https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus/jobs
+  search: München
+- name: Knorr-Bremse
+  ats: successfactors
+  url: https://careers.knorr-bremse.com
+  location: München
 
 # Workday 格式: {name: 公司, ats: workday, url: https://x.wdN.myworkdayjobs.com/wday/cxs/x/SITE/jobs}
