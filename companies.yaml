@@ -1,4 +1,22 @@
 # 由 discover_all.py 自动生成/合并。手工加 Workday 公司也写在这里,格式见文件末注释。
-companies: []
+companies:
+- name: Webasto
+  ats: personio
+  slug: webasto
+- name: Brainlab
+  ats: smartrecruiters
+  slug: brainlab
+- name: Isar Aerospace
+  ats: greenhouse
+  slug: isaraerospace
+- name: Konux
+  ats: greenhouse
+  slug: konux
+- name: Proglove
+  ats: personio
+  slug: proglove
+- name: Magirus
+  ats: personio
+  slug: magirus
 
 # Workday 格式: {name: 公司, ats: workday, url: https://x.wdN.myworkdayjobs.com/wday/cxs/x/SITE/jobs}
