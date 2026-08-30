@@ -1,17 +1,19 @@
-· BMW Group                  未识别
-· MAN Truck & Bus            未识别
-· MTU Aero Engines           未识别
-· KraussMaffei               未识别
-· KUKA                       未识别
-✓ Airbus                     workday          ('ag', 'wd3', 'Airbus')
-    发现于 https://www.airbus.com/en/careers
-· Siemens                    未识别
-· Rohde & Schwarz            未识别
-✓ Knorr-Bremse               successfactors   ('performancemanager5',)
-    发现于 https://careers.knorr-bremse.com/?locale=de_DE
-✓ Linde Material Handling    workday          ('kiongroup', 'wd3', 'de-DE')
-    发现于 https://www.linde-mh.de/karriere/
-· RENK                       未识别
-· Wacker Chemie              未识别
-· Siltronic                  未识别
-· ARRI                       未识别
+########## Workday CXS 接口 ##########
+[Airbus] HTTP 200
+   总数=67 本页=20
+     · Praktikant Talent Acquisition (d/m/w) | München Area | Posted 2 Days Ago
+     · SAP Basis Consultant:In / SAP Administrator:In (d/w/m) | 2 Locations | Posted 2 Days Ago
+     · Junior Solution Architect – Cloud-Native, IaaS & AI Inf | 3 Locations | Posted 3 Days Ago
+     · SAP BI Technology Specialist in Germany  (d/f/m) | 2 Locations | Posted 5 Days Ago
+[KION/Linde] HTTP 404
+    {"errorCode":"S21","errorCaseId":"7A6DD7MTG8QUAM","httpStatus":404,"message":"not found: Job_Posting_Site_ID\u003dde-DE","messageParams":{}}
+[KION alt] HTTP 200
+   总数=0 本页=0
+
+########## Knorr-Bremse SuccessFactors ##########
+https://careers.knorr-bremse.com/search/?q=&locationsearch=M -> HTTP 200, 210550 字节
+   职位样例: ['Total Rewards Professional Corporate (m/w/d)', 'Total Rewards Professional Corporate (m/w/d)', 'Global Learning &amp; Leadership Development Professional (m/w/d)', 'Global Learning &amp; Leadership Development Professional (m/w/d)', 'Werkstudent Global CVS Financial M&amp;A &amp; PMI (m/w/d)']
+   含 RSS: False | 含 /job/: 100
+https://performancemanager5.successfactors.eu/xi/ats/jobrequ -> HTTP 200, 25894 字节
+   职位样例: []
+   含 RSS: False | 含 /job/: 0
