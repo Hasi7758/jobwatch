@@ -1,0 +1,19 @@
+name: debug
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  dbg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install requests
+      - run: python debug_remote.py > debug.log 2>&1 || true
+      - run: |
+          git config user.name jobwatch-bot
+          git config user.email actions@users.noreply.github.com
+          git add -A && git commit -m debug || true
+          git push
