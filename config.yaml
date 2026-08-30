@@ -68,7 +68,9 @@ location:
 
 # ---------- 联邦劳动局官方接口 ----------
 arbeitsagentur:
-  enabled: true
+  # 注意:该官方接口封锁了 GitHub 服务器的 IP 段(全托管模式下拿不到),
+  # 在自己电脑上运行时可以改回 true。
+  enabled: false
   city: "München"
   radius_km: 25
   # 抓最近几天发布的。设 2 是为了容错(跨时区、周末补录),
@@ -94,6 +96,11 @@ employers:
   aliases:
     "Bayerische Motoren Werke": "BMW AG"
     "Maschinenfabrik Augsburg-Nürnberg": "MAN Truck & Bus SE"
+
+# ---------- arbeitnow.com 公开源(GitHub 可达) ----------
+arbeitnow:
+  enabled: true
+  pages: 6        # 每页约100条,按创建时间倒序,6页足够覆盖一天
 
 # ---------- 推送(可选) ----------
 # 不开的话就每天打开 digest.html 看。

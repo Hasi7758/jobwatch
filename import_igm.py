@@ -62,6 +62,69 @@ REGION_KEYS = ["bundesland", "region", "bezirk", "land", "state", "gebiet",
                "tarifgebiet", "tarifbezirk"]
 
 
+
+# ---------------------------------------------------------------- HTML 表格解析
+# 该站的数据不是 JSON,是直接写在首页里的一张 <table>(tablefilter.js 筛选)。
+# 列:Bundesland | Kreis | Stadt/Gemeinde | Unternehmen | Links | ... | Ort (Werk) | Lat | Lon
+
+import html as _html
+
+def _strip_tags(s):
+    s = re.sub(r"<[^>]+>", " ", s or "")
+    s = _html.unescape(s).replace("\u00ad", "")   # 软连字符
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def parse_html_table(page):
+    thead = re.search(r"<thead.*?</thead>", page, re.S)
+    if not thead:
+        return None
+    headers = [_strip_tags(h).lower()
+               for h in re.findall(r"<th[^>]*>(.*?)</th>", thead.group(0), re.S)]
+
+    def col(*needles):
+        for i, h in enumerate(headers):
+            if any(n == h for n in needles):
+                return i
+        for i, h in enumerate(headers):
+            if any(n in h for n in needles):
+                return i
+        return None
+
+    i_name = col("unternehmen", "firma", "company")
+    i_land = col("bundesland")
+    i_stadt = col("stadt / gemeinde", "stadt", "gemeinde")
+    i_werk = col("ort (werk)", "werk")
+    i_lat, i_lon = col("lat"), col("lon")
+    if i_name is None:
+        return None
+
+    out = []
+    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", page, re.S):
+        tds = re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)
+        if len(tds) <= i_name:
+            continue
+
+        def cell(i):
+            return _strip_tags(tds[i]) if i is not None and i < len(tds) else ""
+
+        name = cell(i_name)
+        if not name:
+            continue
+        e = {"name": name}
+        ort = " ".join(x for x in [cell(i_stadt), cell(i_werk)] if x)
+        if ort:
+            e["ort"] = ort
+        if cell(i_land):
+            e["region"] = cell(i_land)
+        try:
+            e["lat"], e["lon"] = float(cell(i_lat)), float(cell(i_lon))
+        except (ValueError, TypeError):
+            pass
+        out.append(e)
+    return out if len(out) >= 20 else None
+
+
 # ---------------------------------------------------------------- 自动探测
 
 def try_json(url):
@@ -83,6 +146,11 @@ def auto_discover():
         html = S.get(SITE, timeout=20).text
     except Exception as e:
         sys.exit(f"抓不到首页: {e}\n改用手动模式,见文件顶部说明。")
+
+    tbl = parse_html_table(html)
+    if tbl:
+        print(f"  ✓ 首页 HTML 表格解析成功: {len(tbl)} 家公司")
+        return tbl
 
     # 直接在 HTML 里出现的 .json
     urls = []
@@ -168,6 +236,15 @@ def pick_key(records, candidates):
             if c in k:
                 return k
     return None
+
+
+def apply_region(entries, region_filter):
+    if not region_filter:
+        return entries
+    keep = [e for e in entries
+            if region_filter.lower() in f"{e.get('ort','')} {e.get('region','')}".lower()]
+    print(f"地区过滤 '{region_filter}': 保留 {len(keep)} / {len(entries)}")
+    return keep
 
 
 def extract(records, region_filter=None):
@@ -261,13 +338,25 @@ def main():
     args = ap.parse_args()
 
     if args.cmd == "auto":
-        save(extract(auto_discover(), args.region))
+        recs = auto_discover()
+        if recs and isinstance(recs[0], dict) and "name" in recs[0] and "lat" in str(recs[0].keys()) + "lat":
+            pass
+        if recs and all("name" in r for r in recs[:5]):
+            save(apply_region(recs, args.region))
+        else:
+            save(extract(recs, args.region))
 
     elif args.cmd == "file":
         p = Path(args.path)
         if not p.exists():
             sys.exit(f"找不到 {p}")
-        raw = json.loads(p.read_text(encoding="utf-8"))
+        txt = p.read_text(encoding="utf-8")
+        if txt.lstrip().startswith("<"):
+            tbl = parse_html_table(txt)
+            if tbl:
+                print(f"HTML 表格: {len(tbl)} 家公司")
+                save(apply_region(tbl, args.region)); return
+        raw = json.loads(txt)
         recs = find_records(raw)
         if not recs:
             print("自动定位数组失败,顶层结构:")

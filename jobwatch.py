@@ -290,6 +290,50 @@ def fetch_arbeitsagentur(cfg):
     return out
 
 
+
+# ----------------------------------------------------------------------------
+# 来源 1b:arbeitnow.com 公开 API(GitHub 服务器可达,含真实创建时间)
+# ----------------------------------------------------------------------------
+
+def fetch_arbeitnow(cfg):
+    ac = cfg.get("arbeitnow") or {}
+    if not ac.get("enabled", True):
+        return []
+    out = []
+    for page in range(1, int(ac.get("pages", 6)) + 1):
+        try:
+            r = session.get("https://www.arbeitnow.com/api/job-board-api",
+                            params={"page": page}, timeout=25)
+            if r.status_code != 200:
+                print(f"  [arbeitnow] HTTP {r.status_code}")
+                break
+            items = r.json().get("data") or []
+        except Exception as e:
+            print(f"  [arbeitnow] 请求失败: {e}")
+            break
+        for j in items:
+            ts = j.get("created_at")
+            posted = ""
+            if isinstance(ts, (int, float)):
+                posted = datetime.fromtimestamp(ts, timezone.utc).date().isoformat()
+            loc = j.get("location") or ""
+            if j.get("remote"):
+                loc += " remote"
+            out.append(Job(
+                uid=f"an:{j.get('slug')}",
+                source="Arbeitnow",
+                company=j.get("company_name") or "—",
+                title=j.get("title") or "—",
+                location=loc,
+                url=j.get("url") or "",
+                posted=posted,
+            ))
+        if not items:
+            break
+        time.sleep(0.3)
+    return out
+
+
 # ----------------------------------------------------------------------------
 # 来源 2:公司自己的 ATS 接口(比任何聚合平台都早)
 # ----------------------------------------------------------------------------
@@ -653,6 +697,11 @@ def cmd_run(cfg):
     print("抓取联邦劳动局…")
     raw = fetch_arbeitsagentur(cfg)
     print(f"  拿到 {len(raw)} 条")
+
+    print("抓取 arbeitnow…")
+    an = fetch_arbeitnow(cfg)
+    print(f"  拿到 {len(an)} 条")
+    raw += an
 
     print("抓取公司 ATS…")
     company_jobs = fetch_companies()

@@ -29,7 +29,7 @@ jobs:
         run: |
           if [ ! -f igmetall.yaml ]; then
             set +e
-            python import_igm.py auto --region bayern > import.log 2>&1
+            python import_igm.py auto > import.log 2>&1
             echo "exit_code=$?" >> import.log
             set -e
             cat import.log
