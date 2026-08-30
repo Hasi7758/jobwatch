@@ -62,5 +62,8 @@ companies:
   ats: successfactors
   url: https://careers.knorr-bremse.com
   location: München
+- name: BMW Group
+  ats: bmw
+  filter: location_DE
 
 # Workday 格式: {name: 公司, ats: workday, url: https://x.wdN.myworkdayjobs.com/wday/cxs/x/SITE/jobs}

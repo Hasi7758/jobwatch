@@ -489,6 +489,78 @@ def ats_join(slug, name):
 
 
 
+
+# ----------------------------------------------------------------------------
+# BMW:自建 jobfinder 接口。BMW 服务器屏蔽数据中心 IP(GitHub 直连必超时),
+# 只能经公共代理中转;代理不稳定,失败就跳过本次,不影响其它源。
+# ----------------------------------------------------------------------------
+
+PROXIES = [
+    lambda u: "https://api.allorigins.win/raw?url=" + quote(u, safe=""),
+    lambda u: "https://api.codetabs.com/v1/proxy?quest=" + quote(u, safe=""),
+    lambda u: "https://corsproxy.io/?" + quote(u, safe=""),
+]
+
+
+def _via_proxy(url, timeout=45):
+    """依次尝试各代理,返回首个看起来正常的响应文本。"""
+    for mk in PROXIES:
+        try:
+            r = session.get(mk(url), timeout=timeout)
+        except Exception:
+            continue
+        if r.status_code != 200 or len(r.text) < 400:
+            continue
+        low = r.text[:600].lower()
+        if "error code 5" in low or "connection timed out" in low or "<title>allorigins" in low:
+            continue
+        return r.text
+    return None
+
+
+def ats_bmw(cfg_entry, name):
+    base = cfg_entry.get("url") or (
+        "https://www.bmwgroup.jobs/de/de/_jcr_content/main/layoutcontainer/"
+        "jobfinder30_copy.jobfinder_table.content.html")
+    jobs, seen = [], set()
+    for row in (0, 40, 80):
+        url = f"{base}?filterSearch={cfg_entry.get('filter','location_DE')}&rowIndex={row}&blockCount=40"
+        page = _via_proxy(url)
+        if not page:
+            print("  [BMW] 代理不可用,本次跳过")
+            break
+        found = 0
+        for href, block in re.findall(r'href="([^"]*?/jobs?/[^"]+)"(.{0,800}?)(?=href="|$)', page, re.S):
+            title = ""
+            m = re.search(r">\s*([^<>]{8,120})\s*<", block)
+            if m:
+                title = _html_unescape(m.group(1))
+            if not title or len(title) < 6:
+                continue
+            jid = href.rstrip("/").split("/")[-1].split("?")[0]
+            if jid in seen:
+                continue
+            seen.add(jid)
+            loc = ""
+            ml = re.search(r"(M\u00fcnchen|Munich|Dingolfing|Landshut|Regensburg|Berlin|Leipzig)", block)
+            if ml:
+                loc = ml.group(1)
+            jobs.append(Job(
+                uid=f"bmw:{jid}",
+                source="BMW",
+                company="BMW Group",
+                title=title,
+                location=loc or "Deutschland",
+                url=href if href.startswith("http") else "https://www.bmwgroup.jobs" + href,
+                posted="",
+            ))
+            found += 1
+        if found == 0:
+            break
+        time.sleep(1.0)
+    return jobs
+
+
 def ats_successfactors(cfg_entry, name):
     """SAP SuccessFactors 的求职门户(HTML)。解析职位列表页。"""
     base = cfg_entry["url"].rstrip("/")
@@ -587,6 +659,8 @@ def fetch_companies():
                 out += ats_workday(c, name)
             elif ats == "successfactors":
                 out += ats_successfactors(c, name)
+            elif ats == "bmw":
+                out += ats_bmw(c, name)
             elif ats in ATS_FETCHERS:
                 out += ATS_FETCHERS[ats](c["slug"], name)
             else:
