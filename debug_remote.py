@@ -1,35 +1,29 @@
 #!/usr/bin/env python3
 import re, requests
+from urllib.parse import urljoin
 S = requests.Session()
-S.headers.update({"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"})
+S.headers.update({"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0"})
 
-print("##### 1. 名单站表格结构 #####")
-h = S.get("https://arbeitgeberliste.netlify.app/", timeout=30).text
-print("总长:", len(h), "| table数:", h.count("<table"), "| tr数:", h.count("<tr"))
-m = re.search(r'<thead.*?</thead>', h, re.S)
-print("THEAD:", (m.group(0)[:800].replace("\n"," ") if m else "无 thead"))
-rows = re.findall(r'<tr[^>]*>.*?</tr>', h, re.S)
-print(f"共 {len(rows)} 行,第2~4行原文:")
-for r in rows[1:4]:
-    print("  ", r[:500].replace("\n", " "))
-
-print()
-print("##### 2. 替代职位源测试 #####")
-try:
-    r = S.get("https://www.arbeitnow.com/api/job-board-api", timeout=20)
-    print("arbeitnow HTTP", r.status_code)
-    if r.status_code == 200:
-        d = r.json(); jobs = d.get("data", [])
-        print("  字段:", list(jobs[0].keys()) if jobs else "空")
-        muc = [j for j in jobs if "münchen" in str(j.get("location","")).lower() or "munich" in str(j.get("location","")).lower()]
-        print(f"  本页 {len(jobs)} 条, 慕尼黑 {len(muc)} 条, 样例:", (muc or jobs)[0].get("title","")[:60])
-except Exception as e:
-    print("arbeitnow 异常:", e)
-
-for name, url in [("AA www域", "https://www.arbeitsagentur.de/jobsuche/"),
-                  ("AA rest 根", "https://rest.arbeitsagentur.de/")]:
-    try:
-        r = S.get(url, timeout=15)
-        print(f"{name}: HTTP {r.status_code}, {len(r.text)} 字节")
-    except Exception as e:
-        print(f"{name}: 异常 {type(e).__name__}")
+URL = "https://arbeitgeberliste.netlify.app/interaktive-karte/unternehmen-mit-ig-metall-flaechentarif-oder-haustarif-sowie-ig-bce"
+r = S.get(URL, timeout=30)
+h = r.text
+print(f"地图页 HTTP {r.status_code}, {len(h)} 字节")
+print("script src:", re.findall(r'<script[^>]+src=["\']([^"\']+)["\']', h))
+print("内联script数:", len(re.findall(r'<script(?![^>]*src)', h)))
+print("geojson/json 引用:", list(set(re.findall(r'["\'\(]([^"\'\)\s]{2,150}\.(?:geo)?json)["\'\)]', h)))[:15])
+print("fetch调用:", list(set(re.findall(r'fetch\(\s*["\'`]([^"\'`]{3,150})["\'`]', h)))[:15])
+print("umap特征:", "umap" in h.lower(), "| leaflet:", "leaflet" in h.lower(), "| L.marker数:", h.count("L.marker"), "| circleMarker:", h.count("circleMarker"))
+# 数据若内嵌:找大数组
+for pat in ['[{"', "[{'", 'var data', 'const data', 'addLayer', 'L.geoJSON', 'L.geoJson']:
+    i = h.find(pat)
+    if i >= 0:
+        print(f"\n--- 首个 {pat!r} @ {i},上下600字符 ---")
+        print(h[max(0,i-100):i+500].replace("\n", " "))
+# 内联 script 逐个报尺寸
+for m in re.finditer(r'<script(?![^>]*src)[^>]*>(.*?)</script>', h, re.S):
+    body = m.group(1)
+    if len(body) > 500:
+        print(f"\n=== 内联script {len(body)} 字节, 开头400: ===")
+        print(body[:400].replace("\n"," "))
+        js_refs = list(set(re.findall(r'["\'`]([^"\'`\s]{2,150}\.(?:geo)?json)["\'`]', body)))
+        if js_refs: print("  其中json引用:", js_refs[:15])
