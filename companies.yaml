@@ -18,5 +18,41 @@ companies:
 - name: Magirus
   ats: personio
   slug: magirus
+- name: Robert Bosch GmbH
+  ats: smartrecruiters
+  slug: robertbosch
+- name: Continental Conti Temic microelectronic GmbH
+  ats: smartrecruiters
+  slug: continental
+- name: Jungheinrich Moosburg AG & Co.KG
+  ats: greenhouse
+  slug: jungheinrich
+- name: SONA BLW Präzisionsschmiede GmbH
+  ats: ashby
+  slug: sona
+- name: Ampack-Ammann GmbH & Co. KG
+  ats: personio
+  slug: ampack
+- name: KERN Microtechnik GmbH
+  ats: personio
+  slug: kern-microtechnik
+- name: BBG GmbH & Co. KG
+  ats: personio
+  slug: bbg
+- name: Sitec Aerospace GmbH
+  ats: recruitee
+  slug: sitec
+- name: Planatol GmbH
+  ats: recruitee
+  slug: planatol
+- name: Turner & Townsend GmbH
+  ats: smartrecruiters
+  slug: turnertownsend
+- name: AERO-Bildungs GmbH
+  ats: lever
+  slug: aero
+- name: Steadforce GmbH
+  ats: personio
+  slug: steadforce
 
 # Workday 格式: {name: 公司, ats: workday, url: https://x.wdN.myworkdayjobs.com/wday/cxs/x/SITE/jobs}
