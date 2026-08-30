@@ -1,57 +1,35 @@
 #!/usr/bin/env python3
-"""远程诊断:在 GitHub runner 上探明两处故障的真实原因。输出到 stdout。"""
-import re, requests, json
-from urllib.parse import urljoin
-
+import re, requests
 S = requests.Session()
-UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-S.headers.update({"User-Agent": UA})
+S.headers.update({"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"})
 
-print("########## A. Arbeitsagentur ##########")
-base_params = {"wo": "München", "umkreis": 25, "size": 2, "page": 1}
-variants = [
-    ("v4 + X-API-Key",      "https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs", {"X-API-Key": "jobboerse-jobsuche"}),
-    ("v4 无key",             "https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs", {}),
-    ("v4 app-UA",           "https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs", {"X-API-Key": "jobboerse-jobsuche", "User-Agent": "Jobsuche/1130 CFNetwork/1494 Darwin/23.4.0"}),
-    ("v5 + X-API-Key",      "https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v5/jobs", {"X-API-Key": "jobboerse-jobsuche"}),
-    ("v4 clientId header",  "https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs", {"OAuthAccessToken": "", "X-API-Key": "c003a37f-024f-462a-b36d-b001be4cd24a"}),
-]
-for name, url, hdr in variants:
-    try:
-        r = S.get(url, params=base_params, headers=hdr, timeout=20)
-        body = r.text[:280].replace("\n", " ")
-        print(f"[{name}] HTTP {r.status_code} | server={r.headers.get('server','')} | body: {body}")
-        if r.status_code == 200:
-            d = r.json()
-            print(f"    -> OK! keys={list(d)[:6]}, 总数={d.get('maxErgebnisse')}")
-    except Exception as e:
-        print(f"[{name}] 异常: {type(e).__name__} {e}")
+print("##### 1. 名单站表格结构 #####")
+h = S.get("https://arbeitgeberliste.netlify.app/", timeout=30).text
+print("总长:", len(h), "| table数:", h.count("<table"), "| tr数:", h.count("<tr"))
+m = re.search(r'<thead.*?</thead>', h, re.S)
+print("THEAD:", (m.group(0)[:800].replace("\n"," ") if m else "无 thead"))
+rows = re.findall(r'<tr[^>]*>.*?</tr>', h, re.S)
+print(f"共 {len(rows)} 行,第2~4行原文:")
+for r in rows[1:4]:
+    print("  ", r[:500].replace("\n", " "))
 
 print()
-print("########## B. arbeitgeberliste.netlify.app ##########")
-SITE = "https://arbeitgeberliste.netlify.app/"
-r = S.get(SITE, timeout=20)
-html = r.text
-print(f"首页 HTTP {r.status_code}, {len(html)} 字节")
-scripts = re.findall(r'<script[^>]+src=["\']([^"\']+)["\']', html)
-links = re.findall(r'(?:href|src)=["\']([^"\']+\.(?:json|js|mjs))["\']', html)
-print("script 标签:", scripts)
-print("js/json 引用:", links)
-print("首页前600字符:", html[:600].replace("\n"," "))
+print("##### 2. 替代职位源测试 #####")
+try:
+    r = S.get("https://www.arbeitnow.com/api/job-board-api", timeout=20)
+    print("arbeitnow HTTP", r.status_code)
+    if r.status_code == 200:
+        d = r.json(); jobs = d.get("data", [])
+        print("  字段:", list(jobs[0].keys()) if jobs else "空")
+        muc = [j for j in jobs if "münchen" in str(j.get("location","")).lower() or "munich" in str(j.get("location","")).lower()]
+        print(f"  本页 {len(jobs)} 条, 慕尼黑 {len(muc)} 条, 样例:", (muc or jobs)[0].get("title","")[:60])
+except Exception as e:
+    print("arbeitnow 异常:", e)
 
-for s in (scripts + [l for l in links if l not in scripts])[:6]:
-    u = urljoin(SITE, s)
+for name, url in [("AA www域", "https://www.arbeitsagentur.de/jobsuche/"),
+                  ("AA rest 根", "https://rest.arbeitsagentur.de/")]:
     try:
-        js = S.get(u, timeout=30).text
+        r = S.get(url, timeout=15)
+        print(f"{name}: HTTP {r.status_code}, {len(r.text)} 字节")
     except Exception as e:
-        print(f"  {u}: 抓取失败 {e}"); continue
-    print(f"\n--- {u} | {len(js)} 字节 ---")
-    print("  .json 引用:", list(set(re.findall(r'["\'`]([^"\'`\s]{2,120}\.json)["\'`]', js)))[:10])
-    print("  fetch/axios 调用:", list(set(re.findall(r'(?:fetch|axios(?:\.get)?)\(\s*["\'`]([^"\'`]{4,150})["\'`]', js)))[:10])
-    for kw in ['"name"', '"firma"', '"Firma"', '"ort"', '"unternehmen"', 'JSON.parse']:
-        n = js.count(kw)
-        if n: print(f"  含 {kw}: {n} 次")
-    i = js.find('[{"')
-    if i >= 0:
-        print(f"  首个 [{{\" 位置 {i}, 附近500字符:")
-        print("   ", js[i:i+500].replace("\n", " "))
+        print(f"{name}: 异常 {type(e).__name__}")
