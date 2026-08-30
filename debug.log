@@ -1,58 +1,43 @@
-字节 25052
+###### A. rodenstock.de 招聘列表页 ######
+https://www.rodenstock.de/karriere/stellenanzeigen           HTTP 200 112366字节 -> https://www.rodenstock.de/karriere/stellenanzeigen
+   hr4you id: [] (共0)
+   iframe: []
+   (m/w/d): []
+https://www.rodenstock.de/karriere-jobs                      HTTP 200 112366字节 -> https://www.rodenstock.de/karriere/stellenanzeigen
+   hr4you id: [] (共0)
+   iframe: []
+   (m/w/d): []
+https://www.rodenstock.de/de/de/wir-als-arbeitgeber.html     HTTP 200 125281字节 -> https://www.rodenstock.de/karriere/wir-als-arbeitgeber
+   hr4you id: [] (共0)
+   iframe: []
+   (m/w/d): []
 
-=== 全部 href(去重) ===
-   /stylesheet.php
-   /ajax/jquery-ui/1.13-latest/jquery-ui.min.css
-   /ajax/select2/3.4.5/select2.css
-   https://static.4hr.de/css/webfonts/font-awesome-4.4.0/css/font-awesome.min.css
-   /include/clipboard.css
-   /include/jquery/jquery_multiselect.css
-   applicationForm.css.php
-
-=== 含 (m/w/d) 文本 ===
-['\n\t\t\t            Bewerbung auf: Internationaler Category Manager ICT (m/w/d)']
-
-=== class 统计 ===
-[('applicationFormBlock', 1), ('applicationFormBlockTitle', 1), ('applicationFormRows', 1), ('applicationFormRow', 1), ('applicationFormField width4', 1), ('ui-widget-header ui-corner-all', 1), ('upload-conatainer ui-corner-all', 1), ('ui-widget-header ui-corner-all upload-label', 1), ('required', 1), ('upload-msg-div', 1), ('upload-input', 1), ('uploader-open-button icon', 1), ('uploader-save-button icon', 1), ('upload-result-div', 1), ('uploader-info-div', 1), ('file-list-elem ui-widget-header ui-corner-all', 1), ('ui-icon ui-icon-close', 1), ('ui-state-highlight ui-corner-all', 1), ('ui-icon ui-icon-check', 1), ('ui-state-error ui-corner-all', 1)]
-
-=== 是否 iframe/JS 加载 ===
-iframe: ['about:blank']
-script src: ['/ajax/jquery/3.5-latest/jquery.min.js', '/ajax/updatesession.min.js', '/ajax/jquery-ui/1.13-latest/jquery-ui.min.js', '/ajax/jquery-deserialize.js', '/ajax/jquery.bgiframe_3.0.1.min.js', '/include/localejs/locale.js', '/include/localejs/de/main.js', '/ajax/select2/3.4.5/select2.min.js']
-ajax/fetch: ['module.php', 'module.php', 'module.php', 'upload_ajax.php']
-
-=== 中段 1500 字符(跳过头部) ===
-<body data-lang="de">
-<div id="main">
-<!-- CONTENT ANFANG -->
-<link rel="stylesheet" type="text/css" href="applicationForm.css.php" />
-<!-- CONTENT ANFANG -->
-
-<div id="applicationForm">
-		<div id="applicationFormHeadImage">
-			<img src="images/banner-hr_922x160_verlauf_njl_version2bunt.jpg" alt="Rodenstock" style="width:100%; margin-top:0px; padding-top:0px ;padding-bottom: 5px;" />
-		</div>
-		
-				<div id="applicationFormTitle">
-				 
-					<h1>
-			            Bewerbung auf: Internationaler Category Manager ICT (m/w/d)			        </h1>
-			        <h3>
-			            Schritt 1 von 3			        </h3>
-			       
-			</div>
-				<div id="applicationFormBlocks">
-					<div class="applicationFormBlock">
-						<div class="applicationFormBlockTitle">Dokumentupload</div>
-							<div class="applicationFormRows">
-								<div class="applicationFormRow">
-									<div class="applicationFormField width4">
-							            <h3 class="ui-widget-header ui-corner-all" style="padding: 5px; margin:5px; ">
-							                Bitte laden Sie hier Ihren Lebenslauf hoch.<br /><br />
-							                <span style="font-size: 13px;">
-								            	Ihre Daten werden automatisch aus Ihrem Lebenslauf ausgelesen und in das Bewerbungsformular &uuml;bertragen. Bitte pr&uuml;fen Sie die Daten im Nachgang auf Richtigkeit.<br />
-												Eingescannte Lebensl&auml;ufe k&ouml;nnen nicht erkannt werden.											</span>
-							            </h3>
-							            
-										<div style="width: 350px; margin-left: auto; margin-right: auto; margin-top: 10pt;">
-											<div class="upload-conatainer ui-corner-all" id="upload-container-lebenslauf">
-	<form id="form-lebenslauf" style="display:inline" id="upload-form-lebenslauf" action="upload_ajax.php?action=upload&name=lebenslauf" method="pos
+###### B. 扫 ID 段(generator.php?id=1900..2100) ######
+命中 27 个有效职位:
+   id=1900  Praktikant (m/w/d) in der Personalentwicklung
+   id=1960  Praktikant (m/w/d) im Recruiting und Personalmarketing
+   id=1975  Corporate Tax Manager (m/w/d)
+   id=1983  International Assistant Sales Europe (m/w/d)
+   id=1984  International Assistant Sales Europe (m/f/x)
+   id=1989  Manager Strategy and Execution Sales Europe (m/f/x)
+   id=1991  International Procurement Excellence Expert (m/w/d)
+   id=1996  International Procurement Excellence Expert (m/f/x)
+   id=1997  Ausbildung Elektroniker für Betriebstechnik (m/w/d)
+   id=1998  Ausbildung Industriemechaniker (m/w/d)
+   id=1999  Manager Strategy and Execution Sales Europe (m/w/d)
+   id=2000  Duales Studium Bachelor of Engineering Elektrotechnik (m/w/d)
+   id=2005  International Product and Project Manager Lenses (m/f/x)
+   id=2006  Internationaler Produkt- und Projektmanager Brillengläser (m/w/d)
+   id=2008  Data Scientist R&D Coatings (m/w/d)
+   id=2009  Projektleiter Engineering Plastic Lenses (m/w/d)
+   id=2010  Data Scientist R&D Coatings (m/f/x)
+   id=2012  Ausbildung Industriekaufmann (m/w/d)
+   id=2013  Dualer Student (m/w/d) Bachelor of Business Administration
+   id=2014  Dualer Student (m/w/d) Bachelor of Science Wirtschaftsinformatik
+   id=2015  Dualer Student (m/w/d) Bachelor Management & Digitalisierung
+   id=2017  Internationaler Category Manager Marketing (m/w/d)
+   id=2023  International Category Manager ICT (m/f/x)
+   id=2025  Teamleiter Customer Service Systems (m/w/d)
+   id=2027  Aussendienstmitarbeiter Brillengläser (m/w/d)
+   id=2030  Internationaler Category Manager ICT (m/w/d)
+   id=2031  Director Finance & Controlling (m/f/x)
