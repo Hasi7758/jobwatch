@@ -1,19 +1,17 @@
-大脚本 5107865 字节
-addFeatures 次数: 4755
-反引号 ` 次数: 9510
-var feature 次数: 4755
-features.push 次数: 0
-
---- 第一个点位块(Point 起 1400 字符) ---
-Geometry.Point(8.34894, 49.02352).transform(epsg4326, projectTo), {description: `<p style="max-width: 250px;"><a href="https://www.google.com/search?q=Stellenangebote+Siemens+AG" target="_blank">Siemens AG</a>&ensp;<a href="https://www.google.com/search?q=stepstone+Siemens+AG" target="_blank"><img class="icon" src="../img/stepstone-favicon-32x32.webp"></a>&ensp;<a href="https://www.google.com/search?q=Stellenangebote+Siemens+AG" target="_blank"><img class="icon" src="../img/google_favicon.ico"></a><br>Östliche Rheinbrückenstraße 50<br>76187 Karlsruhe<br>Karlsruhe<br>Baden-Württemberg</p><p><span style="background-color: #E3051B; color: white;">&nbsp;IG Metall Flächentarif oder Haustarif&nbsp;</span></p>
-<p>293.000 Mitarbeiter</p>
-
-<p style="max-width: 250px;"></p>`}, {graphicName: "circle",pointRadius: 20,fillColor: "#E3051B",fillOpacity: 0.9,stroke: true,strokeColor: "#000000",strokeWidth: 1,strokeOpacity: 1,});vectorLayer.addFeatures(feature);
-var feature = new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(12.40106, 51.36423).transform(epsg4326, projectTo), {description: `<p style="max-width: 250px;"><a href="https://www.google.com/search?q=Stellenangebote+Siemens+AG" target="_blank">Siemens AG</a>&ensp;<a href="https://www.google.com/search?q=stepstone+Siemens+AG" target="_blank"><img class="icon" src="../img/stepstone-favicon-32x32.webp"></a>&ensp;<a href="https:/
-
---- addFeatures 首次出现前后 400 ---
-olor: white;">&nbsp;IG Metall Flächentarif oder Haustarif&nbsp;</span></p>
-<p>293.000 Mitarbeiter</p>
-
-<p style="max-width: 250px;"></p>`}, {graphicName: "circle",pointRadius: 20,fillColor: "#E3051B",fillOpacity: 0.9,stroke: true,strokeColor: "#000000",strokeWidth: 1,strokeOpacity: 1,});vectorLayer.addFeatures(feature);
-var feature = new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(12.40106, 51.36423).transform(epsg4326, projectTo), {d
+· BMW Group                  未识别
+· MAN Truck & Bus            未识别
+· MTU Aero Engines           未识别
+· KraussMaffei               未识别
+· KUKA                       未识别
+✓ Airbus                     workday          ('ag', 'wd3', 'Airbus')
+    发现于 https://www.airbus.com/en/careers
+· Siemens                    未识别
+· Rohde & Schwarz            未识别
+✓ Knorr-Bremse               successfactors   ('performancemanager5',)
+    发现于 https://careers.knorr-bremse.com/?locale=de_DE
+✓ Linde Material Handling    workday          ('kiongroup', 'wd3', 'de-DE')
+    发现于 https://www.linde-mh.de/karriere/
+· RENK                       未识别
+· Wacker Chemie              未识别
+· Siltronic                  未识别
+· ARRI                       未识别
