@@ -34,6 +34,9 @@ SIG = [
     ("concludis",       r"([a-z0-9-]+)\.concludis\.de"),
     ("successfactors",  r"([a-z0-9-]+)\.(?:jobs\.)?(?:successfactors|sapsf)\.(?:com|eu)"),
     ("workday",         r"([a-z0-9-]+)\.(wd\d)\.myworkdayjobs\.com/(?:[a-z-]{2,5}/)?([^/\"'?#]+)"),
+    ("hr4you",          r"([a-z0-9-]+)\.hr4you\.org"),
+    ("prescreen",       r"([a-z0-9-]+)\.prescreen\.io"),
+    ("bite",            r"([a-z0-9-]+)\.bite\.jobs"),
 ]
 
 # slug 直连 API
@@ -48,6 +51,32 @@ API = [
     ("workable",        lambda s: f"https://apply.workable.com/api/v1/widget/accounts/{s}?details=true"),
     ("join",            lambda s: f"https://api.join.com/api/v1/companies/{s}/jobs"),
 ]
+
+# HR4YOU 没有列表接口,单独探:域名存在 + generator.php 能出职位页
+def probe_hr4you(name):
+    for slug in slug_candidates(name)[:3]:
+        host = f"https://{slug}.hr4you.org"
+        try:
+            r = S.get(host + "/index.php?changelanguage=de", timeout=10)
+        except Exception:
+            continue
+        if r.status_code != 200 or len(r.content) < 1500:
+            continue
+        # 域名存在,粗扫一小段 ID 确认真有职位
+        for i in range(1000, 3000, 250):
+            try:
+                rr = S.get(f"{host}/generator.php?id={i}&changelanguage=de", timeout=8)
+            except Exception:
+                continue
+            if rr.status_code == 200 and len(rr.content) > 3000:
+                rr.encoding = "iso-8859-1"
+                import re as _re
+                m = _re.search(r"<title>(.*?)</title>", rr.text, _re.S)
+                ttl = (m.group(1).strip() if m else "")
+                if len(ttl) > 6 and "fehler" not in ttl.lower():
+                    return slug, host, i
+        return slug, host, None   # 域名在但没扫到,仍值得记录
+    return None
 
 PATHS = ["/karriere", "/de/karriere", "/karriere/stellenangebote", "/jobs",
          "/karriere/jobs", "/unternehmen/karriere", "/careers", "/de/jobs", "/"]
@@ -131,11 +160,24 @@ for i, e in enumerate(targets, 1):
                      "search": "München"}
         elif ats == "successfactors":
             entry = None   # 需要门户地址,自动拼不可靠,跳过
+        elif ats == "hr4you":
+            entry = {"name": name, "ats": "hr4you",
+                     "url": f"https://{groups[0]}.hr4you.org",
+                     "id_from": 1000, "id_to": 3000}
         elif ats in ("personio", "softgarden", "greenhouse", "smartrecruiters",
                      "lever", "ashby", "recruitee", "workable", "join"):
             entry = {"name": name, "ats": ats, "slug": groups[0]}
         if entry:
             print(f"[{i}/{len(targets)}] ✓web {name[:40]:<42} {ats:<16} {groups[0]}", flush=True)
+    if not entry:
+        hy = probe_hr4you(name)
+        if hy:
+            slug, host, sample = hy
+            entry = {"name": name, "ats": "hr4you", "url": host,
+                     "id_from": 1000, "id_to": 3000}
+            print(f"[{i}/{len(targets)}] ✓hr4you {name[:38]:<40} {host} "
+                  f"{'样例id='+str(sample) if sample else '(未扫到样例)'}", flush=True)
+
     if not entry:
         a = probe_api(name)
         if a:
