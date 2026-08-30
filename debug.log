@@ -1,15 +1,23 @@
-地图页 HTTP 200, 5115626 字节
-script src: ['OpenLayers.js']
-内联script数: 2
-geojson/json 引用: []
-fetch调用: []
-umap特征: False | leaflet: False | L.marker数: 0 | circleMarker: 0
+大脚本: 5107865 字节
+  LonLat: 2 次
+  Geometry.Point: 4755 次
+  Feature.Vector: 4755 次
+  OpenLayers.Marker: 0 次
+  Popup: 6 次
+  Layer.Vector: 4 次
+  Layer.Markers: 0 次
+  addMarker: 0 次
+  createMarker: 0 次
+  attributes: 1 次
 
---- 首个 'addLayer' @ 7903,上下600字符 ---
- OpenLayers.Map({         div: "mapdiv",         displayProjection: epsg4326       });          map.addLayer(new OpenLayers.Layer.OSM("OpenStreetMap",             ["https://a.tile.openstreetmap.org/${z}/${x}/${y}.png"],             {                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',                 "tileOptions": {"crossOriginKeyword": null}             })     );          map.addLayer(new OpenLayers.Layer.OSM("OpenTopoMap",             ["https://a.tile.opentopomap.org/${z}/${x}/${y}.png"],             {                 att
+Layer.Vector/Markers 定义(前8个):
+  层名: IG Metall: Flächentarif oder Haustarif
+  层名: IG BCE: Flächentarif
+  层名: IG BCE: Haustarif
+  层名: IG BCE: Kein Tarif
 
-=== 内联script 611 字节, 开头400: ===
-     document.getElementById('panel1_MaximizeDiv').onclick = function () {         document.getElementById('panel1_content').style.display = "";         document.getElementById('panel1_MaximizeDiv').style.display = "none";         document.getElementById('panel1_MinimizeDiv').style.display = "";      }      document.getElementById('panel1_MinimizeDiv').onclick = function () {         document.getE
+--- Geometry.Point 首次出现,前后900字符 ---
+if (!map.getCenter()) {         map.setCenter(lonLat, zoom);     }       var vectorLayer = new OpenLayers.Layer.Vector("IG Metall: Flächentarif oder Haustarif");     var vectorLayer2 = new OpenLayers.Layer.Vector("IG BCE: Flächentarif");     var vectorLayer3 = new OpenLayers.Layer.Vector("IG BCE: Haustarif");     var vectorLayer4 = new OpenLayers.Layer.Vector("IG BCE: Kein Tarif");       var feature = new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(8.34894, 49.02352).transform(epsg4326, projectTo), {description: `<p style="max-width: 250px;"><a href="https://www.google.com/search?q=Stellenangebote+Siemens+AG" target="_blank">Siemens AG</a>&ensp;<a href="https://www.google.com/search?q=stepstone+Siemens+AG" target="_blank"><img class="icon" src="../img/stepstone-favicon-32x32.webp"></a>&ensp;<a href="https://www.google.com/search?q=Stellenangebote+Siemens+AG" target="_blank"><
 
-=== 内联script 5107865 字节, 开头400: ===
-     epsg4326 = new OpenLayers.Projection("EPSG:4326")      map = new OpenLayers.Map({         div: "mapdiv",         displayProjection: epsg4326       });          map.addLayer(new OpenLayers.Layer.OSM("OpenStreetMap",             ["https://a.tile.openstreetmap.org/${z}/${x}/${y}.png"],             {                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_bl
+--- Popup 首次出现,前后800 ---
+       selector: new OpenLayers.Control.SelectFeature([             vectorLayer,             vectorLayer2,             vectorLayer3,             vectorLayer4,         ], {             onSelect: createPopup,             onUnselect: destroyPopup         }),     };      function createPopup(feature) {         feature.popup = new OpenLayers.Popup.FramedCloud("pop",                 feature.geometry.getBounds().getCenterLonLat(),                 null,                 '<div class="markerContent">' + feature.attributes.description + '</div>',                 null,                 true,                 function () {                     controls['selector'].unselectAll();                 }         );                 map.addPopup(feature.popup);     }      function destroyPopup(feature) {         fea
