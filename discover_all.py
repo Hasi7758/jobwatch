@@ -12,7 +12,7 @@ from names import slug_candidates
 BASE = Path(__file__).resolve().parent
 MUC = (48.137, 11.575)
 RADIUS_KM = 80
-MAX_COMPANIES = 260
+MAX_COMPANIES = 350
 
 def dist_km(lat, lon):
     dy = (lat - MUC[0]) * 111.0
@@ -28,7 +28,7 @@ for e in emps:
     bayern = "bayern" in str(e.get("region", "")).lower()
     hay = f"{e.get('ort','')}".lower()
     muc_word = "münchen" in hay or "munich" in hay
-    if near or muc_word or (bayern and lat is None):
+    if near or muc_word:
         targets.append(e)
 # 名单站不覆盖慕尼黑,这里补一份慕尼黑周边金属电气大厂(多为 Tarif 企业,
 # 但 Tarifbindung 未逐一核实),让探测器找它们的直连接口:

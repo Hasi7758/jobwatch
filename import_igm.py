@@ -125,6 +125,64 @@ def parse_html_table(page):
     return out if len(out) >= 20 else None
 
 
+
+# ---------------------------------------------------------------- 交互地图解析
+# 地图页把 4700+ 个点内嵌在一个 5MB 的 OpenLayers 脚本里,四个图层:
+#   vectorLayer  = IG Metall: Flächentarif oder Haustarif   <- 我们要的
+#   vectorLayer2/3/4 = IG BCE 各类
+MAP_URL = ("https://arbeitgeberliste.netlify.app/interaktive-karte/"
+           "unternehmen-mit-ig-metall-flaechentarif-oder-haustarif-sowie-ig-bce")
+MUC_LATLON = (48.137, 11.575)
+
+_FEAT = re.compile(
+    r"Geometry\.Point\(\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*\)"
+    r".{0,120}?\{\s*description:\s*`(.*?)`\s*\}\s*\)\s*;?\s*"
+    r"(vectorLayer\d*)\.addFeatures", re.S)
+
+_LAYER = {"vectorLayer": "IG Metall", "vectorLayer2": "IG BCE Flächentarif",
+          "vectorLayer3": "IG BCE Haustarif", "vectorLayer4": "IG BCE kein Tarif"}
+
+
+def _dist_muc(lat, lon):
+    import math
+    dy = (lat - MUC_LATLON[0]) * 111.0
+    dx = (lon - MUC_LATLON[1]) * 111.0 * math.cos(math.radians(MUC_LATLON[0]))
+    return math.hypot(dx, dy)
+
+
+def parse_map(only_ig_metall=True):
+    print(f"抓取交互地图 {MAP_URL[:60]}…")
+    page = S.get(MAP_URL, timeout=90).text
+    m = max(re.finditer(r"<script(?![^>]*src)[^>]*>(.*?)</script>", page, re.S),
+            key=lambda x: len(x.group(1)), default=None)
+    if not m:
+        return None
+    js = m.group(1)
+    best = {}   # 归一名 -> entry(取离慕尼黑最近的厂区坐标)
+    n_raw = 0
+    for lon, lat, desc, layer in _FEAT.findall(js):
+        cat = _LAYER.get(layer, layer)
+        if only_ig_metall and cat != "IG Metall":
+            continue
+        nm = re.search(r">([^<]{2,140})</a>", _html.unescape(desc))
+        if not nm:
+            continue
+        name = re.sub(r"\s+", " ", nm.group(1)).strip()
+        lat, lon = float(lat), float(lon)
+        n_raw += 1
+        k = name.lower()
+        e = {"name": name, "tarif": cat, "lat": lat, "lon": lon}
+        if k not in best or _dist_muc(lat, lon) < _dist_muc(best[k]["lat"], best[k]["lon"]):
+            best[k] = e
+    out = list(best.values())
+    if not out:
+        return None
+    near = sum(1 for e in out if _dist_muc(e["lat"], e["lon"]) <= 80)
+    print(f"  ✓ 地图解析成功: 点位 {n_raw} 个, 去重后 {len(out)} 家 IG Metall 公司,"
+          f" 慕尼黑 80km 内 {near} 家")
+    return out
+
+
 # ---------------------------------------------------------------- 自动探测
 
 def try_json(url):
@@ -141,12 +199,18 @@ def try_json(url):
 
 
 def auto_discover():
+    try:
+        mp = parse_map()
+        if mp:
+            return mp
+    except Exception as e:
+        print(f"  地图解析异常: {type(e).__name__} {e}, 退回表格")
+
     print(f"抓取 {SITE}")
     try:
         html = S.get(SITE, timeout=20).text
     except Exception as e:
         sys.exit(f"抓不到首页: {e}\n改用手动模式,见文件顶部说明。")
-
     tbl = parse_html_table(html)
     if tbl:
         print(f"  ✓ 首页 HTML 表格解析成功: {len(tbl)} 家公司")
@@ -308,7 +372,8 @@ def save(entries):
     print(f"\n已写入 {OUT}  ({len(entries)} 家公司)")
 
     munich = [e for e in entries
-              if "münch" in f"{e.get('ort','')}".lower()
+              if ("lat" in e and _dist_muc(e["lat"], e["lon"]) <= 80)
+              or "münch" in f"{e.get('ort','')}".lower()
               or "munich" in f"{e.get('ort','')}".lower()]
     if munich:
         print(f"其中地点含慕尼黑的:{len(munich)} 家")

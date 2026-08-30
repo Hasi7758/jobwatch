@@ -84,10 +84,8 @@ arbeitsagentur:
 # 先跑:  python import_igm.py auto
 # 生成 igmetall.yaml 之后,把 enabled 改成 true。
 employers:
-  # 2026-08-30 实测:arbeitgeberliste.netlify.app 的 860 家公司全部在
-  # 黑森州和下弗兰肯,离慕尼黑最近的也有 193km——用它筛慕尼黑职位会一无所获。
-  # 名单已导入保留(igmetall.yaml),等换成覆盖慕尼黑的名单后再改回 true。
-  enabled: false
+  # 白名单来自该站的交互地图(IG Metall 图层,全德 4700+ 点),覆盖慕尼黑。
+  enabled: true
   # strict = 只要白名单上的公司(推荐,信噪比最高)
   # loose  = 全都保留,但白名单公司会打上绿色 IG Metall 标记
   mode: strict
