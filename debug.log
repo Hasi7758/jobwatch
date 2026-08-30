@@ -1,14 +1,15 @@
-##### 1. 名单站表格结构 #####
-总长: 1836420 | table数: 1 | tr数: 861
-THEAD: <thead>         <tr>             <th>Bundesland</th>             <th>Kreis</th>             <th>Stadt / Gemeinde</th>             <th>Unternehmen</th>             <th>Links</th>             <th>Mitarbeiter</th>             <th>⌀ Gehalt / MA</th>             <th>*</th>             <th>Gegenstand des Unternehmens</th>             <th>Löhne und Gehälter</th>             <th>Ort (Werk)</th>             <th>Lat</th>             <th>Lon</th>             <th>Geschäfts&shy;jahr</th>         </tr>     </thead>
-共 861 行,第2~4行原文:
-   <tr>         <td>Hessen</td>         <td>Landkreis Fulda</td>         <td>Fulda</td>         <td class="salary_none company">3D Formen- und Werkzeugbau GmbH</td>          <td>             <a href="https://www.openstreetmap.org/?mlat=50.57460&mlon=9.69442#map=12/50.57460/9.69442" target="_blank">                 <img class="icon" src="img/osm_logo-d4979005d8a03d67bbf051b4e7e6ef1b26c6a34a5cd1b65908e2947c360ca391.svg"></a>             <a href="https://maps.google.de/maps?ll=50.57460,9.69442&z=12&t=
-   <tr>         <td>Hessen</td>         <td>Landkreis Fulda</td>         <td>Fulda</td>         <td class="salary_none company">A & S - Engineering GmbH</td>          <td>             <a href="https://www.openstreetmap.org/?mlat=50.52873&mlon=9.68570#map=12/50.52873/9.68570" target="_blank">                 <img class="icon" src="img/osm_logo-d4979005d8a03d67bbf051b4e7e6ef1b26c6a34a5cd1b65908e2947c360ca391.svg"></a>             <a href="https://maps.google.de/maps?ll=50.52873,9.68570&z=12&t=s&q=50.
-   <tr>         <td>Hessen</td>         <td>Landkreis Gießen</td>         <td>Pohlheim</td>         <td class="salary_3 company">A+W Software GmbH</td>          <td>             <a href="https://www.openstreetmap.org/?mlat=50.52808&mlon=8.75195#map=12/50.52808/8.75195" target="_blank">                 <img class="icon" src="img/osm_logo-d4979005d8a03d67bbf051b4e7e6ef1b26c6a34a5cd1b65908e2947c360ca391.svg"></a>             <a href="https://maps.google.de/maps?ll=50.52808,8.75195&z=12&t=s&q=50.52808,
+地图页 HTTP 200, 5115626 字节
+script src: ['OpenLayers.js']
+内联script数: 2
+geojson/json 引用: []
+fetch调用: []
+umap特征: False | leaflet: False | L.marker数: 0 | circleMarker: 0
 
-##### 2. 替代职位源测试 #####
-arbeitnow HTTP 200
-  字段: ['slug', 'company_name', 'title', 'description', 'remote', 'url', 'tags', 'job_types', 'location', 'created_at']
-  本页 175 条, 慕尼黑 23 条, 样例: Backend Developer (Java & Python, Microservices)
-AA www域: HTTP 200, 132942 字节
-AA rest 根: HTTP 403, 1 字节
+--- 首个 'addLayer' @ 7903,上下600字符 ---
+ OpenLayers.Map({         div: "mapdiv",         displayProjection: epsg4326       });          map.addLayer(new OpenLayers.Layer.OSM("OpenStreetMap",             ["https://a.tile.openstreetmap.org/${z}/${x}/${y}.png"],             {                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',                 "tileOptions": {"crossOriginKeyword": null}             })     );          map.addLayer(new OpenLayers.Layer.OSM("OpenTopoMap",             ["https://a.tile.opentopomap.org/${z}/${x}/${y}.png"],             {                 att
+
+=== 内联script 611 字节, 开头400: ===
+     document.getElementById('panel1_MaximizeDiv').onclick = function () {         document.getElementById('panel1_content').style.display = "";         document.getElementById('panel1_MaximizeDiv').style.display = "none";         document.getElementById('panel1_MinimizeDiv').style.display = "";      }      document.getElementById('panel1_MinimizeDiv').onclick = function () {         document.getE
+
+=== 内联script 5107865 字节, 开头400: ===
+     epsg4326 = new OpenLayers.Projection("EPSG:4326")      map = new OpenLayers.Map({         div: "mapdiv",         displayProjection: epsg4326       });          map.addLayer(new OpenLayers.Layer.OSM("OpenStreetMap",             ["https://a.tile.openstreetmap.org/${z}/${x}/${y}.png"],             {                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_bl
