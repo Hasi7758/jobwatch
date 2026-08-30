@@ -21,13 +21,15 @@
   [OK] Turner & Townsend GmbH (smartrecruiters)
   [OK] AERO-Bildungs GmbH (lever)
   [OK] Steadforce GmbH (personio)
-  拿到 1145 条
+  [OK] Airbus (workday)
+  [OK] Knorr-Bremse (successfactors)
+  拿到 1273 条
 
-过滤后 106 / 1895 条符合关键词+地点
+过滤后 131 / 2023 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 17 条,非白名单已排除 89 条
+IG Metall 雇主命中 41 条(宽松模式,其余保留)
 
-首次运行:已把现有 17 条收作基线,不算新职位。
+首次运行:已把现有 131 条收作基线,不算新职位。
 从下一次运行起,只会显示真正新增的。
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
