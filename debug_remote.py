@@ -1,25 +1,20 @@
 #!/usr/bin/env python3
 import re, requests
-S = requests.Session()
-S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0","Accept-Language":"de-DE,de;q=0.9"})
-
-for u in ["https://rodenstock.hr4you.org/index_extern.php?sid=2030&changelanguage=de",
-          "https://rodenstock.hr4you.org/index_extern.php?changelanguage=de",
-          "https://rodenstock.hr4you.org/index.php?changelanguage=de"]:
-    try:
-        r = S.get(u, timeout=25)
-    except Exception as e:
-        print(u, type(e).__name__); continue
-    r.encoding = r.apparent_encoding or "iso-8859-1"
-    h = r.text
-    ids = re.findall(r'generator\.php\?id=(\d+)', h)
-    print(f"\n===== {u[:70]}")
-    print(f"HTTP {r.status_code} {len(h)}字节 | generator.php?id 出现 {len(ids)} 次, 唯一 {len(set(ids))} 个")
-    print("id样例:", sorted(set(ids))[:15])
-    titles = re.findall(r'generator\.php\?id=(\d+)[^"]*"[^>]*>\s*([^<>]{5,120}?)\s*<', h)
-    print("链接文字样例:")
-    for i,tt in titles[:10]: print(f"   {i}: {tt}")
-    if len(set(ids)) > 3:
-        print("--- 一条记录的原文 ---")
-        m = re.search(r'.{300}generator\.php\?id=\d+.{500}', h, re.S)
-        if m: print(m.group(0).replace("\n"," ")[:900])
+S = requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0"})
+r = S.get("https://rodenstock.hr4you.org/index_extern.php?sid=2030&changelanguage=de", timeout=25)
+r.encoding = "iso-8859-1"
+h = r.text
+print("字节", len(h))
+print("\n=== 全部 href(去重) ===")
+for a in list(dict.fromkeys(re.findall(r'href="([^"]+)"', h)))[:30]: print("  ", a[:110])
+print("\n=== 含 (m/w/d) 文本 ===")
+print(re.findall(r'([^<>]{6,110}\((?:m/w/d|w/m/d|d/m/w)[^)]*\))', h)[:15])
+print("\n=== class 统计 ===")
+import collections; print(collections.Counter(re.findall(r'class="([^"]{2,50})"', h)).most_common(20))
+print("\n=== 是否 iframe/JS 加载 ===")
+print("iframe:", re.findall(r'<iframe[^>]*src="([^"]+)"', h)[:5])
+print("script src:", re.findall(r'<script[^>]+src="([^"]+)"', h)[:8])
+print("ajax/fetch:", re.findall(r'(?:url|ajax)\s*:\s*["\']([^"\']{4,120})["\']', h)[:8])
+print("\n=== 中段 1500 字符(跳过头部) ===")
+body = h[h.find("<body"):] if "<body" in h else h
+print(body[:1800])
