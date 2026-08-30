@@ -1,72 +1,41 @@
 #!/usr/bin/env python3
-"""从公司官网招聘页反推它用的招聘系统(ATS)。"""
-import re, requests
+"""验证 Workday / SuccessFactors 接口能否直接取到职位列表。"""
+import json, re, requests
 S = requests.Session()
-S.headers.update({"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0"})
+S.headers.update({"User-Agent": "Mozilla/5.0 Chrome/124.0", "Content-Type": "application/json",
+                  "Accept": "application/json"})
 
-SIG = [
-    ("workday",        r"([a-z0-9-]+)\.(wd\d)\.myworkdayjobs\.com/([^/\"'?]+)"),
-    ("successfactors", r"([a-z0-9-]+)\.(?:jobs\.)?(?:successfactors|sapsf)\.(?:com|eu)"),
-    ("softgarden",     r"([a-z0-9-]+)\.softgarden\.io"),
-    ("personio",       r"([a-z0-9-]+)\.jobs\.personio\.(?:de|com)"),
-    ("greenhouse",     r"boards\.greenhouse\.io/([a-z0-9]+)"),
-    ("smartrecruiters", r"jobs\.smartrecruiters\.com/([A-Za-z0-9]+)"),
-    ("lever",          r"jobs\.lever\.co/([a-z0-9-]+)"),
-    ("ashby",          r"jobs\.ashbyhq\.com/([a-z0-9-]+)"),
-    ("recruitee",      r"([a-z0-9-]+)\.recruitee\.com"),
-    ("workable",       r"apply\.workable\.com/([a-z0-9-]+)"),
-    ("join",           r"join\.com/companies/([a-z0-9-]+)"),
-    ("teamtailor",     r"([a-z0-9-]+)\.teamtailor\.com"),
-    ("dvinci",         r"([a-z0-9-]+)\.dvinci(?:hr)?\.(?:com|de)"),
-    ("rexx",           r"([a-z0-9-]+)\.rexx-systems\.com"),
-    ("concludis",      r"([a-z0-9-]+)\.concludis\.de"),
-    ("umantis",        r"([a-z0-9-]+)\.umantis\.com"),
-    ("avature",        r"([a-z0-9-]+)\.avature\.net"),
-    ("taleo",          r"([a-z0-9-]+)\.taleo\.net"),
-    ("jobvite",        r"jobs\.jobvite\.com/([a-z0-9-]+)"),
+print("########## Workday CXS 接口 ##########")
+WD = [
+    ("Airbus",  "https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus/jobs"),
+    ("KION/Linde", "https://kiongroup.wd3.myworkdayjobs.com/wday/cxs/kiongroup/de-DE/jobs"),
+    ("KION alt", "https://kiongroup.wd3.myworkdayjobs.com/wday/cxs/kiongroup/KIONGroup/jobs"),
 ]
+for name, url in WD:
+    try:
+        r = S.post(url, json={"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": "München"}, timeout=25)
+        print(f"[{name}] HTTP {r.status_code}")
+        if r.status_code == 200:
+            d = r.json()
+            posts = d.get("jobPostings", [])
+            print(f"   总数={d.get('total')} 本页={len(posts)}")
+            for p in posts[:4]:
+                print(f"     · {p.get('title','')[:55]} | {p.get('locationsText','')[:30]} | {p.get('postedOn','')}")
+        else:
+            print("   ", r.text[:150])
+    except Exception as e:
+        print(f"[{name}] 异常 {type(e).__name__} {e}")
 
-TARGETS = [
-    ("BMW Group", "bmwgroup.jobs", ["/de/", "/"]),
-    ("MAN Truck & Bus", "man.eu", ["/de/de/karriere/", "/karriere/"]),
-    ("MTU Aero Engines", "mtu.de", ["/karriere/", "/de/karriere/"]),
-    ("KraussMaffei", "kraussmaffei.com", ["/de/karriere", "/karriere", "/de-de/karriere"]),
-    ("KUKA", "kuka.com", ["/de-de/karriere", "/karriere"]),
-    ("Airbus", "airbus.com", ["/en/careers", "/careers"]),
-    ("Siemens", "siemens.com", ["/global/en/company/jobs.html", "/de/de/unternehmen/jobs.html"]),
-    ("Rohde & Schwarz", "rohde-schwarz.com", ["/karriere/", "/de/karriere/karriere_231.html"]),
-    ("Knorr-Bremse", "knorr-bremse.com", ["/de/karriere/", "/karriere/"]),
-    ("Linde Material Handling", "linde-mh.de", ["/karriere/", "/de/karriere/"]),
-    ("RENK", "renk.com", ["/de/karriere", "/karriere"]),
-    ("Wacker Chemie", "wacker.com", ["/cms/de-de/karriere/karriere.html", "/karriere"]),
-    ("Siltronic", "siltronic.com", ["/de/karriere.html", "/karriere"]),
-    ("ARRI", "arri.com", ["/de/karriere", "/en/careers"]),
-]
-
-for name, dom, paths in TARGETS:
-    found = None
-    for path in paths + ["/karriere", "/jobs", "/careers"]:
-        for base in (f"https://www.{dom}", f"https://{dom}"):
-            url = base + path
-            try:
-                r = S.get(url, timeout=18, allow_redirects=True)
-            except Exception:
-                continue
-            if r.status_code != 200:
-                continue
-            blob = r.text + " " + r.url
-            for ats, pat in SIG:
-                m = re.search(pat, blob, re.I)
-                if m:
-                    found = (ats, m.groups(), r.url[:70])
-                    break
-            if found:
-                break
-        if found:
-            break
-    if found:
-        ats, groups, src = found
-        print(f"✓ {name:<26} {ats:<16} {groups}")
-        print(f"    发现于 {src}")
-    else:
-        print(f"· {name:<26} 未识别")
+print()
+print("########## Knorr-Bremse SuccessFactors ##########")
+for url in ["https://careers.knorr-bremse.com/search/?q=&locationsearch=M%C3%BCnchen",
+            "https://performancemanager5.successfactors.eu/xi/ats/jobrequisition/jobrequisitionsearch"]:
+    try:
+        r = S.get(url, timeout=25)
+        print(f"{url[:60]} -> HTTP {r.status_code}, {len(r.text)} 字节")
+        if r.status_code == 200:
+            jobs = re.findall(r'jobTitle-link[^>]*>([^<]{4,80})<', r.text)
+            print("   职位样例:", jobs[:5])
+            print("   含 RSS:", "rss" in r.text.lower(), "| 含 /job/:", r.text.count("/job/"))
+    except Exception as e:
+        print("   异常", type(e).__name__)
