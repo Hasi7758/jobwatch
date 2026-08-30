@@ -23,15 +23,15 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
-  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  拿到 1273 条
+  [OK] Rodenstock GmbH (hr4you)
+  拿到 1300 条
 
-过滤后 131 / 2023 条符合关键词+地点
+过滤后 132 / 2050 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 41 条(宽松模式,其余保留)
+IG Metall 雇主命中 42 条(宽松模式,其余保留)
 
-首次运行:已把现有 131 条收作基线,不算新职位。
+首次运行:已把现有 132 条收作基线,不算新职位。
 从下一次运行起,只会显示真正新增的。
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
