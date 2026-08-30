@@ -134,10 +134,21 @@ MAP_URL = ("https://arbeitgeberliste.netlify.app/interaktive-karte/"
            "unternehmen-mit-ig-metall-flaechentarif-oder-haustarif-sowie-ig-bce")
 MUC_LATLON = (48.137, 11.575)
 
+# 每个点位:Point(lon, lat).transform(...), {description: `...`}, {样式对象});vectorLayerN.addFeatures(feature);
 _FEAT = re.compile(
     r"Geometry\.Point\(\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*\)"
-    r".{0,120}?\{\s*description:\s*`(.*?)`\s*\}\s*\)\s*;?\s*"
+    r".{0,120}?\{\s*description:\s*`(.*?)`\s*\}\s*"
+    r"(?:,\s*\{[^{}]{0,600}?\}\s*)?,?\s*\)\s*;?\s*"
     r"(vectorLayer\d*)\.addFeatures", re.S)
+
+
+def _desc_fields(desc):
+    """从弹窗 HTML 里抠地址:邮编+城市,以及第一段末尾的联邦州。"""
+    m = re.search(r"(\d{5})\s*([^<]{2,60})<br>", desc)
+    ort = f"{m.group(1)} {m.group(2).strip()}" if m else ""
+    m2 = re.search(r"<br>([^<>]{2,40})</p>", desc)
+    region = m2.group(1).strip() if m2 else ""
+    return ort, region
 
 _LAYER = {"vectorLayer": "IG Metall", "vectorLayer2": "IG BCE Flächentarif",
           "vectorLayer3": "IG BCE Haustarif", "vectorLayer4": "IG BCE kein Tarif"}
@@ -171,7 +182,12 @@ def parse_map(only_ig_metall=True):
         lat, lon = float(lat), float(lon)
         n_raw += 1
         k = name.lower()
+        ort, region = _desc_fields(_html.unescape(desc))
         e = {"name": name, "tarif": cat, "lat": lat, "lon": lon}
+        if ort:
+            e["ort"] = ort
+        if region:
+            e["region"] = region
         if k not in best or _dist_muc(lat, lon) < _dist_muc(best[k]["lat"], best[k]["lon"]):
             best[k] = e
     out = list(best.values())
