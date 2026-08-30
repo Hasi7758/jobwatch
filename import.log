@@ -1,1 +1,9 @@
-igmetall.yaml 已存在,跳过导入
+抓取交互地图 https://arbeitgeberliste.netlify.app/interaktive-karte/unter…
+抓取 https://arbeitgeberliste.netlify.app/
+  ✓ 首页 HTML 表格解析成功: 860 家公司
+
+已写入 /home/runner/work/jobwatch/jobwatch/igmetall.yaml  (860 家公司)
+
+接下来可以拿这些去探测 ATS(一次 8 个左右):
+  python jobwatch.py discover 3dformenwerkzeugbau 3d-formen-werkzeugbau asengineering a-s-engineering awsoftware a-w-software aebbeckeverfahrenstechnik a-ebbecke-verfahrenstechnik assfertigungstechnik a-s-s-fertigungstechnik aam abbautomation abb-automation abimaschinenfabrikvertriebsgesellschaft abi-maschinenfabrik-vertriebsgesellschaft
+exit_code=0
