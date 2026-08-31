@@ -1,4 +1,4 @@
-# 由 discover_all.py 自动生成/合并。手工加 Workday 公司也写在这里,格式见文件末注释。
+# 由 discover_web.py / discover_all.py 生成
 companies:
 - name: Webasto
   ats: personio
@@ -70,5 +70,18 @@ companies:
   url: https://rodenstock.hr4you.org
   id_from: 1900
   id_to: 2200
+- name: NCR GmbH
+  ats: workday
+  url: https://ncr.wd1.myworkdayjobs.com/wday/cxs/ncr/ext_apac/jobs
+  search: München
+- name: Heilind Electronics GmbH
+  ats: recruitee
+  slug: heilindelectronicseurope
+- name: Kraftanlagen München GmbH
+  ats: softgarden
+  slug: kraftanlagen
+- name: manroland Goss web systems GmbH
+  ats: recruitee
+  slug: manrolandgoss
 
-# Workday 格式: {name: 公司, ats: workday, url: https://x.wdN.myworkdayjobs.com/wday/cxs/x/SITE/jobs}
+# Workday: {name:, ats: workday, url: .../wday/cxs/T/SITE/jobs, search: München}
