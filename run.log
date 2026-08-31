@@ -25,13 +25,27 @@
   [OK] Knorr-Bremse (successfactors)
   [OK] BMW Group (bmw)
   [OK] Rodenstock GmbH (hr4you)
-  拿到 1300 条
+  [OK] NCR GmbH (workday)
+  [OK] Heilind Electronics GmbH (recruitee)
+  [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
+  [OK] manroland Goss web systems GmbH (recruitee)
+  拿到 1305 条
 
-过滤后 132 / 2050 条符合关键词+地点
+过滤后 131 / 2055 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 42 条(宽松模式,其余保留)
 
-首次运行:已把现有 132 条收作基线,不算新职位。
-从下一次运行起,只会显示真正新增的。
+★ 新职位 11 条
+  · IT Systems Engineer (m/w/d) — Raya Diagnostics GmbH
+  · Fachinformatiker Systemintegration/ Microsoft 365 Administra — Fierro Hiring Solutions Andrea
+  · Projektingenieur TGA / Versorgungstechnik (m/w/d) — MY Humancapital GmbH
+  · Software Engineer – Developer Experience / Tooling (PHP) (m/ — shopware AG
+  · Data Scientist with focus Bioinformatics / Diagnostics (f/m/ — Staburo
+  · Maintenance System Engineering Intern — Tozero
+  · Kubernetes Administrator/Private Cloud Engineer (m/w/d) — virtual7 GmbH
+  · Senior Java Backend Developer (m/w/d) — virtual7 GmbH
+  · Senior Analytics Engineer (all genders) — Eraneos
+  · Senior AI Engineer (all genders) — Eraneos
+  · Werkstudent (m/w/d) Category Management & Product Data — Vitafy
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
