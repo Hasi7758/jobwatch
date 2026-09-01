@@ -50,7 +50,12 @@ keywords:
     - working student
     - praktik             # 覆盖 Praktikum / Praktikant / Praktikantin / Pflichtpraktikum
     - internship
-    - intern (m          # "Intern (m/w/d)",但不误伤 International / Internal
+    - intern (m          # "Intern (m/w/d)"
+    - " intern "         # "Engineering Intern – ..." 后置写法
+    - " intern-"
+    - " intern –"
+    - " intern("
+    - intern –
     - trainee
     - duales studium
     - dualer student
@@ -64,8 +69,10 @@ keywords:
     - ausbildung          # 职业培训学徒
     - auszubildende
     - azubi
-    - berufseinsteiger
-    - quereinsteiger
+    - junior
+    - einsteiger          # 覆盖 Berufseinsteiger / Quereinsteiger / Einsteiger
+    - entry level
+    - einstiegsposition
     - schüler
     - volontariat
     - working student
