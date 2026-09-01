@@ -9,39 +9,26 @@
 # Ingenieur / Ingenieurin / Wirtschaftsingenieur。
 keywords:
   include:
-    # —— IT / 软件 / 数据 ——
-    - software
-    - entwickler          # 覆盖 Softwareentwickler / Entwicklerin
-    - developer
-    - informatik
-    - daten               # Datenanalyst / Datenbank...
-    - data
-    - machine learning
-    - devops
-    - cloud
-    - firmware
-    # —— 电子 / 电气 / 嵌入式 ——
-    - elektro             # 覆盖 Elektronik / Elektrotechnik / Elektromobilität
-    - embedded
-    - hardware
-    - fpga
-    - halbleiter          # 半导体
-    - leistungselektronik
-    # —— 机械 / 汽车 / 制造 ——
-    - ingenieur           # 覆盖各种 ...ingenieur (m/w/d)
-    - engineer            # 覆盖 engineer / engineering
-    - mechatronik
-    - maschinenbau
-    - konstrukt           # Konstrukteur / Konstruktion
-    - fahrzeug
-    - automotive
-    - fertigung
-    - simulation
-    - robotik
-    - automatisierung
-    - antrieb             # 传动/驱动
-    - batterie
-    - cad
+    # —— Product Owner / Product Management ——
+    - product owner
+    - productowner
+    - product manager
+    - produktmanager
+    - produktmanagement
+    - product lead
+    # —— 项目管理(德语几种写法都要,不然漏一半)——
+    - projektmanager
+    - projektmanagement
+    - projektleiter        # 德国公司里等同于 Projektmanager
+    - projektleitung
+    - project manager
+    - project lead
+    - programmanager
+    - program manager
+    - teilprojektleit      # Teilprojektleiter / Teilprojektleitung
+    # —— 广义 manager ——
+    - manager
+    - managerin
 
   # 排除优先级高于 include,用来去掉噪音
   exclude:
