@@ -185,6 +185,20 @@ def split_new(conn, jobs):
     return fresh
 
 
+def all_current(conn, limit=400):
+    """库中全部职位(最近入库在前),首次运行或近期无新增时兜底显示。"""
+    rows = conn.execute(
+        "SELECT company,title,location,url,posted,source,igm FROM jobs "
+        "ORDER BY first_seen DESC LIMIT ?", (limit,)).fetchall()
+    out = []
+    for c, ti, l, u, po, s, igm in rows:
+        j = Job(uid="", source=s, company=c, title=ti, location=l, url=u, posted=po)
+        if igm:
+            j.extra["igm"] = igm
+        out.append(j)
+    return [("current", out)] if out else []
+
+
 def recent_days(conn, days=7):
     """基线之后、最近 N 天内首次出现的职位,按日期分组(新的在前)。"""
     row = conn.execute("SELECT v FROM meta WHERE k='seeded'").fetchone()
@@ -841,6 +855,8 @@ h1{font-size:23px;margin:0 0 4px;letter-spacing:-.01em}
 .tag.igm{background:#2f7d32;color:#fff;font-weight:700;cursor:help;letter-spacing:.04em;
          padding:2px 7px}
 .empty{color:var(--mut);padding:40px 0;text-align:center}
+.note{background:#fff6e8;border:1px solid #f0dcc0;border-radius:8px;padding:10px 13px;
+      font-size:13px;color:#6b5533;margin-bottom:18px}
 """
 
 
@@ -858,7 +874,7 @@ def _job_card(j):
             f'{html.escape(j.location) or "地点未标注"}</div></div>')
 
 
-def render_html(day_groups, new_today, total_seen, first_run, cfg):
+def render_html(day_groups, new_today, total_seen, first_run, cfg, fallback=None):
     """day_groups: [(日期, [Job,...]), ...] 最近 7 天,新的在前。"""
     ts = datetime.now().strftime("%Y-%m-%d %H:%M")
     today = datetime.now(timezone.utc).date().isoformat()
@@ -873,11 +889,21 @@ def render_html(day_groups, new_today, total_seen, first_run, cfg):
              f"近 7 天 {n_total_recent} 条 · 库中累计 {total_seen} 条</div>"]
 
     if first_run:
-        parts.append("<div class=empty>基线已建立(收录了当前全部在线职位)。<br>"
-                     "从下一次运行起,这里只显示真正新发布的职位。</div>")
+        parts.append('<div class=note>系统刚重建索引,以下是<b>当前全部在招职位</b>。'
+                     '从下次运行起,这里只显示新发布的职位。</div>')
+        for _day, js in day_groups:
+            parts.append(f"<div class=grp>当前在招 · {len(js)} 条</div>")
+            for j in sorted(js, key=lambda x: (0 if x.extra.get("igm") else 1, x.company)):
+                parts.append(_job_card(j))
     elif not day_groups:
-        parts.append("<div class=empty>近 7 天没有新职位。<br>"
-                     "连续多天为 0 的话,检查关键词是否太窄、白名单是否过严。</div>")
+        parts.append('<div class=note>近 7 天没有新发布的职位。'
+                     '以下是<b>当前全部在招职位</b>供参考。</div>')
+        for _day, js in (fallback or []):
+            parts.append(f"<div class=grp>当前在招 · {len(js)} 条</div>")
+            for j in sorted(js, key=lambda x: (0 if x.extra.get("igm") else 1, x.company)):
+                parts.append(_job_card(j))
+        if not fallback:
+            parts.append("<div class=empty>库中暂无职位。</div>")
     else:
         for day, js in day_groups:
             label = "今天" if day == today else ("昨天" if day == yday else day)
@@ -968,14 +994,15 @@ def cmd_run(cfg):
         mark_seeded(conn)
         print(f"\n首次运行:已把现有 {len(new)} 条收作基线,不算新职位。")
         print("从下一次运行起,只会显示真正新增的。")
-        render_html([], 0, total, True, cfg)
+        render_html([("current", new)], 0, total, True, cfg)
     else:
         print(f"\n★ 新职位 {len(new)} 条")
         for j in new[:15]:
             print(f"  · {j.title[:60]} — {j.company[:30]}")
         if len(new) > 15:
             print(f"  …另有 {len(new)-15} 条")
-        render_html(recent_days(conn), len(new), total, False, cfg)
+        render_html(recent_days(conn), len(new), total, False, cfg,
+                    fallback=all_current(conn))
         push_telegram(new, cfg)
 
     conn.close()
