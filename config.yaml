@@ -135,6 +135,10 @@ arbeitnow:
   enabled: true
   pages: 6        # 每页约100条,按创建时间倒序,6页足够覆盖一天
 
+# ---------- 页面显示 ----------
+display:
+  recent_days: 2   # 页面上段显示最近几天的新增;下段永远显示当前全部在招
+
 # ---------- 推送(可选) ----------
 # 不开的话就每天打开 digest.html 看。
 # 想要手机推送:在 Telegram 里找 @BotFather 发 /newbot 拿 token,
