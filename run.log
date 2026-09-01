@@ -30,13 +30,13 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1303 条
+  拿到 1302 条
 
-过滤后 100 / 2053 条符合关键词+地点
+过滤后 97 / 2052 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 24 条(宽松模式,其余保留)
+IG Metall 雇主命中 23 条(宽松模式,其余保留)
 
-首次运行:已把现有 99 条收作基线,不算新职位。
+首次运行:已把现有 97 条收作基线,不算新职位。
 从下一次运行起,只会显示真正新增的。
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
