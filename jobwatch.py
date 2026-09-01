@@ -24,7 +24,7 @@ import sys
 import time
 import webbrowser
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import quote
 
@@ -185,11 +185,75 @@ def split_new(conn, jobs):
     return fresh
 
 
+
+def parse_posted(s):
+    """把各来源的发布日期解析成 date。解析不出返回 None。
+    覆盖:ISO 日期、Workday 的 'Posted 5 Days Ago' / 'Posted Today' / 'Posted 30+ Days Ago'。"""
+    if not s:
+        return None
+    s = str(s).strip()
+    m = re.search(r"(\d{4})-(\d{2})-(\d{2})", s)
+    if m:
+        try:
+            return date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+        except ValueError:
+            return None
+    m = re.search(r"(\d{2})\.(\d{2})\.(\d{4})", s)   # 31.08.2026
+    if m:
+        try:
+            return date(int(m.group(3)), int(m.group(2)), int(m.group(1)))
+        except ValueError:
+            return None
+    low = s.lower()
+    today = datetime.now(timezone.utc).date()
+    if "today" in low or "heute" in low or "gerade" in low:
+        return today
+    if "yesterday" in low or "gestern" in low:
+        return today - timedelta(days=1)
+    m = re.search(r"(\d+)\s*\+?\s*(?:day|tag)", low)
+    if m:
+        return today - timedelta(days=int(m.group(1)))
+    m = re.search(r"(\d+)\s*\+?\s*(?:week|woche)", low)
+    if m:
+        return today - timedelta(weeks=int(m.group(1)))
+    m = re.search(r"(\d+)\s*\+?\s*(?:month|monat)", low)
+    if m:
+        return today - timedelta(days=30 * int(m.group(1)))
+    return None
+
+
+def job_age_days(j):
+    """职位"有多新"。优先用来源标注的发布日期,没有就用我们首次见到的日期。"""
+    today = datetime.now(timezone.utc).date()
+    d = parse_posted(j.posted)
+    if d:
+        return (today - d).days, "posted"
+    fs = j.extra.get("first_seen") or ""
+    if fs:
+        try:
+            return (today - datetime.fromisoformat(fs).date()).days, "seen"
+        except ValueError:
+            pass
+    return None, ""
+
+
+def age_label(j):
+    n, how = job_age_days(j)
+    if n is None:
+        return ""
+    src = "发布" if how == "posted" else "发现"
+    if n <= 0:
+        return f"{src}于今天"
+    if n == 1:
+        return f"{src}于昨天"
+    return f"{src}于 {n} 天前"
+
+
 def all_current(conn, limit=500):
     """库中全部职位,IG Metall 优先、新入库在前。"""
     rows = conn.execute(
         "SELECT company,title,location,url,posted,source,igm,first_seen FROM jobs "
-        "ORDER BY (igm='') ASC, first_seen DESC LIMIT ?", (limit,)).fetchall()
+        "ORDER BY first_seen DESC LIMIT ?", (limit,)).fetchall()
     return [_row_to_job(r) for r in rows]
 
 
@@ -853,6 +917,10 @@ h1{font-size:23px;margin:0 0 4px;letter-spacing:-.01em}
 .tag.igm{background:#2f7d32;color:#fff;font-weight:700;cursor:help;letter-spacing:.04em;
          padding:2px 7px}
 .empty{color:var(--mut);padding:40px 0;text-align:center}
+.sec2{font-size:14px;font-weight:600;margin:26px 0 6px;color:var(--mut);
+      padding-bottom:6px;border-bottom:1px solid var(--line)}
+.hint{font-weight:400;font-size:12px;margin-left:6px}
+details summary{cursor:pointer;color:var(--acc);font-size:13px;margin-bottom:10px}
 .sec{font-size:15px;font-weight:700;margin:30px 0 6px;padding-bottom:8px;
      border-bottom:2px solid var(--tx)}
 .note{background:#fff6e8;border:1px solid #f0dcc0;border-radius:8px;padding:10px 13px;
@@ -861,7 +929,8 @@ h1{font-size:23px;margin:0 0 4px;letter-spacing:-.01em}
 
 
 def _job_card(j):
-    posted = f'<span class=tag>来源标注 {html.escape(j.posted[:10])}</span>' if j.posted else ""
+    lbl = age_label(j)
+    posted = f'<span class=tag>{html.escape(lbl)}</span>' if lbl else ""
     igm = ""
     if j.extra.get("igm"):
         igm = (f'<span class="tag igm" title="名单上写作:'
@@ -875,42 +944,46 @@ def _job_card(j):
 
 
 def render_html(day_groups, new_today, total_seen, first_run, cfg, fallback=None):
-    """上段=最近N天新增(按天分组),下段=当前全部在招。页面永不空白。"""
+    """只显示 max_age_days 天内的职位;若为空,退回显示最新的若干条并说明。"""
     ts = datetime.now().strftime("%Y-%m-%d %H:%M")
-    today = datetime.now(timezone.utc).date().isoformat()
-    yday = (datetime.now(timezone.utc).date() - timedelta(days=1)).isoformat()
-    win = int((cfg.get("display") or {}).get("recent_days", 2))
-    n_recent = sum(len(js) for _, js in day_groups)
-    current = fallback or []
+    disp = cfg.get("display") or {}
+    maxage = int(disp.get("max_age_days", 5))
+    allj = fallback or []
 
-    def card_list(js):
-        out = []
-        for j in sorted(js, key=lambda x: (0 if x.extra.get("igm") else 1, x.company)):
-            out.append(_job_card(j))
-        return out
+    fresh, older = [], []
+    for j in allj:
+        n, _ = job_age_days(j)
+        (fresh if (n is not None and n <= maxage) else older).append(j)
 
+    def by_age(js):
+        return sorted(js, key=lambda x: (0 if x.extra.get("igm") else 1,
+                                         job_age_days(x)[0] if job_age_days(x)[0] is not None else 999))
+
+    def cards(js):
+        return [_job_card(j) for j in by_age(js)]
+
+    n_igm = sum(1 for j in fresh if j.extra.get("igm"))
     parts = ["<!doctype html><meta charset=utf-8>",
              '<meta name=viewport content="width=device-width,initial-scale=1">',
              "<title>慕尼黑新职位</title>", f"<style>{CSS}</style><div class=wrap>",
              "<h1>慕尼黑 · IG Metall 新职位</h1>",
-             f"<div class=sub>更新于 {ts} UTC · 近 {win} 天 <b>{n_recent}</b> 条 · "
-             f"当前在招 {len(current)} 条 · 库中累计 {total_seen} 条</div>"]
+             f"<div class=sub>更新于 {ts} UTC · 最近 {maxage} 天 <b>{len(fresh)}</b> 条"
+             f"(其中 IG Metall {n_igm} 条)· 库中累计 {total_seen} 条</div>"]
 
-    # —— 上段:最近 N 天新增 ——
-    parts.append(f"<div class=sec>最近 {win} 天新增</div>")
-    if day_groups:
-        for day, js in day_groups:
-            label = "今天" if day == today else ("昨天" if day == yday else day)
-            parts.append(f"<div class=grp>{label} · {len(js)} 条</div>")
-            parts += card_list(js)
+    parts.append(f"<div class=sec>最近 {maxage} 天内的职位 · {len(fresh)} 条</div>")
+    if fresh:
+        parts += cards(fresh)
     else:
-        parts.append('<div class=note>这段时间没有新发布的职位(周末尤其常见)。'
-                     '下面是当前全部在招职位。</div>')
+        parts.append(f'<div class=note>最近 {maxage} 天没有新职位(周末常见)。'
+                     f'下面列出最新的一批供参考。</div>')
+        parts += cards(older[:25])
 
-    # —— 下段:当前全部在招(永远显示) ——
-    if current:
-        parts.append(f"<div class=sec>当前全部在招 · {len(current)} 条</div>")
-        parts += card_list(current)
+    if fresh and older:
+        parts.append(f'<div class=sec2>更早的职位 · {len(older)} 条'
+                     f'<span class=hint>(超过 {maxage} 天,默认折叠)</span></div>')
+        parts.append("<details><summary>展开查看</summary>")
+        parts += cards(older[:150])
+        parts.append("</details>")
 
     parts.append("</div>")
     doc = "".join(parts)
