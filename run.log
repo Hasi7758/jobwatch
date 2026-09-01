@@ -30,28 +30,13 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1305 条
+  拿到 1303 条
 
-过滤后 123 / 2055 条符合关键词+地点
+过滤后 100 / 2053 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 41 条(宽松模式,其余保留)
+IG Metall 雇主命中 24 条(宽松模式,其余保留)
 
-★ 新职位 41 条
-  · Backend / Full Stack Developer (m/w/d) — SOFI AI GmbH
-  · Senior Talent Acquisition Partner – Technology (Data, ML & A — The Rec Hub
-  · Senior Security Engineer — Mattermost
-  · Solutions Engineer — Singlestore
-  · Senior Product Design Engineer — Duck Duck Go
-  · Staff Data Scientist — Duck Duck Go
-  · Privacy Engineering Director — Duck Duck Go
-  · Senior Privacy Engineer — Duck Duck Go
-  · AI Automation Engineer (FitMe) — Gismart
-  · Senior Full Stack Developer - AI Team — Think Cell
-  · Forward Deployed Engineer — Hexa
-  · Senior Backend Engineer (Ruby), AI Catalog: External Agents — gitlab
-  · Python Backend Engineer (m/f/x) — Makersite GmbH
-  · Senior Data Scientist (m/f/x) — Makersite GmbH
-  · Global Director, Mid-Market Onboarding — Cloudbedsthirdpartyboard
-  …另有 26 条
+首次运行:已把现有 99 条收作基线,不算新职位。
+从下一次运行起,只会显示真正新增的。
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
