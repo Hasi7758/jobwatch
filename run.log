@@ -23,6 +23,7 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
+  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
@@ -31,21 +32,26 @@
   [OK] manroland Goss web systems GmbH (recruitee)
   拿到 1305 条
 
-过滤后 131 / 2055 条符合关键词+地点
+过滤后 123 / 2055 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 42 条(宽松模式,其余保留)
+IG Metall 雇主命中 41 条(宽松模式,其余保留)
 
-★ 新职位 11 条
-  · IT Systems Engineer (m/w/d) — Raya Diagnostics GmbH
-  · Fachinformatiker Systemintegration/ Microsoft 365 Administra — Fierro Hiring Solutions Andrea
-  · Projektingenieur TGA / Versorgungstechnik (m/w/d) — MY Humancapital GmbH
-  · Software Engineer – Developer Experience / Tooling (PHP) (m/ — shopware AG
-  · Data Scientist with focus Bioinformatics / Diagnostics (f/m/ — Staburo
-  · Maintenance System Engineering Intern — Tozero
-  · Kubernetes Administrator/Private Cloud Engineer (m/w/d) — virtual7 GmbH
-  · Senior Java Backend Developer (m/w/d) — virtual7 GmbH
-  · Senior Analytics Engineer (all genders) — Eraneos
-  · Senior AI Engineer (all genders) — Eraneos
-  · Werkstudent (m/w/d) Category Management & Product Data — Vitafy
+★ 新职位 41 条
+  · Backend / Full Stack Developer (m/w/d) — SOFI AI GmbH
+  · Senior Talent Acquisition Partner – Technology (Data, ML & A — The Rec Hub
+  · Senior Security Engineer — Mattermost
+  · Solutions Engineer — Singlestore
+  · Senior Product Design Engineer — Duck Duck Go
+  · Staff Data Scientist — Duck Duck Go
+  · Privacy Engineering Director — Duck Duck Go
+  · Senior Privacy Engineer — Duck Duck Go
+  · AI Automation Engineer (FitMe) — Gismart
+  · Senior Full Stack Developer - AI Team — Think Cell
+  · Forward Deployed Engineer — Hexa
+  · Senior Backend Engineer (Ruby), AI Catalog: External Agents — gitlab
+  · Python Backend Engineer (m/f/x) — Makersite GmbH
+  · Senior Data Scientist (m/f/x) — Makersite GmbH
+  · Global Director, Mid-Market Onboarding — Cloudbedsthirdpartyboard
+  …另有 26 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
