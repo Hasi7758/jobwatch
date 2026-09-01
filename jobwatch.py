@@ -1039,8 +1039,18 @@ def cmd_run(cfg):
     print(f"  拿到 {len(company_jobs)} 条")
     raw += company_jobs
 
-    kept = [j for j in raw
-            if matches_keywords(j, cfg["keywords"]) and matches_location(j, cfg["location"])]
+    max_age = int((cfg.get("filters") or {}).get("max_posted_age_days", 365))
+    kept, stale = [], 0
+    for j in raw:
+        if not (matches_keywords(j, cfg["keywords"]) and matches_location(j, cfg["location"])):
+            continue
+        d = parse_posted(j.posted)
+        if d and (datetime.now(timezone.utc).date() - d).days > max_age:
+            stale += 1
+            continue
+        kept.append(j)
+    if stale:
+        print(f"丢弃过期职位 {stale} 条(发布超过 {max_age} 天)")
     print(f"\n过滤后 {len(kept)} / {len(raw)} 条符合关键词+地点")
 
     matcher = load_matcher(cfg)

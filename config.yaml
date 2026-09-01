@@ -17,15 +17,17 @@ keywords:
     - produktmanagement
     - product lead
     # —— 项目管理(德语几种写法都要,不然漏一半)——
-    - projektmanager
-    - projektmanagement
-    - projektleiter        # 德国公司里等同于 Projektmanager
-    - projektleitung
-    - project manager
-    - project lead
+    - projektleit          # 词根,覆盖 Projektleiter / Projektleiterin /
+                           # Projektleitung / Teilprojektleiter / Teilprojektleitung /
+                           # Gesamtprojektleitung / Bauprojektleiter
+    - projektmanag         # Projektmanager / Projektmanagerin / Projektmanagement
+    - project lead         # Project Lead / Project Leader
+    - project manag        # Project Manager / Project Management
+    - projectmanager
     - programmanager
     - program manager
-    - teilprojektleit      # Teilprojektleiter / Teilprojektleitung
+    - programme manager
+    - programmleit
     # —— 广义 manager ——
     - manager
     - managerin
@@ -63,6 +65,31 @@ keywords:
     - schüler
     - volontariat
     - working student
+    # —— manager 收窄:营销 / HR / 行政 / 客服,不是产品或项目管理 ——
+    - marketing
+    - campaign
+    - kampagne
+    - seo
+    - social media
+    - content manager
+    - brand manager
+    - growth manager
+    - user acquisition
+    - account manager
+    - key account
+    - customer success
+    - partner manager
+    - community manager
+    - talent acquisition
+    - recruiting
+    - recruiter
+    - payroll
+    - office manager
+    - facility manager
+    - tax manager
+    - tax accounting
+    - billing manager
+    - fundrais
     # —— 方向不符 ——
     - vertrieb            # 销售
     - sales
@@ -121,6 +148,12 @@ employers:
 arbeitnow:
   enabled: true
   pages: 6        # 每页约100条,按创建时间倒序,6页足够覆盖一天
+
+# ---------- 数据清洗 ----------
+filters:
+  # 来源标注的发布日期早于这么多天的,视为脏数据丢弃。
+  # Personio 等接口偶尔会吐出 2016 年的历史职位。
+  max_posted_age_days: 365
 
 # ---------- 页面显示 ----------
 display:
