@@ -45,18 +45,43 @@ keywords:
 
   # 排除优先级高于 include,用来去掉噪音
   exclude:
+    # —— 入门级岗位:已有工作经验,不要这些 ——
+    - werkstudent         # 覆盖 Werkstudent / Werkstudentin / Werkstudierende
+    - working student
+    - praktik             # 覆盖 Praktikum / Praktikant / Praktikantin / Pflichtpraktikum
+    - internship
+    - intern (m          # "Intern (m/w/d)",但不误伤 International / Internal
+    - trainee
+    - duales studium
+    - dualer student
+    - dualen studium
+    - bachelorand
+    - masterand
+    - abschlussarbeit     # 毕业论文岗
+    - bachelorarbeit
+    - masterarbeit
+    - studentische
+    - ausbildung          # 职业培训学徒
+    - auszubildende
+    - azubi
+    - berufseinsteiger
+    - quereinsteiger
+    - schüler
+    - volontariat
+    - working student
+    # —— 方向不符 ——
     - vertrieb            # 销售
     - sales
     - außendienst
-    - helfer              # 各类 Produktionshelfer / Montagehelfer
+    - helfer              # Produktionshelfer / Montagehelfer
     - reinigung           # 保洁
     - fahrer              # 司机
     - pflege              # 护理
-    - kaufmann            # 商务文员类
+    - kaufmann
     - kauffrau
     - buchhalt            # 会计
     - empfang             # 前台
-    - personalentwicklung # HR 的"人才发展",不是研发
+    - personalentwicklung # HR,不是研发
 
 
 # ---------- 地点过滤 ----------
