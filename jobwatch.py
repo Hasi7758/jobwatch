@@ -716,13 +716,35 @@ def ats_workday(cfg_entry, name):
 
 def ats_hr4you(cfg_entry, name):
     """
-    HR4YOU(德国本土系统)。它没有列表接口,职位页是 generator.php?id=N,
-    所以扫描 ID 区间探活。区间会随最大命中 ID 自动向前滚动。
+    HR4YOU 没有列表接口,职位页是 generator.php?id=N。
+
+    为了不给对方服务器造成不必要的负担:首次全量扫一遍并记住命中的 ID,
+    之后每天只做两件事——复查已知 ID 是否还在(职位下架就消失),
+    再在已知最大 ID 往上探一个小窗口(新职位的 ID 总是递增的)。
+    请求量从每天 2000 次降到几十次。
     """
     import concurrent.futures as cf
+    import json as _json
+
     host = cfg_entry["url"].rstrip("/")
-    lo = int(cfg_entry.get("id_from", 1900))
-    hi = int(cfg_entry.get("id_to", 2200))
+    state_file = BASE / f"hr4you_{re.sub(r'[^a-z0-9]+', '', name.lower())}.json"
+    known = []
+    if state_file.exists():
+        try:
+            known = _json.loads(state_file.read_text())
+        except Exception:
+            known = []
+
+    if known:
+        window = int(cfg_entry.get("scan_ahead", 40))
+        hi = max(known)
+        ids = sorted(set(known) | set(range(hi + 1, hi + window + 1)))
+        mode = f"增量({len(known)}个已知 + 前探{window})"
+    else:
+        ids = list(range(int(cfg_entry.get("id_from", 1000)),
+                         int(cfg_entry.get("id_to", 3000)) + 1))
+        mode = f"首次全量扫描({len(ids)})"
+    print(f"  [HR4YOU:{name}] {mode},共 {len(ids)} 次请求")
 
     def probe(i):
         try:
@@ -743,26 +765,26 @@ def ats_hr4you(cfg_entry, name):
         mk = re.search(r'Keywords"\s+CONTENT="[^"]*?,\s*[^,"]*,\s*([^,"]{3,40}?)\s*,', page, re.I)
         if mk:
             loc = _html_unescape(mk.group(1))
-        if not loc:
-            ml = re.search(r"mit Sitz in ([A-Z][\wäöüß .-]{2,30}?) sucht", page)
-            if ml:
-                loc = ml.group(1).strip()
-        return Job(
-            uid=f"hr4you:{name}:{i}",
-            source="HR4YOU",
-            company=name,
-            title=title,
-            location=loc or "München",
-            url=f"{host}/generator.php?id={i}&changelanguage=de",
-            posted="",
-        )
+        return i, Job(uid=f"hr4you:{name}:{i}", source="HR4YOU", company=name,
+                      title=title, location=loc or "München",
+                      url=f"{host}/generator.php?id={i}&changelanguage=de", posted="")
 
-    jobs = []
-    with cf.ThreadPoolExecutor(max_workers=10) as ex:
-        for res in ex.map(probe, range(lo, hi + 1)):
+    jobs, hits = [], []
+    # 并发降到 4,并分批加间隔,避免给对方造成突发压力
+    with cf.ThreadPoolExecutor(max_workers=4) as ex:
+        for n, res in enumerate(ex.map(probe, ids)):
             if res:
-                jobs.append(res)
+                hits.append(res[0])
+                jobs.append(res[1])
+            if n and n % 200 == 0:
+                time.sleep(1.0)
+    if hits:
+        try:
+            state_file.write_text(_json.dumps(sorted(hits)))
+        except Exception:
+            pass
     return jobs
+
 
 
 def ats_softgarden(slug, name):
