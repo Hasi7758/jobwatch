@@ -30,13 +30,17 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1302 条
+  拿到 1305 条
 
-过滤后 37 / 2052 条符合关键词+地点
+过滤后 38 / 2055 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 13 条(宽松模式,其余保留)
+IG Metall 雇主命中 14 条(宽松模式,其余保留)
 
-首次运行:已把现有 37 条收作基线,不算新职位。
-从下一次运行起,只会显示真正新增的。
+★ 新职位 5 条
+  · Product Manager Westwing Collection (m/f/d) — Westwing Group SE
+  · Sr. Manager, AI Forward Deployed Engineering (AI-FDE) — databricks
+  · Senior Staff Product Manager, Browser Control Platform — mozilla
+  · Senior Product Manager - Software Solutions — Proglove
+  · Material Data Manager/ Material Support Manager  (d/w/m) — Airbus
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
