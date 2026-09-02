@@ -25,22 +25,22 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
+  [HR4YOU:Rodenstock GmbH] 首次全量扫描(301),共 301 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1305 条
+  拿到 1308 条
 
-过滤后 38 / 2055 条符合关键词+地点
+过滤后 31 / 2058 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 14 条(宽松模式,其余保留)
+IG Metall 雇主命中 15 条(宽松模式,其余保留)
 
-★ 新职位 5 条
-  · Product Manager Westwing Collection (m/f/d) — Westwing Group SE
-  · Sr. Manager, AI Forward Deployed Engineering (AI-FDE) — databricks
+★ 新职位 4 条
   · Senior Staff Product Manager, Browser Control Platform — mozilla
-  · Senior Product Manager - Software Solutions — Proglove
-  · Material Data Manager/ Material Support Manager  (d/w/m) — Airbus
+  · Product Manager – POS & Fiscalization (m/f/d) — Swissbit
+  · Senior Manager Project Finance (m/w/d) – BESS & Infrastructu — ju:niz Energy GmbH
+  · Flowmanager:in | Home Office | (w/m/d) — Enpal
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
