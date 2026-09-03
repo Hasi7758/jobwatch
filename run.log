@@ -25,22 +25,34 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 首次全量扫描(301),共 301 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(26个已知 + 前探40),共 66 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1308 条
+  拿到 1309 条
 
-过滤后 31 / 2058 条符合关键词+地点
+过滤后 45 / 2059 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 15 条(宽松模式,其余保留)
 
-★ 新职位 4 条
-  · Senior Staff Product Manager, Browser Control Platform — mozilla
-  · Product Manager – POS & Fiscalization (m/f/d) — Swissbit
-  · Senior Manager Project Finance (m/w/d) – BESS & Infrastructu — ju:niz Energy GmbH
-  · Flowmanager:in | Home Office | (w/m/d) — Enpal
+★ 新职位 16 条
+  · Senior Rollout Manager (f/m/x) – DACH — IONITY GmbH
+  · Head of Business Operations / Senior Business Operations Man — Vicegolf
+  · Product Manager (DevTools & AI Reliability, remote) — Checkly
+  · Lead / Senior Manager Fiber Customer Activation and Service  — OXG Glasfaser GmbH
+  · (Senior) Projekt- und Prozessmanager Customer Activation (m/ — OXG Glasfaser GmbH
+  · (Senior) IT Product Owner Data Platform (m/w/d) — OXG Glasfaser GmbH
+  · (Senior) Partnerships Manager DACH (m/f/d) — Bears With Benefits
+  · Senior Consultant/Manager Business Strategy (m/f/d) — Yoummday GmbH
+  · Project Manager, Gaming Localization Production — LILT (Production)
+  · Principal Consultant (Senior Manager) - Trade & Transaction  — capco
+  · Principal Consultant - (Senior Manager) Trade & Transaction  — capco
+  · Principal Consultant (Senior Manager) - Operational Resilien — capco
+  · Principal Consultant - (Senior Manager) Operational Resilien — capco
+  · Principal Consultant (Senior Manager) - Finance Transformati — capco
+  · Principal Consultant - (Senior Manager) Finance Transformati — capco
+  …另有 1 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
