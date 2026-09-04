@@ -1,58 +1,34 @@
 #!/usr/bin/env python3
-import requests, json, re
-S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0",
-                                        "Accept":"application/json, text/html, */*"})
+import requests, json
+S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0","Accept":"application/json"})
 
-print("###### A. Phenom People (Infineon / Lam / Keysight) ######")
-# Phenom 的搜索接口通常是 /widgets 或 /api/jobs
-for name, host in [("Infineon","https://jobs.infineon.com"),
-                   ("Lam Research","https://careers.lamresearch.com"),
-                   ("Keysight","https://careers.keysight.com")]:
-    for path, params in [
-        ("/widgets", {"location":"Singapore","limit":10,"type":"jobs"}),
-        ("/api/jobs", {"location":"Singapore","limit":10}),
-        ("/search-jobs/results", {"ActiveFacetID":"0","CurrentPage":"1","SearchTerm":"Singapore"}),
-        ("/careers/jobs", {"location":"Singapore"}),
-    ]:
+print("### Phenom /api/jobs 全面探测 ###")
+HOSTS=[("AMD","https://careers.amd.com"),("Keysight","https://careers.keysight.com"),
+       ("Infineon","https://jobs.infineon.com"),("Lam Research","https://careers.lamresearch.com"),
+       ("Seagate","https://seagatecareers.com"),("ST Engineering","https://careers.stengg.com"),
+       ("Micron","https://careers.micron.com"),("Abbott","https://www.jobs.abbott"),
+       ("Stryker","https://careers.stryker.com"),("Honeywell","https://careers.honeywell.com")]
+for name, host in HOSTS:
+    for path in ["/api/jobs", "/widgets/api/jobs"]:
         try:
-            r=S.get(host+path, params=params, timeout=20)
-            ct=r.headers.get("content-type","")[:30]
-            ok = r.status_code==200
-            n = 0
-            if ok and "json" in ct:
-                try:
-                    d=r.json()
-                    s=json.dumps(d)
-                    n=s.count('"jobId"')+s.count('"title"')
-                except Exception: pass
-            print(f"  {name:<14} {path:<24} HTTP {r.status_code} {ct:<24} 迹象={n}")
-            if ok and n>3:
-                d=r.json(); s=json.dumps(d, ensure_ascii=False)
-                print("     样例:", s[:400])
+            r=S.get(host+path, params={"location":"Singapore","limit":10,"page":1}, timeout=20)
+            if r.status_code==200 and "json" in r.headers.get("content-type",""):
+                d=r.json(); jobs=d.get("jobs") or []
+                print(f"  ✓ {name:<16} {path:<18} 返回 {len(jobs)} 条 | totalCount={d.get('totalCount') or d.get('count')}")
+                for j in jobs[:2]:
+                    dd=j.get("data") or j
+                    print(f"      · {str(dd.get('title'))[:48]:<50} loc={str(dd.get('city') or dd.get('location'))[:22]} date={dd.get('posted_date') or dd.get('create_date')}")
+                if jobs:
+                    print("      字段:", list((jobs[0].get('data') or jobs[0]).keys())[:18])
+                break
         except Exception as e:
-            print(f"  {name:<14} {path:<24} {type(e).__name__}")
+            pass
+    else:
+        print(f"  · {name}")
 
-print("\n###### B. iCIMS (AMD) ######")
-for u,p in [("https://careers-amd.icims.com/jobs/search", {"ss":"1","searchLocation":"Singapore","in_iframe":"1"}),
-            ("https://careers.amd.com/api/jobs", {"location":"Singapore","limit":10}),
-            ("https://careers.amd.com/careers-home/jobs", {"location":"Singapore"})]:
-    try:
-        r=S.get(u,params=p,timeout=20)
-        print(f"  {u[:52]:<54} HTTP {r.status_code} {len(r.text)}字节 {r.headers.get('content-type','')[:24]}")
-        if r.status_code==200:
-            ids=set(re.findall(r'/jobs/(\d{4,7})/', r.text))
-            print("     job id:", sorted(ids)[:8], f"(共{len(ids)})")
-    except Exception as e: print(f"  {u[:52]} {type(e).__name__}")
-
-print("\n###### C. SuccessFactors (Seagate) ######")
-for u in ["https://career41.sapsf.com/careers?company=seagatetec",
-          "https://career41.sapsf.com/search?company=seagatetec&location=Singapore",
-          "https://seagatecareers.com/search/?q=&locationsearch=Singapore"]:
-    try:
-        r=S.get(u,timeout=25)
-        print(f"  {u[:60]:<62} HTTP {r.status_code} {len(r.text)}字节")
-        if r.status_code==200:
-            jl=re.findall(r'href="(/job/[^"]{6,90})"', r.text)
-            print("     /job/ 链接:", jl[:4], f"(共{len(set(jl))})")
-            print("     含 jobTitle-link:", r.text.count("jobTitle-link"))
-    except Exception as e: print(f"  {u[:60]} {type(e).__name__}")
+print("\n### 参数验证:Singapore 过滤是否生效 (AMD) ###")
+for loc in ["Singapore", ""]:
+    r=S.get("https://careers.amd.com/api/jobs", params={"location":loc,"limit":100,"page":1}, timeout=25)
+    d=r.json(); jobs=d.get("jobs") or []
+    sg=sum(1 for j in jobs if "singapore" in json.dumps(j).lower())
+    print(f"  location={loc!r:<12} 返回{len(jobs)} 其中含Singapore {sg} | total={d.get('totalCount')}")
