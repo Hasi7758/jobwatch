@@ -1,56 +1,38 @@
 #!/usr/bin/env python3
-import re, requests
-S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0"})
+import requests, re
+S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0","Content-Type":"application/json"})
+WD=[("Micron","https://micron.wd1.myworkdayjobs.com/wday/cxs/micron/External/jobs"),
+    ("GlobalFoundries","https://globalfoundries.wd1.myworkdayjobs.com/wday/cxs/globalfoundries/External/jobs"),
+    ("Applied Materials","https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs"),
+    ("KLA","https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/Search/jobs"),
+    ("Medtronic","https://medtronic.wd1.myworkdayjobs.com/wday/cxs/medtronic/MedtronicCareers/jobs")]
+print(f"{'公司':<20} {'全球总数':>8} {'含Singapore':>12} {'其中管理岗':>10}")
+for n,u in WD:
+    try:
+        a=S.post(u,json={"appliedFacets":{},"limit":1,"offset":0,"searchText":""},timeout=25).json()
+        b=S.post(u,json={"appliedFacets":{},"limit":20,"offset":0,"searchText":"Singapore"},timeout=25).json()
+        c=S.post(u,json={"appliedFacets":{},"limit":20,"offset":0,"searchText":"Singapore manager"},timeout=25).json()
+        print(f"{n:<20} {str(a.get('total')):>8} {str(b.get('total')):>12} {str(c.get('total')):>10}")
+        for p in (b.get("jobPostings") or [])[:3]:
+            print(f"     · {p.get('title','')[:52]:<54} {p.get('postedOn','')}")
+    except Exception as e:
+        print(f"{n:<20} 失败 {type(e).__name__}")
 
-# Workday: tenant x wdN x site 组合猜测
-WD_GUESS=[("AMD","amd",["wd1","wd5"],["External","AMD_External"]),
- ("KLA","kla",["wd1","wd5"],["Search","External"]),
- ("Lam Research","lamresearch",["wd1"],["External"]),
- ("Alcon","alcon",["wd5","wd1"],["Careers","External"]),
- ("Siemens Healthineers","siemens",["wd3"],["SiemensHealthineers","Healthineers"]),
- ("TUV SUD","tuvsud",["wd3","wd1"],["Careers","External"]),
- ("Carl Zeiss","zeiss",["wd3"],["ZEISS_Careers","External","Careers"]),
- ("ST Engineering","stengg",["wd3"],["Careers","External","ST_Engineering"]),
- ("Becton Dickinson","bd",["wd1"],["Careers","External"]),
- ("Infineon","infineon",["wd3"],["Careers","External","IFX"]),
- ("Bosch","bosch",["wd3"],["Careers","External"]),
- ("Rolls-Royce","rollsroyce",["wd3"],["Careers","External"]),
- ("Keysight","keysight",["wd1"],["External"]),
- ("Seagate","seagate",["wd1"],["External","Seagate"]),
- ("Dyson","dyson",["wd3"],["Careers","External"]),
- ("Hoya","hoya",["wd3"],["Careers"]),
-]
-print("### Workday 组合探测 ###")
-for name,ten,wds,sites in WD_GUESS:
-    ok=False
-    for wd in wds:
-        for site in sites:
-            u=f"https://{ten}.{wd}.myworkdayjobs.com/wday/cxs/{ten}/{site}/jobs"
-            try:
-                r=S.post(u,json={"appliedFacets":{},"limit":20,"offset":0,"searchText":"Singapore"},
-                         headers={"Content-Type":"application/json"},timeout=20)
-                if r.status_code==200:
-                    d=r.json(); tot=d.get("total")
-                    if tot is not None:
-                        print(f"  ✓ {name:<22} {wd}/{site:<22} total={tot}")
-                        print(f"      {u}")
-                        ok=True; break
-            except Exception: pass
-        if ok: break
-    if not ok: print(f"  · {name}")
-
-print("\n### slug 直连 ###")
-API=[("greenhouse",lambda s:f"https://boards-api.greenhouse.io/v1/boards/{s}/jobs"),
-     ("lever",lambda s:f"https://api.lever.co/v0/postings/{s}?mode=json"),
-     ("ashby",lambda s:f"https://api.ashbyhq.com/posting-api/job-board/{s}"),
-     ("smartrecruiters",lambda s:f"https://api.smartrecruiters.com/v1/companies/{s}/postings?limit=5")]
-for slug in ["alcon","hoya","tuvsud","zeiss","carlzeiss","stengineering","dyson","amd",
-             "keysight","seagate","western-digital","westerndigital","rollsroyce","siemens",
-             "siemenshealthineers","bd","beckman","abbott","jnj","philips","bayer"]:
-    for ats,mk in API:
-        try:
-            r=S.get(mk(slug),timeout=8)
-            if r.status_code==200 and len(r.content)>80:
-                n=len(re.findall(r'"id"\s*:',r.text))
-                if n: print(f"  ✓ {slug:<20} {ats:<16} ~{n}")
-        except Exception: pass
+print("\n### SmartRecruiters / Greenhouse 新加坡岗位数 ###")
+for n,u,typ in [("Grab","https://api.smartrecruiters.com/v1/companies/grab/postings?limit=100","sr"),
+                ("Western Digital","https://api.smartrecruiters.com/v1/companies/westerndigital/postings?limit=100","sr"),
+                ("EssilorLuxottica","https://api.smartrecruiters.com/v1/companies/essilorluxottica/postings?limit=100","sr"),
+                ("Continental","https://api.smartrecruiters.com/v1/companies/continental/postings?limit=100","sr"),
+                ("ByteDance","https://api.smartrecruiters.com/v1/companies/bytedance/postings?limit=100","sr"),
+                ("SHEIN","https://boards-api.greenhouse.io/v1/boards/shein/jobs","gh"),
+                ("GovTech","https://boards-api.greenhouse.io/v1/boards/govtech/jobs","gh")]:
+    try:
+        d=S.get(u,timeout=25).json()
+        items=d.get("content") if typ=="sr" else d.get("jobs")
+        items=items or []
+        sg=[j for j in items if "singapore" in str(j).lower()]
+        print(f"  {n:<18} 取回 {len(items):>4} 条, 其中新加坡 {len(sg):>3}")
+        for j in sg[:2]:
+            print(f"       · {(j.get('name') or j.get('title',''))[:56]}")
+    except Exception as e:
+        print(f"  {n:<18} 失败 {type(e).__name__}")
