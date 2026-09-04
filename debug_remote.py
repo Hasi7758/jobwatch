@@ -1,44 +1,57 @@
 #!/usr/bin/env python3
-import re, requests, concurrent.futures as cf
-S = requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0","Accept-Language":"de-DE,de;q=0.9"})
+"""探测新加坡职位数据源。"""
+import json, re, requests
+S = requests.Session()
+S.headers.update({"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0",
+                  "Accept":"application/json"})
 
-print("###### A. rodenstock.de 招聘列表页 ######")
-for u in ["https://www.rodenstock.de/karriere/stellenanzeigen",
-          "https://www.rodenstock.de/karriere-jobs",
-          "https://www.rodenstock.de/de/de/wir-als-arbeitgeber.html"]:
+print("###### A. MyCareersFuture (新加坡政府官方门户) ######")
+tests = [
+    ("GET v2/jobs", "GET", "https://api.mycareersfuture.gov.sg/v2/jobs", {"limit":5,"page":0}, None),
+    ("GET v2/search", "GET", "https://api.mycareersfuture.gov.sg/v2/search", {"limit":5,"page":0}, None),
+    ("POST v2/search", "POST", "https://api.mycareersfuture.gov.sg/v2/search?limit=5&page=0", None,
+       {"search":"manager","sessionId":"","categories":[]}),
+    ("POST v2/jobs", "POST", "https://api.mycareersfuture.gov.sg/v2/jobs?limit=5&page=0", None,
+       {"search":"manager"}),
+    ("GET api.../jobs-api", "GET", "https://api.mycareersfuture.sg/v2/jobs", {"limit":5}, None),
+    ("网页首页", "GET", "https://www.mycareersfuture.gov.sg/", None, None),
+]
+for name, meth, url, params, body in tests:
     try:
-        r = S.get(u, timeout=25, allow_redirects=True)
-        print(f"{u[:58]:<60} HTTP {r.status_code} {len(r.text)}字节 -> {r.url[:60]}")
-        if r.status_code == 200:
-            ids = set(re.findall(r'hr4you[^"\']*id=(\d+)', r.text)) | set(re.findall(r'generator\.php\?id=(\d+)', r.text))
-            print("   hr4you id:", sorted(ids)[:20], f"(共{len(ids)})")
-            print("   iframe:", re.findall(r'<iframe[^>]*src="([^"]+)"', r.text)[:3])
-            print("   (m/w/d):", re.findall(r'>([^<>]{6,90}\(m/w/d\))', r.text)[:6])
+        r = S.post(url, json=body, timeout=25) if meth=="POST" else S.get(url, params=params, timeout=25)
+        print(f"[{name}] HTTP {r.status_code}, {len(r.content)} 字节")
+        if r.status_code == 200 and r.content[:1] in (b"{", b"["):
+            d = r.json()
+            keys = list(d)[:8] if isinstance(d, dict) else "list"
+            print("   keys:", keys)
+            res = d.get("results") or d.get("jobs") or d.get("data") or (d if isinstance(d,list) else [])
+            print("   条数:", len(res) if hasattr(res,'__len__') else "?", "| 总数:", d.get("total") if isinstance(d,dict) else "")
+            if res:
+                j0 = res[0]
+                print("   字段:", list(j0)[:14])
+                print("   样例:", json.dumps(j0, ensure_ascii=False)[:400])
     except Exception as e:
-        print(u[:58], type(e).__name__)
+        print(f"[{name}] {type(e).__name__} {str(e)[:60]}")
 
-print("\n###### B. 扫 ID 段(generator.php?id=1900..2100) ######")
-def probe(i):
-    try:
-        r = S.get(f"https://rodenstock.hr4you.org/generator.php?id={i}&changelanguage=de", timeout=12)
-        if r.status_code != 200 or len(r.text) < 3000:
-            return None
-        r.encoding = "iso-8859-1"
-        m = re.search(r"<title>(.*?)</title>", r.text, re.S)
-        title = re.sub(r"\s+", " ", m.group(1)).strip() if m else ""
-        if not title or "fehler" in title.lower() or len(title) < 6:
-            return None
-        loc = ""
-        ml = re.search(r'CONTENT="[^"]*?,\s*([A-ZÄÖÜ][^",]{2,30}?)\s*,\s*[^"]*?"', r.text)
-        mk = re.search(r'Keywords"\s*CONTENT="[^"]*?,\s*([^,"]{3,40}?)\s*,', r.text)
-        return (i, title, (mk.group(1).strip() if mk else ""))
-    except Exception:
-        return None
-
-hits = []
-with cf.ThreadPoolExecutor(max_workers=12) as ex:
-    for res in ex.map(probe, range(1900, 2101)):
-        if res: hits.append(res)
-print(f"命中 {len(hits)} 个有效职位:")
-for i, t, loc in sorted(hits):
-    print(f"   id={i}  {t[:70]}")
+print()
+print("###### B. 新加坡公司 ATS 直连 ######")
+API = [("greenhouse", lambda s:f"https://boards-api.greenhouse.io/v1/boards/{s}/jobs"),
+       ("lever", lambda s:f"https://api.lever.co/v0/postings/{s}?mode=json"),
+       ("ashby", lambda s:f"https://api.ashbyhq.com/posting-api/job-board/{s}"),
+       ("smartrecruiters", lambda s:f"https://api.smartrecruiters.com/v1/companies/{s}/postings?limit=5"),
+       ("workable", lambda s:f"https://apply.workable.com/api/v1/widget/accounts/{s}?details=true"),
+       ("recruitee", lambda s:f"https://{s}.recruitee.com/api/offers/")]
+SLUGS = ["grab","sea","shopee","gojek","carousell","ninjavan","propertyguru","razer",
+         "circles","govtech","zendesk","stripe","atlassian","glints","tiktok","bytedance",
+         "coda","endowus","nium","thoughtworks","aspire","xendit","advance","sleek"]
+for slug in SLUGS:
+    for ats, mk in API:
+        try:
+            r = S.get(mk(slug), timeout=8)
+            if r.status_code == 200 and len(r.content) > 80:
+                n = len(re.findall(r'"id"\s*:', r.text))
+                sg = r.text.lower().count("singapore")
+                if n:
+                    print(f"  ✓ {slug:<14} {ats:<16} ~{n} 职位, 提到 Singapore {sg} 次")
+        except Exception:
+            pass
