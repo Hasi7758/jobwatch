@@ -1,32 +1,23 @@
 #!/usr/bin/env python3
-"""AMD 的 /api/jobs 能用,验证同款路径在其它 Phenom 站点的变体。"""
-import requests
-S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0","Accept":"application/json",
-                                        "Referer":"https://careers.amd.com/"})
-HOSTS=["https://jobs.infineon.com","https://careers.lamresearch.com","https://seagatecareers.com",
-       "https://careers.stengg.com","https://www.jobs.abbott","https://careers.stryker.com",
-       "https://careers.honeywell.com","https://jobs.siemens.com","https://careers.micron.com",
-       "https://jobs.bd.com","https://careers.tuvsud.com","https://jobs.siemens-healthineers.com",
-       "https://careers.alcon.com","https://careers.jnj.com","https://www.safran-group.com"]
-PARAMS=[{"location":"Singapore","limit":5,"page":1},
-        {"location":"Singapore","num":5,"start":0},
-        {"limit":5,"page":1}]
-for h in HOSTS:
-    hit=False
-    for pp in PARAMS:
-        try:
-            r=S.get(h+"/api/jobs", params=pp, timeout=15)
-            if r.status_code==200 and "json" in r.headers.get("content-type",""):
-                d=r.json(); jobs=d.get("jobs") or []
-                if jobs:
-                    x=jobs[0].get("data") or jobs[0]
-                    print(f"  ✓ {h:<46} params={list(pp)} count={d.get('totalCount') or d.get('count')}")
-                    print(f"      · {str(x.get('title'))[:50]} | {x.get('city') or x.get('location_name')}")
-                    hit=True; break
-        except Exception: pass
-    if not hit:
-        try:
-            r=S.get(h+"/api/jobs", params={"limit":1}, timeout=12)
-            print(f"  · {h:<46} HTTP {r.status_code} {r.headers.get('content-type','')[:20]}")
-        except Exception as e:
-            print(f"  · {h:<46} {type(e).__name__}")
+import requests, re, collections
+S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0"})
+U="https://jobs.infineon.com/gen/js/ef-536eaa00.b460e4d8416cb3353937.js"
+r=S.get(U,timeout=40); js=r.text
+print(f"HTTP {r.status_code} {len(js)} 字节")
+
+print("\n=== 含 api 的路径字符串 ===")
+paths=set(re.findall(r'["\'`](/[a-zA-Z0-9/_.-]{2,80})["\'`]', js))
+api=[p for p in paths if re.search(r'api|job|search|widget|graphql', p, re.I)]
+for p in sorted(api)[:40]: print("  ", p)
+
+print("\n=== 完整 URL ===")
+for u in sorted(set(re.findall(r'https?://[a-zA-Z0-9./_?=&%-]{10,120}', js)))[:30]:
+    if re.search(r'api|job|search|phenom|widget', u, re.I): print("  ", u)
+
+print("\n=== 关键词上下文 ===")
+for kw in ["/api/", "phApp", "ddo", "jobSearch", "searchJob", "totalHits", "eagerLoad", "domain:"]:
+    idx=[m.start() for m in re.finditer(re.escape(kw), js)][:3]
+    if idx:
+        print(f"\n--- {kw} ({len(idx)}处) ---")
+        for i in idx[:2]:
+            print("   ", js[max(0,i-140):i+180].replace("\n"," ")[:320])
