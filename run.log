@@ -31,28 +31,26 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1309 条
+  拿到 1312 条
 
-过滤后 45 / 2059 条符合关键词+地点
+过滤后 51 / 2062 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 15 条(宽松模式,其余保留)
+IG Metall 雇主命中 14 条(宽松模式,其余保留)
 
-★ 新职位 16 条
-  · Senior Rollout Manager (f/m/x) – DACH — IONITY GmbH
-  · Head of Business Operations / Senior Business Operations Man — Vicegolf
-  · Product Manager (DevTools & AI Reliability, remote) — Checkly
-  · Lead / Senior Manager Fiber Customer Activation and Service  — OXG Glasfaser GmbH
-  · (Senior) Projekt- und Prozessmanager Customer Activation (m/ — OXG Glasfaser GmbH
-  · (Senior) IT Product Owner Data Platform (m/w/d) — OXG Glasfaser GmbH
-  · (Senior) Partnerships Manager DACH (m/f/d) — Bears With Benefits
-  · Senior Consultant/Manager Business Strategy (m/f/d) — Yoummday GmbH
-  · Project Manager, Gaming Localization Production — LILT (Production)
-  · Principal Consultant (Senior Manager) - Trade & Transaction  — capco
-  · Principal Consultant - (Senior Manager) Trade & Transaction  — capco
-  · Principal Consultant (Senior Manager) - Operational Resilien — capco
-  · Principal Consultant - (Senior Manager) Operational Resilien — capco
-  · Principal Consultant (Senior Manager) - Finance Transformati — capco
-  · Principal Consultant - (Senior Manager) Finance Transformati — capco
-  …另有 1 条
+★ 新职位 14 条
+  · Senior Application Product Manager - Supply Chain - Procurem — celonis
+  · Product Manager, BSG (m/f/d) — autoscout24
+  · Senior Manager, Clinical Operations — Precisionmedicinegroup
+  · Product Manager - Payments — ThriveCart
+  · (Senior) B2B Operations Manager (all genders) — Stapelstein
+  · Senior Product Manager (Giftcard) — Atolls
+  · Produktmanager Klinikabrechnung / Krankenhausabrechnung (m/w — Meierhofer
+  · Principal Information Security Manager — Staffbase
+  · Product Owner (m/f/d) - Medical AI — Ocumeda Ag
+  · Product Manager Integration (m/w/d) — Epay
+  · Senior Technical Project Manager - PMO (all genders) — Contabo
+  · Store & Operations Manager (m/w/d) Take-Away Konzept — VIR GmbH
+  · Projektleiter Datacenter Elektrotechnik (m/w/d) — Hypertrics GmbH
+  · Projektleiter Datacenter Elektrotechnik (m/w/d) — Hypertrics GmbH
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
