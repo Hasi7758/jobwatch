@@ -1,38 +1,56 @@
 #!/usr/bin/env python3
-import requests, re
-S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0","Content-Type":"application/json"})
-WD=[("Micron","https://micron.wd1.myworkdayjobs.com/wday/cxs/micron/External/jobs"),
-    ("GlobalFoundries","https://globalfoundries.wd1.myworkdayjobs.com/wday/cxs/globalfoundries/External/jobs"),
-    ("Applied Materials","https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs"),
-    ("KLA","https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/Search/jobs"),
-    ("Medtronic","https://medtronic.wd1.myworkdayjobs.com/wday/cxs/medtronic/MedtronicCareers/jobs")]
-print(f"{'公司':<20} {'全球总数':>8} {'含Singapore':>12} {'其中管理岗':>10}")
-for n,u in WD:
-    try:
-        a=S.post(u,json={"appliedFacets":{},"limit":1,"offset":0,"searchText":""},timeout=25).json()
-        b=S.post(u,json={"appliedFacets":{},"limit":20,"offset":0,"searchText":"Singapore"},timeout=25).json()
-        c=S.post(u,json={"appliedFacets":{},"limit":20,"offset":0,"searchText":"Singapore manager"},timeout=25).json()
-        print(f"{n:<20} {str(a.get('total')):>8} {str(b.get('total')):>12} {str(c.get('total')):>10}")
-        for p in (b.get("jobPostings") or [])[:3]:
-            print(f"     · {p.get('title','')[:52]:<54} {p.get('postedOn','')}")
-    except Exception as e:
-        print(f"{n:<20} 失败 {type(e).__name__}")
+import requests, re, itertools
+S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0"})
+print("### Workday 穷举(航空MRO + 半导体 + 医疗)###")
+TEN={"ST Engineering":["stengg","stengineering","st-engineering"],
+     "Rolls-Royce":["rollsroyce","rr","royce"],
+     "RTX/Collins":["rtx","raytheon","utc","collins"],
+     "Honeywell":["honeywell"],
+     "Safran":["safran"],
+     "SIA Engineering":["siaec","siaengineering"],
+     "Singapore Airlines":["singaporeairlines","sia"],
+     "Abbott":["abbott"],
+     "J&J":["jnj","johnsonandjohnson"],
+     "Stryker":["stryker"],
+     "Boston Scientific":["bostonscientific","bsci"],
+     "AMD":["amd"],
+     "Lam Research":["lamresearch","lam"],
+     "Infineon":["infineon"],
+     "Seagate":["seagate"],
+     "Keysight":["keysight"],
+     "Siemens Healthineers":["healthineers","siemenshealthineers"],
+     "Dyson":["dyson"],
+     "Shell":["shell"],
+     "Schneider":["schneiderelectric","se"]}
+SITES=["External","Careers","Search","ExternalCareers","External_Career_Site","Global",
+       "CareerSite","careers","Professional","ExternalSite"]
+WDS=["wd1","wd3","wd5"]
+for name,tens in TEN.items():
+    hit=None
+    for ten,wd,site in itertools.product(tens,WDS,SITES):
+        u=f"https://{ten}.{wd}.myworkdayjobs.com/wday/cxs/{ten}/{site}/jobs"
+        try:
+            r=S.post(u,json={"appliedFacets":{},"limit":1,"offset":0,"searchText":"Singapore"},
+                     headers={"Content-Type":"application/json"},timeout=8)
+            if r.status_code==200:
+                d=r.json()
+                if d.get("total") is not None:
+                    hit=(u,d.get("total")); break
+        except Exception: pass
+    print((f"  ✓ {name:<22} SG={hit[1]}\n      {hit[0]}") if hit else f"  · {name}")
 
-print("\n### SmartRecruiters / Greenhouse 新加坡岗位数 ###")
-for n,u,typ in [("Grab","https://api.smartrecruiters.com/v1/companies/grab/postings?limit=100","sr"),
-                ("Western Digital","https://api.smartrecruiters.com/v1/companies/westerndigital/postings?limit=100","sr"),
-                ("EssilorLuxottica","https://api.smartrecruiters.com/v1/companies/essilorluxottica/postings?limit=100","sr"),
-                ("Continental","https://api.smartrecruiters.com/v1/companies/continental/postings?limit=100","sr"),
-                ("ByteDance","https://api.smartrecruiters.com/v1/companies/bytedance/postings?limit=100","sr"),
-                ("SHEIN","https://boards-api.greenhouse.io/v1/boards/shein/jobs","gh"),
-                ("GovTech","https://boards-api.greenhouse.io/v1/boards/govtech/jobs","gh")]:
-    try:
-        d=S.get(u,timeout=25).json()
-        items=d.get("content") if typ=="sr" else d.get("jobs")
-        items=items or []
-        sg=[j for j in items if "singapore" in str(j).lower()]
-        print(f"  {n:<18} 取回 {len(items):>4} 条, 其中新加坡 {len(sg):>3}")
-        for j in sg[:2]:
-            print(f"       · {(j.get('name') or j.get('title',''))[:56]}")
-    except Exception as e:
-        print(f"  {n:<18} 失败 {type(e).__name__}")
+print("\n### slug 直连 ###")
+API=[("greenhouse",lambda s:f"https://boards-api.greenhouse.io/v1/boards/{s}/jobs"),
+     ("lever",lambda s:f"https://api.lever.co/v0/postings/{s}?mode=json"),
+     ("ashby",lambda s:f"https://api.ashbyhq.com/posting-api/job-board/{s}"),
+     ("smartrecruiters",lambda s:f"https://api.smartrecruiters.com/v1/companies/{s}/postings?limit=5")]
+for slug in ["stengineering","stengg","rollsroyce","siaec","safran","honeywell","abbott",
+             "stryker","bostonscientific","amd","lamresearch","seagate","keysight","dyson",
+             "shell","schneiderelectric","sembcorp","keppel","seagroup","sea"]:
+    for ats,mk in API:
+        try:
+            r=S.get(mk(slug),timeout=8)
+            if r.status_code==200 and len(r.content)>80:
+                n=len(re.findall(r'"id"\s*:',r.text)); sg=r.text.lower().count("singapore")
+                if n: print(f"  ✓ {slug:<20} {ats:<16} ~{n} 条, SG {sg}")
+        except Exception: pass
