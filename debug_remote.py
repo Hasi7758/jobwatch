@@ -2,33 +2,38 @@
 import requests, json
 S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0","Accept":"application/json"})
 
-print("### Phenom /api/jobs 全面探测 ###")
-HOSTS=[("AMD","https://careers.amd.com"),("Keysight","https://careers.keysight.com"),
-       ("Infineon","https://jobs.infineon.com"),("Lam Research","https://careers.lamresearch.com"),
-       ("Seagate","https://seagatecareers.com"),("ST Engineering","https://careers.stengg.com"),
-       ("Micron","https://careers.micron.com"),("Abbott","https://www.jobs.abbott"),
-       ("Stryker","https://careers.stryker.com"),("Honeywell","https://careers.honeywell.com")]
-for name, host in HOSTS:
-    for path in ["/api/jobs", "/widgets/api/jobs"]:
+TARGETS=[("Infineon","https://jobs.infineon.com","infineon.com"),
+         ("Lam Research","https://careers.lamresearch.com","lamresearch.com"),
+         ("Seagate","https://seagatecareers.com","seagate.com"),
+         ("ST Engineering","https://careers.stengg.com","stengg.com"),
+         ("Abbott","https://www.jobs.abbott","abbott.com"),
+         ("Stryker","https://careers.stryker.com","stryker.com"),
+         ("Honeywell","https://careers.honeywell.com","honeywell.com"),
+         ("Siemens","https://jobs.siemens.com","siemens.com"),
+         ("Siemens Healthineers","https://jobs.siemens-healthineers.com","siemens-healthineers.com"),
+         ("TUV SUD","https://careers.tuvsud.com","tuvsud.com"),
+         ("Micron","https://careers.micron.com","micron.com"),
+         ("ASML","https://www.asml.com","asml.com"),
+         ("Trumpf","https://careers.trumpf.com","trumpf.com"),
+         ("BD","https://jobs.bd.com","bd.com")]
+
+for name, host, dom in TARGETS:
+    found=False
+    for path, extra in [("/api/jobs", {"domain":dom,"start":0,"num":10,"location":"Singapore"}),
+                        ("/api/jobs", {"domain":dom,"start":0,"num":10}),
+                        ("/widgets/api/jobs", {"domain":dom,"start":0,"num":10,"location":"Singapore"}),
+                        ("/api/jobs", {"start":0,"num":10,"location":"Singapore"})]:
         try:
-            r=S.get(host+path, params={"location":"Singapore","limit":10,"page":1}, timeout=20)
+            r=S.get(host+path, params=extra, timeout=20)
             if r.status_code==200 and "json" in r.headers.get("content-type",""):
                 d=r.json(); jobs=d.get("jobs") or []
-                print(f"  ✓ {name:<16} {path:<18} 返回 {len(jobs)} 条 | totalCount={d.get('totalCount') or d.get('count')}")
-                for j in jobs[:2]:
-                    dd=j.get("data") or j
-                    print(f"      · {str(dd.get('title'))[:48]:<50} loc={str(dd.get('city') or dd.get('location'))[:22]} date={dd.get('posted_date') or dd.get('create_date')}")
                 if jobs:
-                    print("      字段:", list((jobs[0].get('data') or jobs[0]).keys())[:18])
-                break
-        except Exception as e:
-            pass
-    else:
-        print(f"  · {name}")
-
-print("\n### 参数验证:Singapore 过滤是否生效 (AMD) ###")
-for loc in ["Singapore", ""]:
-    r=S.get("https://careers.amd.com/api/jobs", params={"location":loc,"limit":100,"page":1}, timeout=25)
-    d=r.json(); jobs=d.get("jobs") or []
-    sg=sum(1 for j in jobs if "singapore" in json.dumps(j).lower())
-    print(f"  location={loc!r:<12} 返回{len(jobs)} 其中含Singapore {sg} | total={d.get('totalCount')}")
+                    dd=jobs[0].get("data") or jobs[0]
+                    print(f"  ✓ {name:<22} {path}?domain={extra.get('domain','-')}")
+                    print(f"      count={d.get('count') or d.get('totalCount')} 本页={len(jobs)}")
+                    for j in jobs[:3]:
+                        x=j.get("data") or j
+                        print(f"        · {str(x.get('title'))[:46]:<48} {str(x.get('city') or x.get('location_name'))[:18]:<20} {str(x.get('posted_date'))[:10]}")
+                    found=True; break
+        except Exception: pass
+    if not found: print(f"  · {name}")
