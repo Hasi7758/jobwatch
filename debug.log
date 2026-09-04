@@ -1,14 +1,26 @@
-  · Infineon
-  · Lam Research
-  · Seagate
-  · ST Engineering
-  · Abbott
-  · Stryker
-  · Honeywell
-  · Siemens
-  · Siemens Healthineers
-  · TUV SUD
-  · Micron
-  · ASML
-  · Trumpf
-  · BD
+/home/runner/work/jobwatch/jobwatch/debug_remote.py:18: SyntaxWarning: invalid escape sequence '\['
+  for var in ["phApp.ddo","window.phApp","__INITIAL_STATE__","eagerLoadRefineSearch","jobs\":\["]:
+### 抓用户给的真实页面,找内嵌数据/接口 ###
+
+=== Infineon HTTP 200 266322 字节 text/html; charset=utf-8
+  phApp.ddo                  未出现
+  window.phApp               未出现
+  __INITIAL_STATE__          未出现
+  eagerLoadRefineSearch      未出现
+  jobs":\[                   未出现
+  页面里的 api 路径: []
+  phenom 域名: []
+  totalHits: 无
+
+=== Lam HTTP 200 220751 字节 text/html; charset=utf-8
+  phApp.ddo                  未出现
+  window.phApp               未出现
+  __INITIAL_STATE__          未出现
+  eagerLoadRefineSearch      未出现
+  jobs":\[                   未出现
+  页面里的 api 路径: []
+  phenom 域名: []
+  totalHits: 无
+
+=== AMD-ok HTTP 200 99602 字节 application/json; charset=ut
+  已是JSON,跳过
