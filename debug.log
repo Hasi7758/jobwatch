@@ -1,21 +1,14 @@
-### Phenom /api/jobs 全面探测 ###
-  ✓ AMD              /api/jobs          返回 10 条 | totalCount=48
-      · Senior Threat Intelligence Manager                 loc=None date=2026-08-31T14:42:00+0000
-      · Wafer Sort/Final Test Thermal Mechanical hardwar   loc=Singapore date=2026-08-25T03:49:00+0000
-      字段: ['slug', 'language', 'languages', 'req_id', 'title', 'description', 'location_name', 'street_address', 'state', 'country', 'country_code', 'location_type', 'latitude', 'longitude', 'categories', 'tags1', 'tags2', 'tags3']
-  ✓ Keysight         /api/jobs          返回 10 条 | totalCount=120
-      · Software Test Automation Engineer                  loc=Singapore date=2026-09-01T03:48:00+0000
-      · Eggplant Server Product Owner                      loc=Singapore date=2026-08-24T09:03:00+0000
-      字段: ['slug', 'language', 'languages', 'req_id', 'title', 'description', 'location_name', 'street_address', 'city', 'country', 'country_code', 'postal_code', 'location_type', 'latitude', 'longitude', 'categories', 'tags1', 'tags2']
   · Infineon
   · Lam Research
   · Seagate
   · ST Engineering
-  · Micron
   · Abbott
   · Stryker
   · Honeywell
-
-### 参数验证:Singapore 过滤是否生效 (AMD) ###
-  location='Singapore'  返回48 其中含Singapore 48 | total=48
-  location=''           返回100 其中含Singapore 4 | total=1160
+  · Siemens
+  · Siemens Healthineers
+  · TUV SUD
+  · Micron
+  · ASML
+  · Trumpf
+  · BD
