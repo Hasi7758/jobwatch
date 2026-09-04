@@ -1,31 +1,21 @@
-###### A. Phenom People (Infineon / Lam / Keysight) ######
-  Infineon       /widgets                 HTTP 404 text/html; charset=utf-8 迹象=0
-  Infineon       /api/jobs                HTTP 404 text/html; charset=utf-8 迹象=0
-  Infineon       /search-jobs/results     HTTP 404 text/html; charset=utf-8 迹象=0
-  Infineon       /careers/jobs            HTTP 200 text/html; charset=utf-8 迹象=0
-  Lam Research   /widgets                 HTTP 404 text/html; charset=utf-8 迹象=0
-  Lam Research   /api/jobs                HTTP 404 text/html; charset=utf-8 迹象=0
-  Lam Research   /search-jobs/results     HTTP 404 text/html; charset=utf-8 迹象=0
-  Lam Research   /careers/jobs            HTTP 200 text/html; charset=utf-8 迹象=0
-  Keysight       /widgets                 HTTP 200 text/html; charset=utf-8 迹象=0
-  Keysight       /api/jobs                HTTP 200 application/json; charset=utf- 迹象=10
-     样例: {"jobs": [{"data": {"slug": "53500", "language": "en-us", "languages": ["en-us"], "req_id": "53500", "title": "Software Test Automation Engineer", "description": "Overview Keysight is at the forefront of technology innovation, delivering breakthroughs and trusted insights in electronic design, simulation, prototyping, test, manufacturing, and optimization. Our ~16,800 employees create world-class 
-  Keysight       /search-jobs/results     HTTP 404 text/html; charset=utf-8 迹象=0
-  Keysight       /careers/jobs            HTTP 200 text/html; charset=utf-8 迹象=0
+### Phenom /api/jobs 全面探测 ###
+  ✓ AMD              /api/jobs          返回 10 条 | totalCount=48
+      · Senior Threat Intelligence Manager                 loc=None date=2026-08-31T14:42:00+0000
+      · Wafer Sort/Final Test Thermal Mechanical hardwar   loc=Singapore date=2026-08-25T03:49:00+0000
+      字段: ['slug', 'language', 'languages', 'req_id', 'title', 'description', 'location_name', 'street_address', 'state', 'country', 'country_code', 'location_type', 'latitude', 'longitude', 'categories', 'tags1', 'tags2', 'tags3']
+  ✓ Keysight         /api/jobs          返回 10 条 | totalCount=120
+      · Software Test Automation Engineer                  loc=Singapore date=2026-09-01T03:48:00+0000
+      · Eggplant Server Product Owner                      loc=Singapore date=2026-08-24T09:03:00+0000
+      字段: ['slug', 'language', 'languages', 'req_id', 'title', 'description', 'location_name', 'street_address', 'city', 'country', 'country_code', 'postal_code', 'location_type', 'latitude', 'longitude', 'categories', 'tags1', 'tags2']
+  · Infineon
+  · Lam Research
+  · Seagate
+  · ST Engineering
+  · Micron
+  · Abbott
+  · Stryker
+  · Honeywell
 
-###### B. iCIMS (AMD) ######
-  https://careers-amd.icims.com/jobs/search              HTTP 200 140字节 text/html;charset=UTF-8
-     job id: [] (共0)
-  https://careers.amd.com/api/jobs                       HTTP 200 186935字节 application/json; charse
-     job id: ['78864', '84338', '88041', '88044', '88425', '88431', '89833', '91461'] (共10)
-  https://careers.amd.com/careers-home/jobs              HTTP 200 414886字节 text/html; charset=utf-8
-     job id: [] (共0)
-
-###### C. SuccessFactors (Seagate) ######
-  https://career41.sapsf.com/careers?company=seagatetec          HTTP 200 184261字节
-     /job/ 链接: [] (共0)
-     含 jobTitle-link: 0
-  https://career41.sapsf.com/search?company=seagatetec&locatio   HTTP 404 43815字节
-  https://seagatecareers.com/search/?q=&locationsearch=Singapo   HTTP 200 69242字节
-     /job/ 链接: [] (共0)
-     含 jobTitle-link: 0
+### 参数验证:Singapore 过滤是否生效 (AMD) ###
+  location='Singapore'  返回48 其中含Singapore 48 | total=48
+  location=''           返回100 其中含Singapore 4 | total=1160
