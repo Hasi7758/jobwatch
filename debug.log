@@ -1,40 +1,18 @@
-扫描 38 个 JS …
+### /search 各种调用 ###
+  search html    HTTP 200     144字节 application/json
+     JSON: {"url":"https://jobs.infineon.com/login?domain=infineon.com&hl=en&next=https%3A%2F%2Fjobs.infineon.com%2Fsearch%3Fq%3D%26location%3DSingapore"}
 
-### base.df0a37eeb2ad2ad3851a2f3a7bf662ab.js (29720字节)
-   PATH: /api/favorite_position
-   PATH: /api/internal_view_app/enabled_for
-   PATH: /api/internal_view_app/view_function
-   PATH: /api/suggest
-   PATH: /search
-   PATH: /search/
+  search json    HTTP 200     144字节 application/json
+     JSON: {"url":"https://jobs.infineon.com/login?domain=infineon.com&hl=en&next=https%3A%2F%2Fjobs.infineon.com%2Fsearch%3Fq%3D%26location%3DSingapore"}
 
-### i18n_override_infineon.com_en_17336d3d.js (21122字节)
-   CTX : jobs? :: ove from cart": "Remove from Saved Jobs", "Remove job from cart?": "Remove job from saved jobs?", "Profile ineligible for position as configured by your organization": "There may be a significant gap in the role expectations, considering the candidat
+  search start   HTTP 200     160字节 application/json
+     JSON: {"url":"https://jobs.infineon.com/login?domain=infineon.com&hl=en&next=https%3A%2F%2Fjobs.infineon.com%2Fsearch%3Fstart%3D0%26num%3D10%26location%3DSingapore"}
 
-### user_interaction.d05956ed.js (1603字节)
-   PATH: /api/user_interaction/submit
+  careers json   HTTP 200  273602字节 text/html; charset=utf-8
+     标记数=7 抓到标题=[]
+  careers ajax   HTTP 200  266258字节 text/html; charset=utf-8
+     标记数=6 抓到标题=[]
+  api suggest    HTTP 400      18字节 text/html; charset=utf-8
 
-### ef-bb3d84b5.fb4d9644438aaeffe5a9.js (702822字节)
-   PATH: /apis
-   PATH: /discovery/v1/apis/drive/v2/rest
-   PATH: /js/api
-
-### ef-1cdde194.2e3ba7586d3a58285f46.js (112817字节)
-   PATH: /search
-
-### ef-27545368.42e904ef9d4a06c04398.js (65881字节)
-   PATH: /api-reference/store
-
-### pcsxPwa.fcc53e8d73c6e3a442a2.js (825372字节)
-   PATH: /api/approval/action-reasons
-   PATH: /api/approval/comments/
-   PATH: /api/approval/dashboard/bootdata
-   PATH: /api/approval/offer/
-   PATH: /api/approval/requests/
-   PATH: /api/contact/upload_attachment
-   PATH: /api/inbox/download_attachment
-   PATH: /api/offer/
-   PATH: /api/offer/offers
-   PATH: /api/offer/offers/
-   PATH: /api/pcsx/dashboard/applications
-   PATH: /api/pcsx/dashboard/events
+### 直接看 /search 页面里有没有职位 ###
+字节: 137
