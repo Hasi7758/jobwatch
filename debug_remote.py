@@ -1,29 +1,32 @@
 #!/usr/bin/env python3
-import requests, re, json
-S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0"})
-
-print("### 抓用户给的真实页面,找内嵌数据/接口 ###")
-URLS=[("Infineon","https://jobs.infineon.com/careers?start=0&location=Singapore&sort_by=distance"),
-      ("Lam","https://careers.lamresearch.com/careers?start=0&sort_by=timestamp"),
-      ("AMD-ok","https://careers.amd.com/api/jobs?location=Singapore&limit=5&page=1")]
-for name,u in URLS:
-    try:
-        r=S.get(u,timeout=30); h=r.text
-    except Exception as e:
-        print(f"{name}: {type(e).__name__}"); continue
-    print(f"\n=== {name} HTTP {r.status_code} {len(h)} 字节 {r.headers.get('content-type','')[:28]}")
-    if "json" in r.headers.get("content-type",""):
-        print("  已是JSON,跳过"); continue
-    # Phenom 常把首屏数据塞进 window.* 变量
-    for var in ["phApp.ddo","window.phApp","__INITIAL_STATE__","eagerLoadRefineSearch","jobs\":\["]:
-        i=h.find(var)
-        print(f"  {var:<26} {'@'+str(i) if i>=0 else '未出现'}")
-    m=re.search(r'"eagerLoadRefineSearch"\s*:\s*(\{.{0,600})', h, re.S)
-    if m: print("  eagerLoad 片段:", m.group(1)[:400].replace("\n"," "))
-    # 找 api 路径
-    apis=set(re.findall(r'["\'](/[a-z0-9/_-]*api[a-z0-9/_-]*)["\']', h, re.I))
-    print("  页面里的 api 路径:", sorted(apis)[:12])
-    hosts=set(re.findall(r'https://([a-z0-9.-]*phenom[a-z0-9.-]*)', h, re.I))
-    print("  phenom 域名:", sorted(hosts)[:6])
-    m2=re.search(r'"totalHits?"\s*:\s*(\d+)', h)
-    print("  totalHits:", m2.group(1) if m2 else "无")
+"""AMD 的 /api/jobs 能用,验证同款路径在其它 Phenom 站点的变体。"""
+import requests
+S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0","Accept":"application/json",
+                                        "Referer":"https://careers.amd.com/"})
+HOSTS=["https://jobs.infineon.com","https://careers.lamresearch.com","https://seagatecareers.com",
+       "https://careers.stengg.com","https://www.jobs.abbott","https://careers.stryker.com",
+       "https://careers.honeywell.com","https://jobs.siemens.com","https://careers.micron.com",
+       "https://jobs.bd.com","https://careers.tuvsud.com","https://jobs.siemens-healthineers.com",
+       "https://careers.alcon.com","https://careers.jnj.com","https://www.safran-group.com"]
+PARAMS=[{"location":"Singapore","limit":5,"page":1},
+        {"location":"Singapore","num":5,"start":0},
+        {"limit":5,"page":1}]
+for h in HOSTS:
+    hit=False
+    for pp in PARAMS:
+        try:
+            r=S.get(h+"/api/jobs", params=pp, timeout=15)
+            if r.status_code==200 and "json" in r.headers.get("content-type",""):
+                d=r.json(); jobs=d.get("jobs") or []
+                if jobs:
+                    x=jobs[0].get("data") or jobs[0]
+                    print(f"  ✓ {h:<46} params={list(pp)} count={d.get('totalCount') or d.get('count')}")
+                    print(f"      · {str(x.get('title'))[:50]} | {x.get('city') or x.get('location_name')}")
+                    hit=True; break
+        except Exception: pass
+    if not hit:
+        try:
+            r=S.get(h+"/api/jobs", params={"limit":1}, timeout=12)
+            print(f"  · {h:<46} HTTP {r.status_code} {r.headers.get('content-type','')[:20]}")
+        except Exception as e:
+            print(f"  · {h:<46} {type(e).__name__}")
