@@ -1,27 +1,33 @@
 #!/usr/bin/env python3
-import requests, re
+import requests, re, concurrent.futures as cf
 from urllib.parse import urljoin
 S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0"})
 BASE="https://jobs.infineon.com/careers?start=0&location=Singapore"
 h=S.get(BASE,timeout=30).text
-print("页面", len(h), "字节")
-scripts=re.findall(r'<script[^>]+src=["\']([^"\']+)["\']', h)
-print(f"共 {len(scripts)} 个 JS:")
-for s in scripts: print("  ", s[:100])
+scripts=[urljoin(BASE,s) for s in re.findall(r'<script[^>]+src=["\']([^"\']+)["\']',h)]
+scripts=[s for s in scripts if "/gen/" in s or "vscdn" in s]
+print(f"扫描 {len(scripts)} 个 JS …")
 
-PAT=re.compile(r'(?:"|\'|`)(/(?:[a-z0-9_-]+/)*(?:api|search|jobs|widgets)[a-z0-9/_-]*)(?:"|\'|`)', re.I)
-for s in scripts[:12]:
-    u=urljoin(BASE,s)
-    try: js=S.get(u,timeout=40).text
-    except Exception as e: print(f"\n{s[:60]} 抓取失败"); continue
-    hits=set(PAT.findall(js))
-    urls=set(x for x in re.findall(r'https?://[a-zA-Z0-9./_?=&%:-]{12,140}', js) if re.search(r'api|job|search|phenom',x,re.I))
-    if hits or urls:
-        print(f"\n### {s[:70]} ({len(js)}字节)")
-        for x in sorted(hits)[:15]: print("   路径:", x)
-        for x in sorted(urls)[:10]: print("   URL :", x[:120])
-    # ph 特征
-    for kw in ["ph-search","phenompeople","x-widget","refineSearch","jobsSearch","/api/jobs"]:
-        if kw in js:
-            i=js.find(kw)
-            print(f"   [{kw}] …{js[max(0,i-100):i+150]}…".replace("\n"," ")[:280])
+KEY=re.compile(r'(/(?:[a-z0-9_-]+/){0,3}(?:api|widgets|search)[a-z0-9/_-]*)', re.I)
+def scan(u):
+    try: js=S.get(u,timeout=45).text
+    except Exception: return None
+    out=[]
+    for m in set(KEY.findall(js)):
+        if len(m)>4: out.append(("PATH",m))
+    for kw in ["/api/jobs","ph-search","x-widget","refineSearch","totalHits","careerSiteApi",
+               "jobDetail","recommended-jobs","phenom","ddoKey","jobs?"]:
+        i=js.find(kw)
+        if i>=0: out.append(("CTX", kw+" :: "+js[max(0,i-90):i+160].replace("\n"," ")[:250]))
+    return (u,len(js),out) if out else None
+
+with cf.ThreadPoolExecutor(max_workers=8) as ex:
+    for res in ex.map(scan, scripts):
+        if not res: continue
+        u,n,out=res
+        paths=sorted({v for k,v in out if k=="PATH"})
+        ctx=[v for k,v in out if k=="CTX"]
+        if paths or ctx:
+            print(f"\n### {u.split('/')[-1][:50]} ({n}字节)")
+            for p in paths[:12]: print("   PATH:", p)
+            for c in ctx[:4]: print("   CTX :", c)
