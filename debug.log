@@ -1,43 +1,25 @@
-###### A. rodenstock.de 招聘列表页 ######
-https://www.rodenstock.de/karriere/stellenanzeigen           HTTP 200 112366字节 -> https://www.rodenstock.de/karriere/stellenanzeigen
-   hr4you id: [] (共0)
-   iframe: []
-   (m/w/d): []
-https://www.rodenstock.de/karriere-jobs                      HTTP 200 112366字节 -> https://www.rodenstock.de/karriere/stellenanzeigen
-   hr4you id: [] (共0)
-   iframe: []
-   (m/w/d): []
-https://www.rodenstock.de/de/de/wir-als-arbeitgeber.html     HTTP 200 125281字节 -> https://www.rodenstock.de/karriere/wir-als-arbeitgeber
-   hr4you id: [] (共0)
-   iframe: []
-   (m/w/d): []
+###### A. MyCareersFuture (新加坡政府官方门户) ######
+[GET v2/jobs] HTTP 200, 35381 字节
+   keys: ['results', 'total', '_links', 'countWithoutFilters']
+   条数: 5 | 总数: 97964
+   字段: ['uuid', 'sourceCode', 'title', 'description', 'minimumYearsExperience', 'shiftPattern', 'schemes', 'skills', 'flexibleWorkArrangements', 'otherRequirements', 'ssocCode', 'occupationId', 'ssocVersion', 'workingHours']
+   样例: {"uuid": "59aba86def274755cd4c8a22b8576ba0", "sourceCode": "Employer Portal", "title": "✈️ MARKETING & EVENTS – Travel Opportunities", "description": "<p>📍 Singapore | Full-Time | Entry-Level</p><p>This role is designed for individuals who want more than just local exposure—combining hands-on marketing experience with opportunities to be part of regional campaigns and travel experiences as the bus
+[GET v2/search] HTTP 404, 148 字节
+[POST v2/search] HTTP 200, 13769 字节
+   keys: ['_links', 'searchRankingId', 'results', 'total', 'countWithoutFilters']
+   条数: 5 | 总数: 11289
+   字段: ['uuid', 'score', 'title_match_score', 'job_role_score', 'skills_match_score', 'recency_score', 'metadata', 'address', 'hiringCompany', 'positionLevels', 'schemes', 'flexibleWorkArrangements', 'salary', 'postedCompany']
+   样例: {"uuid": "7039964f3091f6831eb9a58961266486", "score": 0.8513066752926977, "title_match_score": 0.1301597, "job_role_score": 1.4884843, "skills_match_score": 0, "recency_score": 1.0651566, "metadata": {"jobPostId": "MCF-2026-1549278", "updatedAt": "2026-09-03T08:00:01", "newPostingDate": "2026-09-03", "totalNumberJobApplication": 0, "isPostedOnBehalf": false, "isHideSalary": false, "isHideHiringEmp
+[POST v2/jobs] HTTP 401, 12 字节
+[GET api.../jobs-api] ConnectionError HTTPSConnectionPool(host='api.mycareersfuture.sg', port=443)
+[网页首页] HTTP 200, 7923 字节
 
-###### B. 扫 ID 段(generator.php?id=1900..2100) ######
-命中 27 个有效职位:
-   id=1900  Praktikant (m/w/d) in der Personalentwicklung
-   id=1960  Praktikant (m/w/d) im Recruiting und Personalmarketing
-   id=1975  Corporate Tax Manager (m/w/d)
-   id=1983  International Assistant Sales Europe (m/w/d)
-   id=1984  International Assistant Sales Europe (m/f/x)
-   id=1989  Manager Strategy and Execution Sales Europe (m/f/x)
-   id=1991  International Procurement Excellence Expert (m/w/d)
-   id=1996  International Procurement Excellence Expert (m/f/x)
-   id=1997  Ausbildung Elektroniker für Betriebstechnik (m/w/d)
-   id=1998  Ausbildung Industriemechaniker (m/w/d)
-   id=1999  Manager Strategy and Execution Sales Europe (m/w/d)
-   id=2000  Duales Studium Bachelor of Engineering Elektrotechnik (m/w/d)
-   id=2005  International Product and Project Manager Lenses (m/f/x)
-   id=2006  Internationaler Produkt- und Projektmanager Brillengläser (m/w/d)
-   id=2008  Data Scientist R&D Coatings (m/w/d)
-   id=2009  Projektleiter Engineering Plastic Lenses (m/w/d)
-   id=2010  Data Scientist R&D Coatings (m/f/x)
-   id=2012  Ausbildung Industriekaufmann (m/w/d)
-   id=2013  Dualer Student (m/w/d) Bachelor of Business Administration
-   id=2014  Dualer Student (m/w/d) Bachelor of Science Wirtschaftsinformatik
-   id=2015  Dualer Student (m/w/d) Bachelor Management & Digitalisierung
-   id=2017  Internationaler Category Manager Marketing (m/w/d)
-   id=2023  International Category Manager ICT (m/f/x)
-   id=2025  Teamleiter Customer Service Systems (m/w/d)
-   id=2027  Aussendienstmitarbeiter Brillengläser (m/w/d)
-   id=2030  Internationaler Category Manager ICT (m/w/d)
-   id=2031  Director Finance & Controlling (m/f/x)
+###### B. 新加坡公司 ATS 直连 ######
+  ✓ grab           smartrecruiters  ~25 职位, 提到 Singapore 4 次
+  ✓ ninjavan       lever            ~158 职位, 提到 Singapore 376 次
+  ✓ govtech        greenhouse       ~2009 职位, 提到 Singapore 303 次
+  ✓ stripe         greenhouse       ~612 职位, 提到 Singapore 46 次
+  ✓ bytedance      smartrecruiters  ~10 职位, 提到 Singapore 0 次
+  ✓ nium           lever            ~40 职位, 提到 Singapore 163 次
+  ✓ thoughtworks   greenhouse       ~369 职位, 提到 Singapore 16 次
+  ✓ xendit         greenhouse       ~24 职位, 提到 Singapore 14 次
