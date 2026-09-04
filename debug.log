@@ -1,18 +1,22 @@
-### Workday ###
-  ✓ Micron               total=905 本页=20
-  ✓ GlobalFoundries      total=273 本页=20
-  · Infineon             HTTP 422
-  ✓ Applied Materials    total=319 本页=20
-  ✓ Medtronic            total=23 本页=20
-  · Becton Dickinson     HTTP 422
-  · Siemens              HTTP 401
-  · ASML                 HTTP 404
-  · Carl Zeiss           HTTP 422
-  · ST Engineering       HTTP 422
+### Workday 组合探测 ###
+  · AMD
+  ✓ KLA                    wd1/Search                 total=154
+      https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/Search/jobs
+  · Lam Research
+  · Alcon
+  · Siemens Healthineers
+  · TUV SUD
+  · Carl Zeiss
+  · ST Engineering
+  · Becton Dickinson
+  · Infineon
+  · Bosch
+  · Rolls-Royce
+  · Keysight
+  · Seagate
+  · Dyson
+  · Hoya
 
 ### slug 直连 ###
-  ✓ essilorluxottica     smartrecruiters  ~30 职位, SG提及 0
-  ✓ continental          smartrecruiters  ~25 职位, SG提及 0
-  ✓ shein                greenhouse       ~288 职位, SG提及 0
-  ✓ bytedance            smartrecruiters  ~10 职位, SG提及 0
-  ✓ gitlab               greenhouse       ~460 职位, SG提及 8
+  ✓ zeiss                lever            ~3
+  ✓ westerndigital       smartrecruiters  ~25
