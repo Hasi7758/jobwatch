@@ -1,11 +1,60 @@
-### MCF 是否返回描述 ###
-  字段: ['uuid', 'score', 'title_match_score', 'job_role_score', 'skills_match_score', 'recency_score', 'metadata', 'address', 'hiringCompany', 'positionLevels', 'schemes', 'flexibleWorkArrangements', 'salary', 'postedCompany', 'skills', 'employmentTypes', 'categories', 'shiftPattern', 'title', 'status', 'retriever_score']
-  skills: [{"skill": "Collaborate With Engineers", "uuid": "15c0089c32f4b9a57247cd0187822118"}, {"skill": "Digital Transformation Program", "uuid": "27d3a27e219b0cc8d537900da6008028"}, {"skill": "Marketing Conference", "uuid": "30
-  categories: [{"id": 11, "category": "Engineering"}, {"id": 25, "category": "Manufacturing"}]
-
-### Workday 是否返回描述 (Micron) ###
-  字段: ['title', 'externalPath', 'timeType', 'locationsText', 'postedOn', 'bulletFields']
-
-### Greenhouse content=true ###
-  字段: ['absolute_url', 'data_compliance', 'internal_job_id', 'location', 'metadata', 'id', 'updated_at', 'requisition_id', 'title', 'company_name', 'first_published', 'language', 'application_deadline', 'content', 'departments', 'offices', 'ai_disclaimer', 'include_ai_disclaimer', 'ai_opt_out_request_url']
-  content 长度: 26479
+  · TÜV SÜD
+  · TÜV Rheinland
+  · Siemens
+  · Siemens Energy
+  · Siemens Healthineers
+  · Bosch
+  · BASF
+  ✓ Bayer                  https://jobs.bayer.com                 本页 10条 总数=1,
+        · Senior Software Engineer
+        · Senior Software Engineer
+        · Ingeniero de Mantenimiento Eléctrico (Rojas, Pcia Bs As)
+  · Evonik
+  · Merck
+  · Lanxess
+  · Wacker
+  · Linde
+  · Infineon
+  · Siltronic
+  · Rohde & Schwarz
+  · Trumpf
+  ✓ Festo                  https://jobs.festo.com                 本页  2条 总数=1,
+        · span > a').attr('style', 'color: black !important')
+    $('tr'
+        · Key Account Manager
+        · Key Account Manager
+  · SICK
+  · Pepperl+Fuchs
+  · Endress+Hauser
+  · Dräger
+  · Freudenberg
+  · Heraeus
+  ✓ Körber                 https://jobs.koerber.com               本页  5条 总数=15
+        · Ausbildung Kaufmann für Groß- und Außenhandelsmanagement-FR Au
+        · Ausbildung Kaufmann für Groß- und Außenhandelsmanagement-FR Au
+        · Ausbildung Kaufmann für Groß- und Außenhandelsmanagement-FR Au
+  · DHL
+  · Lufthansa Technik
+  ✓ SAP                    https://jobs.sap.com                   本页 25条 总数=2,
+        · Sales Account Executive - SAP Academy for Customer Success - S
+        · Sales Account Executive - SAP Academy for Customer Success - S
+        · Generative AI Engineer Intern - SAP Labs Singapore
+  · Continental
+  ✓ Schaeffler             https://jobs.schaeffler.com            本页  1条 总数=?
+        · Real Estate Portfolio &amp; Transaction Manager
+              
+        · Real Estate Portfolio &amp; Transaction Manager
+              
+        · Real Estate Portfolio &amp; Transaction Manager
+              
+  ✓ ZF                     https://jobs.zf.com                    本页  1条 总数=1,
+        · div:nth-of-type(1).buttontext {
+       background-position-x: 
+        · Service Engineer, Marine Mechanical
+        · Service Engineer, Marine Mechanical
+  · thyssenkrupp
+  · Jebsen & Jessen
+  · Deutsche Bank
+  · Allianz
+  · Munich Re
+  · Osram
