@@ -1,40 +1,33 @@
 #!/usr/bin/env python3
-import requests, re, concurrent.futures as cf
-S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0"})
+import requests, re
+S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0"})
+H="https://jobs.tuvsud.com"
+print("### TÜV SÜD 路径探测 ###")
+for path,pp in [("/search/",{"q":"","locationsearch":"Singapore"}),
+                ("/search/",{}),("/","" ),("/go/Singapore/",{}),
+                ("/search/",{"q":"manager"}),("/searchjobs",{}),
+                ("/ListJobs/All/",{}),("/search/?q=&sortColumn=referencedate&sortDirection=desc",{})]:
+    try:
+        r=S.get(H+path,params=pp or None,timeout=20)
+        jl=list(dict.fromkeys(re.findall(r'href="(/job/[^"]{8,160})"', r.text))) if r.status_code==200 else []
+        print(f"  {path:<52} HTTP {r.status_code} {len(r.text):>7}字节 /job/链接={len(jl)}")
+        if jl:
+            print("     样例:", jl[:3])
+            tot=re.search(r'([\d,]+)\s*(?:Jobs|jobs)', r.text)
+            print("     总数:", tot.group(1) if tot else "?")
+            break
+    except Exception as e: print(f"  {path:<52} {type(e).__name__}")
 
-GERMAN=[("TÜV SÜD","tuvsud"),("TÜV Rheinland","tuv"),("Siemens","siemens"),
- ("Siemens Energy","siemens-energy"),("Siemens Healthineers","siemens-healthineers"),
- ("Bosch","bosch"),("BASF","basf"),("Bayer","bayer"),("Evonik","evonik"),
- ("Merck","merckgroup"),("Lanxess","lanxess"),("Wacker","wacker"),("Linde","linde"),
- ("Infineon","infineon"),("Siltronic","siltronic"),("Rohde & Schwarz","rohde-schwarz"),
- ("Trumpf","trumpf"),("Festo","festo"),("SICK","sick"),("Pepperl+Fuchs","pepperl-fuchs"),
- ("Endress+Hauser","endress"),("Dräger","draeger"),("Freudenberg","freudenberg"),
- ("Heraeus","heraeus"),("Körber","koerber"),("DHL","dhl"),("Lufthansa Technik","lufthansa-technik"),
- ("SAP","sap"),("Continental","continental"),("Schaeffler","schaeffler"),
- ("ZF","zf"),("thyssenkrupp","thyssenkrupp"),("Jebsen & Jessen","jjsea"),
- ("Deutsche Bank","db"),("Allianz","allianz"),("Munich Re","munichre"),("Osram","ams-osram")]
-
-def probe(item):
-    name,slug=item
-    for host in [f"https://jobs.{slug}.com", f"https://careers.{slug}.com",
-                 f"https://jobs.{slug}.de", f"https://{slug}.jobs"]:
-        for path,pp in [("/search/",{"q":"","locationsearch":"Singapore"}),
-                        ("/search/",{"q":"","location":"Singapore"})]:
-            try:
-                r=S.get(host+path,params=pp,timeout=12)
-            except Exception: continue
-            if r.status_code!=200: continue
-            jl=list(dict.fromkeys(re.findall(r'href="(/job/[^"]{8,160})"', r.text)))
-            if not jl: continue
-            tot=re.search(r'([\d,]+)\s*(?:Jobs|jobs|results|Results)', r.text)
-            titles=re.findall(r'jobTitle-link[^>]*>\s*([^<]{5,80})', r.text)
-            return (name,host,len(jl),tot.group(1) if tot else "?",titles[:3])
-    return (name,None,0,"","")
-
-with cf.ThreadPoolExecutor(max_workers=8) as ex:
-    for name,host,n,tot,titles in ex.map(probe,GERMAN):
-        if host:
-            print(f"  ✓ {name:<22} {host:<38} 本页{n:>3}条 总数={tot}")
-            for x in titles: print(f"        · {x[:62]}")
-        else:
-            print(f"  · {name}")
+print("\n### 验证已探通德企的新加坡岗位量 ###")
+for name,host in [("Bayer","https://jobs.bayer.com"),("Festo","https://jobs.festo.com"),
+                  ("SAP","https://jobs.sap.com"),("Schaeffler","https://jobs.schaeffler.com"),
+                  ("ZF","https://jobs.zf.com"),("Körber","https://jobs.koerber.com")]:
+    try:
+        r=S.get(host+"/search/",params={"q":"","locationsearch":"Singapore"},timeout=20)
+        jl=list(dict.fromkeys(re.findall(r'href="(/job/[^"]{8,160})"', r.text)))
+        sg=sum(1 for x in jl if "singapore" in x.lower())
+        tot=re.search(r'([\d,]+)\s*(?:Jobs|jobs)\s*(?:found|Found)?', r.text)
+        print(f"  {name:<12} 链接{len(jl):>3} URL含Singapore={sg:>3} 页面总数标记={tot.group(1) if tot else '?'}")
+        for x in jl[:2]:
+            if "singapore" in x.lower(): print("      ·", x[:80])
+    except Exception as e: print(f"  {name:<12} {type(e).__name__}")
