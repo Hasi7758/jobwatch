@@ -1,26 +1,40 @@
 #!/usr/bin/env python3
-import requests, json
-S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/124.0","Content-Type":"application/json"})
-print("### MCF 是否返回描述 ###")
-r=S.post("https://api.mycareersfuture.gov.sg/v2/search?limit=3&page=0",
-         json={"search":"engineering manager","sessionId":"","categories":[]},timeout=25)
-d=r.json(); res=d.get("results") or []
-if res:
-    j=res[0]
-    print("  字段:", list(j.keys()))
-    for k in ["description","jobDescription","skills","categories"]:
-        if k in j:
-            v=json.dumps(j[k],ensure_ascii=False)
-            print(f"  {k}: {v[:220]}")
-print("\n### Workday 是否返回描述 (Micron) ###")
-r=S.post("https://micron.wd1.myworkdayjobs.com/wday/cxs/micron/External/jobs",
-         json={"appliedFacets":{},"limit":3,"offset":0,"searchText":"Singapore manager"},timeout=25)
-d=r.json()
-for j in (d.get("jobPostings") or [])[:1]:
-    print("  字段:", list(j.keys()))
-print("\n### Greenhouse content=true ###")
-r=S.get("https://boards-api.greenhouse.io/v1/boards/govtech/jobs?content=true",timeout=25)
-jj=(r.json().get("jobs") or [])
-if jj:
-    print("  字段:", list(jj[0].keys()))
-    print("  content 长度:", len(str(jj[0].get("content",""))))
+import requests, re, concurrent.futures as cf
+S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0"})
+
+GERMAN=[("TÜV SÜD","tuvsud"),("TÜV Rheinland","tuv"),("Siemens","siemens"),
+ ("Siemens Energy","siemens-energy"),("Siemens Healthineers","siemens-healthineers"),
+ ("Bosch","bosch"),("BASF","basf"),("Bayer","bayer"),("Evonik","evonik"),
+ ("Merck","merckgroup"),("Lanxess","lanxess"),("Wacker","wacker"),("Linde","linde"),
+ ("Infineon","infineon"),("Siltronic","siltronic"),("Rohde & Schwarz","rohde-schwarz"),
+ ("Trumpf","trumpf"),("Festo","festo"),("SICK","sick"),("Pepperl+Fuchs","pepperl-fuchs"),
+ ("Endress+Hauser","endress"),("Dräger","draeger"),("Freudenberg","freudenberg"),
+ ("Heraeus","heraeus"),("Körber","koerber"),("DHL","dhl"),("Lufthansa Technik","lufthansa-technik"),
+ ("SAP","sap"),("Continental","continental"),("Schaeffler","schaeffler"),
+ ("ZF","zf"),("thyssenkrupp","thyssenkrupp"),("Jebsen & Jessen","jjsea"),
+ ("Deutsche Bank","db"),("Allianz","allianz"),("Munich Re","munichre"),("Osram","ams-osram")]
+
+def probe(item):
+    name,slug=item
+    for host in [f"https://jobs.{slug}.com", f"https://careers.{slug}.com",
+                 f"https://jobs.{slug}.de", f"https://{slug}.jobs"]:
+        for path,pp in [("/search/",{"q":"","locationsearch":"Singapore"}),
+                        ("/search/",{"q":"","location":"Singapore"})]:
+            try:
+                r=S.get(host+path,params=pp,timeout=12)
+            except Exception: continue
+            if r.status_code!=200: continue
+            jl=list(dict.fromkeys(re.findall(r'href="(/job/[^"]{8,160})"', r.text)))
+            if not jl: continue
+            tot=re.search(r'([\d,]+)\s*(?:Jobs|jobs|results|Results)', r.text)
+            titles=re.findall(r'jobTitle-link[^>]*>\s*([^<]{5,80})', r.text)
+            return (name,host,len(jl),tot.group(1) if tot else "?",titles[:3])
+    return (name,None,0,"","")
+
+with cf.ThreadPoolExecutor(max_workers=8) as ex:
+    for name,host,n,tot,titles in ex.map(probe,GERMAN):
+        if host:
+            print(f"  ✓ {name:<22} {host:<38} 本页{n:>3}条 总数={tot}")
+            for x in titles: print(f"        · {x[:62]}")
+        else:
+            print(f"  · {name}")
