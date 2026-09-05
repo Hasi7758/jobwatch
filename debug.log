@@ -1,7 +1,11 @@
-### 找对的地点过滤写法 ###
-  ✓ 无过滤                                          返回  0 总数=40 新加坡=0
-  ✓ offset独立                                     返回  0 总数=40 新加坡=0
-  ✗ locationId                                   HTTP 400 URL request parameter finder with value findReqs;siteNumber=CX_1001,limit=50,locationId=300000000440956,locati
-  ✓ selectedLocationsFacet                       返回  0 总数=5 新加坡=0
-  ✓ keyword Singapore                            返回  0 总数=1 新加坡=0
-  ✓ limit200 无过滤                                 返回  0 总数=40 新加坡=0
+### MCF 是否返回描述 ###
+  字段: ['uuid', 'score', 'title_match_score', 'job_role_score', 'skills_match_score', 'recency_score', 'metadata', 'address', 'hiringCompany', 'positionLevels', 'schemes', 'flexibleWorkArrangements', 'salary', 'postedCompany', 'skills', 'employmentTypes', 'categories', 'shiftPattern', 'title', 'status', 'retriever_score']
+  skills: [{"skill": "Collaborate With Engineers", "uuid": "15c0089c32f4b9a57247cd0187822118"}, {"skill": "Digital Transformation Program", "uuid": "27d3a27e219b0cc8d537900da6008028"}, {"skill": "Marketing Conference", "uuid": "30
+  categories: [{"id": 11, "category": "Engineering"}, {"id": 25, "category": "Manufacturing"}]
+
+### Workday 是否返回描述 (Micron) ###
+  字段: ['title', 'externalPath', 'timeType', 'locationsText', 'postedOn', 'bulletFields']
+
+### Greenhouse content=true ###
+  字段: ['absolute_url', 'data_compliance', 'internal_job_id', 'location', 'metadata', 'id', 'updated_at', 'requisition_id', 'title', 'company_name', 'first_published', 'language', 'application_deadline', 'content', 'departments', 'offices', 'ai_disclaimer', 'include_ai_disclaimer', 'ai_opt_out_request_url']
+  content 长度: 26479
