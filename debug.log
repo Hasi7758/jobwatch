@@ -1,19 +1,7 @@
-###### A. Oracle HCM REST 接口 ######
-  [标准 finder] HTTP 200 82879字节
-     职位数=40 | 总数=40
-       · Customer Service Agent                                 Madrid, Madrid, Spain    2026-09-04
-       · Territory Sales Manager                                ONT, Canada              2026-09-03
-       · Customer Service Representative                        Malaysia                 2026-09-03
-       · HR Specialist                                          Budapest, Kozep-Magyar   2026-09-03
-     字段: ['Id', 'Title', 'PostedDate', 'PostingEndDate', 'Language', 'PrimaryLocationCountry', 'GeographyId', 'HotJobFlag', 'WorkplaceTypeCode', 'JobFamily', 'JobFunction', 'WorkerType', 'ContractType', 'ManagerLevel', 'JobSchedule', 'JobShift']
-
-###### B. 这是哪家公司? ######
-  HTTP 200 11266 字节
-   <title>([^<]{3,80})</title -> Hoya Global Career Site
-   og:site_name"\s*content="( -> Hoya Global Career Site
-
-###### C. Siemens Healthineers ######
-  /de_DE/searchjobs/results                HTTP 404  333943字节 text/html; charset=UTF-8
-  /en_US/searchjobs/results                HTTP 404  333943字节 text/html; charset=UTF-8
-  /de_DE/searchjobs                        HTTP 200   87344字节 text/html;charset=UTF-8
-  /api/jobs                                HTTP 404  333943字节 text/html; charset=UTF-8
+### 找对的地点过滤写法 ###
+  ✓ 无过滤                                          返回  0 总数=40 新加坡=0
+  ✓ offset独立                                     返回  0 总数=40 新加坡=0
+  ✗ locationId                                   HTTP 400 URL request parameter finder with value findReqs;siteNumber=CX_1001,limit=50,locationId=300000000440956,locati
+  ✓ selectedLocationsFacet                       返回  0 总数=5 新加坡=0
+  ✓ keyword Singapore                            返回  0 总数=1 新加坡=0
+  ✓ limit200 无过滤                                 返回  0 总数=40 新加坡=0
