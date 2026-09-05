@@ -1,18 +1,15 @@
-### /search 各种调用 ###
-  search html    HTTP 200     144字节 application/json
-     JSON: {"url":"https://jobs.infineon.com/login?domain=infineon.com&hl=en&next=https%3A%2F%2Fjobs.infineon.com%2Fsearch%3Fq%3D%26location%3DSingapore"}
-
-  search json    HTTP 200     144字节 application/json
-     JSON: {"url":"https://jobs.infineon.com/login?domain=infineon.com&hl=en&next=https%3A%2F%2Fjobs.infineon.com%2Fsearch%3Fq%3D%26location%3DSingapore"}
-
-  search start   HTTP 200     160字节 application/json
-     JSON: {"url":"https://jobs.infineon.com/login?domain=infineon.com&hl=en&next=https%3A%2F%2Fjobs.infineon.com%2Fsearch%3Fstart%3D0%26num%3D10%26location%3DSingapore"}
-
-  careers json   HTTP 200  273602字节 text/html; charset=utf-8
-     标记数=7 抓到标题=[]
-  careers ajax   HTTP 200  266258字节 text/html; charset=utf-8
-     标记数=6 抓到标题=[]
-  api suggest    HTTP 400      18字节 text/html; charset=utf-8
-
-### 直接看 /search 页面里有没有职位 ###
-字节: 137
+### SuccessFactors 列表页格式验证 ###
+  ✓ ST Engineering     /search/     职位链接 25 条 | 总数标记=14,
+         /job/Digital-Hub-Customer-Service-Executive-%28DSCET%29/1330730966/
+         /job/Digital-Hub-Senior-Software-Engineer-%28C%2B%2B-Java-Javascript%29-PS/1331723566/
+         /job/Digital-Hub-AWS-Platform-Lead/1327739566/
+      标题: ['Customer Service Executive (DSC/ET)', 'Customer Service Executive (DSC/ET)', 'Senior/ Software Engineer (C++ / Java / Javascript) - PS']
+  · SIA Engineering
+  · Abbott
+  · Seagate
+  · Stryker
+  · BD
+  · Honeywell
+  · Micron
+  · TUV SUD
+  · Alcon
