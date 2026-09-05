@@ -1,60 +1,22 @@
-  · TÜV SÜD
-  · TÜV Rheinland
-  · Siemens
-  · Siemens Energy
-  · Siemens Healthineers
-  · Bosch
-  · BASF
-  ✓ Bayer                  https://jobs.bayer.com                 本页 10条 总数=1,
-        · Senior Software Engineer
-        · Senior Software Engineer
-        · Ingeniero de Mantenimiento Eléctrico (Rojas, Pcia Bs As)
-  · Evonik
-  · Merck
-  · Lanxess
-  · Wacker
-  · Linde
-  · Infineon
-  · Siltronic
-  · Rohde & Schwarz
-  · Trumpf
-  ✓ Festo                  https://jobs.festo.com                 本页  2条 总数=1,
-        · span > a').attr('style', 'color: black !important')
-    $('tr'
-        · Key Account Manager
-        · Key Account Manager
-  · SICK
-  · Pepperl+Fuchs
-  · Endress+Hauser
-  · Dräger
-  · Freudenberg
-  · Heraeus
-  ✓ Körber                 https://jobs.koerber.com               本页  5条 总数=15
-        · Ausbildung Kaufmann für Groß- und Außenhandelsmanagement-FR Au
-        · Ausbildung Kaufmann für Groß- und Außenhandelsmanagement-FR Au
-        · Ausbildung Kaufmann für Groß- und Außenhandelsmanagement-FR Au
-  · DHL
-  · Lufthansa Technik
-  ✓ SAP                    https://jobs.sap.com                   本页 25条 总数=2,
-        · Sales Account Executive - SAP Academy for Customer Success - S
-        · Sales Account Executive - SAP Academy for Customer Success - S
-        · Generative AI Engineer Intern - SAP Labs Singapore
-  · Continental
-  ✓ Schaeffler             https://jobs.schaeffler.com            本页  1条 总数=?
-        · Real Estate Portfolio &amp; Transaction Manager
-              
-        · Real Estate Portfolio &amp; Transaction Manager
-              
-        · Real Estate Portfolio &amp; Transaction Manager
-              
-  ✓ ZF                     https://jobs.zf.com                    本页  1条 总数=1,
-        · div:nth-of-type(1).buttontext {
-       background-position-x: 
-        · Service Engineer, Marine Mechanical
-        · Service Engineer, Marine Mechanical
-  · thyssenkrupp
-  · Jebsen & Jessen
-  · Deutsche Bank
-  · Allianz
-  · Munich Re
-  · Osram
+### TÜV SÜD 路径探测 ###
+  /search/                                             HTTP 200   93256字节 /job/链接=0
+  /search/                                             HTTP 200   90714字节 /job/链接=0
+  /                                                    HTTP 200   66388字节 /job/链接=0
+  /go/Singapore/                                       HTTP 200   64673字节 /job/链接=0
+  /search/                                             HTTP 200   91703字节 /job/链接=0
+  /searchjobs                                          HTTP 200   90728字节 /job/链接=0
+  /ListJobs/All/                                       HTTP 200   64349字节 /job/链接=0
+  /search/?q=&sortColumn=referencedate&sortDirection=desc HTTP 200   93900字节 /job/链接=0
+
+### 验证已探通德企的新加坡岗位量 ###
+  Bayer        链接 10 URL含Singapore=  0 页面总数标记=?
+  Festo        链接  2 URL含Singapore=  2 页面总数标记=?
+      · /job/Singapore-Key-Account-Manager-628754/1286469301/
+      · /job/Singapore-Technician-%28Mechanical%29-628754/1420035033/
+  SAP          链接 25 URL含Singapore= 25 页面总数标记=12
+      · /job/Singapore-Sales-Account-Executive-SAP-Academy-for-Customer-Success-SINGAPOR
+      · /job/Singapore-Generative-AI-Engineer-Intern-SAP-Labs-Singapore-117440/143263323
+  Schaeffler   链接  1 URL含Singapore=  1 页面总数标记=?
+      · /job/Singapore-Real-Estate-Portfolio-&amp;-Transaction-Manager-569874/1423813733
+  ZF           链接  1 URL含Singapore=  0 页面总数标记=?
+  Körber       链接  5 URL含Singapore=  0 页面总数标记=15
