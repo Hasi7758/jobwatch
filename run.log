@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 750 条
+  拿到 900 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -31,26 +31,21 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1311 条
+  拿到 1248 条
 
-过滤后 43 / 2061 条符合关键词+地点
+过滤后 36 / 2148 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 15 条(宽松模式,其余保留)
+IG Metall 雇主命中 9 条(宽松模式,其余保留)
 
-★ 新职位 14 条
-  · Partnership Development Manager GSI DACH — Mistral.ai
-  · Technical Delivery Manager - Munich — Legora
-  · Housing & Delegate Management, Attendee Data Manager — Firstglobalmanagementservicesi
-  · SAP Senior Delivery Manager - Banking Transformation (m/f/d) — Fioneer
-  · Technischer Senior Projektmanager (m/w/d) — Vitagroup
-  · Projektleiter (m/w/d) Simulationssysteme — MY Humancapital GmbH
-  · Vergabemanager (m/w/d) Öffentliche Ausschreibung — MY Humancapital GmbH
-  · Technischer Property Manager (m/w/d) — MY Humancapital GmbH
-  · Senior Category Manager, Womenswear UK/EU — Quince
-  · Senior Category Manager, Men's EU — Quince
-  · Senior Category Manager, Home EU — Quince
-  · Projektmanager / Projektentwickler (m/w/d) PV / Green Energy — feld.energy GmbH
-  · Senior Product Manager - Human AI Collaboration (all genders — wingmaite GmbH
-  · Senior Technical Project Manager — Proglove
+★ 新职位 9 条
+  · Senior Product Manager - Software Solutions — Proglove
+  · Projektmanager / Projektentwickler (m/w/d) PV / Green Energy — Feld Energy
+  · Engineering Manager (m/f/d) — autoscout24
+  · (Senior) Technical Project Manager Germany — parloa
+  · Senior Product Manager (f/m/d) — Apaleo
+  · (Senior) Purchasing Manager (m/w/d) — ECO STOR GmbH
+  · Senior eCommerce Manager (m/w/d) — Tmh
+  · Product Manager (m/f/d) Home Energy Solution (B2C) — Tmh
+  · (Senior) Manager Business Value Chain (all genders) — Eraneos
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
