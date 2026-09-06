@@ -1,37 +1,33 @@
-样本: 313
+### MCF 薪资字段 ###
+样本: 213
+带薪资字段: 213/213
+salary 结构: {"minimum": 4500, "maximum": 6500, "type": {"salaryType": "Monthly"}}
+隐藏薪资: 0
 
-=== schemes 分布 ===
-    2  {"expiryDate": "2029-03-31", "startDate": "2025-10-01", "scheme": {"id": 2, "scheme": "Career Conversion Programme", "_links": {"s
-    1  {"expiryDate": "2027-12-01", "startDate": "2024-07-01", "scheme": {"id": 2, "scheme": "Career Conversion Programme", "_links": {"s
-    1  {"expiryDate": "2029-03-31", "startDate": "2025-10-01", "subScheme": {"id": 242, "schemeId": 2, "programme": "CCP for ICT Professi
+薪资分布(月薪中位):
+  S$ 2,000-4,000   █████ 5
+  S$ 4,000-6,000   ██████████████████████████████████ 34
+  S$ 6,000-8,000   ████████████████████████████████████████ 53
+  S$ 8,000-10,000  ████████████████████████████████████████ 45
+  S$10,000-12,000  ███████████████████████████████ 31
+  S$12,000-14,000  ████████████████████ 20
+  S$14,000-16,000  ██████████ 10
+  S$16,000-18,000  ███ 3
+  S$18,000-20,000  ████ 4
+  S$20,000-22,000  ███ 3
+  S$22,000-24,000  ███ 3
+  S$26,000-28,000  ██ 2
 
-=== isPostedOnBehalf: 2/313 ===
-   · Project Manager                        posted=HYPERSCAL SOLUTIONS PTE. LTD   hiring=LEY CHOON CONSTRUCTIONS AN
-   · Product Manager                        posted=KOPI RECRUIT PTE. LTD.         hiring=AVEPOINT SINGAPORE PTE. LT
+月薪 >= 9000 的样例:
+  S$10,000-15,000  Engineering Manager                            NEXTLABS INTERNATIONAL PRI
+  S$13,000-17,000  Software Engineering Manager                   MORGAN MCKINLEY PTE. LTD.
+  S$15,000-18,000  Head of Engineering                            DOCTOR WORLD PTE. LTD.
+  S$18,000-36,000  Head of Engineering                            TRAVELOKA TECHNOLOGY PTE. 
+  S$10,000-12,000  MRO Process Engineering Manager                RECRUIT LYNC PTE. LTD.
+  S$11,000-13,000  Electrical Engineering Manager                 ABB PTE. LTD.
+  S$11,500-17,250  Software Engineering Manager II                GRABTAXI HOLDINGS PTE. LTD
+  S$18,000-22,000  Software Engineering Manager                   IKAS INTERNATIONAL (ASIA) 
 
-=== 发帖公司 Top 25 ===
-    7  IKAS INTERNATIONAL (ASIA) PTE. LTD.
-    5  ANRADUS PTE. LTD.
-    5  AIRWALLEX (SINGAPORE) PTE. LTD.
-    5  GOOGLE ASIA PACIFIC PTE. LTD.
-    4  CANDIDATEASIA GROUP PTE. LTD.
-    4  CHINA HARBOUR (SINGAPORE) ENGINEERING COMPANY PTE. LTD.
-    4  EVOLUTION RECRUITMENT SOLUTIONS PTE. LTD.
-    4  STANDARD CHARTERED BANK (SINGAPORE) LIMITED
-    4  SCIENTEC CONSULTING PTE. LTD.
-    3  SAKSOFT PTE LIMITED
-    3  APBA TG HUMAN RESOURCE PTE. LTD.
-    3  NSEARCH GLOBAL PTE. LTD.
-    3  VINOVA PTE. LTD.
-    3  CONTINENTAL TECHNOLOGY SOLUTIONS PTE. LTD.
-    3  AVETICS GLOBAL PTE. LTD.
-    3  QUANTUM AUTOMATION PTE LTD
-    3  JOBLINE RESOURCES PTE. LTD.
-    3  MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD.
-    3  RANDSTAD PTE. LIMITED
-    3  RAPSYS TECHNOLOGIES PTE. LTD.
-    2  ESPIRE INFOLABS (SINGAPORE) PTE. LTD.
-    2  ASCENDION ENGINEERING SOLUTIONS SINGAPORE PTE. LTD.
-    2  KRIS INFOTECH PTE. LTD.
-    2  V-ELEGANT PTE. LTD.
-    2  JOBSTER PRIVATE LTD.
+### 其它源有没有薪资 ###
+Workday 字段: ['title', 'externalPath', 'timeType', 'locationsText', 'postedOn', 'bulletFields']
+Greenhouse 字段: ['absolute_url', 'data_compliance', 'internal_job_id', 'location', 'metadata', 'id', 'updated_at', 'requisition_id', 'title', 'company_name', 'first_published', 'language', 'application_deadline', 'content', 'departments', 'offices', 'ai_disclaimer', 'include_ai_disclaimer', 'ai_opt_out_request_url']
