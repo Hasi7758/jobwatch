@@ -1,13 +1,19 @@
-### 验证 Workday 链接拼法 ###
-  旧(错) HTTP 404 | Package Pathfinding Architect, MTS   loc=MSB, Singapore
-  新(修) HTTP 200 | Package Pathfinding Architect, MTS   loc=MSB, Singapore
+字段: ['uuid', 'score', 'title_match_score', 'job_role_score', 'skills_match_score', 'recency_score', 'metadata', 'address', 'hiringCompany', 'positionLevels', 'schemes', 'flexibleWorkArrangements', 'salary', 'postedCompany', 'skills', 'employmentTypes', 'categories', 'shiftPattern', 'title', 'status', 'retriever_score']
+metadata 字段: ['jobPostId', 'updatedAt', 'newPostingDate', 'totalNumberJobApplication', 'isPostedOnBehalf', 'isHideSalary', 'isHideHiringEmployerName', 'jobDetailsUrl']
 
-  旧(错) HTTP 404 | Manager, Data Science, SMAI          loc=Fab 10A, Singapore
-  新(修) HTTP 200 | Manager, Data Science, SMAI          loc=Fab 10A, Singapore
+  uuid = 533ec9f539f4501bf025a4318c0ac5c8
+  jobPostId = MCF-2026-1562604
+  jobDetailsUrl = https://www.mycareersfuture.gov.sg/job/building-construction/project-management-manager-venturefort-contracts-services-533ec9f539f4501bf025a4318c0ac5c8
+  originalPostingDate = None
 
-  旧(错) HTTP 404 | Engineering Execution Manager, HIG   loc=Fab 10A, Singapore
-  新(修) HTTP 200 | Engineering Execution Manager, HIG   loc=Fab 10A, Singapore
+完整 metadata: {"jobPostId": "MCF-2026-1562604", "updatedAt": "2026-09-05T14:07:12", "newPostingDate": "2026-09-05", "totalNumberJobApplication": 0, "isPostedOnBehalf": false, "isHideSalary": false, "isHideHiringEmployerName": false, "jobDetailsUrl": "https://www.mycareersfuture.gov.sg/job/building-construction/project-management-manager-venturefort-contracts-services-533ec9f539f4501bf025a4318c0ac5c8"}
 
-  旧(错) HTTP 404 | Fab10 FAC Electrical Principal Eng   loc=Fab 10N/X, Singapore
-  新(修) HTTP 200 | Fab10 FAC Electrical Principal Eng   loc=Fab 10N/X, Singapore
-
+### 测试各种链接格式 ###
+  HTTP 200    7923字节  https://www.mycareersfuture.gov.sg/job/MCF-2026-1562604
+       -> 最终URL: https://www.mycareersfuture.gov.sg/job/MCF-2026-1562604
+  HTTP 200    7923字节  https://www.mycareersfuture.gov.sg/job/533ec9f539f4501bf025a4318c0ac5c8
+       -> 最终URL: https://www.mycareersfuture.gov.sg/job/533ec9f539f4501bf025a4318c0ac5c8
+  HTTP 200    7923字节  https://www.mycareersfuture.gov.sg/job/project-management-manager-533ec9f539f4501bf025a4
+       -> 最终URL: https://www.mycareersfuture.gov.sg/job/project-management-manager-533ec9f539f4501bf025a4318c0ac5c8
+  HTTP 200    7923字节  https://www.mycareersfuture.gov.sg/job/engineering/project-management-manager-venturefor
+       -> 最终URL: https://www.mycareersfuture.gov.sg/job/engineering/project-management-manager-venturefort-contracts-
