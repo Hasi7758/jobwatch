@@ -1,19 +1,37 @@
-字段: ['uuid', 'score', 'title_match_score', 'job_role_score', 'skills_match_score', 'recency_score', 'metadata', 'address', 'hiringCompany', 'positionLevels', 'schemes', 'flexibleWorkArrangements', 'salary', 'postedCompany', 'skills', 'employmentTypes', 'categories', 'shiftPattern', 'title', 'status', 'retriever_score']
-metadata 字段: ['jobPostId', 'updatedAt', 'newPostingDate', 'totalNumberJobApplication', 'isPostedOnBehalf', 'isHideSalary', 'isHideHiringEmployerName', 'jobDetailsUrl']
+样本: 313
 
-  uuid = 533ec9f539f4501bf025a4318c0ac5c8
-  jobPostId = MCF-2026-1562604
-  jobDetailsUrl = https://www.mycareersfuture.gov.sg/job/building-construction/project-management-manager-venturefort-contracts-services-533ec9f539f4501bf025a4318c0ac5c8
-  originalPostingDate = None
+=== schemes 分布 ===
+    2  {"expiryDate": "2029-03-31", "startDate": "2025-10-01", "scheme": {"id": 2, "scheme": "Career Conversion Programme", "_links": {"s
+    1  {"expiryDate": "2027-12-01", "startDate": "2024-07-01", "scheme": {"id": 2, "scheme": "Career Conversion Programme", "_links": {"s
+    1  {"expiryDate": "2029-03-31", "startDate": "2025-10-01", "subScheme": {"id": 242, "schemeId": 2, "programme": "CCP for ICT Professi
 
-完整 metadata: {"jobPostId": "MCF-2026-1562604", "updatedAt": "2026-09-05T14:07:12", "newPostingDate": "2026-09-05", "totalNumberJobApplication": 0, "isPostedOnBehalf": false, "isHideSalary": false, "isHideHiringEmployerName": false, "jobDetailsUrl": "https://www.mycareersfuture.gov.sg/job/building-construction/project-management-manager-venturefort-contracts-services-533ec9f539f4501bf025a4318c0ac5c8"}
+=== isPostedOnBehalf: 2/313 ===
+   · Project Manager                        posted=HYPERSCAL SOLUTIONS PTE. LTD   hiring=LEY CHOON CONSTRUCTIONS AN
+   · Product Manager                        posted=KOPI RECRUIT PTE. LTD.         hiring=AVEPOINT SINGAPORE PTE. LT
 
-### 测试各种链接格式 ###
-  HTTP 200    7923字节  https://www.mycareersfuture.gov.sg/job/MCF-2026-1562604
-       -> 最终URL: https://www.mycareersfuture.gov.sg/job/MCF-2026-1562604
-  HTTP 200    7923字节  https://www.mycareersfuture.gov.sg/job/533ec9f539f4501bf025a4318c0ac5c8
-       -> 最终URL: https://www.mycareersfuture.gov.sg/job/533ec9f539f4501bf025a4318c0ac5c8
-  HTTP 200    7923字节  https://www.mycareersfuture.gov.sg/job/project-management-manager-533ec9f539f4501bf025a4
-       -> 最终URL: https://www.mycareersfuture.gov.sg/job/project-management-manager-533ec9f539f4501bf025a4318c0ac5c8
-  HTTP 200    7923字节  https://www.mycareersfuture.gov.sg/job/engineering/project-management-manager-venturefor
-       -> 最终URL: https://www.mycareersfuture.gov.sg/job/engineering/project-management-manager-venturefort-contracts-
+=== 发帖公司 Top 25 ===
+    7  IKAS INTERNATIONAL (ASIA) PTE. LTD.
+    5  ANRADUS PTE. LTD.
+    5  AIRWALLEX (SINGAPORE) PTE. LTD.
+    5  GOOGLE ASIA PACIFIC PTE. LTD.
+    4  CANDIDATEASIA GROUP PTE. LTD.
+    4  CHINA HARBOUR (SINGAPORE) ENGINEERING COMPANY PTE. LTD.
+    4  EVOLUTION RECRUITMENT SOLUTIONS PTE. LTD.
+    4  STANDARD CHARTERED BANK (SINGAPORE) LIMITED
+    4  SCIENTEC CONSULTING PTE. LTD.
+    3  SAKSOFT PTE LIMITED
+    3  APBA TG HUMAN RESOURCE PTE. LTD.
+    3  NSEARCH GLOBAL PTE. LTD.
+    3  VINOVA PTE. LTD.
+    3  CONTINENTAL TECHNOLOGY SOLUTIONS PTE. LTD.
+    3  AVETICS GLOBAL PTE. LTD.
+    3  QUANTUM AUTOMATION PTE LTD
+    3  JOBLINE RESOURCES PTE. LTD.
+    3  MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD.
+    3  RANDSTAD PTE. LIMITED
+    3  RAPSYS TECHNOLOGIES PTE. LTD.
+    2  ESPIRE INFOLABS (SINGAPORE) PTE. LTD.
+    2  ASCENDION ENGINEERING SOLUTIONS SINGAPORE PTE. LTD.
+    2  KRIS INFOTECH PTE. LTD.
+    2  V-ELEGANT PTE. LTD.
+    2  JOBSTER PRIVATE LTD.
