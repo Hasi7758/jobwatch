@@ -1,33 +1,14 @@
-### MCF 薪资字段 ###
-样本: 213
-带薪资字段: 213/213
-salary 结构: {"minimum": 4500, "maximum": 6500, "type": {"salaryType": "Monthly"}}
-隐藏薪资: 0
+### arbeitnow 里慕尼黑 PO/PM 岗位是否含薪资 ###
+命中慕尼黑 PO/PM 岗位: 8
+字段: ['slug', 'company_name', 'title', 'description', 'remote', 'url', 'tags', 'job_types', 'location', 'created_at']
+  · Projektmanager / Projektentwickler (m/w/d) PV / Gree   salary=None 文中数字=[('60', '000', '', '')]
 
-薪资分布(月薪中位):
-  S$ 2,000-4,000   █████ 5
-  S$ 4,000-6,000   ██████████████████████████████████ 34
-  S$ 6,000-8,000   ████████████████████████████████████████ 53
-  S$ 8,000-10,000  ████████████████████████████████████████ 45
-  S$10,000-12,000  ███████████████████████████████ 31
-  S$12,000-14,000  ████████████████████ 20
-  S$14,000-16,000  ██████████ 10
-  S$16,000-18,000  ███ 3
-  S$18,000-20,000  ████ 4
-  S$20,000-22,000  ███ 3
-  S$22,000-24,000  ███ 3
-  S$26,000-28,000  ██ 2
-
-月薪 >= 9000 的样例:
-  S$10,000-15,000  Engineering Manager                            NEXTLABS INTERNATIONAL PRI
-  S$13,000-17,000  Software Engineering Manager                   MORGAN MCKINLEY PTE. LTD.
-  S$15,000-18,000  Head of Engineering                            DOCTOR WORLD PTE. LTD.
-  S$18,000-36,000  Head of Engineering                            TRAVELOKA TECHNOLOGY PTE. 
-  S$10,000-12,000  MRO Process Engineering Manager                RECRUIT LYNC PTE. LTD.
-  S$11,000-13,000  Electrical Engineering Manager                 ABB PTE. LTD.
-  S$11,500-17,250  Software Engineering Manager II                GRABTAXI HOLDINGS PTE. LTD
-  S$18,000-22,000  Software Engineering Manager                   IKAS INTERNATIONAL (ASIA) 
-
-### 其它源有没有薪资 ###
-Workday 字段: ['title', 'externalPath', 'timeType', 'locationsText', 'postedOn', 'bulletFields']
-Greenhouse 字段: ['absolute_url', 'data_compliance', 'internal_job_id', 'location', 'metadata', 'id', 'updated_at', 'requisition_id', 'title', 'company_name', 'first_published', 'language', 'application_deadline', 'content', 'departments', 'offices', 'ai_disclaimer', 'include_ai_disclaimer', 'ai_opt_out_request_url']
+含薪资信息: 1/8
+  Product Manager – POS & Fiscalization (m/f/d)              Swissbit
+  Product Manager Westwing Collection (m/f/d)                Westwing Group SE
+  Product Manager                                            CesiumAstro
+  Senior Software Engineer (m/w/d) – Teilprojektleitung      Steadforce
+  Senior Product Manager - Software Solutions                Proglove
+  Projektmanager / Projektentwickler (m/w/d) PV / Green En   Feld Energy
+  Senior Product Manager (f/m/d)                             Apaleo
+  Product Manager (m/f/d) Home Energy Solution (B2C)         Tmh
