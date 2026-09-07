@@ -23,7 +23,6 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
-  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(26个已知 + 前探40),共 66 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -31,21 +30,26 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1248 条
+  拿到 1306 条
 
-过滤后 36 / 2148 条符合关键词+地点
+过滤后 47 / 2206 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 9 条(宽松模式,其余保留)
+IG Metall 雇主命中 14 条(宽松模式,其余保留)
 
-★ 新职位 9 条
-  · Senior Product Manager - Software Solutions — Proglove
-  · Projektmanager / Projektentwickler (m/w/d) PV / Green Energy — Feld Energy
-  · Engineering Manager (m/f/d) — autoscout24
-  · (Senior) Technical Project Manager Germany — parloa
-  · Senior Product Manager (f/m/d) — Apaleo
-  · (Senior) Purchasing Manager (m/w/d) — ECO STOR GmbH
-  · Senior eCommerce Manager (m/w/d) — Tmh
-  · Product Manager (m/f/d) Home Energy Solution (B2C) — Tmh
-  · (Senior) Manager Business Value Chain (all genders) — Eraneos
+★ 新职位 14 条
+  · E-Commerce Manager (m/w/d) — AYLASHES
+  · Product Manager – POS & Fiscalization (m/f/d) — Swissbit
+  · Business Development Manager - Montpellier - CDI — Deliveroo
+  · Cybersecurity Manager (m/w/d) — Trusteq Gmbh
+  · Product Manager Westwing Collection (m/f/d) — Westwing Group SE
+  · (Senior) CRM Automation & Lifecycle Manager (all genders) — HolidayCheck Group AG
+  · Product Manager (Radiotech) — Gismart
+  · Knit - Research Manager — Eleve Talent
+  · Knit - Lead Product Manager — Eleve Talent
+  · Endear - Onboarding Manager — Eleve Talent
+  · Product Manager — CesiumAstro
+  · Senior Software Engineer (m/w/d) – Teilprojektleitung — Steadforce
+  · Engineering Manager Embedded — Qwello.eu
+  · Customer Service Manager — Omaze
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
