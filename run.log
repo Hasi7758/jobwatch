@@ -23,33 +23,34 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
+  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(26个已知 + 前探40),共 66 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(25个已知 + 前探40),共 65 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1306 条
+  拿到 1318 条
 
-过滤后 47 / 2206 条符合关键词+地点
+过滤后 48 / 2218 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 14 条(宽松模式,其余保留)
+IG Metall 雇主命中 15 条(宽松模式,其余保留)
 
 ★ 新职位 14 条
-  · E-Commerce Manager (m/w/d) — AYLASHES
-  · Product Manager – POS & Fiscalization (m/f/d) — Swissbit
-  · Business Development Manager - Montpellier - CDI — Deliveroo
-  · Cybersecurity Manager (m/w/d) — Trusteq Gmbh
-  · Product Manager Westwing Collection (m/f/d) — Westwing Group SE
-  · (Senior) CRM Automation & Lifecycle Manager (all genders) — HolidayCheck Group AG
-  · Product Manager (Radiotech) — Gismart
-  · Knit - Research Manager — Eleve Talent
-  · Knit - Lead Product Manager — Eleve Talent
-  · Endear - Onboarding Manager — Eleve Talent
-  · Product Manager — CesiumAstro
-  · Senior Software Engineer (m/w/d) – Teilprojektleitung — Steadforce
-  · Engineering Manager Embedded — Qwello.eu
-  · Customer Service Manager — Omaze
+  · Produktmanager Klinikabrechnung / Krankenhausabrechnung (m/w — Meierhofer
+  · Product Owner (m/f/d) - Medical AI — Ocumeda Ag
+  · Senior Manager, Clinical Operations - Clinical Process Owner — Precisionmedicinegroup
+  · Enablement and Conversion Manager, Revenue Operations — Nivoda
+  · Product Manager confirmé H/F - SaaS - Fintech — N2JSoft
+  · Senior Technical Project Manager - PMO (all genders) — Contabo
+  · Senior Rollout Manager (f/m/x) – DACH — IONITY GmbH
+  · Head of Business Operations / Senior Business Operations Man — Vicegolf
+  · Lead / Senior Manager Fiber Customer Activation and Service  — OXG Glasfaser GmbH
+  · (Senior) Projekt- und Prozessmanager Customer Activation (m/ — OXG Glasfaser GmbH
+  · (Senior) Partnerships Manager DACH (m/f/d) — Bears With Benefits
+  · Senior Consultant/Manager Business Strategy (m/f/d) — Yoummday GmbH
+  · Business Development Manager — CreateYourSuccess4life
+  · Product Manager – Android Integration & Ecosystem — Proglove
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
