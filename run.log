@@ -31,26 +31,27 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1318 条
+  拿到 1312 条
 
-过滤后 48 / 2218 条符合关键词+地点
+过滤后 48 / 2212 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 15 条(宽松模式,其余保留)
 
-★ 新职位 14 条
-  · Produktmanager Klinikabrechnung / Krankenhausabrechnung (m/w — Meierhofer
-  · Product Owner (m/f/d) - Medical AI — Ocumeda Ag
-  · Senior Manager, Clinical Operations - Clinical Process Owner — Precisionmedicinegroup
-  · Enablement and Conversion Manager, Revenue Operations — Nivoda
-  · Product Manager confirmé H/F - SaaS - Fintech — N2JSoft
-  · Senior Technical Project Manager - PMO (all genders) — Contabo
-  · Senior Rollout Manager (f/m/x) – DACH — IONITY GmbH
-  · Head of Business Operations / Senior Business Operations Man — Vicegolf
-  · Lead / Senior Manager Fiber Customer Activation and Service  — OXG Glasfaser GmbH
-  · (Senior) Projekt- und Prozessmanager Customer Activation (m/ — OXG Glasfaser GmbH
-  · (Senior) Partnerships Manager DACH (m/f/d) — Bears With Benefits
-  · Senior Consultant/Manager Business Strategy (m/f/d) — Yoummday GmbH
-  · Business Development Manager — CreateYourSuccess4life
-  · Product Manager – Android Integration & Ecosystem — Proglove
+★ 新职位 15 条
+  · Technischer Senior Projektmanager (m/w/d) — Vitagroup
+  · SRE Manager — Parity
+  · Senior Platform Engineering Manager — prolific
+  · Product Manager — remotewoman
+  · (Senior) Manager Business Value Chain (all genders) — Eraneos
+  · Collection Operations & Process Manager (all genders) — Wemolo
+  · Senior Collection Operations & Process Manager (all genders) — Wemolo
+  · Projektleiter(in) im SharePoint-Umfeld (m/w/d) Remote — Teamsware GmbH
+  · Consulting Manager (m/f/d) Data & AI Strategy — Artefactlinkedin
+  · Senior Technical Program Manager I — Axon
+  · (Senior) B2B Operations Manager (all genders) — Stapelstein
+  · Customer Onboarding & Success Manager (m/w/d) 100% Remote mö — cinify GmbH
+  · Manager, Solutions Architect - CEUR — gitlab
+  · Senior Project Manager  (m/f/d) — Turner & Townsend GmbH
+  · Project Manager  (m/f/d) — Turner & Townsend GmbH
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
