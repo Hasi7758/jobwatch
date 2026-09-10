@@ -31,27 +31,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1312 条
+  拿到 1316 条
 
-过滤后 48 / 2212 条符合关键词+地点
+过滤后 53 / 2216 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 15 条(宽松模式,其余保留)
 
-★ 新职位 15 条
-  · Technischer Senior Projektmanager (m/w/d) — Vitagroup
+★ 新职位 21 条
+  · Market Fleet Manager - DACH — Roadsurfer
+  · Senior Manager, FP&A — Camunda
+  · Senior International Sourcing & SFN Manager — Shipbobinc
+  · Compliance Manager (Data Protection Officer, Regulatory Comp — Affirm
   · SRE Manager — Parity
-  · Senior Platform Engineering Manager — prolific
+  · Senior Manager, FP&A — Camunda
+  · SRE Manager — Parity
+  · Senior Post-Market Surveillance Manager (m/f/d) — Hilobyaktiia
   · Product Manager — remotewoman
-  · (Senior) Manager Business Value Chain (all genders) — Eraneos
-  · Collection Operations & Process Manager (all genders) — Wemolo
-  · Senior Collection Operations & Process Manager (all genders) — Wemolo
-  · Projektleiter(in) im SharePoint-Umfeld (m/w/d) Remote — Teamsware GmbH
-  · Consulting Manager (m/f/d) Data & AI Strategy — Artefactlinkedin
-  · Senior Technical Program Manager I — Axon
-  · (Senior) B2B Operations Manager (all genders) — Stapelstein
-  · Customer Onboarding & Success Manager (m/w/d) 100% Remote mö — cinify GmbH
-  · Manager, Solutions Architect - CEUR — gitlab
-  · Senior Project Manager  (m/f/d) — Turner & Townsend GmbH
-  · Project Manager  (m/f/d) — Turner & Townsend GmbH
+  · Manager, Agent Architecture — parloa
+  · Senior Manager/Associate Director, Commercial Operations, Ge — Acadia Job Listings
+  · Staff Product Manager: Product Discovery Engine — Constructor
+  · Senior Consultant | Manager (m/w/d) - Operational Transforma — Baringa
+  · Senior Product Manager (w/m/d) - Abrechnung & ERP — Arsipa GmbH
+  · (Senior) Purchasing Manager (m/w/d) — ECO STOR GmbH
+  …另有 6 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
