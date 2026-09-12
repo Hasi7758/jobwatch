@@ -31,28 +31,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1312 条
+  拿到 1643 条
 
-过滤后 59 / 2212 条符合关键词+地点
+过滤后 60 / 2543 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 17 条(宽松模式,其余保留)
+IG Metall 雇主命中 19 条(宽松模式,其余保留)
 
-★ 新职位 24 条
-  · Senior A/R Manager – E-Commerce & Meldewesen (all genders) — Glow25
-  · (Senior) Technical Project Manager — Omegga
-  · Senior Project Manager (all genders) — Init Ag
-  · (Senior) Project Manager (all genders) — Init Ag
-  · Engagement Manager — Intelance
-  · (Senior) CRM Automation & Lifecycle Manager (all genders) — HolidayCheck Group AG
-  · Senior Software Engineer (m/w/d) – Teilprojektleitung — Steadforce
-  · (Senior) Manager Accounting and Finance Operations — Hypersonica
-  · Senior Engineering Project Manager - ADAS Homologation (M/W/ — Mobileye
-  · Senior Product Manager - Software Solutions — Proglove
-  · Product Manager – Android Integration & Ecosystem — Proglove
-  · Private Equity Operations Manager / Operations Director (m/w — AEM Unternehmerkapital GmbH
-  · Senior Accounting Manager (w/m/d) – Multi-Entity & Process B — Proliance
-  · Project Manager — Tended
-  · Manager, Agent Architecture — parloa
-  …另有 9 条
+★ 新职位 19 条
+  · (Senior) Partnerships Manager DACH (m/f/d) — Bears With Benefits
+  · Senior Consultant/Manager Business Strategy (m/f/d) — Yoummday GmbH
+  · (Senior) Sustainability Manager — Eqs Group
+  · Executive Audience Manager — Pmmalliance
+  · Founding Product Manager (German-speaking) — Bowatt
+  · Senior Manager Group Accounting & IFRS (m/f/d) — Fioneer
+  · Senior Scaled Enablement Manager (m/w/d) — Maltego
+  · Projektleiter (m/w/d) Simulationssysteme — MY Humancapital GmbH
+  · Vergabemanager (m/w/d) Öffentliche Ausschreibung — MY Humancapital GmbH
+  · Technischer Property Manager (m/w/d) — MY Humancapital GmbH
+  · (Senior) Go-to-Market Scaling Manager - Germany (m/f/d) — 1KOMMA5˚
+  · Project Manager - Software Implementation (m/f/x) — Makersite GmbH
+  · Freelance Senior Product Manager (w/m/d) - Abrechnung & ERP — Arsipa GmbH
+  · Cybersecurity Manager (m/w/d) — Trusteq Gmbh
+  · Product Manager Westwing Collection (m/f/d) — Westwing Group SE
+  …另有 4 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
