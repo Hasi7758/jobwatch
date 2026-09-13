@@ -25,7 +25,7 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(25个已知 + 前探40),共 65 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(27个已知 + 前探40),共 67 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
@@ -33,26 +33,26 @@
   [OK] manroland Goss web systems GmbH (recruitee)
   拿到 1643 条
 
-过滤后 60 / 2543 条符合关键词+地点
+过滤后 72 / 2543 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 19 条(宽松模式,其余保留)
+IG Metall 雇主命中 17 条(宽松模式,其余保留)
 
-★ 新职位 19 条
-  · (Senior) Partnerships Manager DACH (m/f/d) — Bears With Benefits
-  · Senior Consultant/Manager Business Strategy (m/f/d) — Yoummday GmbH
-  · (Senior) Sustainability Manager — Eqs Group
-  · Executive Audience Manager — Pmmalliance
-  · Founding Product Manager (German-speaking) — Bowatt
-  · Senior Manager Group Accounting & IFRS (m/f/d) — Fioneer
-  · Senior Scaled Enablement Manager (m/w/d) — Maltego
-  · Projektleiter (m/w/d) Simulationssysteme — MY Humancapital GmbH
-  · Vergabemanager (m/w/d) Öffentliche Ausschreibung — MY Humancapital GmbH
-  · Technischer Property Manager (m/w/d) — MY Humancapital GmbH
-  · (Senior) Go-to-Market Scaling Manager - Germany (m/f/d) — 1KOMMA5˚
-  · Project Manager - Software Implementation (m/f/x) — Makersite GmbH
-  · Freelance Senior Product Manager (w/m/d) - Abrechnung & ERP — Arsipa GmbH
-  · Cybersecurity Manager (m/w/d) — Trusteq Gmbh
-  · Product Manager Westwing Collection (m/f/d) — Westwing Group SE
-  …另有 4 条
+★ 新职位 32 条
+  · Product Manager AI Search (m/w/d) — Moebel De
+  · (Senior) B2B Operations Manager (all genders) — Stapelstein
+  · Senior Manager, Clinical Operations - Clinical Process Owner — Precisionmedicinegroup
+  · Freelance Senior Product Manager / Product Consultant (w/m/d — Arsipa GmbH
+  · Manager, Applied AI Engineering (Codex) — OpenAI
+  · Produktmanager Klinikabrechnung / Krankenhausabrechnung (m/w — Meierhofer
+  · Product Owner AI (m/f/d) — Ocumeda Ag
+  · Senior Adobe Project Manager — dept
+  · Senior Machine Learning Engineer - Embedded AI — Design system manager @ Pennyl
+  · Senior Product Manager (m/w/d) — caronsale
+  · Product Manager (m/w/d) — caronsale
+  · Senior IT Projektmanager (m/w/d) in der Finanzdienstleistung — capco
+  · Shopify Manager (m/w/d) - Conversion, Funnel & Shop-Entwickl — Neolymp
+  · Senior Technical Project Manager - PMO (all genders) — Contabo
+  · Senior Cloud Product Manager (all genders) — Contabo
+  …另有 17 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
