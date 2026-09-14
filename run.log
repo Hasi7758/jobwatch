@@ -31,28 +31,26 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1643 条
+  拿到 1636 条
 
-过滤后 72 / 2543 条符合关键词+地点
+过滤后 56 / 2536 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 17 条(宽松模式,其余保留)
+IG Metall 雇主命中 15 条(宽松模式,其余保留)
 
-★ 新职位 32 条
-  · Product Manager AI Search (m/w/d) — Moebel De
-  · (Senior) B2B Operations Manager (all genders) — Stapelstein
-  · Senior Manager, Clinical Operations - Clinical Process Owner — Precisionmedicinegroup
-  · Freelance Senior Product Manager / Product Consultant (w/m/d — Arsipa GmbH
-  · Manager, Applied AI Engineering (Codex) — OpenAI
-  · Produktmanager Klinikabrechnung / Krankenhausabrechnung (m/w — Meierhofer
-  · Product Owner AI (m/f/d) — Ocumeda Ag
-  · Senior Adobe Project Manager — dept
-  · Senior Machine Learning Engineer - Embedded AI — Design system manager @ Pennyl
-  · Senior Product Manager (m/w/d) — caronsale
-  · Product Manager (m/w/d) — caronsale
-  · Senior IT Projektmanager (m/w/d) in der Finanzdienstleistung — capco
-  · Shopify Manager (m/w/d) - Conversion, Funnel & Shop-Entwickl — Neolymp
-  · Senior Technical Project Manager - PMO (all genders) — Contabo
-  · Senior Cloud Product Manager (all genders) — Contabo
-  …另有 17 条
+★ 新职位 14 条
+  · Senior eCommerce Manager (m/w/d) — Tmh
+  · Product Manager (m/f/d) Home Energy Solution (B2C) — Tmh
+  · Projektleiter (m/w/d) TGA / Energietechnik für Hotels — Enerdies Energieberatung
+  · Founding Product Manager (Y Combinator Startup) — CoCrafter (YC W24)
+  · Senior Consultant/Manager - Sécurité Financière & Conformité — capco
+  · Manager - Data Management H/F — capco
+  · Technischer Senior Projektmanager (m/w/d) — Vitagroup
+  · Principal Product Manager — nCino, Inc.
+  · Engineering Manager - Analytics House — Doitintl
+  · Product Manager, Procure-to-Pay — Zone & Co
+  · Senior Project Manager - Construction Fit-Out (UK / Europe) — Nscaleoperationsukltd
+  · Senior Product Manager, Platform — Nscaleoperationsukltd
+  · Senior Product Manager, Observability — Nscaleoperationsukltd
+  · (Senior) Manager Business Value Chain (all genders) — Eraneos
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
