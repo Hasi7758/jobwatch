@@ -25,32 +25,34 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(27个已知 + 前探40),共 67 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(22个已知 + 前探40),共 62 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1636 条
+  拿到 1326 条
 
-过滤后 56 / 2536 条符合关键词+地点
+过滤后 54 / 2226 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 15 条(宽松模式,其余保留)
+IG Metall 雇主命中 17 条(宽松模式,其余保留)
 
-★ 新职位 14 条
-  · Senior eCommerce Manager (m/w/d) — Tmh
-  · Product Manager (m/f/d) Home Energy Solution (B2C) — Tmh
-  · Projektleiter (m/w/d) TGA / Energietechnik für Hotels — Enerdies Energieberatung
-  · Founding Product Manager (Y Combinator Startup) — CoCrafter (YC W24)
-  · Senior Consultant/Manager - Sécurité Financière & Conformité — capco
-  · Manager - Data Management H/F — capco
-  · Technischer Senior Projektmanager (m/w/d) — Vitagroup
-  · Principal Product Manager — nCino, Inc.
-  · Engineering Manager - Analytics House — Doitintl
-  · Product Manager, Procure-to-Pay — Zone & Co
-  · Senior Project Manager - Construction Fit-Out (UK / Europe) — Nscaleoperationsukltd
-  · Senior Product Manager, Platform — Nscaleoperationsukltd
-  · Senior Product Manager, Observability — Nscaleoperationsukltd
-  · (Senior) Manager Business Value Chain (all genders) — Eraneos
+★ 新职位 30 条
+  · CRM Manager/ RevOps Analyst (m/w/d) — Crewmeister
+  · Product Manager | Intch — Hirehire
+  · Senior Accounting Manager (w/m/d) – Multi-Entity & Process B — Proliance
+  · Projektmanager / Projektentwickler (m/w/d) PV / Green Energy — Feld Energy
+  · Senior Product Manager (all genders) | B2C — Real Digital
+  · Senior Operations Manager (f/m/d) — Alemi Zurich
+  · Projektleitung Versicherungs-Software (all Genders) — Global Side Gmbh
+  · Senior Technical Project Manager — Coveoen
+  · Senior Technical Product Manager - Token Factory — Nebius
+  · Senior Project Manager — Cognite
+  · Amazon Marktplatz-Manager (m/w/d) remote oder hybrid — EBZ Marketplaces GmbH
+  · Senior Product Manager - Product & Experience — capco
+  · Senior AI Product Manager - Product & Experience — capco
+  · Product Owner (Specialty Insurance) - Product & Experience — capco
+  · Principal Consultant (Senior Manager) - Non-Financial / Oper — capco
+  …另有 15 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
