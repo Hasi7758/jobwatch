@@ -23,7 +23,6 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
-  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(22个已知 + 前探40),共 62 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -31,28 +30,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1326 条
+  拿到 1314 条
 
-过滤后 54 / 2226 条符合关键词+地点
+过滤后 54 / 2214 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 17 条(宽松模式,其余保留)
 
-★ 新职位 30 条
-  · CRM Manager/ RevOps Analyst (m/w/d) — Crewmeister
+★ 新职位 22 条
+  · Senior Scaled Enablement Manager (m/w/d) — Maltego
+  · Senior Customer Relationship Manager (R-19677) — Dun & Bradstreet
+  · Senior Manager, New Business DACH & Benelux — Twilio
   · Product Manager | Intch — Hirehire
-  · Senior Accounting Manager (w/m/d) – Multi-Entity & Process B — Proliance
-  · Projektmanager / Projektentwickler (m/w/d) PV / Green Energy — Feld Energy
-  · Senior Product Manager (all genders) | B2C — Real Digital
-  · Senior Operations Manager (f/m/d) — Alemi Zurich
-  · Projektleitung Versicherungs-Software (all Genders) — Global Side Gmbh
-  · Senior Technical Project Manager — Coveoen
-  · Senior Technical Product Manager - Token Factory — Nebius
-  · Senior Project Manager — Cognite
-  · Amazon Marktplatz-Manager (m/w/d) remote oder hybrid — EBZ Marketplaces GmbH
-  · Senior Product Manager - Product & Experience — capco
-  · Senior AI Product Manager - Product & Experience — capco
-  · Product Owner (Specialty Insurance) - Product & Experience — capco
-  · Principal Consultant (Senior Manager) - Non-Financial / Oper — capco
-  …另有 15 条
+  · Product Manager | Intch — Hirehire
+  · Datacenter Facilities Manager — Nebius
+  · Group Product Manager — Engagedmd
+  · Produktmanager Managed Services - Cloud & Infrastructure (m/ — Swissitsecuritygroup
+  · Cybersecurity Manager (m/w/d) — Trusteq Gmbh
+  · Senior Project Manager (all genders) — Init Ag
+  · (Senior) Project Manager (all genders) — Init Ag
+  · Forward Deployed Engineering Manager — Auterion
+  · Engineering Manager - Revenue Management Azure — Doitintl
+  · Project Manager - Software Implementation (m/f/x) — Makersite GmbH
+  · (Senior) CRM Automation & Lifecycle Manager (all genders) — HolidayCheck Group AG
+  …另有 7 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
