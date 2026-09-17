@@ -23,6 +23,7 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
+  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(22个已知 + 前探40),共 62 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -30,28 +31,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1314 条
+  拿到 1316 条
 
-过滤后 54 / 2214 条符合关键词+地点
+过滤后 52 / 2216 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 17 条(宽松模式,其余保留)
+IG Metall 雇主命中 15 条(宽松模式,其余保留)
 
 ★ 新职位 22 条
-  · Senior Scaled Enablement Manager (m/w/d) — Maltego
-  · Senior Customer Relationship Manager (R-19677) — Dun & Bradstreet
-  · Senior Manager, New Business DACH & Benelux — Twilio
-  · Product Manager | Intch — Hirehire
-  · Product Manager | Intch — Hirehire
-  · Datacenter Facilities Manager — Nebius
-  · Group Product Manager — Engagedmd
-  · Produktmanager Managed Services - Cloud & Infrastructure (m/ — Swissitsecuritygroup
-  · Cybersecurity Manager (m/w/d) — Trusteq Gmbh
-  · Senior Project Manager (all genders) — Init Ag
-  · (Senior) Project Manager (all genders) — Init Ag
-  · Forward Deployed Engineering Manager — Auterion
-  · Engineering Manager - Revenue Management Azure — Doitintl
-  · Project Manager - Software Implementation (m/f/x) — Makersite GmbH
-  · (Senior) CRM Automation & Lifecycle Manager (all genders) — HolidayCheck Group AG
+  · Manager, ADR - EMEA — Camunda
+  · Staff Product Manager: Agentic Discovery — Constructor
+  · Senior Engineering Manager, Non-Linear Productivity — gitlab
+  · Engineering Manager, Tenant Scale:Git — gitlab
+  · Engineering Manager, Switchboard — gitlab
+  · Manager, ADR - EMEA — Camunda
+  · Senior Technical Project Manager - PMO (all genders) — Contabo
+  · Senior Cloud Product Manager (all genders) — Contabo
+  · Senior Rollout Manager (f/m/x) – DACH — IONITY GmbH
+  · Head of Business Operations / Senior Business Operations Man — Vicegolf
+  · Senior Manager, Professional Services - EMEA — chainguard
+  · Senior Product Manager — nearform
+  · Partnerships Manager (South East) — Allica Bank
+  · Partnerships Manager (North West) — Allica Bank
+  · Partnerships Manager (Midlands) — Allica Bank
   …另有 7 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
