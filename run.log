@@ -23,6 +23,7 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
+  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(22个已知 + 前探40),共 62 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -32,26 +33,23 @@
   [OK] manroland Goss web systems GmbH (recruitee)
   拿到 1320 条
 
-过滤后 62 / 2220 条符合关键词+地点
+过滤后 55 / 2220 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 16 条(宽松模式,其余保留)
+IG Metall 雇主命中 18 条(宽松模式,其余保留)
 
-★ 新职位 37 条
-  · Senior CRM / Lifecycle Manager (m/w/d) — Next Lotto GmbH
-  · Remote Manager (Director) Partnerships DACH (m/f/d) — Roompricegenie
-  · Avionics AIT Manager — Hypersonica
-  · (Senior) Purchasing Manager (m/w/d) — ECO STOR GmbH
-  · Paid Search Manager — dept
-  · Senior Strategic ABM  Manager — purestorage
-  · Staff Product Manager, Machine Learning — Overstory
-  · Engineering Manager, Machine Learning — Overstory
-  · Senior Design Manager — Pennylane SAS
-  · Senior Technical Project Manager (m/f/d) — Berlitz
-  · Senior Product Operations Manager (m/f/d) — Berlitz
-  · Contract & Claim Manager (m/w/d) — ILF Consulting Engineers Germa
-  · Senior eCommerce Manager (m/w/d) — Tmh
-  · Product Manager (m/f/d) Home Energy Solution (B2C) — Tmh
-  · Blockchain Expansion  Manager (100% remote) — Tether Operations Limited
-  …另有 22 条
+★ 新职位 13 条
+  · Product Owner (m/w/d) - Customer Domain — doctari GmbH
+  · Engineering Manager (m/w/d) — Xempus AG
+  · Engineering Manager (m/f/d) — Xempus AG
+  · Paid Social & Analytics Manager (m/f/d) — everdrop GmbH
+  · Senior Product Manager - Software Solutions — Proglove
+  · Product Manager – Android Integration & Ecosystem — Proglove
+  · Projektmanager / Projektentwickler (m/w/d) PV / Green Energy — Feld Energy
+  · Senior Regulatory CMC Project lead — Excelya
+  · Senior Product Manager (all genders) | B2C — Real Digital
+  · Senior Operations Manager (f/m/d) — Alemi Zurich
+  · Projektleitung Versicherungs-Software (all Genders) — Global Side Gmbh
+  · Expansion Manager, EU Airport transfers (all genders) — Distribusion Technologies
+  · Public Affairs Manager - digitale Bildung (gn) — sofatutor GmbH
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
