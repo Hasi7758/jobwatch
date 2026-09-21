@@ -31,25 +31,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1320 条
+  拿到 1318 条
 
-过滤后 55 / 2220 条符合关键词+地点
+过滤后 51 / 2218 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 18 条(宽松模式,其余保留)
+IG Metall 雇主命中 17 条(宽松模式,其余保留)
 
-★ 新职位 13 条
-  · Product Owner (m/w/d) - Customer Domain — doctari GmbH
-  · Engineering Manager (m/w/d) — Xempus AG
-  · Engineering Manager (m/f/d) — Xempus AG
-  · Paid Social & Analytics Manager (m/f/d) — everdrop GmbH
-  · Senior Product Manager - Software Solutions — Proglove
-  · Product Manager – Android Integration & Ecosystem — Proglove
-  · Projektmanager / Projektentwickler (m/w/d) PV / Green Energy — Feld Energy
-  · Senior Regulatory CMC Project lead — Excelya
-  · Senior Product Manager (all genders) | B2C — Real Digital
-  · Senior Operations Manager (f/m/d) — Alemi Zurich
-  · Projektleitung Versicherungs-Software (all Genders) — Global Side Gmbh
-  · Expansion Manager, EU Airport transfers (all genders) — Distribusion Technologies
-  · Public Affairs Manager - digitale Bildung (gn) — sofatutor GmbH
+★ 新职位 27 条
+  · Heartbeat AI Partnerships Manager (m/f/d) — 1KOMMA5˚
+  · (Senior) Product Manager Heating & Cooling (m/f/d) — 1KOMMA5˚
+  · (Senior) Product Manager Energy (m/f/d) — 1KOMMA5˚
+  · (Senior) Product Manager Heartbeat (m/f/d) — 1KOMMA5˚
+  · (Senior) Partnerships Manager DACH (m/f/d) — Bears With Benefits
+  · Senior Consultant/Manager Business Strategy (m/f/d) — Yoummday GmbH
+  · Commercial Senior Manager, Expansion Markets — eucalyptus
+  · Principal Product Program Manager — Globalizationpartners
+  · Product Owner - Agentic — Hawk
+  · Senior Product Manager (m/f/d) — Moss
+  · (Senior) Sustainability Manager — Eqs Group
+  · Senior Engineering Project Manager (m/w/d) — Idealworks
+  · Product Manager (all genders) - IoT Platform — Wemolo
+  · GTM Enablement Manager (all genders) — Wemolo
+  · Senior Scaled Enablement Manager (m/w/d) — Maltego
+  …另有 12 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
