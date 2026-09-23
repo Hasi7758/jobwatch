@@ -31,28 +31,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1317 条
+  拿到 1323 条
 
-过滤后 50 / 2217 条符合关键词+地点
+过滤后 51 / 2223 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 16 条(宽松模式,其余保留)
 
-★ 新职位 23 条
-  · Engineering Manager - Observability | Germany | Remote — grafanalabs
-  · Product Manager AI Search (m/w/d) — Moebel De
-  · Senior Quality Manager (all genders) — væridion
-  · Technical Project Manager - ERP Implementation (all genders) — væridion
-  · Senior HR IT Project Lead - SAP HCM / Integrations / Carve-o — Sidekick Network GmbH & Co. KG
-  · Workplace Manager — Se3
-  · Sr. Product Manager - Market Data Feeds — Addepar1
-  · Produktmanager Klinikabrechnung / Krankenhausabrechnung (m/w — Meierhofer
-  · Senior Product Manager - Marketplace — Cosuno
-  · Senior Product Manager - General Contractors — Cosuno
-  · Strategic Partnerships Manager, Germany — OpenAI
-  · Product Owner AI (m/f/d) — Ocumeda Ag
-  · Technical Outsource Manager (m/w/d) — ICT Digital Solutions
-  · Finance Systems and FP&A Manager (m/f/d) — Dataguard
-  · Senior Revenue Operations Manager (m/f/d) — Dataguard
-  …另有 8 条
+★ 新职位 28 条
+  · Engineering Manager - Observability | UK | Remote — grafanalabs
+  · Strategic Finance Manager (m/f/d) — RobCo
+  · Staff Product Manager - Robotics & Safety — RobCo
+  · Workplace and Company Operations Manager (m/f/d) — RobCo
+  · Engineering Manager — Workmotion
+  · Technical Product Owner – C++ SDK & ImFusion Suite — Imfusion
+  · Regulatory Manager / Senior Regulatory Manager — Precisionmedicinegroup
+  · Legal Engineer Manager, Munich — Harvey
+  · Senior CRM Lifecycle + Journeys Manager — Quince
+  · Consulting Manager (m/f/d) Data & AI Strategy — Artefact
+  · People Operations Manager — Proxima Fusion GmbH
+  · Procurement Manager, Integrated Systems (Cryogenics, Vacuum, — Proxima Fusion GmbH
+  · Procurement Manager, Construction and Infrastructure (EPC/EP — Proxima Fusion GmbH
+  · Project Manager - Site & Infrastructure Development — Proxima Fusion GmbH
+  · Project Manager - General & Cross-Program — Proxima Fusion GmbH
+  …另有 13 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
