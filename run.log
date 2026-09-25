@@ -25,34 +25,34 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(21个已知 + 前探40),共 61 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(22个已知 + 前探40),共 62 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1324 条
+  拿到 1329 条
 
-过滤后 45 / 2224 条符合关键词+地点
+过滤后 50 / 2229 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 17 条(宽松模式,其余保留)
+IG Metall 雇主命中 15 条(宽松模式,其余保留)
 
-★ 新职位 20 条
-  · Testmanager (m/w/d) — CPU Consulting & Software GmbH
-  · Solutions Engineering Manager - DACH & Nordics — Neuralconcept
-  · Senior Product Manager (all genders) | B2C — Real Digital
-  · Senior Product Manager (all genders) | B2B — Real Digital
-  · Senior Operations Manager (f/m/d) — Alemi Zurich
-  · Paid Ads Manager (m/w/d) — Filz Asmussen
-  · Strategic Tech Partnerships Manager — Pennylane SAS
-  · Partnership Manager — Pennylane SAS
-  · Projektleitung Versicherungs-Software (all Genders) — Global Side Gmbh
-  · Principal Product Manager, Document Domain — Pandadoc
-  · Product Manager – Horizontal Platform Poseidon — Verifone
-  · Supply Chain Manager — Auterion
-  · Senior Product Manager (m/w/d) — Skalar
-  · IT Administration & Automation Manager (all genders) — Lio
-  · Interim Einkaufsleitung / Senior Procurement Manager (m/w/d) — enomyc GmbH
-  …另有 5 条
+★ 新职位 26 条
+  · Senior Scaled Enablement Manager (m/w/d) — Maltego
+  · Onboarding Manager, Cybersecurity/CTI (m/w/d) — Maltego
+  · E-Commerce Manager (m/w/d) — AYLASHES
+  · Senior Design Manager - U&R — Bakerhicks
+  · Technical Program Manager - UK — Marqeta Inc
+  · Product Manager  H/F — capco
+  · Cybersecurity Manager (m/w/d) — Trusteq Gmbh
+  · Senior Manager, Global Procurement (Materials) — Quince
+  · Senior Project Manager für digitale Verwaltungsprojekte - Mi — Init Ag
+  · Senior Project Manager für digitale Verwaltungsprojekte - Mi — Init Ag
+  · Senior Project Manager (all genders) — Init Ag
+  · (Senior) Project Manager (all genders) — Init Ag
+  · Product Owner – Trust Services (eIDAS2, EUDI Wallet & Trust  — idnow
+  · Senior Product Manager (JetBrains Context) — jetbrains
+  · Senior Information Security Manager (EU Sovereignty) — DeepL
+  …另有 11 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
