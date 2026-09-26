@@ -25,34 +25,34 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(22个已知 + 前探40),共 62 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(24个已知 + 前探40),共 64 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1329 条
+  拿到 1331 条
 
-过滤后 50 / 2229 条符合关键词+地点
+过滤后 45 / 2231 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 15 条(宽松模式,其余保留)
 
-★ 新职位 26 条
-  · Senior Scaled Enablement Manager (m/w/d) — Maltego
-  · Onboarding Manager, Cybersecurity/CTI (m/w/d) — Maltego
-  · E-Commerce Manager (m/w/d) — AYLASHES
-  · Senior Design Manager - U&R — Bakerhicks
-  · Technical Program Manager - UK — Marqeta Inc
-  · Product Manager  H/F — capco
-  · Cybersecurity Manager (m/w/d) — Trusteq Gmbh
+★ 新职位 16 条
+  · Group Product Manager - Enterprise & Commercial (m/f/d) — Berlitz
+  · Product Manager - Growth & Website (m/f/d) — Berlitz
+  · Senior Learning, Development and Culture Manager (m/f/d) — TYTAN Technologies GmbH
+  · Senior Technical Project Manager - PMO (all genders) — Contabo
+  · Senior Cloud Product Manager (all genders) — Contabo
   · Senior Manager, Global Procurement (Materials) — Quince
-  · Senior Project Manager für digitale Verwaltungsprojekte - Mi — Init Ag
-  · Senior Project Manager für digitale Verwaltungsprojekte - Mi — Init Ag
-  · Senior Project Manager (all genders) — Init Ag
-  · (Senior) Project Manager (all genders) — Init Ag
-  · Product Owner – Trust Services (eIDAS2, EUDI Wallet & Trust  — idnow
-  · Senior Product Manager (JetBrains Context) — jetbrains
-  · Senior Information Security Manager (EU Sovereignty) — DeepL
-  …另有 11 条
+  · Senior Controller / FP&A Manager (m/w/d) — Thermengruppe Josef Wund
+  · Senior Rollout Manager (f/m/x) – DACH — IONITY GmbH
+  · Head of Business Operations / Senior Business Operations Man — Vicegolf
+  · Senior Contracts Manager, Commercial (EMEA) — gitlab
+  · (Senior) Sustainability Manager — Eqs Group
+  · Senior Engineering Project Manager (m/w/d) — Idealworks
+  · Projektleiter (m/w/d) Simulationssysteme — MY Humancapital GmbH
+  · Vergabemanager (m/w/d) Öffentliche Ausschreibung — MY Humancapital GmbH
+  · Technischer Property Manager (m/w/d) — MY Humancapital GmbH
+  …另有 1 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
