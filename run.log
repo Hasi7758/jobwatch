@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 900 条
+  拿到 1050 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -23,7 +23,6 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
-  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(24个已知 + 前探40),共 64 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -33,26 +32,26 @@
   [OK] manroland Goss web systems GmbH (recruitee)
   拿到 1331 条
 
-过滤后 45 / 2231 条符合关键词+地点
+过滤后 56 / 2381 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 15 条(宽松模式,其余保留)
+IG Metall 雇主命中 16 条(宽松模式,其余保留)
 
-★ 新职位 16 条
-  · Group Product Manager - Enterprise & Commercial (m/f/d) — Berlitz
-  · Product Manager - Growth & Website (m/f/d) — Berlitz
-  · Senior Learning, Development and Culture Manager (m/f/d) — TYTAN Technologies GmbH
-  · Senior Technical Project Manager - PMO (all genders) — Contabo
-  · Senior Cloud Product Manager (all genders) — Contabo
-  · Senior Manager, Global Procurement (Materials) — Quince
-  · Senior Controller / FP&A Manager (m/w/d) — Thermengruppe Josef Wund
-  · Senior Rollout Manager (f/m/x) – DACH — IONITY GmbH
-  · Head of Business Operations / Senior Business Operations Man — Vicegolf
-  · Senior Contracts Manager, Commercial (EMEA) — gitlab
-  · (Senior) Sustainability Manager — Eqs Group
-  · Senior Engineering Project Manager (m/w/d) — Idealworks
-  · Projektleiter (m/w/d) Simulationssysteme — MY Humancapital GmbH
-  · Vergabemanager (m/w/d) Öffentliche Ausschreibung — MY Humancapital GmbH
-  · Technischer Property Manager (m/w/d) — MY Humancapital GmbH
-  …另有 1 条
+★ 新职位 20 条
+  · Technical Product Owner – C++ SDK & ImFusion Suite — Imfusion
+  · Staff Product Manager, Pricing and Manufacturability — Xometryeurope
+  · Manager SAP EWM – Logistics / Supply Chain (m/w/d) — Eraneos
+  · Growth Product Manager — Distrokid
+  · Product Manager, Performance AI — Wpp
+  · Product Owner, College Pads — Starrez
+  · Store Manager - Saint-Tropez — Aloyoga
+  · Lead Product Manager - RPG — Homa Games
+  · Project Manager, Gaming Localization Production — LILT (Production)
+  · Technical Program Manager (m/f/d) — RobCo
+  · Manager, Solutions Consultants, DACH — Notion
+  · Manager, ADR - EMEA — Camunda
+  · Senior Manager, FP&A — Camunda
+  · Principal Product Manager- Time to First Production — Camunda
+  · Senior Manager, QA Engineering — Camunda
+  …另有 5 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
