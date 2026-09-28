@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1050 条
+  拿到 1051 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -23,6 +23,7 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
+  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(24个已知 + 前探40),共 64 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -30,28 +31,26 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1331 条
+  拿到 1328 条
 
-过滤后 56 / 2381 条符合关键词+地点
+过滤后 47 / 2379 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 16 条(宽松模式,其余保留)
 
-★ 新职位 20 条
-  · Technical Product Owner – C++ SDK & ImFusion Suite — Imfusion
-  · Staff Product Manager, Pricing and Manufacturability — Xometryeurope
-  · Manager SAP EWM – Logistics / Supply Chain (m/w/d) — Eraneos
-  · Growth Product Manager — Distrokid
-  · Product Manager, Performance AI — Wpp
-  · Product Owner, College Pads — Starrez
-  · Store Manager - Saint-Tropez — Aloyoga
-  · Lead Product Manager - RPG — Homa Games
-  · Project Manager, Gaming Localization Production — LILT (Production)
-  · Technical Program Manager (m/f/d) — RobCo
-  · Manager, Solutions Consultants, DACH — Notion
-  · Manager, ADR - EMEA — Camunda
-  · Senior Manager, FP&A — Camunda
-  · Principal Product Manager- Time to First Production — Camunda
-  · Senior Manager, QA Engineering — Camunda
-  …另有 5 条
+★ 新职位 14 条
+  · HR-Manager:in / HR Generalist:in (m/w/d) Teilzeit (25 Std./W — Metallbau Pfeuffer GmbH
+  · Technical Program Manager — SoSafe
+  · Operations Manager - Education & Student Services — London School of Excellence
+  · Senior Product Manager - Sports Trading — Super
+  · Senior Engineering Manager- Payment Experience — Super
+  · Senior Engineering Manager - Machine Learning — Super
+  · Head of Product Design - Manager role — Super
+  · Senior Product Manager — Ddome
+  · (Senior) IT Project Manager — capco
+  · Senior Manager, Solutions Consulting - Alpine Region — zscaler
+  · Supply Chain Manager — Auterion
+  · Group Product Manager [Klaxoon] — Wrike
+  · Senior Product Manager — Yubico
+  · Accounting Manager – Accounts Payable (all genders) — Glow25
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
