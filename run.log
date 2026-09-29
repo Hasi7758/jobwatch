@@ -25,32 +25,34 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(24个已知 + 前探40),共 64 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(23个已知 + 前探40),共 63 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1328 条
+  拿到 1324 条
 
-过滤后 47 / 2379 条符合关键词+地点
+过滤后 43 / 2375 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 16 条(宽松模式,其余保留)
+IG Metall 雇主命中 17 条(宽松模式,其余保留)
 
-★ 新职位 14 条
-  · HR-Manager:in / HR Generalist:in (m/w/d) Teilzeit (25 Std./W — Metallbau Pfeuffer GmbH
-  · Technical Program Manager — SoSafe
-  · Operations Manager - Education & Student Services — London School of Excellence
-  · Senior Product Manager - Sports Trading — Super
-  · Senior Engineering Manager- Payment Experience — Super
-  · Senior Engineering Manager - Machine Learning — Super
-  · Head of Product Design - Manager role — Super
-  · Senior Product Manager — Ddome
-  · (Senior) IT Project Manager — capco
-  · Senior Manager, Solutions Consulting - Alpine Region — zscaler
-  · Supply Chain Manager — Auterion
-  · Group Product Manager [Klaxoon] — Wrike
-  · Senior Product Manager — Yubico
-  · Accounting Manager – Accounts Payable (all genders) — Glow25
+★ 新职位 17 条
+  · Accounting Manager A/R – E-Commerce (all genders) — Glow25
+  · (Senior) Produkt Manager (m/w/d) — Finway
+  · Clinical Project Manager / Senior Clinical Project Manager — Precisionmedicinegroup
+  · Project Manager - Software Implementation (m/f/x) — Makersite GmbH
+  · Manager Digital & AI Strategy - Pharma & Healthcare (m/f/d) — Ommax
+  · Manager Digital & AI Strategy - Automotive (m/f/d) — Ommax
+  · Product Manager (f/m/d) — Quantum Diamond
+  · Senior FP&A Manager (m/f/d) -  Remote — Xentral
+  · Product Owner (m/w/d) - Customer Domain — doctari GmbH
+  · Engineering Manager (m/w/d) — Xempus AG
+  · Engineering Manager (m/f/d) — Xempus AG
+  · Senior Product Manager - Software Solutions — Proglove
+  · Product Manager – Android Integration & Ecosystem — Proglove
+  · Projektmanager / Projektentwickler (m/w/d) PV / Green Energy — Feld Energy
+  · Amazon Marktplatz-Manager (m/w/d) remote oder hybrid — EBZ Marketplaces GmbH
+  …另有 2 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
