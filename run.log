@@ -25,34 +25,34 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(23个已知 + 前探40),共 63 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(24个已知 + 前探40),共 64 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1324 条
+  拿到 1333 条
 
-过滤后 43 / 2375 条符合关键词+地点
+过滤后 52 / 2384 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 17 条(宽松模式,其余保留)
+IG Metall 雇主命中 13 条(宽松模式,其余保留)
 
-★ 新职位 17 条
-  · Accounting Manager A/R – E-Commerce (all genders) — Glow25
-  · (Senior) Produkt Manager (m/w/d) — Finway
-  · Clinical Project Manager / Senior Clinical Project Manager — Precisionmedicinegroup
-  · Project Manager - Software Implementation (m/f/x) — Makersite GmbH
-  · Manager Digital & AI Strategy - Pharma & Healthcare (m/f/d) — Ommax
-  · Manager Digital & AI Strategy - Automotive (m/f/d) — Ommax
-  · Product Manager (f/m/d) — Quantum Diamond
-  · Senior FP&A Manager (m/f/d) -  Remote — Xentral
-  · Product Owner (m/w/d) - Customer Domain — doctari GmbH
-  · Engineering Manager (m/w/d) — Xempus AG
-  · Engineering Manager (m/f/d) — Xempus AG
-  · Senior Product Manager - Software Solutions — Proglove
-  · Product Manager – Android Integration & Ecosystem — Proglove
-  · Projektmanager / Projektentwickler (m/w/d) PV / Green Energy — Feld Energy
-  · Amazon Marktplatz-Manager (m/w/d) remote oder hybrid — EBZ Marketplaces GmbH
-  …另有 2 条
+★ 新职位 27 条
+  · Brand Strategy Manager (m/w/d) — New Flag GmbH
+  · New Business Manager — Siteminder
+  · Senior Vendor Manager / Lieferantenmanager Telekommunikation — OXG Glasfaser GmbH
+  · Senior Paid Search Manager — mewssystems
+  · Senior Product Manager — Suvoda
+  · Engineering Manager, Dedicated Integrations — gitlab
+  · Senior Engineering Manager [gn] Data Intelligence Platform — Actian
+  · Visual Manager (Seasonal Fixed-Term) - Saint-Tropez — Aloyoga
+  · Stock Manager (Seasonal Fixed-Term) - Saint-Tropez — Aloyoga
+  · (Senior) Sustainability Manager — Eqs Group
+  · Senior Engineering Project Manager (m/w/d) — Idealworks
+  · Senior Project Manager — BLP Digital AG
+  · Project Manager — BLP Digital AG
+  · Senior Engineering Project Manager -Automotive Systems (M/W/ — Mobileye
+  · Senior Partner Delivery Manager (UK) — parloa
+  …另有 12 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
