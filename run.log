@@ -31,28 +31,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1336 条
+  拿到 1333 条
 
-过滤后 46 / 2387 条符合关键词+地点
+过滤后 47 / 2384 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 14 条(宽松模式,其余保留)
+IG Metall 雇主命中 15 条(宽松模式,其余保留)
 
-★ 新职位 19 条
-  · Manager SAP EWM – Logistics / Supply Chain (m/w/d) — Eraneos
-  · IT Application Manager (m/w/d) — MY Humancapital GmbH
-  · Senior Shopify Project Manager / Project Lead (m/w/d) — Strix Group B.V.
-  · Meta Ads Manager (m/w/d) Teilzeit — Social Galaxy GmbH
-  · Product Manager / Business Analyst (m/w/d) - Enterprise Bank — XALT Business Consulting GmbH
-  · Senior Product Manager, CRM - MONOPOLY GO! — Scopely
-  · Engineering Manager - Cloud & Security (m/f/x) — FINN
-  · Senior Technical Program Manager (IDE Department) — jetbrains
-  · AI & Automation Manager (m/w/d) — P3 Security
-  · Supply Chain Manager (all genders) — Maniko Nails GmbH
-  · Senior Technical Project Manager - PMO (all genders) — Contabo
-  · Senior Cloud Product Manager (all genders) — Contabo
-  · Engineering Manager - Mobile (f/m/d) — Awin
-  · Senior Controller / FP&A Manager (m/w/d) — Thermengruppe Josef Wund
-  · Senior Paid Social Manager – Meta & TikTok, Perspektive Paid — Evolve Digital GmbH
-  …另有 4 条
+★ 新职位 21 条
+  · Project Lead DXP I Composable DXP — TOWA - the digital growth comp
+  · Digitalisierungsmanager (m/w/d) - Weiterbildung mit KI & Aut — Mentify Learn GmbH
+  · Supply Chain Manager — Auterion
+  · Senior Product Manager, Billing Engine & Platforms Monetizat — gitlab
+  · Senior Product Manager, Mobile — mozilla
+  · Senior Project Manager — Cognite
+  · Senior Product Manager - Paris — Yubo
+  · Senior Program Manager — CesiumAstro
+  · Procurement Manager, Advanced Manufacturing — Proxima Fusion GmbH
+  · Engineering Manager - Grafana Application Security | EMEA |  — grafanalabs
+  · Senior Block Manager / Team Leader — Dwelly
+  · Senior Product Manager, Mobile — mozilla
+  · Senior Communications Manager — Skeletontech
+  · Founding Technical Project Manager — BLP Digital AG
+  · Technical Outsource Manager (m/w/d) — ICT Digital Solutions
+  …另有 6 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
