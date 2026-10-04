@@ -31,28 +31,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1333 条
+  拿到 1331 条
 
-过滤后 50 / 2383 条符合关键词+地点
+过滤后 56 / 2381 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 16 条(宽松模式,其余保留)
 
-★ 新职位 23 条
-  · Senior Expansion Manager:in (m/w/d) für Standortakquise in M — Fastned
-  · Technical SAP Product Owner (m/w/d) — Natuvion GmbH
-  · Engineering Manager (m/w/d) — Xempus AG
-  · Controls Product Senior Manager — Monzo
-  · Product Manager – Android Integration & Ecosystem — Proglove
-  · Principal Product Manager (AI Product) (f/m/d) — thinkcellsoftware
-  · People & Operation Manager — Zeit Ai
-  · (Senior) Manager FP&A (m/f/d) — limehome
-  · Projektmanager / Projektentwickler (m/w/d) PV / Green Energy — Feld Energy
-  · Senior Product Manager (all genders) | B2B — Real Digital
-  · Testmanager SAP SuccessFactors (m/w/d) — Qualysoft
-  · Senior Product Manager (Business Applications Development) — jetbrains
-  · Projektleitung Versicherungs-Software (all Genders) — Global Side Gmbh
-  · Senior Business Development Manager — Allica Bank
-  · Senior Product Manager, Mobile — mozilla
-  …另有 8 条
+★ 新职位 21 条
+  · Senior Product Manager (m/f/x) Growth / E-Commerce — FINN
+  · E-Commerce Manager (m/w/d) — AYLASHES
+  · Supply Chain Manager (m/w/d) — Memodo Gmbh
+  · Senior Product Manager, Ongoing Monitoring — tide
+  · Manager - Data ScientistH/F — capco
+  · Technical Project Manager - Dach — Tandem Health
+  · Senior Scaled Enablement Manager (m/w/d) — Maltego
+  · Onboarding Manager, Cybersecurity/CTI (m/w/d) — Maltego
+  · Lead Project Manager Dual Use In-Orbit Services — The Exploration Company
+  · Senior Project Manager (m/w/d) — epilot GmbH
+  · Cybersecurity Manager (m/w/d) — Trusteq Gmbh
+  · Business Development Manager — Tactiliarobotics
+  · Staff Product Manager, Comms Platform — Affirm
+  · Senior Project Manager für digitale Verwaltungsprojekte - Mi — Init Ag
+  · Senior Project Manager (all genders) — Init Ag
+  …另有 6 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
