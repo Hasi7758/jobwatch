@@ -31,28 +31,22 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1331 条
+  拿到 1320 条
 
-过滤后 56 / 2381 条符合关键词+地点
+过滤后 46 / 2370 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 16 条(宽松模式,其余保留)
+IG Metall 雇主命中 14 条(宽松模式,其余保留)
 
-★ 新职位 21 条
-  · Senior Product Manager (m/f/x) Growth / E-Commerce — FINN
-  · E-Commerce Manager (m/w/d) — AYLASHES
-  · Supply Chain Manager (m/w/d) — Memodo Gmbh
-  · Senior Product Manager, Ongoing Monitoring — tide
-  · Manager - Data ScientistH/F — capco
-  · Technical Project Manager - Dach — Tandem Health
-  · Senior Scaled Enablement Manager (m/w/d) — Maltego
-  · Onboarding Manager, Cybersecurity/CTI (m/w/d) — Maltego
-  · Lead Project Manager Dual Use In-Orbit Services — The Exploration Company
-  · Senior Project Manager (m/w/d) — epilot GmbH
-  · Cybersecurity Manager (m/w/d) — Trusteq Gmbh
-  · Business Development Manager — Tactiliarobotics
-  · Staff Product Manager, Comms Platform — Affirm
-  · Senior Project Manager für digitale Verwaltungsprojekte - Mi — Init Ag
-  · Senior Project Manager (all genders) — Init Ag
-  …另有 6 条
+★ 新职位 10 条
+  · Client Success Senior Manager — gympass
+  · Senior Manager, Global Procurement — Quince
+  · Engineering Manager, AI CICD — chainguard
+  · E-Commerce Manager für Shopify (m/w/d) – Vollzeit — ECOM MATE GmbH
+  · AI & Automation Manager (m/w/d) — P3 Security
+  · Senior Cloud Product Manager (all genders) — Contabo
+  · Senior Controller / FP&A Manager (m/w/d) — Thermengruppe Josef Wund
+  · TikTok Shop - Creator Manager (m/w/d) — RealStudio GmbH
+  · Senior Vendor Manager / Lieferantenmanager Telekommunikation — OXG Glasfaser GmbH
+  · Senior Engineering Project Manager (m/w/d) — Idealworks
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
