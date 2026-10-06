@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1050 条
+  拿到 1036 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -25,28 +25,30 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(23个已知 + 前探40),共 63 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(21个已知 + 前探40),共 61 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1320 条
+  拿到 1327 条
 
-过滤后 46 / 2370 条符合关键词+地点
+过滤后 42 / 2363 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 14 条(宽松模式,其余保留)
 
-★ 新职位 10 条
-  · Client Success Senior Manager — gympass
-  · Senior Manager, Global Procurement — Quince
-  · Engineering Manager, AI CICD — chainguard
-  · E-Commerce Manager für Shopify (m/w/d) – Vollzeit — ECOM MATE GmbH
-  · AI & Automation Manager (m/w/d) — P3 Security
-  · Senior Cloud Product Manager (all genders) — Contabo
-  · Senior Controller / FP&A Manager (m/w/d) — Thermengruppe Josef Wund
-  · TikTok Shop - Creator Manager (m/w/d) — RealStudio GmbH
-  · Senior Vendor Manager / Lieferantenmanager Telekommunikation — OXG Glasfaser GmbH
-  · Senior Engineering Project Manager (m/w/d) — Idealworks
+★ 新职位 12 条
+  · Product Owner – mit Aussicht auf Head of Product (all gender — fino digital GmbH
+  · Quality & Regulatory Affairs Manager (m/w/d) befristete Elte — ADDVANCE Consumer Health Group
+  · Senior Project Manager, Professional Services (German Speaki — Rubrik
+  · Senior IT Project Manager (m/w/d) — Natuvion GmbH
+  · Senior Technical Product Manager - Keet (100% Remote) — Tether Operations Limited
+  · Senior Technical Product Manager - Keet (100% Remote) — Tether Operations Limited
+  · Senior Product Manager — Nucs AI
+  · Technical Product Owner – C++ SDK & ImFusion Suite — Imfusion
+  · AI Program Manager (w/m/d) — Timetoact Group
+  · Senior Product Manager B2B (d/w/m*) — Pixxio
+  · Senior IT Project Manager (m/w/d) — noris network AG
+  · People & Culture Manager — Vetaion GmbH
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
