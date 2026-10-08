@@ -30,28 +30,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1329 条
+  拿到 1333 条
 
-过滤后 53 / 2379 条符合关键词+地点
+过滤后 63 / 2383 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 12 条(宽松模式,其余保留)
+IG Metall 雇主命中 13 条(宽松模式,其余保留)
 
-★ 新职位 34 条
-  · Senior Project Manager — BLP Digital AG
-  · Project Manager — BLP Digital AG
-  · Senior Manager Aviation Data — Skailark
-  · PR & Communications Manager (m/w/d) — MY Humancapital GmbH
-  · Senior Manager, Global Procurement (Materials) — Quince
-  · Senior Category Manager, Women's - Wovens UK/EU — Quince
-  · Senior Category Manager, Women's - Activewear UK/EU — Quince
-  · Senior Category Manager, Home - Bedding UK/EU — Quince
-  · Staff Product Manager: Product Discovery Engine — Constructor
-  · Staff Product Manager — mewssystems
-  · AI Technical Product Manager (QVAC) (100% remote) — Tether Operations Limited
-  · Product Manager On-Ramp & Swap (100% remote) — Tether Operations Limited
-  · Manager, Engineering - Identity — Camunda
-  · Manager, Engineering - Identity — Camunda
+★ 新职位 32 条
+  · Product Owner (m/w/d) — Crewmeister
   · Procurement Manager — Eberhardt Service Group GmbH
-  …另有 19 条
+  · Workforce Manager (m/w/d) für Planung, Steuerung & Automatis — hey contact heroes GmbH
+  · Manager, Software Engineering (Identity) — Affirm
+  · Manager, Engineering - Identity — Camunda
+  · Self-Serve Product Manager - ElevenCreative — Elevenlabs
+  · Enterprise Product Manager - ElevenCreative — Elevenlabs
+  · Cybersecurity Manager (m/w/d) — Trusteq Gmbh
+  · Senior SEA Manager (m/f/d) — Westwing Group SE
+  · Senior Project Manager für digitale Verwaltungsprojekte - Mi — Init Ag
+  · Senior Project Manager (all genders) — Init Ag
+  · (Senior) Project Manager (all genders) — Init Ag
+  · Senior Regulatory Affairs & Entity Corporate Governance Mana — Atlas HXM
+  · (Senior) Produkt Manager (m/w/d) — Finway
+  · Product Manager (f/m/d) — Quantum Diamond
+  …另有 17 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
