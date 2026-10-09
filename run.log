@@ -15,7 +15,7 @@
   [OK] SONA BLW Präzisionsschmiede GmbH (ashby)
   [OK] Ampack-Ammann GmbH & Co. KG (personio)
   [OK] KERN Microtechnik GmbH (personio)
-  [OK] BBG GmbH & Co. KG (personio)
+  [失败] BBG GmbH & Co. KG (personio): HTTPError 503 Server Error: Service Unavailable for url: https://bbg.jobs.personio.de/xml
   [OK] Sitec Aerospace GmbH (recruitee)
   [OK] Planatol GmbH (recruitee)
   [OK] Turner & Townsend GmbH (smartrecruiters)
@@ -30,28 +30,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1333 条
+  拿到 1657 条
 
-过滤后 63 / 2383 条符合关键词+地点
+过滤后 51 / 2707 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 13 条(宽松模式,其余保留)
+IG Metall 雇主命中 14 条(宽松模式,其余保留)
 
-★ 新职位 32 条
-  · Product Owner (m/w/d) — Crewmeister
-  · Procurement Manager — Eberhardt Service Group GmbH
-  · Workforce Manager (m/w/d) für Planung, Steuerung & Automatis — hey contact heroes GmbH
-  · Manager, Software Engineering (Identity) — Affirm
-  · Manager, Engineering - Identity — Camunda
-  · Self-Serve Product Manager - ElevenCreative — Elevenlabs
-  · Enterprise Product Manager - ElevenCreative — Elevenlabs
-  · Cybersecurity Manager (m/w/d) — Trusteq Gmbh
-  · Senior SEA Manager (m/f/d) — Westwing Group SE
-  · Senior Project Manager für digitale Verwaltungsprojekte - Mi — Init Ag
-  · Senior Project Manager (all genders) — Init Ag
-  · (Senior) Project Manager (all genders) — Init Ag
-  · Senior Regulatory Affairs & Entity Corporate Governance Mana — Atlas HXM
-  · (Senior) Produkt Manager (m/w/d) — Finway
-  · Product Manager (f/m/d) — Quantum Diamond
-  …另有 17 条
+★ 新职位 28 条
+  · Operations Manager:in Baustellen (m/w/d) — Enpal
+  · EHS Manager:in (w/m/d) — Enpal
+  · AIT Senior Project Manager – Nyx Earth — The Exploration Company
+  · Senior Manager, Deal Desk, EMEA — gitlab
+  · Self-Serve Product Manager - ElevenCreative — ElevenLabs
+  · Enterprise Product Manager - ElevenCreative — ElevenLabs
+  · Senior Klaviyo CRM Manager - Data & AI Automation (m/w/d) -  — Lyto Brands Group GmbH
+  · (Senior) Product Manager, Trust Platform- Digital Identities — idnow
+  · Technical Product Owner — NetBird
+  · Engineering Manager: Agentic Integrations — Constructor
+  · Engineering Manager - Customer Developer Experience — Constructor
+  · Senior Solution Manager – Workforce Optimization & Complianc — primion Technology GmbH
+  · Senior Controller / FP&A Manager (m/w/d) — Thermengruppe Josef Wund
+  · Product Manager (UK) — Hypori
+  · Senior Manager, Research and Technology Enablement — Harborglobal
+  …另有 13 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
