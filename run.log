@@ -23,6 +23,7 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
+  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(21个已知 + 前探40),共 61 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -30,28 +31,21 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1343 条
+  拿到 1344 条
 
-过滤后 57 / 2393 条符合关键词+地点
+过滤后 50 / 2394 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 14 条(宽松模式,其余保留)
 
-★ 新职位 25 条
-  · Engineering Manager — Cosuno
-  · AI Program Manager (w/m/d) — Timetoact Group
-  · Quality & Regulatory Affairs Manager (m/w/d) befristete Elte — Vitafy
-  · Senior Procurement Manager — Eberhardt Service Group GmbH
-  · Principal Project Manager — nCino, Inc.
-  · Enterprise Product Manager - ElevenCreative — ElevenLabs
-  · Senior Product Manager — Vivid
-  · Senior Product Manager B2B (d/w/m*) — Pixxio
-  · Language Technology Manager (m/w/d) — MY Humancapital GmbH
-  · PR & Communications Manager (m/w/d) — MY Humancapital GmbH
-  · M&A Manager (m/f/d) — Onepage GmbH
-  · M&A Manager (m/f/d) — Onepage GmbH
-  · IT Application Manager (m/w/d) — MY Humancapital GmbH
-  · Events Manager - EMEA — Dandy
-  · Projektleiter (m/w/d) Simulationssysteme — MY Humancapital GmbH
-  …另有 10 条
+★ 新职位 9 条
+  · Procurement Manager — Eberhardt Service Group GmbH
+  · Senior Manager Accounting & Controlling (m/w/d) — Vogel
+  · Senior Project Manager — Ensono
+  · Freelance Product Manager (m/w/d) — Naturida
+  · Senior Project Manager (all genders) — Agilerobotsse
+  · (Senior) Business Development Manager (m/w/d) — Tmh
+  · Engagement Manager SMB — Legora
+  · Partner(m/w/d): Für Interim Manager und Berater: Mandate im  — thexton armstrong Nord und Ost
+  · Technical Product Owner – C++ SDK & ImFusion Suite — Imfusion
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
