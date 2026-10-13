@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1050 条
+  拿到 1687 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -25,34 +25,34 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(21个已知 + 前探40),共 61 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(22个已知 + 前探40),共 62 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1339 条
+  拿到 1335 条
 
-过滤后 51 / 2389 条符合关键词+地点
+过滤后 46 / 3022 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 11 条(宽松模式,其余保留)
+IG Metall 雇主命中 9 条(宽松模式,其余保留)
 
-★ 新职位 24 条
-  · Cybersecurity Manager (m/w/d) — Trusteq Gmbh
-  · (Senior) Product Manager (m/w/d) – Customer & Agent Experien — Ottonova
-  · Senior SEA Manager (m/f/d) — Westwing Group SE
-  · Senior Project Manager für digitale Verwaltungsprojekte - Mi — Init Ag
-  · Senior Manager, Technical Program Management — gitlab
-  · Engineering Manager, Build — gitlab
-  · M&A Manager (m/w/d) - Healthcare / Health-Tech — My Project Box
-  · PR & Communications Manager (m/w/d) Teilzeit — MY Humancapital GmbH
-  · Project Manager - Software Implementation (m/f/x) — Makersite GmbH
-  · (Senior) Produkt Manager (m/w/d) — Finway
-  · Manager Financial Services (m/w/d) — Alexander Thamm GmbH
-  · Senior Data & AI Projektleitung - Schwerpunkt Defense (m/w/d — Alexander Thamm GmbH
-  · Pricing Data Science & Automation Manager — Castrol
-  · Product Manager - Ledger & Reporting — Bvnk
-  · Product Manager (f/m/d) — Quantum Diamond
-  …另有 9 条
+★ 新职位 18 条
+  · Finance Manager (m/f/d) — much. GmbH
+  · Technology Alliances Manager — Artemis
+  · Senior Product Manager (f/m/x) — exmox GmbH
+  · Senior Project Manager — INDG
+  · Senior Engineering Project Manager (m/w/d) — Idealworks
+  · Partnerships Manager — Vio
+  · Senior Product Manager (Platform) — Vio
+  · Senior Manager, QA Engineering — Camunda
+  · Flowmanager:in | Home Office | (w/m/d) — Enpal
+  · Strategic Project Manager — BLP Digital AG
+  · Project Manager — BLP Digital AG
+  · Supply Chain Manager (m/w/d) — Memodo Gmbh
+  · Accountmanager Silky Groene Sector Noord Oost Nederland & Li — Lekker Persoonlijk
+  · Business Development Manager – B2B & B2C Supplements — GFIC
+  · Onboarding Manager, Cybersecurity/CTI (m/w/d) — Maltego
+  …另有 3 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
