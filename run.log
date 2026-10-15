@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1678 条
+  拿到 1694 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -25,34 +25,34 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(21个已知 + 前探40),共 61 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(20个已知 + 前探40),共 60 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1352 条
+  拿到 1674 条
 
-过滤后 47 / 3030 条符合关键词+地点
+过滤后 49 / 3368 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 10 条(宽松模式,其余保留)
+IG Metall 雇主命中 13 条(宽松模式,其余保留)
 
-★ 新职位 23 条
-  · Senior Transport Manager (m/f/d) — Autoproff
-  · Senior Product Manager — Affirm
-  · Staff Product Manager — Gomotive
-  · Copy of Product Manager, New Content Initiatives and Analysi — Alphasense
-  · Senior Product Manager — Vivid
-  · Site Development Program Manager — Proxima Fusion GmbH
-  · AI & Automation Manager (m/w/d) — P3 Security
-  · Founding Customer Value Manager (m/w/d) — alago
-  · Lead Product Manager, Go-to-Market — Haut Ai
-  · SPAR Research Manager — Kairos Project
-  · GCP Program Manager — Kairos Project
-  · Digital Project Manager (m/w/d) | 100 % Remote — Claudia Buhl
-  · Senior Project Manager — Mustardseed
-  · Senior Controller / FP&A Manager (m/w/d) — Thermengruppe Josef Wund
-  · Senior Product Owner — Protofy GmbH & Co. KG
-  …另有 8 条
+★ 新职位 19 条
+  · Manager Accounting & Controlling (m/w/d) — Vogel
+  · Senior Manager Tax (m/w/d) — Vogel
+  · Produktmanager Managed Services - Cloud & Infrastructure (m/ — Swissitsecuritygroup
+  · Business Development Manager (m/w/d), Raumfahrt & Verteidigu — CTG Consulting GmbH
+  · R&D and Innovation Manager (m/w/d), Space & Defense Industry — CTG Consulting GmbH
+  · Proposal & Project Manager (m/w/d), Space & Defense Industry — CTG Consulting GmbH
+  · Senior Configuration Manager (All Genders) — Skdse
+  · Senior Engineering Manager, Infrastructure (all genders) — Distribusion Technologies
+  · Engagement Manager Data & AI Solutions (m/w/d) — Rewire
+  · Lead Product Manager — Constructor Labs
+  · Product Owner (m/w/d) | Festanstellung oder Freelance | Münc — KFS GROUP
+  · Product Manager — Wpp
+  · PMO Manager, Data — Wpp
+  · Product Manager  H/F — capco
+  · Technical Delivery Manager - Munich — Legora
+  …另有 4 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
