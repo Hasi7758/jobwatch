@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1670 条
+  拿到 1680 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -30,28 +30,27 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1359 条
+  拿到 1685 条
 
-过滤后 58 / 3029 条符合关键词+地点
+过滤后 55 / 3365 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 14 条(宽松模式,其余保留)
+IG Metall 雇主命中 12 条(宽松模式,其余保留)
 
-★ 新职位 27 条
-  · Marketplace Manager (m/w/d) — Neolymp
-  · Senior Strategic Finance Manager — Duck Duck Go
-  · Senior Consultant* / Manager* – ServiceNow Specialist (GRC / — capco
-  · Senior Consultant* / Manager* – ServiceNow Specialist (GRC / — capco
-  · Senior Consultant* / Manager* – ServiceNow Specialist (GRC / — capco
-  · Senior Consultant* / Manager* – ServiceNow Specialist (GRC / — capco
-  · Senior Consultant*/ Manager* - Insurance (m/w/d) — capco
-  · Senior Engagement Manager — Clickup
-  · Senior Data & AI Projektleitung - Schwerpunkt Defense (m/w/d — Alexander Thamm GmbH
-  · Senior Data & AI Projektleitung - Schwerpunkt Defense (m/w/d — Alexander Thamm GmbH
-  · Senior Clinical Project Manager - Oncology — Precisionmedicinegroup
-  · Senior Coaching & Advice Service Manager - (Remote) — Moneybox
-  · Engineering Manager — Parity
-  · Product Manager (ElevenCreative Self-Serve) — ElevenLabs
-  · Operations Manager (m/f/d) — Alp Ami Hospitality GmbH
-  …另有 12 条
+★ 新职位 15 条
+  · Manager, Solutions Consultants, DACH — Notion
+  · General Manager, DACH — Notion
+  · Senior Project Manager — BLP Digital AG
+  · Engineering Manager – Robot Intelligence — RobCo
+  · Senior Engineering Operations Manager — Camunda
+  · Senior Manager, Commercial Sourcing & Contracts — Bridgebio
+  · Projektleiter (m/w/d) Simulationssysteme — MY Humancapital GmbH
+  · Customer Support Manager (w/m/d) | GovTech Startup mit Impac — Ayunis
+  · Senior Product Manager - Payment Security (m/w/d) — Netcetera
+  · Senior Product Manager - Productization (m/w/d) — Soley GmbH
+  · E-Commerce Manager (m/w/d) — AYLASHES
+  · CRM & Retention Manager (m/w/d) – Remote — Löwenanteil
+  · Configuration Manager (m/w/d) — Large Space Structures GmbH
+  · Senior Product Manager — Bloomreach
+  · Hiring Manager — Skinnify
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
