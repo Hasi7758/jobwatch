@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1680 条
+  拿到 1665 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -23,6 +23,7 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
+  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(20个已知 + 前探40),共 60 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -30,27 +31,18 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1685 条
+  拿到 1686 条
 
-过滤后 55 / 3365 条符合关键词+地点
+过滤后 47 / 3351 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 12 条(宽松模式,其余保留)
 
-★ 新职位 15 条
-  · Manager, Solutions Consultants, DACH — Notion
-  · General Manager, DACH — Notion
-  · Senior Project Manager — BLP Digital AG
-  · Engineering Manager – Robot Intelligence — RobCo
-  · Senior Engineering Operations Manager — Camunda
-  · Senior Manager, Commercial Sourcing & Contracts — Bridgebio
-  · Projektleiter (m/w/d) Simulationssysteme — MY Humancapital GmbH
-  · Customer Support Manager (w/m/d) | GovTech Startup mit Impac — Ayunis
-  · Senior Product Manager - Payment Security (m/w/d) — Netcetera
-  · Senior Product Manager - Productization (m/w/d) — Soley GmbH
-  · E-Commerce Manager (m/w/d) — AYLASHES
-  · CRM & Retention Manager (m/w/d) – Remote — Löwenanteil
-  · Configuration Manager (m/w/d) — Large Space Structures GmbH
-  · Senior Product Manager — Bloomreach
-  · Hiring Manager — Skinnify
+★ 新职位 6 条
+  · (Senior) Program Manager — orcristtechnologies
+  · Remote Manager (Director) Partnerships DACH (m/f/d) — Roompricegenie
+  · Panel Manager (f/m/d) - Freelancer / Contractor; 100% remote — PlaytestCloud GmbH
+  · Legal Product Manager | Legal Engineer (Jurist/in) (x/w/m) — Hopkins Rechtsanwaltsgesellsch
+  · Language Technology Manager (m/w/d) — MY Humancapital GmbH
+  · IT Application Manager (m/w/d) — MY Humancapital GmbH
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
