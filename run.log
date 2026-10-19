@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1665 条
+  拿到 1800 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -23,7 +23,6 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
-  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(20个已知 + 前探40),共 60 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -31,18 +30,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1686 条
+  拿到 1363 条
 
-过滤后 47 / 3351 条符合关键词+地点
+过滤后 44 / 3163 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 12 条(宽松模式,其余保留)
+IG Metall 雇主命中 13 条(宽松模式,其余保留)
 
-★ 新职位 6 条
-  · (Senior) Program Manager — orcristtechnologies
-  · Remote Manager (Director) Partnerships DACH (m/f/d) — Roompricegenie
-  · Panel Manager (f/m/d) - Freelancer / Contractor; 100% remote — PlaytestCloud GmbH
-  · Legal Product Manager | Legal Engineer (Jurist/in) (x/w/m) — Hopkins Rechtsanwaltsgesellsch
-  · Language Technology Manager (m/w/d) — MY Humancapital GmbH
-  · IT Application Manager (m/w/d) — MY Humancapital GmbH
+★ 新职位 16 条
+  · Projektleiter:in Wärmepumpen (w/m/d) - im Home Office (100%  — Enpal
+  · Projektmanager (m/w/d) Hochbau — PRIME HR Agentur®
+  · Projektleiter Tiefbau / Bauleiter (m/w/d) — PRIME HR Agentur®
+  · Projektmanager (m/w/d) Bau & Immobilien — Jobbusters® GmbH
+  · Bauleiter / Projektleiter (m/w/d) Tiefbau — Jobbusters® GmbH
+  · Google Ads Manager (m/w/d) | Vollzeit | 100 % Remote — Simplyright GmbH
+  · Workplace Experience Manager — Proxima Fusion GmbH
+  · Senior Engineering Manager, Grafana Frontend | United Kingdo — grafanalabs
+  · CRM Manager | CDI | Full Remote — Standard Ecom
+  · Project Manager - Software Implementation (m/f/x) — Makersite GmbH
+  · Senior Engineering Manager, Grafana Frontend | Germany | Rem — grafanalabs
+  · (Senior) Project Manager (m/w/d) mit Schwerpunkt Microsoft D — Hsogroupbv
+  · Senior Product Manager Claims — TechBiz Global GmbH
+  · Performance Manager (Expert Social Ads Meta, Tiktok, Snap... — Leads Power
+  · Senior IT Risk & Governance Manager — Coopers Group AG
+  …另有 1 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
