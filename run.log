@@ -23,35 +23,30 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
+  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(20个已知 + 前探40),共 60 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(19个已知 + 前探40),共 59 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1363 条
+  拿到 1369 条
 
-过滤后 44 / 3163 条符合关键词+地点
+过滤后 46 / 3169 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 13 条(宽松模式,其余保留)
 
-★ 新职位 16 条
-  · Projektleiter:in Wärmepumpen (w/m/d) - im Home Office (100%  — Enpal
-  · Projektmanager (m/w/d) Hochbau — PRIME HR Agentur®
-  · Projektleiter Tiefbau / Bauleiter (m/w/d) — PRIME HR Agentur®
-  · Projektmanager (m/w/d) Bau & Immobilien — Jobbusters® GmbH
-  · Bauleiter / Projektleiter (m/w/d) Tiefbau — Jobbusters® GmbH
-  · Google Ads Manager (m/w/d) | Vollzeit | 100 % Remote — Simplyright GmbH
-  · Workplace Experience Manager — Proxima Fusion GmbH
-  · Senior Engineering Manager, Grafana Frontend | United Kingdo — grafanalabs
-  · CRM Manager | CDI | Full Remote — Standard Ecom
-  · Project Manager - Software Implementation (m/f/x) — Makersite GmbH
-  · Senior Engineering Manager, Grafana Frontend | Germany | Rem — grafanalabs
-  · (Senior) Project Manager (m/w/d) mit Schwerpunkt Microsoft D — Hsogroupbv
-  · Senior Product Manager Claims — TechBiz Global GmbH
-  · Performance Manager (Expert Social Ads Meta, Tiktok, Snap... — Leads Power
-  · Senior IT Risk & Governance Manager — Coopers Group AG
-  …另有 1 条
+★ 新职位 10 条
+  · Manager, Forward Deployed Engineering — parloa
+  · Manager, Agent Architecture — parloa
+  · Manager, Forward Deployed Engineering — parloa
+  · Manager, Agent Architecture — parloa
+  · Corporate Communications Manager EMEA & APAC — Delinea
+  · Engineering Manager, Search Engine (all genders) — Distribusion Technologies
+  · Senior Events Manager- EMEA — Camunda
+  · Client Success Manager - 100% Remote (m/w/d) — Digistore24
+  · Business Development Manager Cyber Security (m/w/d) – Aufbau — Jamorie Consulting GmbH
+  · People & Operations Manager:in — Luxera Energy GmbH
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
