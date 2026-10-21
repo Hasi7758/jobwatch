@@ -25,28 +25,32 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(19个已知 + 前探40),共 59 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(21个已知 + 前探40),共 61 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1369 条
+  拿到 1371 条
 
-过滤后 46 / 3169 条符合关键词+地点
+过滤后 45 / 3171 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 13 条(宽松模式,其余保留)
 
-★ 新职位 10 条
-  · Manager, Forward Deployed Engineering — parloa
-  · Manager, Agent Architecture — parloa
-  · Manager, Forward Deployed Engineering — parloa
-  · Manager, Agent Architecture — parloa
-  · Corporate Communications Manager EMEA & APAC — Delinea
-  · Engineering Manager, Search Engine (all genders) — Distribusion Technologies
-  · Senior Events Manager- EMEA — Camunda
-  · Client Success Manager - 100% Remote (m/w/d) — Digistore24
-  · Business Development Manager Cyber Security (m/w/d) – Aufbau — Jamorie Consulting GmbH
-  · People & Operations Manager:in — Luxera Energy GmbH
+★ 新职位 14 条
+  · Manager, Applied AI Architects - Digital Natives — OpenAI
+  · CRM & Lead Generation Manager (m/w/d) — Callwey GmbH
+  · Knit - Research Manager — Eleve Talent
+  · Senior Technical Product Manager (m/w/d) — Digital Loop GmbH
+  · CRO Manager e-commerce (H/F) — Leads Power
+  · Systems Analyst/ IT Project Manager as Freelancer (all gende — Vexcash AG
+  · Quality and Assurance Manager as Freelancer (all genders) — Vexcash AG
+  · Staff Product Manager, Enterprise Deployment Solutions |  Ge — grafanalabs
+  · Senior Supply Chain Manager (f/m/d) — Quantumdiamonds
+  · Investment Manager - Early Stage Ventures (m/f/d) — Viessmann
+  · Senior Project Manager (French Speaking - Early Access) — Wepclinical
+  · Datacenter Security Manager (UK) — Nscaleoperationsukltd
+  · Senior Product Manager — nearform
+  · Staff Product Manager, Enterprise Deployment Solutions |  UK — grafanalabs
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
