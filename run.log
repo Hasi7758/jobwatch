@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1800 条
+  拿到 1741 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -23,7 +23,6 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
-  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(21个已知 + 前探40),共 61 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -31,26 +30,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1371 条
+  拿到 1376 条
 
-过滤后 45 / 3171 条符合关键词+地点
+过滤后 52 / 3117 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 13 条(宽松模式,其余保留)
+IG Metall 雇主命中 14 条(宽松模式,其余保留)
 
-★ 新职位 14 条
-  · Manager, Applied AI Architects - Digital Natives — OpenAI
-  · CRM & Lead Generation Manager (m/w/d) — Callwey GmbH
-  · Knit - Research Manager — Eleve Talent
-  · Senior Technical Product Manager (m/w/d) — Digital Loop GmbH
-  · CRO Manager e-commerce (H/F) — Leads Power
-  · Systems Analyst/ IT Project Manager as Freelancer (all gende — Vexcash AG
-  · Quality and Assurance Manager as Freelancer (all genders) — Vexcash AG
-  · Staff Product Manager, Enterprise Deployment Solutions |  Ge — grafanalabs
-  · Senior Supply Chain Manager (f/m/d) — Quantumdiamonds
-  · Investment Manager - Early Stage Ventures (m/f/d) — Viessmann
-  · Senior Project Manager (French Speaking - Early Access) — Wepclinical
-  · Datacenter Security Manager (UK) — Nscaleoperationsukltd
-  · Senior Product Manager — nearform
-  · Staff Product Manager, Enterprise Deployment Solutions |  UK — grafanalabs
+★ 新职位 16 条
+  · Google Ads Manager (m/w/d) | Vollzeit | 100 % Remote — Simplyright GmbH
+  · Operations Manager (m/w/d) | Leader | Remote — Julia Goessler GmbH
+  · Staff Product Manager – Firefox Enterprise — mozilla
+  · Senior Consultant / Manager Data Foundation — Xebiadach
+  · Senior IT-Projektleiter:in (20%) — Coopers Group AG
+  · Supply Chain Manager — pplwise
+  · Supply Chain Manager (m/w/d) — pplwise
+  · Technical Outsource Manager (m/w/d) — ICT Digital Solutions
+  · Shopify Manager (m/w/d) - Conversion, Funnel & Shop-Entwickl — Neolymp
+  · Projektmanager / Planer (m/w/q) Elektromobilität — FREQUENTUM
+  · Project Booking Manager B2B (m/w/d) — MyFlexHome
+  · Operations Manager (m/f/d) — Alp Ami Hospitality GmbH
+  · Product Manager (m/w/d) – B2C-Plattform — EDTELLIGENT
+  · Microsoft Principle Project Manager (m/w/d) — mi.ro Personalvermittlung
+  · (Senior / Advanced) Clinical Study Manager — Brainlab
+  …另有 1 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
