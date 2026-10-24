@@ -23,36 +23,35 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
-  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(21个已知 + 前探40),共 61 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(20个已知 + 前探40),共 60 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1375 条
+  拿到 1378 条
 
-过滤后 55 / 3175 条符合关键词+地点
+过滤后 72 / 3178 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 13 条(宽松模式,其余保留)
 
-★ 新职位 22 条
-  · Technical Project Manager (EMEA) — Constructor
-  · Technical Project Manager (AMER) — Constructor
-  · Principal Product Manager (AI Product) (f/m/d) — Think Cell
-  · Senior Manager, Revenue Operations — Camunda
-  · IT-Vertragsmanager:in — Coopers Group AG
-  · Solutions Manager- (German Fluency) — Zip
-  · Project Manager - Software Implementation (m/f/x) — Makersite GmbH
-  · Senior Projektmanager (Shopify) — beyondservice GmbH
-  · Project Manager, Gaming Localization Production — LILT (Production)
-  · Accounting Manager – Accounts Payable (all genders) — Glow25
-  · (Senior) Product Manager Heating & Cooling (m/f/d) — 1KOMMA5˚
-  · Senior E-Commerce / D2C Manager (m/w/d) — Patronus
-  · Product Manager - Field Service Management (SaaS) — Joblogic
-  · Senior Program Manager (Product Development) — Vertical Compute
-  · Senior Hardware Project Manager (All genders) — Skdse
-  …另有 7 条
+★ 新职位 31 条
+  · Senior Engagement Manager - EMEA — gitlab
+  · Senior Application Product Manager - Supply Chain - Procurem — celonis
+  · Senior Engagement Manager - EMEA — gitlab
+  · Engineering Manager, Tenant Scale: Gitaly — gitlab
+  · Disputes & Chargebacks Manager — Vio
+  · Senior Returns Manager, EU — Quince
+  · Product Manager (f/m/d) — Quantumdiamonds
+  · IT Application Manager (m/w/d) — MY Humancapital GmbH
+  · Projektleiter (m/w/d) Simulationssysteme — MY Humancapital GmbH
+  · Principal Consultant* - Project Manager Credit and Capital M — capco
+  · Principal Consultant* - Project Manager Credit and Capital M — capco
+  · Principal Consultant* – Project Manager Core Banking — capco
+  · Principal Consultant* – Project Manager Core Banking — capco
+  · Principal Consultant* - Business Analyst / Project Manager P — capco
+  · Principal Consultant* - Business Analyst / Project Manager P — capco
+  …另有 16 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
