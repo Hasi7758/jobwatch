@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1800 条
+  拿到 1764 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -31,19 +31,23 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1378 条
+  拿到 1381 条
 
-过滤后 62 / 3178 条符合关键词+地点
+过滤后 56 / 3145 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 14 条(宽松模式,其余保留)
+IG Metall 雇主命中 13 条(宽松模式,其余保留)
 
-★ 新职位 7 条
-  · (Senior) Customer Experience & Loyalty Manager (m/w/d) — Octopus Energy Group
-  · Senior Programme Manager — Hypersonica
-  · Senior Product Manager - Fiscal (f/m/d) — Apaleo
-  · Engineering Manager Embedded — Qwello.eu
-  · Staff Product Manager: Product Discovery Engine — Constructor
-  · Project Manager - Avionics, GNC & Flight Software — The Exploration Company
-  · Product Manager, New Content Initiatives and Analysis — Alphasense
+★ 新职位 11 条
+  · Finance Manager Europe / Head of Finance (m/f/x) — Dreamlines GmbH
+  · Projektmanager (m/w/d) Power BI mit Entscheidungsbefugnis — Weiler Consult GmbH
+  · Senior Merchant Success Manager — Shipbobinc
+  · Senior Category Manager, Womenswear UK/EU — Quince
+  · Senior Category Manager, Home EU — Quince
+  · Product Manager — Lio
+  · Product Manager — Lio
+  · Customer Service Manager — Omaze
+  · Senior Manager Continuous Improvement — Sharkninjaoperatingllc
+  · Senior Technical Project Manager — Coveoen
+  · Product Manager — 360Learning
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
