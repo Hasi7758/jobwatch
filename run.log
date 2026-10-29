@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1720 条
+  拿到 1694 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -31,28 +31,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1391 条
+  拿到 1394 条
 
-过滤后 53 / 3111 条符合关键词+地点
+过滤后 63 / 3088 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 15 条(宽松模式,其余保留)
+IG Metall 雇主命中 16 条(宽松模式,其余保留)
 
-★ 新职位 18 条
-  · Consulting Manager (m/f/d) Data & AI Strategy — Artefactlinkedin
-  · Procurement Manager -ECLSS/TCS — The Exploration Company
-  · Technical Site Manager — Se3
-  · Business Development Manager – Dual Use (all genders) — væridion
-  · Senior Business Development Manager Growth (m/w/d) — FINN
-  · Senior Technical Success Manager — zscaler
-  · Engineering Manager - Data Platform (m/f/d) — autoscout24
-  · Project Manager - Software Implementation (m/f/x) — Makersite GmbH
-  · Technical Product Owner mit Entwickler-Background 100 % (w/m — YOU MAWO
-  · Manager: Compliance Advisory (and Data Protection) — Griffin
-  · Senior Business Development Manager (European Business Servi — Dentons Europe
-  · Customer Support Manager mit Erfahrung in der Zahnarztpraxis — Roger
-  · Senior Paid Social Manager — tide
-  · Lead Country Commercial Manager for Business Management Soft — tide
-  · Product Manager - Research Participants - United Kingdom — Prolificacademicltd
-  …另有 3 条
+★ 新职位 19 条
+  · Product Manager* – Artificial Intelligence — capco
+  · Product Manager* – Artificial Intelligence — capco
+  · Product Manager* – Artificial Intelligence — capco
+  · Product Manager* – Artificial Intelligence — capco
+  · Onboarding Manager — Cosuno
+  · Business Development Manager (m/w/d) — Cartonplast Group GmbH
+  · Google Ads Manager (m/w/d) | Vollzeit | 100 % Remote — Simplyright GmbH
+  · (Senior) Origination Manager (m/w/d) – Batteriespeicher — Tmh
+  · (Senior) Origination Manager (m/w/d) - Battery Storage Franc — Tmh
+  · (Senior) Business Development Manager (m/w/d) — Tmh
+  · Collection Operations & Process Manager (all genders) — Wemolo
+  · Senior Collection Operations & Process Manager (all genders) — Wemolo
+  · Senior Technical Program Manager I — Axon
+  · Manager, Machine Learning Engineering, Checkout — Affirm
+  · CRM & Retention Manager (Bilingue Français/Anglais - 100% Re — EmailClub
+  …另有 4 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
