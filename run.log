@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1694 条
+  拿到 1721 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -31,28 +31,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1394 条
+  拿到 1398 条
 
-过滤后 63 / 3088 条符合关键词+地点
+过滤后 74 / 3119 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 16 条(宽松模式,其余保留)
+IG Metall 雇主命中 17 条(宽松模式,其余保留)
 
-★ 新职位 19 条
-  · Product Manager* – Artificial Intelligence — capco
-  · Product Manager* – Artificial Intelligence — capco
-  · Product Manager* – Artificial Intelligence — capco
-  · Product Manager* – Artificial Intelligence — capco
-  · Onboarding Manager — Cosuno
-  · Business Development Manager (m/w/d) — Cartonplast Group GmbH
-  · Google Ads Manager (m/w/d) | Vollzeit | 100 % Remote — Simplyright GmbH
-  · (Senior) Origination Manager (m/w/d) – Batteriespeicher — Tmh
-  · (Senior) Origination Manager (m/w/d) - Battery Storage Franc — Tmh
-  · (Senior) Business Development Manager (m/w/d) — Tmh
-  · Collection Operations & Process Manager (all genders) — Wemolo
-  · Senior Collection Operations & Process Manager (all genders) — Wemolo
-  · Senior Technical Program Manager I — Axon
-  · Manager, Machine Learning Engineering, Checkout — Affirm
-  · CRM & Retention Manager (Bilingue Français/Anglais - 100% Re — EmailClub
-  …另有 4 条
+★ 新职位 32 条
+  · Program Manager, Aircraft — Swarmaero
+  · Remote Sr. Product Manager - Revenue Management - 1 year con — Roompricegenie
+  · Senior Manager, Global Benefits — dataiku
+  · Manager, Professional Services Engineers, EMEA — gitlab
+  · Product Manager — remotewoman
+  · Engineering Manager, Product Catalogs — reddit
+  · Senior Finance Manager — Global Reporting Initiative
+  · Contract manager — The Exploration Company
+  · Senior Export Control Manager - Defense (m/f/d) — TYTAN Technologies GmbH
+  · Senior IP Manager/ IP Professional (m/f/d) — Agilerobotsse
+  · Consulting Manager - Financial Services / Data & AI (m/f/d) — Alaika
+  · Technical Product Lead Locaboo (m/w/d) — Ayunis
+  · Senior Product Manager - Consumer Experience (m/f/d) — leasingmarkt
+  · (Senior) Manager Group Accounting (m/f/d) — autoscout24
+  · Engineering Manager, Product Catalogs — reddit
+  …另有 17 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
