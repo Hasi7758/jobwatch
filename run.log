@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1721 条
+  拿到 1723 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -31,28 +31,26 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1398 条
+  拿到 1397 条
 
-过滤后 74 / 3119 条符合关键词+地点
+过滤后 71 / 3120 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 17 条(宽松模式,其余保留)
 
-★ 新职位 32 条
-  · Program Manager, Aircraft — Swarmaero
-  · Remote Sr. Product Manager - Revenue Management - 1 year con — Roompricegenie
-  · Senior Manager, Global Benefits — dataiku
-  · Manager, Professional Services Engineers, EMEA — gitlab
-  · Product Manager — remotewoman
-  · Engineering Manager, Product Catalogs — reddit
-  · Senior Finance Manager — Global Reporting Initiative
-  · Contract manager — The Exploration Company
-  · Senior Export Control Manager - Defense (m/f/d) — TYTAN Technologies GmbH
-  · Senior IP Manager/ IP Professional (m/f/d) — Agilerobotsse
-  · Consulting Manager - Financial Services / Data & AI (m/f/d) — Alaika
-  · Technical Product Lead Locaboo (m/w/d) — Ayunis
-  · Senior Product Manager - Consumer Experience (m/f/d) — leasingmarkt
-  · (Senior) Manager Group Accounting (m/f/d) — autoscout24
-  · Engineering Manager, Product Catalogs — reddit
-  …另有 17 条
+★ 新职位 14 条
+  · Staff Technical Program Manager (f/m/d) — Orbem
+  · Product Owner Hardware (m/f/d) — Omegga
+  · Senior Product Manager — Cosuno
+  · Senior Product Manager (Giftcard) — Atolls
+  · Senior Delivery Manager (m/w/d) — SPREAD GmbH
+  · IT Application Manager (m/w/d) — MY Humancapital GmbH
+  · Projektleiter (m/w/d) Simulationssysteme — MY Humancapital GmbH
+  · Senior Projektleiter (m/w/d) Softwaredevelopment // REMOTE — Pont Connects e.K.
+  · AI Engineering Manager (m/f/d) — Dataguard
+  · Strategic Project Lead - Speech & Audio AI (London) — Appen 2
+  · Strategic Project Lead - Multimodal AI (London) — Appen 2
+  · Strategic Project Lead - AI Post-Training (London) — Appen 2
+  · Product Manager Energy Markets & Flexibility (m/f/d) — 1KOMMA5˚
+  · Product Manager Energy Markets & Flexibility (m/w/d) — 1KOMMA5˚
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
