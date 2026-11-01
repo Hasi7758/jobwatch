@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1723 条
+  拿到 1644 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -25,32 +25,25 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(20个已知 + 前探40),共 60 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(19个已知 + 前探40),共 59 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1397 条
+  拿到 1395 条
 
-过滤后 71 / 3120 条符合关键词+地点
+过滤后 59 / 3039 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 17 条(宽松模式,其余保留)
 
-★ 新职位 14 条
-  · Staff Technical Program Manager (f/m/d) — Orbem
-  · Product Owner Hardware (m/f/d) — Omegga
-  · Senior Product Manager — Cosuno
-  · Senior Product Manager (Giftcard) — Atolls
-  · Senior Delivery Manager (m/w/d) — SPREAD GmbH
-  · IT Application Manager (m/w/d) — MY Humancapital GmbH
-  · Projektleiter (m/w/d) Simulationssysteme — MY Humancapital GmbH
-  · Senior Projektleiter (m/w/d) Softwaredevelopment // REMOTE — Pont Connects e.K.
-  · AI Engineering Manager (m/f/d) — Dataguard
-  · Strategic Project Lead - Speech & Audio AI (London) — Appen 2
-  · Strategic Project Lead - Multimodal AI (London) — Appen 2
-  · Strategic Project Lead - AI Post-Training (London) — Appen 2
-  · Product Manager Energy Markets & Flexibility (m/f/d) — 1KOMMA5˚
-  · Product Manager Energy Markets & Flexibility (m/w/d) — 1KOMMA5˚
+★ 新职位 7 条
+  · Product Manager — CesiumAstro
+  · (Senior) Accounting Manager (f/m/x) — sparetech
+  · Founding Product Manager (German-speaking) — Bowatt
+  · Market Fleet Manager - DACH — Roadsurfer
+  · Senior Manager, FP&A — Camunda
+  · Senior Manager/Associate Director, Commercial Operations, Ge — Acadia Job Listings
+  · Senior Professional Services Project Manager (EMEA) — gitlab
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
