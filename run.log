@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1644 条
+  拿到 1637 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -31,19 +31,21 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1395 条
+  拿到 1385 条
 
-过滤后 59 / 3039 条符合关键词+地点
+过滤后 55 / 3022 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 17 条(宽松模式,其余保留)
 
-★ 新职位 7 条
-  · Product Manager — CesiumAstro
-  · (Senior) Accounting Manager (f/m/x) — sparetech
-  · Founding Product Manager (German-speaking) — Bowatt
-  · Market Fleet Manager - DACH — Roadsurfer
-  · Senior Manager, FP&A — Camunda
-  · Senior Manager/Associate Director, Commercial Operations, Ge — Acadia Job Listings
-  · Senior Professional Services Project Manager (EMEA) — gitlab
+★ 新职位 9 条
+  · Business Product Owner | Full Time (m/w/d) — CONROO GmbH
+  · Senior Consultant*/ Manager* - Insurance (m/w/d) — capco
+  · Remote Sr. Product Manager - Revenue Management - 1 year con — Roompricegenie
+  · Manager, Applied AI Engineering (Codex) — OpenAI
+  · Principal Program Manager - Operations Management - London ( — Convera
+  · Senior Consultant/Manager - Sécurité Financière & Conformité — capco
+  · Senior Product Manager — Shopfully
+  · Kundenmanager (m/w/d) – Schwerpunkt Beschwerdemanagement — Wiese Dental Beratungs GmbH
+  · Senior Product Manager — Shopfully
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
