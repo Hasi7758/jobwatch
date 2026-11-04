@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1607 条
+  拿到 1685 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -31,26 +31,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1393 条
+  拿到 1400 条
 
-过滤后 56 / 3000 条符合关键词+地点
+过滤后 57 / 3085 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 18 条(宽松模式,其余保留)
+IG Metall 雇主命中 17 条(宽松模式,其余保留)
 
-★ 新职位 14 条
-  · Senior Brand & E-Commerce Manager (m/w/d) — YourCasa
-  · Senior Product Manager - 12 Month FTC — Plos
-  · Senior Engineering Manager - Agents and Context - Platform — Elastic
-  · Senior Product Manager (f/m/d) — Apaleo
-  · Event Manager — Proxima Fusion GmbH
-  · Senior Business Intelligence Manager - COO Office (m/f/x) — FINN
-  · Manager Steuerung & Planung (m/w/d) | 100 % remote — hey contact heroes GmbH
-  · Entwickler One Identity Manager – IAM, C# / .NET (m/w/d) — Rockstardevelopers GmbH
-  · Senior Adobe Project Manager — dept
-  · Senior Product Manager, Platform — Nscaleoperationsukltd
-  · Commercial Manager / Senior Commercial Manager — Nscaleoperationsukltd
-  · Senior Cost Manager (m/w/d) Hochbauprojekte — Turner & Townsend GmbH
-  · Senior Project Manager (m/w/d) -Schwerpunkt TGA — Turner & Townsend GmbH
-  · AI Capability Building Program Manager (m/w/d) — Knorr-Bremse
+★ 新职位 25 条
+  · Projektmanager (m/w/d) Power BI mit Entscheidungsbefugnis — Weiler Consult GmbH
+  · Senior Technical Product Manager (Platform) — constructortech
+  · Senior Product Manager (EdTech & AI) — constructortech
+  · Senior Technical Product Manager - Inference Platform — Nebius
+  · Datacenter Facilities Manager — Nebius
+  · Senior QA Manager - Fully Remote — SOFTGAMES
+  · Senior Industrialization & Supply Chain Manager (f/m/d). — Tactiliarobotics
+  · Senior AI Product Manager - Product & Experience — capco
+  · Principal Consultant (Senior Manager) - Non-Financial / Oper — capco
+  · Principal Consultant (Senior Manager) - Cyber — capco
+  · Financial Risk Principal Consultant (Senior Manager) — capco
+  · Data Science Manager — capco
+  · Data & AI Strategy Consultant - Manager/Senior Manager — capco
+  · Senior IT-Projectmanager (all genders): Microsoft-Großprojek — mi.ro Personalvermittlung
+  · IT-Krisenmanager (all genders) gesucht: Bring Großprojekte z — mi.ro Personalvermittlung
+  …另有 10 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
