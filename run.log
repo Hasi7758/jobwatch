@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1685 条
+  拿到 1664 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -31,28 +31,27 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1400 条
+  拿到 1399 条
 
-过滤后 57 / 3085 条符合关键词+地点
+过滤后 54 / 3063 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 17 条(宽松模式,其余保留)
+IG Metall 雇主命中 18 条(宽松模式,其余保留)
 
-★ 新职位 25 条
-  · Projektmanager (m/w/d) Power BI mit Entscheidungsbefugnis — Weiler Consult GmbH
-  · Senior Technical Product Manager (Platform) — constructortech
-  · Senior Product Manager (EdTech & AI) — constructortech
-  · Senior Technical Product Manager - Inference Platform — Nebius
-  · Datacenter Facilities Manager — Nebius
-  · Senior QA Manager - Fully Remote — SOFTGAMES
-  · Senior Industrialization & Supply Chain Manager (f/m/d). — Tactiliarobotics
-  · Senior AI Product Manager - Product & Experience — capco
-  · Principal Consultant (Senior Manager) - Non-Financial / Oper — capco
-  · Principal Consultant (Senior Manager) - Cyber — capco
-  · Financial Risk Principal Consultant (Senior Manager) — capco
-  · Data Science Manager — capco
-  · Data & AI Strategy Consultant - Manager/Senior Manager — capco
-  · Senior IT-Projectmanager (all genders): Microsoft-Großprojek — mi.ro Personalvermittlung
-  · IT-Krisenmanager (all genders) gesucht: Bring Großprojekte z — mi.ro Personalvermittlung
-  …另有 10 条
+★ 新职位 15 条
+  · Partner Success Manager (w/m/d) - Fintech SaaS Scale-Up — Pennylane
+  · Senior Manager, New Business DACH & Benelux — Twilio
+  · Manager, Developer Advocacy (EMEA) — Temporal Technologies
+  · Senior Project Manager — Cognite
+  · Senior Project Manager (Intralogistics and Robotics) — Nomagic
+  · (Senior) FP&A Manager — Workmotion
+  · Senior Manager of Strategic Projects (All genders) — Skdse
+  · (Senior) M&A Manager Healthcare (w/m/d) — Right Search
+  · Technische Unternehmensberater:in / F&E-Projektmanager:in (m — neowistra GmbH
+  · Manager, Forward Deployed Engineering — anthropic
+  · Infrastructure Program Manager — Proxima Fusion GmbH
+  · Endear - Product Manager — Eleve Talent
+  · Project Manager PMO (m/w/d) — Turner & Townsend GmbH
+  · Senior PMO Manager (m/w/d) — Turner & Townsend GmbH
+  · Guest Relations & Concierge Manager — AERO-Bildungs GmbH
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
