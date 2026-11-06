@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1664 条
+  拿到 1681 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -31,27 +31,20 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1399 条
+  拿到 1405 条
 
-过滤后 54 / 3063 条符合关键词+地点
+过滤后 41 / 3086 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 18 条(宽松模式,其余保留)
 
-★ 新职位 15 条
-  · Partner Success Manager (w/m/d) - Fintech SaaS Scale-Up — Pennylane
-  · Senior Manager, New Business DACH & Benelux — Twilio
-  · Manager, Developer Advocacy (EMEA) — Temporal Technologies
-  · Senior Project Manager — Cognite
-  · Senior Project Manager (Intralogistics and Robotics) — Nomagic
-  · (Senior) FP&A Manager — Workmotion
-  · Senior Manager of Strategic Projects (All genders) — Skdse
-  · (Senior) M&A Manager Healthcare (w/m/d) — Right Search
-  · Technische Unternehmensberater:in / F&E-Projektmanager:in (m — neowistra GmbH
-  · Manager, Forward Deployed Engineering — anthropic
-  · Infrastructure Program Manager — Proxima Fusion GmbH
-  · Endear - Product Manager — Eleve Talent
-  · Project Manager PMO (m/w/d) — Turner & Townsend GmbH
-  · Senior PMO Manager (m/w/d) — Turner & Townsend GmbH
-  · Guest Relations & Concierge Manager — AERO-Bildungs GmbH
+★ 新职位 8 条
+  · Renewal Manager SaaS (m/w/d) — Noerr Solutions | Digital Recr
+  · Technical Product Manager (Data Integrations) — orcristtechnologies
+  · E-Commerce Manager (m/w/d) – Marktplätze & Internationalisie — AYLASHES
+  · Paid Social & Analytics Manager (m/w/d) — everdrop GmbH
+  · Product Owner — Coopers Group AG
+  · Test Manager - Output-/CCM-/Dokumenten-Management-Systemen — Coopers Group AG
+  · First Line Manager (all genders) — Lio
+  · Senior Technical Project Manager — Coveoen
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
