@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1746 条
+  拿到 1747 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -31,25 +31,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1401 条
+  拿到 1394 条
 
-过滤后 45 / 3147 条符合关键词+地点
+过滤后 60 / 3141 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 19 条(宽松模式,其余保留)
+IG Metall 雇主命中 17 条(宽松模式,其余保留)
 
-★ 新职位 13 条
-  · Ehrenamt · remote · 4–6 Std./Woche: Projektleiter / Projektm — Deutscher Hilfsbund e.V.
-  · Product Manager – AI Agents & Atlassian Cloud — XALT Business Consulting GmbH
-  · Project Manager – IT & AI Projects — XALT Business Consulting GmbH
-  · Product Manager – Atlassian Service Management — XALT Business Consulting GmbH
-  · Product Manager – Employee Communication & AI Workplace — XALT Business Consulting GmbH
-  · (Senior) Consultant & Project Manager (m/w/d) — foobar Agency GmbH
-  · (Senior) Product Owner | Full Time (m/w/d) — CONROO GmbH
-  · Freelance E-Commerce Operations & AI Manager - Right Hand to — Time to hire
-  · Remote Manager (Director) Partnerships DACH (m/f/d) — Roompricegenie
-  · Design Manager or Senior Design Manager - Norway (Stargate N — Nscaleoperationsukltd
-  · Senior Strategic ABM  Manager — purestorage
-  · International Data Acquisition Manager — Socure
-  · Manager, Data Centers — Godaddy
+★ 新职位 21 条
+  · Senior New Business Manager (m/w/d) | SaaS & IoT — ANGEHEUERT GmbH Personalberatu
+  · (Senior) Customer Expansion Manager (m/w/d) | SaaS & IoT — ANGEHEUERT GmbH Personalberatu
+  · Senior Product Manager, App o11y | Germany  | Remote — grafanalabs
+  · Senior Technical Product Manager, Rail Integrations (all gen — Distribusion Technologies
+  · PR Manager DE — OKTAGON MMA
+  · Senior Project Manager, Colocation EMEA — Nscaleoperationsukltd
+  · Senior Product Manager, App o11y | UK | Remote — grafanalabs
+  · Senior Manager, Partnerships EMEA — Temporal Technologies
+  · Senior Design Manager — Pennylane SAS
+  · Senior M&A Finance Integration Manager — Coopers Group AG
+  · Senior Consultant / Manager Business Strategy M&A Focus (m/f — Yoummday
+  · 🎯 Senior New Business Manager (m|w|d)⚡SaaS & IoT |  100 % Re — ANGEHEUERT GmbH
+  · 🎯 Senior New Business Manager (m|w|d)⚡SaaS & IoT |  100 % Re — ANGEHEUERT GmbH
+  · 🎯 Senior New Business Manager (m|w|d)⚡SaaS & IoT |  100 % Re — ANGEHEUERT GmbH
+  · 🎯 Senior New Business Manager (m|w|d)⚡SaaS & IoT |  100 % Re — ANGEHEUERT GmbH
+  …另有 6 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
