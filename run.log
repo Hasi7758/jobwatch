@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1747 条
+  拿到 1730 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -25,34 +25,32 @@
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(19个已知 + 前探40),共 59 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(18个已知 + 前探40),共 58 次请求
   [OK] Rodenstock GmbH (hr4you)
   [OK] NCR GmbH (workday)
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1394 条
+  拿到 1398 条
 
-过滤后 60 / 3141 条符合关键词+地点
+过滤后 56 / 3128 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 17 条(宽松模式,其余保留)
+IG Metall 雇主命中 16 条(宽松模式,其余保留)
 
-★ 新职位 21 条
-  · Senior New Business Manager (m/w/d) | SaaS & IoT — ANGEHEUERT GmbH Personalberatu
-  · (Senior) Customer Expansion Manager (m/w/d) | SaaS & IoT — ANGEHEUERT GmbH Personalberatu
-  · Senior Product Manager, App o11y | Germany  | Remote — grafanalabs
-  · Senior Technical Product Manager, Rail Integrations (all gen — Distribusion Technologies
-  · PR Manager DE — OKTAGON MMA
-  · Senior Project Manager, Colocation EMEA — Nscaleoperationsukltd
-  · Senior Product Manager, App o11y | UK | Remote — grafanalabs
-  · Senior Manager, Partnerships EMEA — Temporal Technologies
-  · Senior Design Manager — Pennylane SAS
-  · Senior M&A Finance Integration Manager — Coopers Group AG
-  · Senior Consultant / Manager Business Strategy M&A Focus (m/f — Yoummday
-  · 🎯 Senior New Business Manager (m|w|d)⚡SaaS & IoT |  100 % Re — ANGEHEUERT GmbH
-  · 🎯 Senior New Business Manager (m|w|d)⚡SaaS & IoT |  100 % Re — ANGEHEUERT GmbH
-  · 🎯 Senior New Business Manager (m|w|d)⚡SaaS & IoT |  100 % Re — ANGEHEUERT GmbH
-  · 🎯 Senior New Business Manager (m|w|d)⚡SaaS & IoT |  100 % Re — ANGEHEUERT GmbH
-  …另有 6 条
+★ 新职位 14 条
+  · Principal Project Manager — nCino, Inc.
+  · Senior Credit Risk Manager, Credit Platform — Monzo
+  · Product Manager — Connectwise
+  · Principal Project Manager — Ncinoinc
+  · Büromanager — pplwise
+  · 📈 (Senior) New Business Manager (h/f/d) | Suisse Romande ⚡ S — ANGEHEUERT GmbH
+  · 📈 (Senior) New Business Manager (h/f/d) | Suisse Romande ⚡ S — ANGEHEUERT GmbH
+  · 📈 (Senior) New Business Manager (h/f/d) | Suisse Romande ⚡ S — ANGEHEUERT GmbH
+  · Commercial Growth Project Manager  (m/w/d) — Crewmeister
+  · Technical Quality Assurance Manager — Bromcom Computers Plc
+  · Project Manager (m/w/d) – Komplexe IT-Infrastrukturprojekte — citema group GmbH
+  · Senior Manager, Total Rewards — Camunda
+  · ISMS Manager (ISO 27001 and Vanta) — Intelance
+  · Commercial Senior Manager, Expansion Markets — eucalyptus
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
