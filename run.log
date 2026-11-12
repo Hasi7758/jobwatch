@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1730 条
+  拿到 1766 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -23,7 +23,6 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
-  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(18个已知 + 前探40),共 58 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -31,26 +30,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1398 条
+  拿到 1391 条
 
-过滤后 56 / 3128 条符合关键词+地点
+过滤后 59 / 3157 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 16 条(宽松模式,其余保留)
 
-★ 新职位 14 条
-  · Principal Project Manager — nCino, Inc.
-  · Senior Credit Risk Manager, Credit Platform — Monzo
-  · Product Manager — Connectwise
-  · Principal Project Manager — Ncinoinc
-  · Büromanager — pplwise
-  · 📈 (Senior) New Business Manager (h/f/d) | Suisse Romande ⚡ S — ANGEHEUERT GmbH
-  · 📈 (Senior) New Business Manager (h/f/d) | Suisse Romande ⚡ S — ANGEHEUERT GmbH
-  · 📈 (Senior) New Business Manager (h/f/d) | Suisse Romande ⚡ S — ANGEHEUERT GmbH
-  · Commercial Growth Project Manager  (m/w/d) — Crewmeister
-  · Technical Quality Assurance Manager — Bromcom Computers Plc
-  · Project Manager (m/w/d) – Komplexe IT-Infrastrukturprojekte — citema group GmbH
-  · Senior Manager, Total Rewards — Camunda
-  · ISMS Manager (ISO 27001 and Vanta) — Intelance
-  · Commercial Senior Manager, Expansion Markets — eucalyptus
+★ 新职位 31 条
+  · Senior Business Development Manager (all genders) — Ray Sono GmbH
+  · Projektmanager TGA / MEP (m/w/d) - Remote (DE) — Ruby GmbH
+  · Bauleiter / Projektleiter (m/w/d) Tiefbau — Jobbusters® GmbH
+  · European Product Manager FRP (m/f/d) — Simpson Strong-Tie GmbH
+  · Senior Product Manager - Productization (m/w/d) — Soley GmbH
+  · Senior Manager Paid Search (Mensch) — wppmedia
+  · Legal Engineer Manager, Munich — Harvey
+  · AI Reliability Engineering Manager — Nscaleoperationsukltd
+  · Product Manager PRINCE2 — Peoplecert
+  · Human Factors Project Manager (m/f/d) (part-time contractor, — Hilobyaktiia
+  · CRM Manager (m/w/d) — Start To Finish Consulting Gmb
+  · Engineering Manager - Infrastructure — Camunda
+  · Senior Manager, Constructability — Volta
+  · Senior Professional Services Project Manager, Paris — gitlab
+  · Technical Integrations Manager — Vio
+  …另有 16 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
