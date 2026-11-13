@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1766 条
+  拿到 1750 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -23,6 +23,7 @@
   [OK] Steadforce GmbH (personio)
   [OK] Airbus (workday)
   [OK] Knorr-Bremse (successfactors)
+  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(18个已知 + 前探40),共 58 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -30,28 +31,25 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1391 条
+  拿到 1397 条
 
-过滤后 59 / 3157 条符合关键词+地点
+过滤后 64 / 3147 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 16 条(宽松模式,其余保留)
+IG Metall 雇主命中 17 条(宽松模式,其余保留)
 
-★ 新职位 31 条
-  · Senior Business Development Manager (all genders) — Ray Sono GmbH
-  · Projektmanager TGA / MEP (m/w/d) - Remote (DE) — Ruby GmbH
-  · Bauleiter / Projektleiter (m/w/d) Tiefbau — Jobbusters® GmbH
-  · European Product Manager FRP (m/f/d) — Simpson Strong-Tie GmbH
-  · Senior Product Manager - Productization (m/w/d) — Soley GmbH
-  · Senior Manager Paid Search (Mensch) — wppmedia
-  · Legal Engineer Manager, Munich — Harvey
-  · AI Reliability Engineering Manager — Nscaleoperationsukltd
-  · Product Manager PRINCE2 — Peoplecert
-  · Human Factors Project Manager (m/f/d) (part-time contractor, — Hilobyaktiia
-  · CRM Manager (m/w/d) — Start To Finish Consulting Gmb
-  · Engineering Manager - Infrastructure — Camunda
-  · Senior Manager, Constructability — Volta
-  · Senior Professional Services Project Manager, Paris — gitlab
-  · Technical Integrations Manager — Vio
-  …另有 16 条
+★ 新职位 13 条
+  · Capital Markets Manager (m/f/d) — NaroIQ
+  · Projekt Manager/in B2B SaaS (w/m/d) — ParkEfficient
+  · (Associate) Manager (m/w/d) Automotive Transformation & R&D — ANGEHEUERT GmbH Personalberatu
+  · Senior Product Manager (Insurance) — TechBiz Global GmbH
+  · E-Commerce Operations Manager/-in (Amazon DE & USA) — GalleryLab GmbH
+  · Senior Engineering Manager, Product Engineering — Secfix
+  · Forward Deployed Engineering Manager — Auterion
+  · IT Administration & Automation Manager (all genders) — Lio
+  · Senior QA Manager Automation & AI - Fully Remote — SOFTGAMES
+  · Product Manager — Dexory
+  · Project Manager (all genders) — Ray Sono GmbH
+  · Product Manager - Field Service Management (SaaS) — Joblogic
+  · Projektmanager Corporate Events & Sponsoring (m/w/d) — Knorr-Bremse
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
