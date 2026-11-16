@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1718 条
+  拿到 1736 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -21,7 +21,7 @@
   [OK] Turner & Townsend GmbH (smartrecruiters)
   [OK] AERO-Bildungs GmbH (lever)
   [OK] Steadforce GmbH (personio)
-  [OK] Airbus (workday)
+  [失败] Airbus (workday): HTTPError 429 Client Error: Too Many Requests for url: https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus/jobs
   [OK] Knorr-Bremse (successfactors)
   [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
@@ -31,14 +31,21 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1403 条
+  拿到 1308 条
 
-过滤后 59 / 3121 条符合关键词+地点
+过滤后 54 / 3044 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 17 条(宽松模式,其余保留)
+IG Metall 雇主命中 13 条(宽松模式,其余保留)
 
-★ 新职位 2 条
-  · Senior CRM & Lifecycle Manager — Cosuno
-  · Technical Delivery Manager - Munich — Legora
+★ 新职位 9 条
+  · Business Development Manager in a disruptive scale-up: be a  — Vicoland
+  · CRM Manager & HubSpot Consultant (w/m/d) | Teilzeit 20h — emerve GmbH
+  · SEA Manager (m/f/d) — We Love X GmbH
+  · Product Manager — Wpp
+  · Accountmanager in Auction Business - Nouvelle Aquitaine (gn) — Surplex GmbH
+  · Accountmanager in Auction Business - Hauts-de-France (gn) — Surplex GmbH
+  · (Senior) Technical Program Manager (m/f/d) — RobCo
+  · Product Manager - Growth & Website (m/f/d) — Berlitz
+  · Senior Product Manager (w/m/d) — Lanesplanes
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
