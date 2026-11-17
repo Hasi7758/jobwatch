@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1736 条
+  拿到 1782 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -27,25 +27,28 @@
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(17个已知 + 前探40),共 57 次请求
   [OK] Rodenstock GmbH (hr4you)
-  [OK] NCR GmbH (workday)
+  [失败] NCR GmbH (workday): HTTPError 429 Client Error: Too Many Requests for url: https://ncr.wd1.myworkdayjobs.com/wday/cxs/ncr/ext_apac/jobs
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1308 条
+  拿到 1286 条
 
-过滤后 54 / 3044 条符合关键词+地点
+过滤后 38 / 3068 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 13 条(宽松模式,其余保留)
+IG Metall 雇主命中 12 条(宽松模式,其余保留)
 
-★ 新职位 9 条
-  · Business Development Manager in a disruptive scale-up: be a  — Vicoland
-  · CRM Manager & HubSpot Consultant (w/m/d) | Teilzeit 20h — emerve GmbH
-  · SEA Manager (m/f/d) — We Love X GmbH
-  · Product Manager — Wpp
-  · Accountmanager in Auction Business - Nouvelle Aquitaine (gn) — Surplex GmbH
-  · Accountmanager in Auction Business - Hauts-de-France (gn) — Surplex GmbH
-  · (Senior) Technical Program Manager (m/f/d) — RobCo
-  · Product Manager - Growth & Website (m/f/d) — Berlitz
-  · Senior Product Manager (w/m/d) — Lanesplanes
+★ 新职位 12 条
+  · Senior FP&A Manager (f/m/d) — plancraft
+  · Regional Partnerships Manager - DACH — Constructor
+  · Senior FP&A Manager (m/f/d) — Roadsurfer
+  · Kundenservice-Manager (m/w/d), bundesweit — Qivalo GmbH
+  · Senior Paid Social Manager / Media Buyer (Meta & TikTok) (m/ — We Love X GmbH
+  · Digital-Communitymanager:in (m/w/d) - Teilzeit — Project Bay Workation Hotel UG
+  · Senior Delivery Manager (Remote) — Coopers Group AG
+  · Finanzierungsmanager (m/w/d) Baufinanzierung B2B — BS Baugeld Spezialisten.de
+  · CRM Manager (Klaviyo) | 100 % Remote (m/w/d) — Bendt Brothers
+  · Project Manager - ERP Testing - Contract Role — Project Blackbook
+  · Growth Product Manager (Senior to Staff) — Distrokid
+  · Talent Pool: Revenue Manager (m/f/d) — RoomPriceGenie
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
