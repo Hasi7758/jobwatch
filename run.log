@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1781 条
+  拿到 1800 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -23,7 +23,6 @@
   [OK] Steadforce GmbH (personio)
   [失败] Airbus (workday): HTTPError 429 Client Error: Too Many Requests for url: https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus/jobs
   [OK] Knorr-Bremse (successfactors)
-  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(16个已知 + 前探40),共 56 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -33,26 +32,26 @@
   [OK] manroland Goss web systems GmbH (recruitee)
   拿到 1309 条
 
-过滤后 43 / 3090 条符合关键词+地点
+过滤后 56 / 3109 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 12 条(宽松模式,其余保留)
+IG Metall 雇主命中 14 条(宽松模式,其余保留)
 
-★ 新职位 26 条
-  · Quereinstieg: Weiterbildung zum Marketplace Manager (m/w/d)  — Mentify Learn GmbH
-  · Quereinstieg: Weiterbildung zum Marketplace Manager (m/w/d)  — Mentify Learn GmbH
-  · Market Access (Senior) Manager, EU Center — Bridgebio
-  · Business Development Manager — TDP
-  · SRE Platform Manager — Yubo
-  · Senior Business Development Manager Data & AI – Financial Se — Xebiadach
-  · Manager, Solutions Engineering | NorBen | Remote — grafanalabs
-  · Hands-on Engineering Manager DevOps (GCP/Kubernetes) — Miaplaza
-  · AI Implementation Manager (all genders) – Munich — Lio
-  · (Senior) Product Manager | Full Time (m/w/d) — CONROO GmbH
-  · Senior Product Manager — Yubico
-  · Projektleitung (m/w/d) Elektrotechnik — IBP Ingenieure GmbH
-  · Investment Manager/Associate — BANKING CONSULT Executive Sear
-  · PR Manager:in (m/w/d) — hypr
-  · Projektleiter/-in (m/w/d) — Süd Hansa GmbH & Co. KG
-  …另有 11 条
+★ 新职位 24 条
+  · Finance Operations Manager (m/w/d) — Start To Finish Consulting Gmb
+  · Infrastructure Manager (m/w/d) for AI Ops Implementation — capco
+  · Infrastructure Manager (m/f/d) for AI Ops Implementation — capco
+  · (Senior) Operations Manager in Remote E-Commerce Agentur (m/ — Evolve Digital GmbH
+  · Customer-Success-Manager (m/w/d) | 100 % Remote — Koller & Lode GmbH
+  · (Senior) Google Ads/ SEA Manager (m/w/d) — Loyamo GmbH
+  · Partnerships Manager — Manex AI GmbH
+  · Technical Program Manager — Vesoma
+  · Technical Product Manager — Vesoma
+  · Strategic Sourcing Manager — Vesoma
+  · Curriculum Manager - AI Engineering — Datacamp
+  · Curriculum Manager - AI Engineering — Datacamp
+  · Curriculum Manager - AI Engineering — Datacamp
+  · Curriculum Manager - AI Engineeering — Datacamp
+  · Senior Programme Manager — mewssystems
+  …另有 9 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
