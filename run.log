@@ -23,35 +23,36 @@
   [OK] Steadforce GmbH (personio)
   [失败] Airbus (workday): HTTPError 429 Client Error: Too Many Requests for url: https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus/jobs
   [OK] Knorr-Bremse (successfactors)
+  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
-  [HR4YOU:Rodenstock GmbH] 增量(16个已知 + 前探40),共 56 次请求
+  [HR4YOU:Rodenstock GmbH] 增量(17个已知 + 前探40),共 57 次请求
   [OK] Rodenstock GmbH (hr4you)
   [失败] NCR GmbH (workday): HTTPError 429 Client Error: Too Many Requests for url: https://ncr.wd1.myworkdayjobs.com/wday/cxs/ncr/ext_apac/jobs
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1309 条
+  拿到 1243 条
 
-过滤后 56 / 3109 条符合关键词+地点
+过滤后 54 / 3043 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 14 条(宽松模式,其余保留)
+IG Metall 雇主命中 3 条(宽松模式,其余保留)
 
-★ 新职位 24 条
-  · Finance Operations Manager (m/w/d) — Start To Finish Consulting Gmb
-  · Infrastructure Manager (m/w/d) for AI Ops Implementation — capco
-  · Infrastructure Manager (m/f/d) for AI Ops Implementation — capco
-  · (Senior) Operations Manager in Remote E-Commerce Agentur (m/ — Evolve Digital GmbH
-  · Customer-Success-Manager (m/w/d) | 100 % Remote — Koller & Lode GmbH
-  · (Senior) Google Ads/ SEA Manager (m/w/d) — Loyamo GmbH
-  · Partnerships Manager — Manex AI GmbH
-  · Technical Program Manager — Vesoma
-  · Technical Product Manager — Vesoma
-  · Strategic Sourcing Manager — Vesoma
-  · Curriculum Manager - AI Engineering — Datacamp
-  · Curriculum Manager - AI Engineering — Datacamp
-  · Curriculum Manager - AI Engineering — Datacamp
-  · Curriculum Manager - AI Engineeering — Datacamp
-  · Senior Programme Manager — mewssystems
-  …另有 9 条
+★ 新职位 29 条
+  · Client Success Manager - 100% Remote (m/w/d) — Digistore24
+  · Business Development Manager — AIM
+  · Kleiner Feigling Brand Activation Manager (m/w/d) - Region ( — Waldemar Behn GmbH
+  · Kleiner Feigling Brand Activation Manager (m/w/d) - Region N — Waldemar Behn GmbH
+  · Group Product Manager (m/w/d) / Team Lead Product — Peter Park System GmbH
+  · Senior Product Manager (w/m/d) — Verve
+  · Senior E-Commerce / D2C Manager (m/w/d) — Patronus
+  · Manager, Legal Programs, Privacy & AI (EU/UK) — Hims And Hers
+  · Senior Financial Risk Manager — Coopers Group AG
+  · Weiterbildung zum Process Automation Manager (m/w/d) – (100  — velpTEC GmbH
+  · 1218 | Senior Project Manager — Intetics 2
+  · Senior Engineering Manager — Xometryeurope
+  · Implementation Manager - German Speaking (m/w/d) — Kraken
+  · Senior Manager, AI Forward Deployed Engineering — databricks
+  · Engineering Manager (m/f/x) — Makersite GmbH
+  …另有 14 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
