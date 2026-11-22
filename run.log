@@ -23,7 +23,6 @@
   [OK] Steadforce GmbH (personio)
   [失败] Airbus (workday): HTTPError 429 Client Error: Too Many Requests for url: https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus/jobs
   [OK] Knorr-Bremse (successfactors)
-  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(17个已知 + 前探40),共 57 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -31,28 +30,21 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1307 条
+  拿到 1306 条
 
-过滤后 62 / 3107 条符合关键词+地点
+过滤后 60 / 3106 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
 IG Metall 雇主命中 14 条(宽松模式,其余保留)
 
-★ 新职位 19 条
-  · 1228 | IT Service Manager / Senior IT Service Manager — Intetics 2
-  · Infrastructure Manager (m/w/d) for AI Ops Implementation — capco
-  · Infrastructure Manager (m/w/d) for AI Ops Implementation — capco
-  · Infrastructure Manager (m/w/d) for AI Ops Implementation — capco
-  · Partner Success Manager, Technical Lead - German Speaking — nice
-  · Senior Media Relations Manager (m/f/d) — mewssystems
-  · Senior Customer Intelligence Manager — Camunda
-  · Senior Manager- Asset Management and Operations — Baringa
-  · Senior Media Relations Manager — mewssystems
-  · Projektleiter Hochbau (m/w/d) — MY Humancapital GmbH
-  · (Senior) Project Manager – Industrialization (all genders) — væridion
-  · Accounting Manager (all genders) — væridion
-  · Finance Manager (all genders) — væridion
-  · Product Manager/ Business Analyst As Freelancer (All Genders — Vexcash AG
-  · Partner Success Manager, Technical Lead — nice
-  …另有 4 条
+★ 新职位 9 条
+  · Senior SAP Test Manager (m/w/d) — Natuvion GmbH
+  · Lead Technical Product Manager, Rail Integrations (all gende — Distribusion Technologies
+  · Project Manager EMEA, Production — LILT (Production)
+  · Qualitätsmanager:in für App-, Website- und Filialen-Tests (m — Probantica
+  · Senior Configuration Manager (All Genders) — Skdse
+  · Qualitätsmanager:in für App-, Website- und Filialen-Tests (m — Probantica
+  · Senior Product Manager - Paris — Yubo
+  · Senior Manager, Professional Services - EMEA — chainguard
+  · Engineering Manager - Grafana Infrastructure (Remote, UK) — grafanalabs
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
