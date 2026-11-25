@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1797 条
+  拿到 1800 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -23,6 +23,7 @@
   [OK] Steadforce GmbH (personio)
   [失败] Airbus (workday): HTTPError 429 Client Error: Too Many Requests for url: https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus/jobs
   [OK] Knorr-Bremse (successfactors)
+  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(16个已知 + 前探40),共 56 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -30,26 +31,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1309 条
+  拿到 1308 条
 
-过滤后 58 / 3106 条符合关键词+地点
+过滤后 49 / 3108 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 17 条(宽松模式,其余保留)
+IG Metall 雇主命中 18 条(宽松模式,其余保留)
 
-★ 新职位 14 条
-  · HSE Manager / Fachkraft für Arbeitssicherheit (m/w/d) — ju:niz Energy GmbH
-  · Forward Deployed Engineering Manager — Auterion
-  · Senior Business Development Manager Europe (m/f/d) — Odys Aviation
-  · Technical Operations Manager — Beo Energy
-  · Grid Manager — Beo Energy
-  · Technical Product Manager – Local Control System — Beo Energy
-  · Senior CRM Manager (m/w/d) — A-LEVEL
-  · Accounting Operations Manager — Fal Ai
-  · Senior Operations Excellence Manager (m/w/d) — Peter Park
-  · Group Product Manager (m/w/d) / Team Lead Product — Peter Park
-  · (Senior) Product Manager (m/w/d) — Peter Park
-  · Data Project Manager — Snke
-  · Senior Privacy Manager (m/w/d) – Datenschutz im Gesundheitsw — Proliance
-  · Senior Delivery Manager — Xdesign
+★ 新职位 19 条
+  · Teamlead Projektleitung Innenausbau | Objekteinrichtung (w/m — Right Search
+  · Engineering Manager, AI CICD — chainguard
+  · Senior Product Manager — Nucs AI
+  · Business Automation & AI Manager (all genders) — Foodji GmbH
+  · Business Development Manager - New Customer Acquisition — Signode
+  · Customer-Success-Manager (m/w/d) | 100 % Remote — JMVision GmbH
+  · Senior Data & AI Projektleitung - Schwerpunkt Defense (m/w/d — Alexander Thamm GmbH
+  · Manager Financial Services (m/w/d) — Alexander Thamm GmbH
+  · Senior IT Project Manager (m/w/d) — Natuvion GmbH
+  · Senior/ Principal Group Accounting Manager (m/w/d) — FINN
+  · Senior Manager — Faculty
+  · Client Success Senior Manager — gympass
+  · Partner(m/w/d): Für Interim Manager und Berater: Mandate im  — VOVOI GmbH
+  · Technical Product Manager — Sanovio
+  · Technical Product Owner – Fiskalisierung (m/f/d) — Swissbit
+  …另有 4 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
