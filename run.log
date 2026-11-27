@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1743 条
+  拿到 1715 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -23,6 +23,7 @@
   [OK] Steadforce GmbH (personio)
   [失败] Airbus (workday): HTTPError 429 Client Error: Too Many Requests for url: https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus/jobs
   [OK] Knorr-Bremse (successfactors)
+  [BMW] 代理不可用,本次跳过
   [OK] BMW Group (bmw)
   [HR4YOU:Rodenstock GmbH] 增量(16个已知 + 前探40),共 56 次请求
   [OK] Rodenstock GmbH (hr4you)
@@ -30,28 +31,28 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1308 条
+  拿到 1310 条
 
-过滤后 49 / 3051 条符合关键词+地点
+过滤后 67 / 3025 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 14 条(宽松模式,其余保留)
+IG Metall 雇主命中 15 条(宽松模式,其余保留)
 
-★ 新职位 21 条
-  · Product Manager Payment (m/w/d) — Epay
-  · Venture Development Manager (AI Transformation) — Excelling Ventures GmbH
-  · Senior Product Owner — Nmi
-  · Manager, Data Centers — Godaddy
-  · Business Development Manager - New Customer Acquisition — Signode
-  · CRO Manager (m/w/d) — A-LEVEL
-  · Client Success Manager - 100% Remote (m/w/d) — Digistore24
-  · Legal Engineer Manager, Product Specialist, Munich — Harvey
-  · Manager, Engineering - Identity — Camunda
-  · Software Engineering Project Manager (m/f/d) — TYTAN Technologies GmbH
-  · (Senior) Product Manager - B2B SaaS (m/w/d) — epilot GmbH
-  · General Ledger Manager, Accounting — Fal Ai
-  · Senior Consultant / Manager Business Strategy (m/f/d) | Germ — Yoummday
-  · Solution Consultant - Onboarding & Training Manager - Tax &  — Pennylane
-  · Creative Production Manager — Se3
-  …另有 6 条
+★ 新职位 29 条
+  · Accounting Manager A/R – E-Commerce (all genders) — Glow25
+  · Technische/r InformatikerIn als IT ProjektleiterIn & Busines — Sogema Software GmbH
+  · IT-Projektleiter Delivery, Releases & Migration (m/w/d) — SPECTRUM AG
+  · Product Manager (all genders) — Gamma Communications GmbH
+  · Engineering Manager – Auctions (m/w/d) — caronsale
+  · Senior Consultant/Manager, Data & AI — Xebiadach
+  · (Senior) Product Manager:in KYC (m/w/d) — ClariLab GmbH & Co.KG
+  · Senior Product Manager (f/m/d) — idnow
+  · (Senior) Manager (m/w/d), Commodities & Energy Trading — Baringa
+  · Senior SEM Manager — Quince
+  · Senior Category Manager, Women's - Wovens UK/EU — Quince
+  · Senior Category Manager, Home - Bedding UK/EU — Quince
+  · Engineering Manager, Payments (all genders) — Distribusion Technologies
+  · Marketplace Manager für OTTO & Kaufland — Dudes&Partner
+  · (Senior) Process Manager (all genders) — Wemolo
+  …另有 14 条
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
