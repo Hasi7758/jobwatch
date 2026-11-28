@@ -1,7 +1,7 @@
 抓取联邦劳动局…
   拿到 0 条
 抓取 arbeitnow…
-  拿到 1715 条
+  拿到 1725 条
 抓取公司 ATS…
   [OK] Webasto (personio)
   [OK] Brainlab (smartrecruiters)
@@ -31,28 +31,25 @@
   [OK] Heilind Electronics GmbH (recruitee)
   [失败] Kraftanlagen München GmbH (softgarden): HTTPError 404 Client Error: Not Found for url: https://kraftanlagen.softgarden.io/api/rest/frontend/v3/job-postings?limit=200
   [OK] manroland Goss web systems GmbH (recruitee)
-  拿到 1310 条
+  拿到 1307 条
 
-过滤后 67 / 3025 条符合关键词+地点
+过滤后 52 / 3032 条符合关键词+地点
   [白名单] 载入 2430 家 IG Metall 雇主(含 2 条别名)
-IG Metall 雇主命中 15 条(宽松模式,其余保留)
+IG Metall 雇主命中 14 条(宽松模式,其余保留)
 
-★ 新职位 29 条
-  · Accounting Manager A/R – E-Commerce (all genders) — Glow25
-  · Technische/r InformatikerIn als IT ProjektleiterIn & Busines — Sogema Software GmbH
-  · IT-Projektleiter Delivery, Releases & Migration (m/w/d) — SPECTRUM AG
-  · Product Manager (all genders) — Gamma Communications GmbH
-  · Engineering Manager – Auctions (m/w/d) — caronsale
-  · Senior Consultant/Manager, Data & AI — Xebiadach
-  · (Senior) Product Manager:in KYC (m/w/d) — ClariLab GmbH & Co.KG
-  · Senior Product Manager (f/m/d) — idnow
-  · (Senior) Manager (m/w/d), Commodities & Energy Trading — Baringa
-  · Senior SEM Manager — Quince
-  · Senior Category Manager, Women's - Wovens UK/EU — Quince
-  · Senior Category Manager, Home - Bedding UK/EU — Quince
-  · Engineering Manager, Payments (all genders) — Distribusion Technologies
-  · Marketplace Manager für OTTO & Kaufland — Dudes&Partner
-  · (Senior) Process Manager (all genders) — Wemolo
-  …另有 14 条
+★ 新职位 13 条
+  · Ehrenamtliche/r Mitarbeiter:innen Projektmanagement Städtepa — Go For Climate e.V.
+  · Client Success Senior Manager (m/f/d) — Wellhub
+  · Senior RWE Program Manager - Data/IA Expert — Excelya
+  · Remote Sr. Product Manager (m/f/d) — Roompricegenie
+  · Projektleiter Hochbau (m/w/d) — MY Humancapital GmbH
+  · Quality Manager (all genders) – Quality & Sustainability — mammaly
+  · Quality Manager (all genders) – Quality & Sustainability — mammaly
+  · Product Manager Mission Autonomy (All Genders) — Skdse
+  · Engineering Manager Mission Autonomy (All Genders) — Skdse
+  · Senior Manager, Capability Engineering & Customer Training,  — databricks
+  · Manager, Delivery Solutions Architects — databricks
+  · Engineering Manager EU/UK (m/f/x) — Makersite GmbH
+  · Freelancer Quality Assurance Manager C# .NET (all genders) — Vexcash AG
 
 报告已生成: /home/runner/work/jobwatch/jobwatch/digest.html
